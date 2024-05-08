@@ -39,16 +39,18 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgvLoans = new System.Windows.Forms.DataGridView();
+            this.dgvMembers = new System.Windows.Forms.DataGridView();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLoans)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -108,11 +110,12 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Welfare Members";
             // 
-            // dgvLoans
+            // dgvMembers
             // 
-            this.dgvLoans.AllowUserToDeleteRows = false;
-            this.dgvLoans.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dgvLoans.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvMembers.AllowUserToAddRows = false;
+            this.dgvMembers.AllowUserToDeleteRows = false;
+            this.dgvMembers.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvMembers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ScrollBar;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -120,26 +123,28 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLoans.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvLoans.ColumnHeadersHeight = 30;
-            this.dgvLoans.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvLoans.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvMembers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvMembers.ColumnHeadersHeight = 30;
+            this.dgvMembers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvMembers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column8,
             this.Column1,
             this.Column2,
             this.Column3,
+            this.Column7,
             this.Column4,
             this.Column5,
+            this.Column9,
             this.Column6});
-            this.dgvLoans.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvLoans.EnableHeadersVisualStyles = false;
-            this.dgvLoans.Location = new System.Drawing.Point(0, 40);
-            this.dgvLoans.Name = "dgvLoans";
-            this.dgvLoans.RowHeadersVisible = false;
-            this.dgvLoans.RowTemplate.Height = 30;
-            this.dgvLoans.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvLoans.Size = new System.Drawing.Size(1350, 590);
-            this.dgvLoans.TabIndex = 5;
+            this.dgvMembers.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvMembers.EnableHeadersVisualStyles = false;
+            this.dgvMembers.Location = new System.Drawing.Point(0, 40);
+            this.dgvMembers.Name = "dgvMembers";
+            this.dgvMembers.RowHeadersVisible = false;
+            this.dgvMembers.RowTemplate.Height = 30;
+            this.dgvMembers.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMembers.Size = new System.Drawing.Size(1350, 590);
+            this.dgvMembers.TabIndex = 5;
             // 
             // Column8
             // 
@@ -147,47 +152,65 @@
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Column8.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column8.HeaderText = "PF. NO";
+            this.Column8.HeaderText = "Staff Code";
             this.Column8.Name = "Column8";
-            this.Column8.Width = 81;
+            this.Column8.Width = 104;
             // 
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.Column1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column1.HeaderText = "Full Name";
+            this.Column1.HeaderText = "Staff Name";
             this.Column1.Name = "Column1";
             // 
             // Column2
             // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.HeaderText = "Department";
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column2.HeaderText = "Status";
             this.Column2.Name = "Column2";
+            this.Column2.Width = 75;
             // 
             // Column3
             // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column3.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column3.HeaderText = "Employment End Date";
             this.Column3.Name = "Column3";
-            this.Column3.Width = 200;
+            this.Column3.Width = 187;
+            // 
+            // Column7
+            // 
+            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column7.HeaderText = "Nationality";
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 109;
             // 
             // Column4
             // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column4.DefaultCellStyle = dataGridViewCellStyle5;
             this.Column4.HeaderText = "Pending Loans";
             this.Column4.Name = "Column4";
-            this.Column4.Width = 170;
+            this.Column4.Width = 134;
             // 
             // Column5
             // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             this.Column5.DefaultCellStyle = dataGridViewCellStyle6;
             this.Column5.HeaderText = "Savings Account";
             this.Column5.Name = "Column5";
-            this.Column5.Width = 170;
+            this.Column5.Width = 147;
+            // 
+            // Column9
+            // 
+            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column9.HeaderText = "Email Address";
+            this.Column9.Name = "Column9";
+            this.Column9.Width = 131;
             // 
             // Column6
             // 
@@ -212,7 +235,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 630);
             this.ControlBox = false;
-            this.Controls.Add(this.dgvLoans);
+            this.Controls.Add(this.dgvMembers);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -220,8 +243,9 @@
             this.Name = "Members";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Members";
+            this.Load += new System.EventHandler(this.Members_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLoans)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -231,13 +255,15 @@
         private System.Windows.Forms.Panel panel1;
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dgvLoans;
+        private System.Windows.Forms.DataGridView dgvMembers;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewButtonColumn Column6;
     }
 }

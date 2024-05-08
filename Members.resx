@@ -121,7 +121,7 @@
   <data name="metroTextBox1.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAodJREFUSEvNlruLFEEQxmd9ISgmvhIDRfAZ+QyOk1WPjdyd7pnZ2btjlQvUxUiP
+        DwAACw8BkvkDpQAAAodJREFUSEvNlruLFEEQxmd9ISgmvhIDRfAZ+QyOk1WPjdyd7pnZ2btjlQvUxUiP
         SzTbwEA8EASTQw0EFVQOEREfeCjcnQiCoZnJRf4Dmvv72lo4l0vWmcAPiu6q6vqqu7qmmWgldLvdVXkc
         703TdF+e56vNXB4y54aa3s83nXuIPGC+iG3E3MUx6v0eSOdy749AfCN3bjqL46PM3zAesmXFoN2TYFgn
         yZPkNOQnkAUlwvbSlhWDSiNyxq6ZlHgydc5j+2SmYoDwBfJapGaS7ULm/VmSfDRTMdBJG7MsO2hqRIcd
@@ -147,10 +147,16 @@
   <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="Column7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column9.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

@@ -13,16 +13,12 @@ namespace EAC_STAFF_WELFARE_LMS
 {
     public partial class MainScreen : Form
     {
-        SqlConnection cn = new SqlConnection();
-        SqlCommand cmd = new SqlCommand();
-        dbConnect dbConn = new dbConnect();
+        
 
         public MainScreen()
         {
             InitializeComponent();
-            cn = new SqlConnection(dbConn.myConnection());
-            cn.Open();
-            MessageBox.Show("Database connected successfully");
+            
         }
 
 

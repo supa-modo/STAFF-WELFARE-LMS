@@ -43,11 +43,15 @@
             this.btnLoanApps = new System.Windows.Forms.Button();
             this.btnSavings = new System.Windows.Forms.Button();
             this.panelMainScreen = new System.Windows.Forms.Panel();
+            this.panelFooter = new System.Windows.Forms.Panel();
+            this.label1Footer = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panelTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoMainScrn)).BeginInit();
             this.panelUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelNavBar.SuspendLayout();
+            this.panelFooter.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTopBar
@@ -240,8 +244,43 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelMainScreen.Location = new System.Drawing.Point(5, 100);
             this.panelMainScreen.Name = "panelMainScreen";
-            this.panelMainScreen.Size = new System.Drawing.Size(1342, 624);
+            this.panelMainScreen.Size = new System.Drawing.Size(1342, 609);
             this.panelMainScreen.TabIndex = 5;
+            // 
+            // panelFooter
+            // 
+            this.panelFooter.BackColor = System.Drawing.Color.SeaGreen;
+            this.panelFooter.Controls.Add(this.label2);
+            this.panelFooter.Controls.Add(this.label1Footer);
+            this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelFooter.Location = new System.Drawing.Point(0, 709);
+            this.panelFooter.Name = "panelFooter";
+            this.panelFooter.Size = new System.Drawing.Size(1350, 20);
+            this.panelFooter.TabIndex = 6;
+            // 
+            // label1Footer
+            // 
+            this.label1Footer.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label1Footer.ForeColor = System.Drawing.Color.White;
+            this.label1Footer.Location = new System.Drawing.Point(9, 4);
+            this.label1Footer.Name = "label1Footer";
+            this.label1Footer.Size = new System.Drawing.Size(237, 13);
+            this.label1Footer.TabIndex = 0;
+            this.label1Footer.Text = "EAC STAFF WELFARE MANAGEMENT SYSTEM ";
+            this.label1Footer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Location = new System.Drawing.Point(249, 4);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "      2024";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // MainScreen
             // 
@@ -249,6 +288,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.panelFooter);
             this.Controls.Add(this.panelMainScreen);
             this.Controls.Add(this.panelNavBar);
             this.Controls.Add(this.panelTopBar);
@@ -262,6 +302,7 @@
             this.panelUser.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelNavBar.ResumeLayout(false);
+            this.panelFooter.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -282,5 +323,8 @@
         private System.Windows.Forms.Panel panelMainScreen;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelFooter;
+        private System.Windows.Forms.Label label1Footer;
+        private System.Windows.Forms.Label label2;
     }
 }

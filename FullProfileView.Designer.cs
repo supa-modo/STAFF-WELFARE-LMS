@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FullProfileView));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -38,37 +37,25 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FullProfileView));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelMetro = new System.Windows.Forms.Panel();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroPDetails = new MetroFramework.Controls.MetroTabPage();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -107,9 +94,23 @@
             this.label38 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.metroTabControl2 = new MetroFramework.Controls.MetroTabControl();
+            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
+            this.metroDateTime2 = new MetroFramework.Controls.MetroDateTime();
+            this.picBxClose = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panelMetro.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
@@ -121,10 +122,12 @@
             this.panel4.SuspendLayout();
             this.metroSavings.SuspendLayout();
             this.metroTabControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBxClose)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.picBxClose);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -163,7 +166,7 @@
             this.metroTabControl1.Controls.Add(this.metroSavings);
             this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(1350, 590);
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTabControl1.TabIndex = 0;
@@ -194,31 +197,32 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label29);
-            this.panel2.Controls.Add(this.label28);
-            this.panel2.Controls.Add(this.label44);
+            this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.metroDateTime2);
+            this.panel2.Controls.Add(this.metroDateTime1);
+            this.panel2.Controls.Add(this.comboBox2);
+            this.panel2.Controls.Add(this.textBox10);
+            this.panel2.Controls.Add(this.textBox9);
+            this.panel2.Controls.Add(this.textBox8);
+            this.panel2.Controls.Add(this.textBox7);
+            this.panel2.Controls.Add(this.textBox6);
+            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label45);
-            this.panel2.Controls.Add(this.label41);
             this.panel2.Controls.Add(this.label43);
-            this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label40);
-            this.panel2.Controls.Add(this.label27);
             this.panel2.Controls.Add(this.label26);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label24);
-            this.panel2.Controls.Add(this.label25);
-            this.panel2.Controls.Add(this.label23);
             this.panel2.Controls.Add(this.label19);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label22);
             this.panel2.Controls.Add(this.label21);
             this.panel2.Controls.Add(this.label20);
-            this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.label18);
             this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label30);
@@ -236,66 +240,6 @@
             this.panel2.Size = new System.Drawing.Size(1341, 549);
             this.panel2.TabIndex = 2;
             // 
-            // label10
-            // 
-            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.label10.ForeColor = System.Drawing.Color.DimGray;
-            this.label10.Location = new System.Drawing.Point(689, 190);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(244, 30);
-            this.label10.TabIndex = 102;
-            this.label10.Text = "John Smith Test User";
-            // 
-            // label11
-            // 
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.label11.ForeColor = System.Drawing.Color.DimGray;
-            this.label11.Location = new System.Drawing.Point(339, 190);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(244, 30);
-            this.label11.TabIndex = 101;
-            this.label11.Text = "John Smith Test User";
-            // 
-            // label29
-            // 
-            this.label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label29.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.label29.ForeColor = System.Drawing.Color.DimGray;
-            this.label29.Location = new System.Drawing.Point(1039, 68);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(244, 30);
-            this.label29.TabIndex = 100;
-            this.label29.Text = "John Smith Test User";
-            // 
-            // label28
-            // 
-            this.label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label28.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.label28.ForeColor = System.Drawing.Color.DimGray;
-            this.label28.Location = new System.Drawing.Point(689, 68);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(244, 30);
-            this.label28.TabIndex = 99;
-            this.label28.Text = "John Smith Test User";
-            // 
-            // label44
-            // 
-            this.label44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label44.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.label44.ForeColor = System.Drawing.Color.DimGray;
-            this.label44.Location = new System.Drawing.Point(689, 278);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(244, 30);
-            this.label44.TabIndex = 98;
-            this.label44.Text = "ARUSHA";
-            // 
             // label45
             // 
             this.label45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -307,18 +251,6 @@
             this.label45.TabIndex = 97;
             this.label45.Text = "Address";
             this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label41
-            // 
-            this.label41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label41.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.label41.ForeColor = System.Drawing.Color.DimGray;
-            this.label41.Location = new System.Drawing.Point(339, 278);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(244, 30);
-            this.label41.TabIndex = 96;
-            this.label41.Text = "TestUser@eachq.org";
             // 
             // label43
             // 
@@ -332,18 +264,6 @@
             this.label43.Text = "Secondary Email";
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label8
-            // 
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.label8.ForeColor = System.Drawing.Color.DimGray;
-            this.label8.Location = new System.Drawing.Point(1039, 191);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(244, 30);
-            this.label8.TabIndex = 94;
-            this.label8.Text = "TestUser@eachq.org";
-            // 
             // label40
             // 
             this.label40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -355,18 +275,6 @@
             this.label40.TabIndex = 93;
             this.label40.Text = "Email Address";
             this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label27
-            // 
-            this.label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label27.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.label27.ForeColor = System.Drawing.Color.DimGray;
-            this.label27.Location = new System.Drawing.Point(339, 68);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(244, 30);
-            this.label27.TabIndex = 90;
-            this.label27.Text = "John Smith Test User";
             // 
             // label26
             // 
@@ -392,50 +300,12 @@
             this.label9.Text = "Last Name";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label24
-            // 
-            this.label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.label24.ForeColor = System.Drawing.Color.DimGray;
-            this.label24.Location = new System.Drawing.Point(1126, 501);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(148, 30);
-            this.label24.TabIndex = 87;
-            this.label24.Text = "23/03/2028";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label25
-            // 
-            this.label25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.label25.ForeColor = System.Drawing.Color.DimGray;
-            this.label25.Location = new System.Drawing.Point(861, 501);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(148, 30);
-            this.label25.TabIndex = 86;
-            this.label25.Text = "23/03/2018";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label23
-            // 
-            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label23.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.label23.ForeColor = System.Drawing.Color.DimGray;
-            this.label23.Location = new System.Drawing.Point(768, 413);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(353, 30);
-            this.label23.TabIndex = 85;
-            this.label23.Text = "John Smith Test User";
-            // 
             // label19
             // 
             this.label19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label19.Location = new System.Drawing.Point(1034, 504);
+            this.label19.Location = new System.Drawing.Point(1045, 503);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(89, 25);
             this.label19.TabIndex = 84;
@@ -447,7 +317,7 @@
             this.label15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label15.Location = new System.Drawing.Point(768, 504);
+            this.label15.Location = new System.Drawing.Point(768, 503);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(89, 25);
             this.label15.TabIndex = 83;
@@ -490,18 +360,6 @@
             this.label20.Text = "Employment Dates";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label17
-            // 
-            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.label17.ForeColor = System.Drawing.Color.DimGray;
-            this.label17.Location = new System.Drawing.Point(339, 501);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(353, 30);
-            this.label17.TabIndex = 79;
-            this.label17.Text = "John Smith Test User";
-            // 
             // label18
             // 
             this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -525,18 +383,6 @@
             this.label16.TabIndex = 77;
             this.label16.Text = "Contract Type";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label13
-            // 
-            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.label13.ForeColor = System.Drawing.Color.DimGray;
-            this.label13.Location = new System.Drawing.Point(339, 413);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(353, 30);
-            this.label13.TabIndex = 76;
-            this.label13.Text = "John Smith Test User";
             // 
             // label14
             // 
@@ -985,15 +831,29 @@
             // 
             // metroTabControl2
             // 
+            this.metroTabControl2.Controls.Add(this.metroTabPage1);
             this.metroTabControl2.Controls.Add(this.metroTabPage2);
             this.metroTabControl2.Controls.Add(this.metroTabPage3);
-            this.metroTabControl2.Controls.Add(this.metroTabPage1);
             this.metroTabControl2.Location = new System.Drawing.Point(34, 275);
             this.metroTabControl2.Name = "metroTabControl2";
             this.metroTabControl2.SelectedIndex = 2;
             this.metroTabControl2.Size = new System.Drawing.Size(377, 225);
             this.metroTabControl2.TabIndex = 2;
             this.metroTabControl2.UseSelectable = true;
+            // 
+            // metroTabPage2
+            // 
+            this.metroTabPage2.HorizontalScrollbarBarColor = true;
+            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.HorizontalScrollbarSize = 8;
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage2.Name = "metroTabPage2";
+            this.metroTabPage2.Size = new System.Drawing.Size(369, 183);
+            this.metroTabPage2.TabIndex = 1;
+            this.metroTabPage2.Text = "metroTabPage2";
+            this.metroTabPage2.VerticalScrollbarBarColor = true;
+            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.VerticalScrollbarSize = 9;
             // 
             // metroTabPage3
             // 
@@ -1023,19 +883,134 @@
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 9;
             // 
-            // metroTabPage2
+            // textBox1
             // 
-            this.metroTabPage2.HorizontalScrollbarBarColor = true;
-            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 8;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
-            this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(369, 183);
-            this.metroTabPage2.TabIndex = 1;
-            this.metroTabPage2.Text = "metroTabPage2";
-            this.metroTabPage2.VerticalScrollbarBarColor = true;
-            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 9;
+            this.textBox1.ForeColor = System.Drawing.Color.Gray;
+            this.textBox1.Location = new System.Drawing.Point(339, 64);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(244, 29);
+            this.textBox1.TabIndex = 103;
+            // 
+            // textBox2
+            // 
+            this.textBox2.ForeColor = System.Drawing.Color.Gray;
+            this.textBox2.Location = new System.Drawing.Point(689, 68);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(244, 29);
+            this.textBox2.TabIndex = 104;
+            // 
+            // textBox3
+            // 
+            this.textBox3.ForeColor = System.Drawing.Color.Gray;
+            this.textBox3.Location = new System.Drawing.Point(1039, 68);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(244, 29);
+            this.textBox3.TabIndex = 105;
+            // 
+            // textBox4
+            // 
+            this.textBox4.ForeColor = System.Drawing.Color.Gray;
+            this.textBox4.Location = new System.Drawing.Point(339, 190);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(244, 29);
+            this.textBox4.TabIndex = 106;
+            // 
+            // textBox5
+            // 
+            this.textBox5.ForeColor = System.Drawing.Color.Gray;
+            this.textBox5.Location = new System.Drawing.Point(689, 192);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(244, 29);
+            this.textBox5.TabIndex = 107;
+            // 
+            // textBox6
+            // 
+            this.textBox6.ForeColor = System.Drawing.Color.Gray;
+            this.textBox6.Location = new System.Drawing.Point(1039, 192);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(244, 29);
+            this.textBox6.TabIndex = 108;
+            // 
+            // textBox7
+            // 
+            this.textBox7.ForeColor = System.Drawing.Color.Gray;
+            this.textBox7.Location = new System.Drawing.Point(339, 279);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(244, 29);
+            this.textBox7.TabIndex = 109;
+            // 
+            // textBox8
+            // 
+            this.textBox8.ForeColor = System.Drawing.Color.Gray;
+            this.textBox8.Location = new System.Drawing.Point(689, 279);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(244, 29);
+            this.textBox8.TabIndex = 110;
+            // 
+            // textBox9
+            // 
+            this.textBox9.ForeColor = System.Drawing.Color.Gray;
+            this.textBox9.Location = new System.Drawing.Point(339, 414);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(353, 29);
+            this.textBox9.TabIndex = 111;
+            // 
+            // textBox10
+            // 
+            this.textBox10.ForeColor = System.Drawing.Color.Gray;
+            this.textBox10.Location = new System.Drawing.Point(339, 501);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(353, 29);
+            this.textBox10.TabIndex = 112;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.ForeColor = System.Drawing.Color.Gray;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Permanent Contract",
+            "Short-Term Contract",
+            "Casual Contract",
+            "Consultant Contract"});
+            this.comboBox2.Location = new System.Drawing.Point(772, 414);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(353, 28);
+            this.comboBox2.TabIndex = 113;
+            // 
+            // metroDateTime1
+            // 
+            this.metroDateTime1.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.metroDateTime1.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
+            this.metroDateTime1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.metroDateTime1.Location = new System.Drawing.Point(863, 501);
+            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime1.Name = "metroDateTime1";
+            this.metroDateTime1.Size = new System.Drawing.Size(160, 29);
+            this.metroDateTime1.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroDateTime1.TabIndex = 119;
+            // 
+            // metroDateTime2
+            // 
+            this.metroDateTime2.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.metroDateTime2.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
+            this.metroDateTime2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.metroDateTime2.Location = new System.Drawing.Point(1140, 501);
+            this.metroDateTime2.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime2.Name = "metroDateTime2";
+            this.metroDateTime2.Size = new System.Drawing.Size(160, 29);
+            this.metroDateTime2.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroDateTime2.TabIndex = 120;
+            // 
+            // picBxClose
+            // 
+            this.picBxClose.Image = ((System.Drawing.Image)(resources.GetObject("picBxClose.Image")));
+            this.picBxClose.Location = new System.Drawing.Point(1319, 10);
+            this.picBxClose.Name = "picBxClose";
+            this.picBxClose.Size = new System.Drawing.Size(20, 20);
+            this.picBxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBxClose.TabIndex = 17;
+            this.picBxClose.TabStop = false;
             // 
             // FullProfileView
             // 
@@ -1057,6 +1032,7 @@
             this.metroTabControl1.ResumeLayout(false);
             this.metroPDetails.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picProfile)).EndInit();
             this.metroLoans.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvIndividualLoans)).EndInit();
@@ -1064,6 +1040,7 @@
             this.metroSavings.ResumeLayout(false);
             this.metroSavings.PerformLayout();
             this.metroTabControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picBxClose)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1086,35 +1063,22 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DataGridView dgvIndividualLoans;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -1142,5 +1106,19 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox textBox10;
+        private MetroFramework.Controls.MetroDateTime metroDateTime1;
+        private MetroFramework.Controls.MetroDateTime metroDateTime2;
+        private System.Windows.Forms.PictureBox picBxClose;
     }
 }

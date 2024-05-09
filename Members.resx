@@ -118,20 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnNewMember.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAPFJREFUSEvtlU0OgjAQheEGbowLvYyiR2iZUJRoPIF/J9Utegn2zpMxgQBiCRJM
-        +JKXSaYz89LQFmegDdwoika2Ql/aXsNa66Xx/QcrsZbWd46ejKrE5SIYXFln1sFCqL/CCHPScSVslRpz
-        YRIQXSRlBfrQjzmSKkJEEzE5SsoK9KEfcyRVpM7EGDMzRDtESeVoxSQkWmEdUVI5+m2yUWoaaD2HQt8/
-        vUw4vnNYl9LmJnwk98hViteltOc7yfLfHz5LJ/ekjq9MOnm7GFee60avMJ+6G8cYc9JxFXCRJ0bl9+Kz
-        Yj4UCxlVy2//jAPVOM4TpBVQIzGF+hgAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="txtSearch.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAW9JREFUOE/Vk61PA0EQxXuBAAqDAItBNGDwl73bba9XwMEVLAoElRAS/g+QJJCg
+        DAAACwwBP0AiyAAAAW9JREFUOE/Vk61PA0EQxXuBAAqDAItBNGDwl73bba9XwMEVLAoElRAS/g+QJJCg
         6/AVNbUktYSKGgK0UM+b44VQ9m7Lh4FfMsnN29mXuZu5wv+krNRyRevTShh2EE+R1rdRGDaiINjEsfdW
         9TU8XD5BPMOgBbNDRA3m+9CuoA2QXxtj5ljvhmaPuLiL1OqkWiqt4PwG502l1AzlbOQ12ZmY5VL2/UXU
         9BDHlLJBwRmihcex30jMEF10OUnJJh1AEBwxdVI1ZgmGQ3zbVUo2KHiItd5h6iSO4+nUMAjWKdmgwzsU
@@ -167,7 +157,7 @@
   <metadata name="Column9.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="btnViewProfile.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
 </root>

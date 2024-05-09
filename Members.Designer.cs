@@ -37,7 +37,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnNewMember = new System.Windows.Forms.Button();
+            this.metroBtnNew = new MetroFramework.Controls.MetroButton();
             this.txtSearch = new MetroFramework.Controls.MetroTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvMembers = new System.Windows.Forms.DataGridView();
@@ -50,14 +50,14 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnViewProfile = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnNewMember);
+            this.panel1.Controls.Add(this.metroBtnNew);
             this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -66,21 +66,23 @@
             this.panel1.Size = new System.Drawing.Size(1350, 40);
             this.panel1.TabIndex = 4;
             // 
-            // btnNewMember
+            // metroBtnNew
             // 
-            this.btnNewMember.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNewMember.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnNewMember.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnNewMember.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewMember.Image = ((System.Drawing.Image)(resources.GetObject("btnNewMember.Image")));
-            this.btnNewMember.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNewMember.Location = new System.Drawing.Point(729, 5);
-            this.btnNewMember.Name = "btnNewMember";
-            this.btnNewMember.Size = new System.Drawing.Size(185, 31);
-            this.btnNewMember.TabIndex = 4;
-            this.btnNewMember.Text = "          New Member";
-            this.btnNewMember.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNewMember.UseVisualStyleBackColor = false;
+            this.metroBtnNew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroBtnNew.BackColor = System.Drawing.Color.OldLace;
+            this.metroBtnNew.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.metroBtnNew.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroBtnNew.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.metroBtnNew.Location = new System.Drawing.Point(676, 7);
+            this.metroBtnNew.Name = "metroBtnNew";
+            this.metroBtnNew.Size = new System.Drawing.Size(193, 29);
+            this.metroBtnNew.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroBtnNew.TabIndex = 5;
+            this.metroBtnNew.Text = "Add New Member";
+            this.metroBtnNew.UseCustomBackColor = true;
+            this.metroBtnNew.UseCustomForeColor = true;
+            this.metroBtnNew.UseSelectable = true;
+            this.metroBtnNew.UseStyleColors = true;
             // 
             // txtSearch
             // 
@@ -156,7 +158,7 @@
             this.Column4,
             this.Column5,
             this.Column9,
-            this.Column6});
+            this.btnViewProfile});
             this.dgvMembers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMembers.EnableHeadersVisualStyles = false;
             this.dgvMembers.Location = new System.Drawing.Point(0, 40);
@@ -172,6 +174,7 @@
             this.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column10.HeaderText = "S\\No";
             this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
             this.Column10.Width = 69;
             // 
             // Column8
@@ -182,6 +185,7 @@
             this.Column8.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column8.HeaderText = "Staff Code";
             this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
             this.Column8.Width = 104;
             // 
             // Column1
@@ -191,12 +195,14 @@
             this.Column1.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column1.HeaderText = "Staff Name";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column2.HeaderText = "Status";
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             this.Column2.Width = 75;
             // 
             // Column3
@@ -206,6 +212,7 @@
             this.Column3.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column3.HeaderText = "Employment End Date";
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             this.Column3.Width = 187;
             // 
             // Column7
@@ -213,6 +220,7 @@
             this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column7.HeaderText = "Nationality";
             this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
             this.Column7.Width = 109;
             // 
             // Column4
@@ -222,6 +230,7 @@
             this.Column4.DefaultCellStyle = dataGridViewCellStyle5;
             this.Column4.HeaderText = "Pending Loans";
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             this.Column4.Width = 134;
             // 
             // Column5
@@ -231,6 +240,7 @@
             this.Column5.DefaultCellStyle = dataGridViewCellStyle6;
             this.Column5.HeaderText = "Savings Account";
             this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             this.Column5.Width = 147;
             // 
             // Column9
@@ -238,9 +248,11 @@
             this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.Column9.HeaderText = "Email Address";
             this.Column9.Name = "Column9";
-            this.Column9.Width = 131;
+            this.Column9.ReadOnly = true;
+            this.Column9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column9.Width = 112;
             // 
-            // Column6
+            // btnViewProfile
             // 
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.SeaGreen;
@@ -248,14 +260,14 @@
             dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle7;
-            this.Column6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Column6.HeaderText = "";
-            this.Column6.Name = "Column6";
-            this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column6.Text = "View Profile";
-            this.Column6.UseColumnTextForButtonValue = true;
-            this.Column6.Width = 130;
+            this.btnViewProfile.DefaultCellStyle = dataGridViewCellStyle7;
+            this.btnViewProfile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnViewProfile.HeaderText = "";
+            this.btnViewProfile.Name = "btnViewProfile";
+            this.btnViewProfile.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.btnViewProfile.Text = "View Profile";
+            this.btnViewProfile.UseColumnTextForButtonValue = true;
+            this.btnViewProfile.Width = 130;
             // 
             // Members
             // 
@@ -284,6 +296,7 @@
         private MetroFramework.Controls.MetroTextBox txtSearch;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvMembers;
+        private MetroFramework.Controls.MetroButton metroBtnNew;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -293,7 +306,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewButtonColumn Column6;
-        private System.Windows.Forms.Button btnNewMember;
+        private System.Windows.Forms.DataGridViewButtonColumn btnViewProfile;
     }
 }

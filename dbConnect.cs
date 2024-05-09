@@ -14,6 +14,7 @@ namespace EAC_STAFF_WELFARE_LMS
         SqlConnection cn = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
 
+
         private string _connectionString;
         public string myConnection() {
             _connectionString = @"Data Source=EDDY-SP\SQLEXPRESS;Initial Catalog=EacLMSDB;Integrated Security=True";

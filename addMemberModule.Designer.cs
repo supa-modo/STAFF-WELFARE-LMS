@@ -33,6 +33,8 @@
             this.picBxClose = new System.Windows.Forms.PictureBox();
             this.lblAddMember = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.metroDateTime2 = new MetroFramework.Controls.MetroDateTime();
             this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -62,8 +64,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.labelFName = new System.Windows.Forms.Label();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBxClose)).BeginInit();
             this.panel2.SuspendLayout();
@@ -105,6 +107,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.btnCancel);
             this.panel2.Controls.Add(this.btnSave);
             this.panel2.Controls.Add(this.metroDateTime2);
@@ -141,6 +145,31 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1185, 590);
             this.panel2.TabIndex = 1;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(632, 523);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(129, 42);
+            this.btnCancel.TabIndex = 151;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Location = new System.Drawing.Point(451, 523);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(137, 42);
+            this.btnSave.TabIndex = 150;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
             // 
             // metroDateTime2
             // 
@@ -452,30 +481,25 @@
             this.labelFName.Text = "First Name";
             this.labelFName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // btnSave
+            // textBox1
             // 
-            this.btnSave.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(451, 523);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(137, 42);
-            this.btnSave.TabIndex = 150;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
+            this.textBox1.ForeColor = System.Drawing.Color.Gray;
+            this.textBox1.Location = new System.Drawing.Point(901, 352);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(244, 29);
+            this.textBox1.TabIndex = 153;
             // 
-            // btnCancel
+            // label1
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnCancel.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(632, 523);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(129, 42);
-            this.btnCancel.TabIndex = 151;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(901, 322);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(244, 25);
+            this.label1.TabIndex = 152;
+            this.label1.Text = "Monthly Savings Amount";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // addMemberModule
             // 
@@ -538,5 +562,7 @@
         private System.Windows.Forms.PictureBox picBxClose;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

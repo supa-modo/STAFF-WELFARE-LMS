@@ -1012,6 +1012,7 @@
             this.picBxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBxClose.TabIndex = 18;
             this.picBxClose.TabStop = false;
+            this.picBxClose.Click += new System.EventHandler(this.picBxClose_Click);
             // 
             // FullProfileView
             // 

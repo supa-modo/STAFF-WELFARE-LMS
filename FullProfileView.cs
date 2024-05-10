@@ -17,6 +17,9 @@ namespace EAC_STAFF_WELFARE_LMS
             InitializeComponent();
         }
 
-        
+        private void picBxClose_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

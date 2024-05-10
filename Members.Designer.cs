@@ -43,7 +43,7 @@
             this.dgvMembers = new System.Windows.Forms.DataGridView();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.staffName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -152,7 +152,7 @@
             this.dgvMembers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column10,
             this.Column8,
-            this.Column1,
+            this.staffName,
             this.Column2,
             this.Column3,
             this.Column7,
@@ -169,7 +169,9 @@
             this.dgvMembers.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvMembers.Size = new System.Drawing.Size(1350, 590);
             this.dgvMembers.TabIndex = 5;
-            this.dgvMembers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMembers_CellContentClick);
+            
+            this.dgvMembers.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMembers_CellContentDoubleClick);
+            
             // 
             // Column10
             // 
@@ -190,14 +192,14 @@
             this.Column8.ReadOnly = true;
             this.Column8.Width = 104;
             // 
-            // Column1
+            // staffName
             // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.staffName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column1.HeaderText = "Staff Name";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.staffName.DefaultCellStyle = dataGridViewCellStyle3;
+            this.staffName.HeaderText = "Staff Name";
+            this.staffName.Name = "staffName";
+            this.staffName.ReadOnly = true;
             // 
             // Column2
             // 
@@ -301,7 +303,7 @@
         private MetroFramework.Controls.MetroButton metroBtnNewMember;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn staffName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;

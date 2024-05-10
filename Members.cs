@@ -93,17 +93,17 @@ namespace EAC_STAFF_WELFARE_LMS
             addMemberModule.ShowDialog();
         }
 
-        private void dgvMembers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        
+
+        private void dgvMembers_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             var senderGrid = (DataGridView)sender;
-
-            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
-                e.RowIndex >= 0)
+            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn ||
+                e.ColumnIndex == 2)
             {
-                addMemberModule addMemberModule = new addMemberModule();
-                addMemberModule.ShowDialog();
+                FullProfileView fullProfileView = new FullProfileView();
+                fullProfileView.ShowDialog();
             }
-
         }
     }
 }

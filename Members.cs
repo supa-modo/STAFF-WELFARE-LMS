@@ -89,7 +89,8 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private void metroBtnNew_Click(object sender, EventArgs e)
         {
-
+            addMemberModule addMemberModule = new addMemberModule();
+            addMemberModule.ShowDialog();
         }
     }
 }

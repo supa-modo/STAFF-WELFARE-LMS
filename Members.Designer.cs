@@ -169,6 +169,7 @@
             this.dgvMembers.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvMembers.Size = new System.Drawing.Size(1350, 590);
             this.dgvMembers.TabIndex = 5;
+            this.dgvMembers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMembers_CellContentClick);
             // 
             // Column10
             // 

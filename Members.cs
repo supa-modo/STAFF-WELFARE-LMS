@@ -92,5 +92,18 @@ namespace EAC_STAFF_WELFARE_LMS
             addMemberModule addMemberModule = new addMemberModule();
             addMemberModule.ShowDialog();
         }
+
+        private void dgvMembers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var senderGrid = (DataGridView)sender;
+
+            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+                e.RowIndex >= 0)
+            {
+                addMemberModule addMemberModule = new addMemberModule();
+                addMemberModule.ShowDialog();
+            }
+
+        }
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FullProfileView));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -38,6 +37,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FullProfileView));
             this.panelMemberProfileTop = new System.Windows.Forms.Panel();
             this.lblMemberProfile = new System.Windows.Forms.Label();
             this.panelMetro = new System.Windows.Forms.Panel();
@@ -107,9 +107,10 @@
             this.label38 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.metroTabControl2 = new MetroFramework.Controls.MetroTabControl();
+            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.picBxClose = new System.Windows.Forms.PictureBox();
             this.panelMemberProfileTop.SuspendLayout();
             this.panelMetro.SuspendLayout();
             this.metroTabProfile.SuspendLayout();
@@ -121,10 +122,12 @@
             this.panel4.SuspendLayout();
             this.metroSavings.SuspendLayout();
             this.metroTabControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBxClose)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMemberProfileTop
             // 
+            this.panelMemberProfileTop.Controls.Add(this.picBxClose);
             this.panelMemberProfileTop.Controls.Add(this.lblMemberProfile);
             this.panelMemberProfileTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMemberProfileTop.Location = new System.Drawing.Point(0, 0);
@@ -163,7 +166,7 @@
             this.metroTabProfile.Controls.Add(this.metroSavings);
             this.metroTabProfile.Location = new System.Drawing.Point(0, 0);
             this.metroTabProfile.Name = "metroTabProfile";
-            this.metroTabProfile.SelectedIndex = 0;
+            this.metroTabProfile.SelectedIndex = 1;
             this.metroTabProfile.Size = new System.Drawing.Size(1350, 590);
             this.metroTabProfile.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTabProfile.TabIndex = 0;
@@ -947,15 +950,29 @@
             // 
             // metroTabControl2
             // 
+            this.metroTabControl2.Controls.Add(this.metroTabPage1);
             this.metroTabControl2.Controls.Add(this.metroTabPage2);
             this.metroTabControl2.Controls.Add(this.metroTabPage3);
-            this.metroTabControl2.Controls.Add(this.metroTabPage1);
             this.metroTabControl2.Location = new System.Drawing.Point(34, 275);
             this.metroTabControl2.Name = "metroTabControl2";
             this.metroTabControl2.SelectedIndex = 2;
             this.metroTabControl2.Size = new System.Drawing.Size(377, 225);
             this.metroTabControl2.TabIndex = 2;
             this.metroTabControl2.UseSelectable = true;
+            // 
+            // metroTabPage2
+            // 
+            this.metroTabPage2.HorizontalScrollbarBarColor = true;
+            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.HorizontalScrollbarSize = 8;
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage2.Name = "metroTabPage2";
+            this.metroTabPage2.Size = new System.Drawing.Size(369, 183);
+            this.metroTabPage2.TabIndex = 1;
+            this.metroTabPage2.Text = "metroTabPage2";
+            this.metroTabPage2.VerticalScrollbarBarColor = true;
+            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.VerticalScrollbarSize = 9;
             // 
             // metroTabPage3
             // 
@@ -985,19 +1002,16 @@
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 9;
             // 
-            // metroTabPage2
+            // picBxClose
             // 
-            this.metroTabPage2.HorizontalScrollbarBarColor = true;
-            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 8;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
-            this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(369, 183);
-            this.metroTabPage2.TabIndex = 1;
-            this.metroTabPage2.Text = "metroTabPage2";
-            this.metroTabPage2.VerticalScrollbarBarColor = true;
-            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 9;
+            this.picBxClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picBxClose.Image = ((System.Drawing.Image)(resources.GetObject("picBxClose.Image")));
+            this.picBxClose.Location = new System.Drawing.Point(1318, 11);
+            this.picBxClose.Name = "picBxClose";
+            this.picBxClose.Size = new System.Drawing.Size(20, 20);
+            this.picBxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBxClose.TabIndex = 18;
+            this.picBxClose.TabStop = false;
             // 
             // FullProfileView
             // 
@@ -1027,6 +1041,7 @@
             this.metroSavings.ResumeLayout(false);
             this.metroSavings.PerformLayout();
             this.metroTabControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picBxClose)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1105,5 +1120,6 @@
         private System.Windows.Forms.TextBox textBox10;
         private MetroFramework.Controls.MetroDateTime metroDateTime1;
         private MetroFramework.Controls.MetroDateTime metroDateTime2;
+        private System.Windows.Forms.PictureBox picBxClose;
     }
 }

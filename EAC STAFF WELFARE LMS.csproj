@@ -55,6 +55,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addMemberModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addMemberModule.Designer.cs">
+      <DependentUpon>addMemberModule.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbConnect.cs" />
     <Compile Include="FullProfileView.cs">
       <SubType>Form</SubType>
@@ -88,6 +94,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="addMemberModule.resx">
+      <DependentUpon>addMemberModule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FullProfileView.resx">
       <DependentUpon>FullProfileView.cs</DependentUpon>
     </EmbeddedResource>

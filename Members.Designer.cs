@@ -83,6 +83,7 @@
             this.metroBtnNew.UseCustomForeColor = true;
             this.metroBtnNew.UseSelectable = true;
             this.metroBtnNew.UseStyleColors = true;
+            this.metroBtnNew.Click += new System.EventHandler(this.metroBtnNew_Click);
             // 
             // txtSearch
             // 

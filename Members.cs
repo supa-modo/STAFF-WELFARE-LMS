@@ -87,6 +87,9 @@ namespace EAC_STAFF_WELFARE_LMS
             LoadDataIntoDataGridView();
         }
 
-        
+        private void metroBtnNew_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

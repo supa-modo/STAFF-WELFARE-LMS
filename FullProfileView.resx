@@ -118,15 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="picBxClose.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAMJJREFUOE+tk8EOgjAMhnegex0P+igSD/r+FxMuChcg2o6WdG3RBP2SP2Tt/n9j
-        g/RXngCHPuczDx3Uozk8rClmgDs+pwfAjcsrQ84t9kac0/VNc+LygphRL5INUebSR9UhvDU9gULGAeBC
-        inruVTdCZtRkarS7K9tqohCtj2aBQ6pV2Tx/NRN0YGjYCnC3UxGctg0Jr7gQmWlVMpmaD/n5GrEQfUjr
-        gQULdKgjtxckxJoFFeLNQgnRWzNwSPwz7SOlNxdE7y30nOCdAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="picProfile.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL

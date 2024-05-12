@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace EAC_STAFF_WELFARE_LMS
 {
-    public partial class LoanApplications : Form
+    public partial class NewLoan : Form
     {
-        public LoanApplications()
+        public NewLoan()
         {
             InitializeComponent();
         }
 
-        private void metroBtnNewLoan_Click(object sender, EventArgs e)
+        private void picBxClose_Click(object sender, EventArgs e)
         {
-            NewLoan newLoan = new NewLoan();
-            newLoan.ShowDialog();  
+            this.Dispose();
         }
     }
 }

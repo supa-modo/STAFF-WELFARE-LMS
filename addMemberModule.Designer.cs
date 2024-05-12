@@ -33,8 +33,8 @@
             this.picBxClose = new System.Windows.Forms.PictureBox();
             this.lblAddMember = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.metroDateTime2 = new MetroFramework.Controls.MetroDateTime();
             this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -64,8 +64,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.labelFName = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBxClose)).BeginInit();
             this.panel2.SuspendLayout();
@@ -107,10 +107,10 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.metroButton2);
+            this.panel2.Controls.Add(this.metroButton1);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.btnCancel);
-            this.panel2.Controls.Add(this.btnSave);
             this.panel2.Controls.Add(this.metroDateTime2);
             this.panel2.Controls.Add(this.metroDateTime1);
             this.panel2.Controls.Add(this.comboBox2);
@@ -146,30 +146,25 @@
             this.panel2.Size = new System.Drawing.Size(1185, 590);
             this.panel2.TabIndex = 1;
             // 
-            // btnCancel
+            // textBox1
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnCancel.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(632, 523);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(129, 42);
-            this.btnCancel.TabIndex = 151;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
+            this.textBox1.ForeColor = System.Drawing.Color.Gray;
+            this.textBox1.Location = new System.Drawing.Point(901, 352);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(244, 29);
+            this.textBox1.TabIndex = 153;
             // 
-            // btnSave
+            // label1
             // 
-            this.btnSave.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(451, 523);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(137, 42);
-            this.btnSave.TabIndex = 150;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(901, 322);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(244, 25);
+            this.label1.TabIndex = 152;
+            this.label1.Text = "Monthly Savings Amount";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // metroDateTime2
             // 
@@ -481,25 +476,33 @@
             this.labelFName.Text = "First Name";
             this.labelFName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox1
+            // metroButton1
             // 
-            this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(901, 352);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 29);
-            this.textBox1.TabIndex = 153;
+            this.metroButton1.BackColor = System.Drawing.Color.SeaGreen;
+            this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton1.ForeColor = System.Drawing.Color.White;
+            this.metroButton1.Location = new System.Drawing.Point(440, 519);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(137, 40);
+            this.metroButton1.TabIndex = 154;
+            this.metroButton1.Text = "Save";
+            this.metroButton1.UseCustomBackColor = true;
+            this.metroButton1.UseCustomForeColor = true;
+            this.metroButton1.UseSelectable = true;
             // 
-            // label1
+            // metroButton2
             // 
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(901, 322);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 25);
-            this.label1.TabIndex = 152;
-            this.label1.Text = "Monthly Savings Amount";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.metroButton2.BackColor = System.Drawing.Color.Gray;
+            this.metroButton2.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton2.ForeColor = System.Drawing.Color.White;
+            this.metroButton2.Location = new System.Drawing.Point(646, 519);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(137, 40);
+            this.metroButton2.TabIndex = 155;
+            this.metroButton2.Text = "Cancel";
+            this.metroButton2.UseCustomBackColor = true;
+            this.metroButton2.UseCustomForeColor = true;
+            this.metroButton2.UseSelectable = true;
             // 
             // addMemberModule
             // 
@@ -560,9 +563,9 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label labelFName;
         private System.Windows.Forms.PictureBox picBxClose;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton metroButton2;
     }
 }

@@ -40,6 +40,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.metroBtnNewLoan = new MetroFramework.Controls.MetroButton();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvLoans = new System.Windows.Forms.DataGridView();
@@ -55,7 +56,6 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.View = new System.Windows.Forms.DataGridViewImageColumn();
             this.Print = new System.Windows.Forms.DataGridViewImageColumn();
-            this.metroBtnNewLoan = new MetroFramework.Controls.MetroButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoans)).BeginInit();
             this.SuspendLayout();
@@ -70,6 +70,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1350, 40);
             this.panel1.TabIndex = 2;
+            // 
+            // metroBtnNewLoan
+            // 
+            this.metroBtnNewLoan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroBtnNewLoan.BackColor = System.Drawing.Color.SeaGreen;
+            this.metroBtnNewLoan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.metroBtnNewLoan.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroBtnNewLoan.ForeColor = System.Drawing.Color.White;
+            this.metroBtnNewLoan.Location = new System.Drawing.Point(718, 3);
+            this.metroBtnNewLoan.Name = "metroBtnNewLoan";
+            this.metroBtnNewLoan.Size = new System.Drawing.Size(193, 33);
+            this.metroBtnNewLoan.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroBtnNewLoan.TabIndex = 6;
+            this.metroBtnNewLoan.Text = "Add New Loan";
+            this.metroBtnNewLoan.UseCustomBackColor = true;
+            this.metroBtnNewLoan.UseCustomForeColor = true;
+            this.metroBtnNewLoan.UseSelectable = true;
+            this.metroBtnNewLoan.UseStyleColors = true;
+            this.metroBtnNewLoan.Click += new System.EventHandler(this.metroBtnNewLoan_Click);
             // 
             // metroTextBox1
             // 
@@ -122,7 +141,7 @@
             // dgvLoans
             // 
             this.dgvLoans.AllowUserToDeleteRows = false;
-            this.dgvLoans.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvLoans.BackgroundColor = System.Drawing.Color.White;
             this.dgvLoans.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ScrollBar;
@@ -255,24 +274,6 @@
             this.Print.Image = ((System.Drawing.Image)(resources.GetObject("Print.Image")));
             this.Print.Name = "Print";
             this.Print.Width = 50;
-            // 
-            // metroBtnNewLoan
-            // 
-            this.metroBtnNewLoan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroBtnNewLoan.BackColor = System.Drawing.Color.SeaGreen;
-            this.metroBtnNewLoan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.metroBtnNewLoan.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroBtnNewLoan.ForeColor = System.Drawing.Color.White;
-            this.metroBtnNewLoan.Location = new System.Drawing.Point(718, 3);
-            this.metroBtnNewLoan.Name = "metroBtnNewLoan";
-            this.metroBtnNewLoan.Size = new System.Drawing.Size(193, 33);
-            this.metroBtnNewLoan.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroBtnNewLoan.TabIndex = 6;
-            this.metroBtnNewLoan.Text = "Add New Loan";
-            this.metroBtnNewLoan.UseCustomBackColor = true;
-            this.metroBtnNewLoan.UseCustomForeColor = true;
-            this.metroBtnNewLoan.UseSelectable = true;
-            this.metroBtnNewLoan.UseStyleColors = true;
             // 
             // LoanApplications
             // 

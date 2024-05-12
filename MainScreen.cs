@@ -18,14 +18,15 @@ namespace EAC_STAFF_WELFARE_LMS
         public MainScreen()
         {
             InitializeComponent();
-            
+            openChildForm(new Dashboard());
+
         }
 
 
         private Form activeForm = null;
         public void openChildForm(Form childForm)
         {
-            if(activeForm != null)
+            if (activeForm != null)
                 activeForm.Close();
             activeForm = childForm;
             childForm.TopLevel = false;
@@ -35,6 +36,7 @@ namespace EAC_STAFF_WELFARE_LMS
             panelMainScreen.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+            
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)

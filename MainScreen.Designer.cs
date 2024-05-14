@@ -94,9 +94,9 @@
             this.panelUser.BackColor = System.Drawing.Color.Khaki;
             this.panelUser.Controls.Add(this.labelLoggedInUser);
             this.panelUser.Controls.Add(this.picBxUser);
-            this.panelUser.Location = new System.Drawing.Point(1099, 15);
+            this.panelUser.Location = new System.Drawing.Point(1079, 15);
             this.panelUser.Name = "panelUser";
-            this.panelUser.Size = new System.Drawing.Size(239, 34);
+            this.panelUser.Size = new System.Drawing.Size(259, 34);
             this.panelUser.TabIndex = 2;
             // 
             // labelLoggedInUser
@@ -107,7 +107,7 @@
             this.labelLoggedInUser.Name = "labelLoggedInUser";
             this.labelLoggedInUser.Size = new System.Drawing.Size(193, 22);
             this.labelLoggedInUser.TabIndex = 1;
-            this.labelLoggedInUser.Text = "LOGGED IN USER";
+            this.labelLoggedInUser.Text = "Logged In User";
             this.labelLoggedInUser.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // picBxUser

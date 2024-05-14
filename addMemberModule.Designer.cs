@@ -35,13 +35,13 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.metroDateTime2 = new MetroFramework.Controls.MetroDateTime();
-            this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBoxSavings = new System.Windows.Forms.TextBox();
+            this.labelSavings = new System.Windows.Forms.Label();
+            this.metroDateEndCt = new MetroFramework.Controls.MetroDateTime();
+            this.metroDateStartCt = new MetroFramework.Controls.MetroDateTime();
+            this.comboBoxContractType = new System.Windows.Forms.ComboBox();
+            this.txtBxDpt = new System.Windows.Forms.TextBox();
+            this.txtBxJobTitle = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -109,13 +109,13 @@
             // 
             this.panel2.Controls.Add(this.metroButton2);
             this.panel2.Controls.Add(this.metroButton1);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.metroDateTime2);
-            this.panel2.Controls.Add(this.metroDateTime1);
-            this.panel2.Controls.Add(this.comboBox2);
-            this.panel2.Controls.Add(this.textBox10);
-            this.panel2.Controls.Add(this.textBox9);
+            this.panel2.Controls.Add(this.textBoxSavings);
+            this.panel2.Controls.Add(this.labelSavings);
+            this.panel2.Controls.Add(this.metroDateEndCt);
+            this.panel2.Controls.Add(this.metroDateStartCt);
+            this.panel2.Controls.Add(this.comboBoxContractType);
+            this.panel2.Controls.Add(this.txtBxDpt);
+            this.panel2.Controls.Add(this.txtBxJobTitle);
             this.panel2.Controls.Add(this.textBox8);
             this.panel2.Controls.Add(this.textBox7);
             this.panel2.Controls.Add(this.textBox6);
@@ -174,80 +174,80 @@
             this.metroButton1.UseCustomForeColor = true;
             this.metroButton1.UseSelectable = true;
             // 
-            // textBox1
+            // textBoxSavings
             // 
-            this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(901, 352);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 29);
-            this.textBox1.TabIndex = 153;
+            this.textBoxSavings.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxSavings.Location = new System.Drawing.Point(865, 352);
+            this.textBoxSavings.Name = "textBoxSavings";
+            this.textBoxSavings.Size = new System.Drawing.Size(244, 29);
+            this.textBoxSavings.TabIndex = 153;
             // 
-            // label1
+            // labelSavings
             // 
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(901, 322);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 25);
-            this.label1.TabIndex = 152;
-            this.label1.Text = "Monthly Savings Amount";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelSavings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelSavings.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSavings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelSavings.Location = new System.Drawing.Point(865, 322);
+            this.labelSavings.Name = "labelSavings";
+            this.labelSavings.Size = new System.Drawing.Size(244, 25);
+            this.labelSavings.TabIndex = 152;
+            this.labelSavings.Text = "Monthly Savings Deduction";
+            this.labelSavings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // metroDateTime2
+            // metroDateEndCt
             // 
-            this.metroDateTime2.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.metroDateTime2.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
-            this.metroDateTime2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.metroDateTime2.Location = new System.Drawing.Point(891, 428);
-            this.metroDateTime2.MinimumSize = new System.Drawing.Size(0, 29);
-            this.metroDateTime2.Name = "metroDateTime2";
-            this.metroDateTime2.Size = new System.Drawing.Size(160, 29);
-            this.metroDateTime2.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroDateTime2.TabIndex = 149;
+            this.metroDateEndCt.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.metroDateEndCt.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
+            this.metroDateEndCt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.metroDateEndCt.Location = new System.Drawing.Point(874, 428);
+            this.metroDateEndCt.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateEndCt.Name = "metroDateEndCt";
+            this.metroDateEndCt.Size = new System.Drawing.Size(160, 29);
+            this.metroDateEndCt.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroDateEndCt.TabIndex = 149;
             // 
-            // metroDateTime1
+            // metroDateStartCt
             // 
-            this.metroDateTime1.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.metroDateTime1.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
-            this.metroDateTime1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.metroDateTime1.Location = new System.Drawing.Point(614, 428);
-            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
-            this.metroDateTime1.Name = "metroDateTime1";
-            this.metroDateTime1.Size = new System.Drawing.Size(160, 29);
-            this.metroDateTime1.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroDateTime1.TabIndex = 148;
+            this.metroDateStartCt.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.metroDateStartCt.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
+            this.metroDateStartCt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.metroDateStartCt.Location = new System.Drawing.Point(597, 428);
+            this.metroDateStartCt.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateStartCt.Name = "metroDateStartCt";
+            this.metroDateStartCt.Size = new System.Drawing.Size(160, 29);
+            this.metroDateStartCt.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroDateStartCt.TabIndex = 148;
             // 
-            // comboBox2
+            // comboBoxContractType
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.Color.Gray;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBoxContractType.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxContractType.ForeColor = System.Drawing.Color.Gray;
+            this.comboBoxContractType.FormattingEnabled = true;
+            this.comboBoxContractType.Items.AddRange(new object[] {
             "Permanent Contract",
             "Short-Term Contract",
             "Casual Contract",
             "Consultant Contract"});
-            this.comboBox2.Location = new System.Drawing.Point(520, 354);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(353, 28);
-            this.comboBox2.TabIndex = 147;
+            this.comboBoxContractType.Location = new System.Drawing.Point(503, 354);
+            this.comboBoxContractType.Name = "comboBoxContractType";
+            this.comboBoxContractType.Size = new System.Drawing.Size(296, 28);
+            this.comboBoxContractType.TabIndex = 147;
             // 
-            // textBox10
+            // txtBxDpt
             // 
-            this.textBox10.ForeColor = System.Drawing.Color.Gray;
-            this.textBox10.Location = new System.Drawing.Point(90, 428);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(353, 29);
-            this.textBox10.TabIndex = 146;
+            this.txtBxDpt.ForeColor = System.Drawing.Color.Gray;
+            this.txtBxDpt.Location = new System.Drawing.Point(90, 428);
+            this.txtBxDpt.Name = "txtBxDpt";
+            this.txtBxDpt.Size = new System.Drawing.Size(353, 29);
+            this.txtBxDpt.TabIndex = 146;
             // 
-            // textBox9
+            // txtBxJobTitle
             // 
-            this.textBox9.ForeColor = System.Drawing.Color.Gray;
-            this.textBox9.Location = new System.Drawing.Point(90, 354);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(353, 29);
-            this.textBox9.TabIndex = 145;
+            this.txtBxJobTitle.ForeColor = System.Drawing.Color.Gray;
+            this.txtBxJobTitle.Location = new System.Drawing.Point(90, 354);
+            this.txtBxJobTitle.Name = "txtBxJobTitle";
+            this.txtBxJobTitle.Size = new System.Drawing.Size(353, 29);
+            this.txtBxJobTitle.TabIndex = 145;
             // 
             // textBox8
             // 
@@ -378,7 +378,7 @@
             this.label19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label19.Location = new System.Drawing.Point(796, 430);
+            this.label19.Location = new System.Drawing.Point(779, 430);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(89, 25);
             this.label19.TabIndex = 131;
@@ -390,7 +390,7 @@
             this.label15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label15.Location = new System.Drawing.Point(519, 430);
+            this.label15.Location = new System.Drawing.Point(502, 430);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(89, 25);
             this.label15.TabIndex = 130;
@@ -426,7 +426,7 @@
             this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label20.Location = new System.Drawing.Point(519, 398);
+            this.label20.Location = new System.Drawing.Point(502, 398);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(150, 25);
             this.label20.TabIndex = 127;
@@ -450,7 +450,7 @@
             this.label16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label16.Location = new System.Drawing.Point(519, 322);
+            this.label16.Location = new System.Drawing.Point(502, 322);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(150, 25);
             this.label16.TabIndex = 125;
@@ -533,11 +533,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblAddMember;
         private System.Windows.Forms.Panel panel2;
-        private MetroFramework.Controls.MetroDateTime metroDateTime2;
-        private MetroFramework.Controls.MetroDateTime metroDateTime1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
+        private MetroFramework.Controls.MetroDateTime metroDateEndCt;
+        private MetroFramework.Controls.MetroDateTime metroDateStartCt;
+        private System.Windows.Forms.ComboBox comboBoxContractType;
+        private System.Windows.Forms.TextBox txtBxDpt;
+        private System.Windows.Forms.TextBox txtBxJobTitle;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
@@ -563,8 +563,8 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label labelFName;
         private System.Windows.Forms.PictureBox picBxClose;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxSavings;
+        private System.Windows.Forms.Label labelSavings;
         private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroButton metroButton2;
     }

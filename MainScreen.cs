@@ -71,7 +71,7 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new Settings());
         }
     }
 }

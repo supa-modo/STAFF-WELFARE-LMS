@@ -52,10 +52,9 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.View = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Print = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoans)).BeginInit();
             this.SuspendLayout();
@@ -162,10 +161,9 @@
             this.Column3,
             this.Column10,
             this.Column5,
+            this.Column11,
             this.Column6,
-            this.Column7,
-            this.View,
-            this.Print});
+            this.Column7});
             this.dgvLoans.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvLoans.EnableHeadersVisualStyles = false;
             this.dgvLoans.Location = new System.Drawing.Point(0, 40);
@@ -177,12 +175,13 @@
             // 
             // Column8
             // 
+            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.Column8.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column8.HeaderText = "Loan ID";
             this.Column8.Name = "Column8";
-            this.Column8.Width = 150;
+            this.Column8.Width = 83;
             // 
             // Column9
             // 
@@ -243,6 +242,13 @@
             this.Column5.Name = "Column5";
             this.Column5.Width = 130;
             // 
+            // Column11
+            // 
+            this.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column11.HeaderText = "Monthly Installments";
+            this.Column11.Name = "Column11";
+            this.Column11.Width = 169;
+            // 
             // Column6
             // 
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -259,21 +265,6 @@
             this.Column7.HeaderText = "Status";
             this.Column7.Name = "Column7";
             this.Column7.Width = 130;
-            // 
-            // View
-            // 
-            this.View.HeaderText = "";
-            this.View.Image = ((System.Drawing.Image)(resources.GetObject("View.Image")));
-            this.View.Name = "View";
-            this.View.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.View.Width = 50;
-            // 
-            // Print
-            // 
-            this.Print.HeaderText = "";
-            this.Print.Image = ((System.Drawing.Image)(resources.GetObject("Print.Image")));
-            this.Print.Name = "Print";
-            this.Print.Width = 50;
             // 
             // LoanApplications
             // 
@@ -300,6 +291,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvLoans;
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
+        private MetroFramework.Controls.MetroButton metroBtnNewLoan;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -308,10 +300,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewImageColumn View;
-        private System.Windows.Forms.DataGridViewImageColumn Print;
-        private MetroFramework.Controls.MetroButton metroBtnNewLoan;
     }
 }

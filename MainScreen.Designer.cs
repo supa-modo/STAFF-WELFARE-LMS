@@ -33,8 +33,8 @@
             this.logoMainScrn = new System.Windows.Forms.PictureBox();
             this.labelTop = new System.Windows.Forms.Label();
             this.panelUser = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelLoggedInUser = new System.Windows.Forms.Label();
+            this.picBxUser = new System.Windows.Forms.PictureBox();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.panelNavBar = new System.Windows.Forms.Panel();
             this.btnSettings = new System.Windows.Forms.Button();
@@ -49,7 +49,7 @@
             this.panelTopBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoMainScrn)).BeginInit();
             this.panelUser.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBxUser)).BeginInit();
             this.panelNavBar.SuspendLayout();
             this.panelFooter.SuspendLayout();
             this.SuspendLayout();
@@ -92,33 +92,33 @@
             // 
             this.panelUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panelUser.BackColor = System.Drawing.Color.Khaki;
-            this.panelUser.Controls.Add(this.label1);
-            this.panelUser.Controls.Add(this.pictureBox1);
+            this.panelUser.Controls.Add(this.labelLoggedInUser);
+            this.panelUser.Controls.Add(this.picBxUser);
             this.panelUser.Location = new System.Drawing.Point(1099, 15);
             this.panelUser.Name = "panelUser";
             this.panelUser.Size = new System.Drawing.Size(239, 34);
             this.panelUser.TabIndex = 2;
             // 
-            // label1
+            // labelLoggedInUser
             // 
-            this.label1.Font = new System.Drawing.Font("Cocon", 9.5F);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(38, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "LOGGED IN USER";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.labelLoggedInUser.Font = new System.Drawing.Font("Cocon", 9.5F);
+            this.labelLoggedInUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelLoggedInUser.Location = new System.Drawing.Point(38, 6);
+            this.labelLoggedInUser.Name = "labelLoggedInUser";
+            this.labelLoggedInUser.Size = new System.Drawing.Size(193, 22);
+            this.labelLoggedInUser.TabIndex = 1;
+            this.labelLoggedInUser.Text = "LOGGED IN USER";
+            this.labelLoggedInUser.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // pictureBox1
+            // picBxUser
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 28);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.picBxUser.Image = ((System.Drawing.Image)(resources.GetObject("picBxUser.Image")));
+            this.picBxUser.Location = new System.Drawing.Point(3, 3);
+            this.picBxUser.Name = "picBxUser";
+            this.picBxUser.Size = new System.Drawing.Size(28, 28);
+            this.picBxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picBxUser.TabIndex = 0;
+            this.picBxUser.TabStop = false;
             // 
             // btnDashboard
             // 
@@ -299,7 +299,7 @@
             this.panelTopBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logoMainScrn)).EndInit();
             this.panelUser.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBxUser)).EndInit();
             this.panelNavBar.ResumeLayout(false);
             this.panelFooter.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -320,8 +320,8 @@
         private System.Windows.Forms.Button btnSavings;
         private System.Windows.Forms.PictureBox logoMainScrn;
         private System.Windows.Forms.Panel panelMainScreen;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox picBxUser;
+        private System.Windows.Forms.Label labelLoggedInUser;
         private System.Windows.Forms.Panel panelFooter;
         private System.Windows.Forms.Label label1Footer;
         private System.Windows.Forms.Label label2;

@@ -1,4 +1,11 @@
-﻿using System;
+﻿ 
+
+
+
+
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,14 +21,12 @@ namespace EAC_STAFF_WELFARE_LMS
     public partial class MainScreen : Form
     {
         
-
         public MainScreen()
         {
             InitializeComponent();
             openChildForm(new Dashboard());
 
         }
-
 
         private Form activeForm = null;
         public void openChildForm(Form childForm)
@@ -61,7 +66,7 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private void btnReports_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new Reports());
         }
 
         private void btnSettings_Click(object sender, EventArgs e)

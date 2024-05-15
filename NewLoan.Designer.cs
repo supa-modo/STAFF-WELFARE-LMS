@@ -32,8 +32,8 @@
             this.panelTopNewLoan = new System.Windows.Forms.Panel();
             this.picBxClose = new System.Windows.Forms.PictureBox();
             this.lblAddLoan = new System.Windows.Forms.Label();
-            this.textInstallments = new System.Windows.Forms.TextBox();
-            this.textDuration = new System.Windows.Forms.TextBox();
+            this.txtInstallments = new System.Windows.Forms.TextBox();
+            this.txtDuration = new System.Windows.Forms.TextBox();
             this.textInterest = new System.Windows.Forms.TextBox();
             this.txtLoanAmt = new System.Windows.Forms.TextBox();
             this.txtPFNo = new System.Windows.Forms.TextBox();
@@ -84,29 +84,32 @@
             this.lblAddLoan.Text = "Add a New Loan";
             this.lblAddLoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textInstallments
+            // txtInstallments
             // 
-            this.textInstallments.ForeColor = System.Drawing.Color.Gray;
-            this.textInstallments.Location = new System.Drawing.Point(377, 425);
-            this.textInstallments.Name = "textInstallments";
-            this.textInstallments.Size = new System.Drawing.Size(417, 29);
-            this.textInstallments.TabIndex = 162;
+            this.txtInstallments.ForeColor = System.Drawing.Color.Gray;
+            this.txtInstallments.Location = new System.Drawing.Point(377, 425);
+            this.txtInstallments.Name = "txtInstallments";
+            this.txtInstallments.Size = new System.Drawing.Size(417, 29);
+            this.txtInstallments.TabIndex = 162;
             // 
-            // textDuration
+            // txtDuration
             // 
-            this.textDuration.ForeColor = System.Drawing.Color.Gray;
-            this.textDuration.Location = new System.Drawing.Point(377, 356);
-            this.textDuration.Name = "textDuration";
-            this.textDuration.Size = new System.Drawing.Size(417, 29);
-            this.textDuration.TabIndex = 161;
+            this.txtDuration.ForeColor = System.Drawing.Color.Gray;
+            this.txtDuration.Location = new System.Drawing.Point(377, 356);
+            this.txtDuration.Name = "txtDuration";
+            this.txtDuration.Size = new System.Drawing.Size(417, 29);
+            this.txtDuration.TabIndex = 161;
             // 
             // textInterest
             // 
+            this.textInterest.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textInterest.ForeColor = System.Drawing.Color.Gray;
             this.textInterest.Location = new System.Drawing.Point(377, 292);
             this.textInterest.Name = "textInterest";
+            this.textInterest.ReadOnly = true;
             this.textInterest.Size = new System.Drawing.Size(417, 29);
             this.textInterest.TabIndex = 160;
+            this.textInterest.Text = "   5%";
             // 
             // txtLoanAmt
             // 
@@ -244,8 +247,8 @@
             this.Controls.Add(this.labelLoanID);
             this.Controls.Add(this.metroBtnCancel);
             this.Controls.Add(this.metroBtnSave);
-            this.Controls.Add(this.textInstallments);
-            this.Controls.Add(this.textDuration);
+            this.Controls.Add(this.txtInstallments);
+            this.Controls.Add(this.txtDuration);
             this.Controls.Add(this.textInterest);
             this.Controls.Add(this.txtLoanAmt);
             this.Controls.Add(this.txtPFNo);
@@ -275,8 +278,8 @@
         private System.Windows.Forms.Panel panelTopNewLoan;
         private System.Windows.Forms.PictureBox picBxClose;
         private System.Windows.Forms.Label lblAddLoan;
-        private System.Windows.Forms.TextBox textInstallments;
-        private System.Windows.Forms.TextBox textDuration;
+        private System.Windows.Forms.TextBox txtInstallments;
+        private System.Windows.Forms.TextBox txtDuration;
         private System.Windows.Forms.TextBox textInterest;
         private System.Windows.Forms.TextBox txtLoanAmt;
         private System.Windows.Forms.TextBox txtPFNo;

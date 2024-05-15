@@ -21,6 +21,7 @@ namespace EAC_STAFF_WELFARE_LMS
         {
             NewLoan newLoan = new NewLoan();
             newLoan.ShowDialog();  
+            
         }
     }
 }

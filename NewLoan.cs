@@ -15,6 +15,7 @@ namespace EAC_STAFF_WELFARE_LMS
         public NewLoan()
         {
             InitializeComponent();
+            getLoanID();
         }
 
         private void picBxClose_Click(object sender, EventArgs e)
@@ -22,6 +23,12 @@ namespace EAC_STAFF_WELFARE_LMS
             this.Dispose();
         }
 
-       
+        public void getLoanID()
+        {
+            string sdate = DateTime.Now.ToString("yyyyMMddhhmmss");
+            string loanID = "11001" + sdate;
+            labelLoanID.Text = loanID;
+
+        }
     }
 }

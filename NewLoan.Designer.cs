@@ -32,20 +32,20 @@
             this.panelTopNewLoan = new System.Windows.Forms.Panel();
             this.picBxClose = new System.Windows.Forms.PictureBox();
             this.lblAddLoan = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.txtLName = new System.Windows.Forms.TextBox();
-            this.txtMName = new System.Windows.Forms.TextBox();
-            this.txtFName = new System.Windows.Forms.TextBox();
+            this.textInstallments = new System.Windows.Forms.TextBox();
+            this.textDuration = new System.Windows.Forms.TextBox();
+            this.textInterest = new System.Windows.Forms.TextBox();
+            this.txtLoanAmt = new System.Windows.Forms.TextBox();
+            this.txtPFNo = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.labelMName = new System.Windows.Forms.Label();
             this.labelLName = new System.Windows.Forms.Label();
             this.labelFName = new System.Windows.Forms.Label();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.metroBtnCancel = new MetroFramework.Controls.MetroButton();
+            this.metroBtnSave = new MetroFramework.Controls.MetroButton();
+            this.labelLoanID = new System.Windows.Forms.Label();
             this.panelTopNewLoan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBxClose)).BeginInit();
             this.SuspendLayout();
@@ -84,53 +84,45 @@
             this.lblAddLoan.Text = "Add a New Loan";
             this.lblAddLoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox8
+            // textInstallments
             // 
-            this.textBox8.ForeColor = System.Drawing.Color.Gray;
-            this.textBox8.Location = new System.Drawing.Point(377, 425);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(417, 29);
-            this.textBox8.TabIndex = 162;
+            this.textInstallments.ForeColor = System.Drawing.Color.Gray;
+            this.textInstallments.Location = new System.Drawing.Point(377, 425);
+            this.textInstallments.Name = "textInstallments";
+            this.textInstallments.Size = new System.Drawing.Size(417, 29);
+            this.textInstallments.TabIndex = 162;
             // 
-            // textBox7
+            // textDuration
             // 
-            this.textBox7.ForeColor = System.Drawing.Color.Gray;
-            this.textBox7.Location = new System.Drawing.Point(377, 356);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(417, 29);
-            this.textBox7.TabIndex = 161;
+            this.textDuration.ForeColor = System.Drawing.Color.Gray;
+            this.textDuration.Location = new System.Drawing.Point(377, 356);
+            this.textDuration.Name = "textDuration";
+            this.textDuration.Size = new System.Drawing.Size(417, 29);
+            this.textDuration.TabIndex = 161;
             // 
-            // textBox6
+            // textInterest
             // 
-            this.textBox6.ForeColor = System.Drawing.Color.Gray;
-            this.textBox6.Location = new System.Drawing.Point(377, 292);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(417, 29);
-            this.textBox6.TabIndex = 160;
+            this.textInterest.ForeColor = System.Drawing.Color.Gray;
+            this.textInterest.Location = new System.Drawing.Point(377, 292);
+            this.textInterest.Name = "textInterest";
+            this.textInterest.Size = new System.Drawing.Size(417, 29);
+            this.textInterest.TabIndex = 160;
             // 
-            // txtLName
+            // txtLoanAmt
             // 
-            this.txtLName.ForeColor = System.Drawing.Color.Gray;
-            this.txtLName.Location = new System.Drawing.Point(377, 225);
-            this.txtLName.Name = "txtLName";
-            this.txtLName.Size = new System.Drawing.Size(417, 29);
-            this.txtLName.TabIndex = 157;
+            this.txtLoanAmt.ForeColor = System.Drawing.Color.Gray;
+            this.txtLoanAmt.Location = new System.Drawing.Point(377, 225);
+            this.txtLoanAmt.Name = "txtLoanAmt";
+            this.txtLoanAmt.Size = new System.Drawing.Size(417, 29);
+            this.txtLoanAmt.TabIndex = 157;
             // 
-            // txtMName
+            // txtPFNo
             // 
-            this.txtMName.ForeColor = System.Drawing.Color.Gray;
-            this.txtMName.Location = new System.Drawing.Point(377, 165);
-            this.txtMName.Name = "txtMName";
-            this.txtMName.Size = new System.Drawing.Size(417, 29);
-            this.txtMName.TabIndex = 156;
-            // 
-            // txtFName
-            // 
-            this.txtFName.ForeColor = System.Drawing.Color.Gray;
-            this.txtFName.Location = new System.Drawing.Point(377, 101);
-            this.txtFName.Name = "txtFName";
-            this.txtFName.Size = new System.Drawing.Size(417, 29);
-            this.txtFName.TabIndex = 155;
+            this.txtPFNo.ForeColor = System.Drawing.Color.Gray;
+            this.txtPFNo.Location = new System.Drawing.Point(377, 165);
+            this.txtPFNo.Name = "txtPFNo";
+            this.txtPFNo.Size = new System.Drawing.Size(417, 29);
+            this.txtPFNo.TabIndex = 156;
             // 
             // label45
             // 
@@ -204,33 +196,42 @@
             this.labelFName.Text = "Loan ID";
             this.labelFName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // metroButton2
+            // metroBtnCancel
             // 
-            this.metroButton2.BackColor = System.Drawing.Color.Gray;
-            this.metroButton2.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton2.ForeColor = System.Drawing.Color.White;
-            this.metroButton2.Location = new System.Drawing.Point(680, 503);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(137, 40);
-            this.metroButton2.TabIndex = 164;
-            this.metroButton2.Text = "Cancel";
-            this.metroButton2.UseCustomBackColor = true;
-            this.metroButton2.UseCustomForeColor = true;
-            this.metroButton2.UseSelectable = true;
+            this.metroBtnCancel.BackColor = System.Drawing.Color.Gray;
+            this.metroBtnCancel.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroBtnCancel.ForeColor = System.Drawing.Color.White;
+            this.metroBtnCancel.Location = new System.Drawing.Point(680, 503);
+            this.metroBtnCancel.Name = "metroBtnCancel";
+            this.metroBtnCancel.Size = new System.Drawing.Size(137, 40);
+            this.metroBtnCancel.TabIndex = 164;
+            this.metroBtnCancel.Text = "Cancel";
+            this.metroBtnCancel.UseCustomBackColor = true;
+            this.metroBtnCancel.UseCustomForeColor = true;
+            this.metroBtnCancel.UseSelectable = true;
             // 
-            // metroButton1
+            // metroBtnSave
             // 
-            this.metroButton1.BackColor = System.Drawing.Color.SeaGreen;
-            this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton1.ForeColor = System.Drawing.Color.White;
-            this.metroButton1.Location = new System.Drawing.Point(474, 503);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(137, 40);
-            this.metroButton1.TabIndex = 163;
-            this.metroButton1.Text = "Save";
-            this.metroButton1.UseCustomBackColor = true;
-            this.metroButton1.UseCustomForeColor = true;
-            this.metroButton1.UseSelectable = true;
+            this.metroBtnSave.BackColor = System.Drawing.Color.SeaGreen;
+            this.metroBtnSave.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroBtnSave.ForeColor = System.Drawing.Color.White;
+            this.metroBtnSave.Location = new System.Drawing.Point(474, 503);
+            this.metroBtnSave.Name = "metroBtnSave";
+            this.metroBtnSave.Size = new System.Drawing.Size(137, 40);
+            this.metroBtnSave.TabIndex = 163;
+            this.metroBtnSave.Text = "Save";
+            this.metroBtnSave.UseCustomBackColor = true;
+            this.metroBtnSave.UseCustomForeColor = true;
+            this.metroBtnSave.UseSelectable = true;
+            // 
+            // labelLoanID
+            // 
+            this.labelLoanID.BackColor = System.Drawing.SystemColors.Window;
+            this.labelLoanID.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelLoanID.Location = new System.Drawing.Point(377, 99);
+            this.labelLoanID.Name = "labelLoanID";
+            this.labelLoanID.Size = new System.Drawing.Size(417, 29);
+            this.labelLoanID.TabIndex = 165;
             // 
             // NewLoan
             // 
@@ -239,14 +240,14 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1041, 591);
             this.ControlBox = false;
-            this.Controls.Add(this.metroButton2);
-            this.Controls.Add(this.metroButton1);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.txtLName);
-            this.Controls.Add(this.txtMName);
-            this.Controls.Add(this.txtFName);
+            this.Controls.Add(this.labelLoanID);
+            this.Controls.Add(this.metroBtnCancel);
+            this.Controls.Add(this.metroBtnSave);
+            this.Controls.Add(this.textInstallments);
+            this.Controls.Add(this.textDuration);
+            this.Controls.Add(this.textInterest);
+            this.Controls.Add(this.txtLoanAmt);
+            this.Controls.Add(this.txtPFNo);
             this.Controls.Add(this.label45);
             this.Controls.Add(this.label43);
             this.Controls.Add(this.label40);
@@ -273,19 +274,19 @@
         private System.Windows.Forms.Panel panelTopNewLoan;
         private System.Windows.Forms.PictureBox picBxClose;
         private System.Windows.Forms.Label lblAddLoan;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox txtLName;
-        private System.Windows.Forms.TextBox txtMName;
-        private System.Windows.Forms.TextBox txtFName;
+        private System.Windows.Forms.TextBox textInstallments;
+        private System.Windows.Forms.TextBox textDuration;
+        private System.Windows.Forms.TextBox textInterest;
+        private System.Windows.Forms.TextBox txtLoanAmt;
+        private System.Windows.Forms.TextBox txtPFNo;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label labelMName;
         private System.Windows.Forms.Label labelLName;
         private System.Windows.Forms.Label labelFName;
-        private MetroFramework.Controls.MetroButton metroButton2;
-        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton metroBtnCancel;
+        private MetroFramework.Controls.MetroButton metroBtnSave;
+        private System.Windows.Forms.Label labelLoanID;
     }
 }

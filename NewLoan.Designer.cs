@@ -228,6 +228,7 @@
             // 
             this.labelLoanID.BackColor = System.Drawing.SystemColors.Window;
             this.labelLoanID.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelLoanID.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLoanID.Location = new System.Drawing.Point(377, 99);
             this.labelLoanID.Name = "labelLoanID";
             this.labelLoanID.Size = new System.Drawing.Size(417, 29);

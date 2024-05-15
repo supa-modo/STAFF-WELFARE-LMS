@@ -26,7 +26,7 @@ namespace EAC_STAFF_WELFARE_LMS
         public void getLoanID()
         {
             string sdate = DateTime.Now.ToString("yyyyMMddhhmmss");
-            string loanID = "11001" + sdate;
+            string loanID = "101" + sdate;
             labelLoanID.Text = loanID;
 
         }

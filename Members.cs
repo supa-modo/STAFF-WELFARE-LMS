@@ -42,32 +42,44 @@ namespace EAC_STAFF_WELFARE_LMS
             txtSearchParam.Value = txtSearch.Text;
 
             // Define the SQL query with parameters
-            string query = "SELECT EMPLOYEE_CODE, EMPLOYEE_NAME, CURRENT_EMPLOYEE_STATUS, AGE_TEXT, " +
-                           "NATIONALITY, MARITAL_STATUS, OFFICE, EMAIL " +
-                           "FROM employeeMaster " +
-                           "WHERE EMPLOYEE_CODE LIKE '%' + @txtSearch + '%' " +
-                           "OR EMPLOYEE_NAME LIKE '%' + @txtSearch + '%' " +
-                           "OR CURRENT_EMPLOYEE_STATUS LIKE '%' + @txtSearch + '%' " +
-                           "OR AGE_TEXT LIKE '%' + @txtSearch + '%' " +
-                           "OR NATIONALITY LIKE '%' + @txtSearch + '%' " +
-                           "OR MARITAL_STATUS LIKE '%' + @txtSearch + '%' " +
-                           "OR OFFICE LIKE '%' + @txtSearch + '%' " +
-                           "OR EMAIL LIKE '%' + @txtSearch + '%';";
+            string query = "SELECT MemberPFNo, FirstName, MiddleName, LastName, JobTitle, ContractEndDate, ContractType, EmailAddress, SecondaryEmail, PhoneNumber1, PhoneNumber2, PhysicalAddress " +
+                           "FROM Members " +
+                           "WHERE MemberPFNo LIKE '%' + @txtSearch + '%' " +
+                           "OR (FirstName + ' ' + ISNULL(MiddleName, '') + ' ' + LastName) LIKE '%' + @txtSearch + '%' " +
+                           "OR JobTitle LIKE '%' + @txtSearch + '%' " +
+                           "OR ContractEndDate LIKE '%' + @txtSearch + '%' " +
+                           "OR ContractType LIKE '%' + @txtSearch + '%' " +
+                           "OR EmailAddress LIKE '%' + @txtSearch + '%' " +
+                           "OR SecondaryEmail LIKE '%' + @txtSearch + '%' " +
+                           "OR PhoneNumber1 LIKE '%' + @txtSearch + '%' " +
+                           "OR PhoneNumber2 LIKE '%' + @txtSearch + '%' " +
+                           "OR PhysicalAddress LIKE '%' + @txtSearch + '%';";
 
             // Define the SqlCommand with connection and query
-            cmd = new SqlCommand(query, cn);
+            SqlCommand cmd = new SqlCommand(query, cn);
             cmd.Parameters.Add(txtSearchParam);
 
             try
             {
                 cn.Open();
                 // Execute the query
-                dr = cmd.ExecuteReader();
+                SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
                     i++;
                     // Add data to DataGridView
-                    dgvMembers.Rows.Add(i, dr["EMPLOYEE_CODE"], dr["EMPLOYEE_NAME"], dr["CURRENT_EMPLOYEE_STATUS"], dr["AGE_TEXT"], dr["NATIONALITY"], dr["MARITAL_STATUS"], dr["OFFICE"], dr["EMAIL"]);
+                    dgvMembers.Rows.Add(i, dr["MemberPFNo"],
+                                          dr["FirstName"].ToString() + " " +
+                                          dr["MiddleName"].ToString() + " " +
+                                          dr["LastName"].ToString(),
+                                          dr["JobTitle"],
+                                          dr["ContractEndDate"],
+                                          dr["ContractType"],
+                                          dr["EmailAddress"],
+                                          dr["SecondaryEmail"],
+                                          dr["PhoneNumber1"],
+                                          dr["PhoneNumber2"],
+                                          dr["PhysicalAddress"]);
                 }
             }
             catch (Exception ex)
@@ -76,11 +88,11 @@ namespace EAC_STAFF_WELFARE_LMS
             }
             finally
             {
-                // Close the DataReader and SqlConnection
-                dr.Close();
+                // Close the SqlConnection
                 cn.Close();
             }
         }
+
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {

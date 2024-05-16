@@ -105,9 +105,48 @@ namespace EAC_STAFF_WELFARE_LMS
             addMemberModule.ShowDialog();
         }
 
-        
+       
 
-        private void dgvMembers_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+
+        private int lastClickedRowIndex = -1;
+        private void dgvMembers_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Check if the clicked cell is not the header cell and the row index is valid
+            if (e.RowIndex >= 0 && e.RowIndex < dgvMembers.Rows.Count && e.ColumnIndex >= 0)
+            {
+                // Check if the clicked cell is not a button type cell
+                if (dgvMembers.Rows[e.RowIndex].Cells[e.ColumnIndex] is DataGridViewButtonCell)
+                {
+                    return; // Exit the event handler if a button cell is clicked
+                }
+
+                // Get the clicked row
+                DataGridViewRow clickedRow = dgvMembers.Rows[e.RowIndex];
+
+                // Toggle background color of the clicked row
+                if (e.RowIndex == lastClickedRowIndex)
+                {
+                    // If the same row is clicked again, revert back to default color
+                    clickedRow.DefaultCellStyle.BackColor = Color.White;
+                    lastClickedRowIndex = -1; // Reset last clicked row index
+                }
+                else
+                {
+                    // Reset the background color of the last clicked row, if any
+                    if (lastClickedRowIndex != -1)
+                    {
+                        dgvMembers.Rows[lastClickedRowIndex].DefaultCellStyle.BackColor = Color.White;
+                    }
+
+                    // Highlight the clicked row by changing its background color
+                    clickedRow.DefaultCellStyle.BackColor = Color.Khaki;
+                    lastClickedRowIndex = e.RowIndex; // Store the index of the last clicked row
+                }
+            }
+        }
+
+
+        private void dgvMembers_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             var senderGrid = (DataGridView)sender;
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn ||

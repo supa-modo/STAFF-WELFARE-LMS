@@ -173,7 +173,8 @@
             this.dgvMembers.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvMembers.Size = new System.Drawing.Size(1350, 590);
             this.dgvMembers.TabIndex = 5;
-            this.dgvMembers.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMembers_CellContentDoubleClick);
+            this.dgvMembers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMembers_CellClick);
+            this.dgvMembers.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMembers_CellDoubleClick);
             // 
             // Column10
             // 
@@ -286,6 +287,7 @@
             this.btnViewProfile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnViewProfile.HeaderText = "";
             this.btnViewProfile.Name = "btnViewProfile";
+            this.btnViewProfile.ReadOnly = true;
             this.btnViewProfile.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.btnViewProfile.Text = "View Profile";
             this.btnViewProfile.UseColumnTextForButtonValue = true;

@@ -34,7 +34,7 @@
             this.lblAddLoan = new System.Windows.Forms.Label();
             this.txtInstallments = new System.Windows.Forms.TextBox();
             this.txtDuration = new System.Windows.Forms.TextBox();
-            this.textInterest = new System.Windows.Forms.TextBox();
+            this.txtInterest = new System.Windows.Forms.TextBox();
             this.txtLoanAmt = new System.Windows.Forms.TextBox();
             this.txtPFNo = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
@@ -100,16 +100,16 @@
             this.txtDuration.Size = new System.Drawing.Size(417, 29);
             this.txtDuration.TabIndex = 161;
             // 
-            // textInterest
+            // txtInterest
             // 
-            this.textInterest.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textInterest.ForeColor = System.Drawing.Color.Gray;
-            this.textInterest.Location = new System.Drawing.Point(377, 292);
-            this.textInterest.Name = "textInterest";
-            this.textInterest.ReadOnly = true;
-            this.textInterest.Size = new System.Drawing.Size(417, 29);
-            this.textInterest.TabIndex = 160;
-            this.textInterest.Text = "   5%";
+            this.txtInterest.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInterest.ForeColor = System.Drawing.Color.Gray;
+            this.txtInterest.Location = new System.Drawing.Point(377, 292);
+            this.txtInterest.Name = "txtInterest";
+            this.txtInterest.ReadOnly = true;
+            this.txtInterest.Size = new System.Drawing.Size(417, 29);
+            this.txtInterest.TabIndex = 160;
+            this.txtInterest.Text = "5";
             // 
             // txtLoanAmt
             // 
@@ -226,6 +226,7 @@
             this.metroBtnSave.UseCustomBackColor = true;
             this.metroBtnSave.UseCustomForeColor = true;
             this.metroBtnSave.UseSelectable = true;
+            this.metroBtnSave.Click += new System.EventHandler(this.metroBtnSave_Click);
             // 
             // labelLoanID
             // 
@@ -249,7 +250,7 @@
             this.Controls.Add(this.metroBtnSave);
             this.Controls.Add(this.txtInstallments);
             this.Controls.Add(this.txtDuration);
-            this.Controls.Add(this.textInterest);
+            this.Controls.Add(this.txtInterest);
             this.Controls.Add(this.txtLoanAmt);
             this.Controls.Add(this.txtPFNo);
             this.Controls.Add(this.label45);
@@ -280,7 +281,7 @@
         private System.Windows.Forms.Label lblAddLoan;
         private System.Windows.Forms.TextBox txtInstallments;
         private System.Windows.Forms.TextBox txtDuration;
-        private System.Windows.Forms.TextBox textInterest;
+        private System.Windows.Forms.TextBox txtInterest;
         private System.Windows.Forms.TextBox txtLoanAmt;
         private System.Windows.Forms.TextBox txtPFNo;
         private System.Windows.Forms.Label label45;

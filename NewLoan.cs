@@ -21,6 +21,7 @@ namespace EAC_STAFF_WELFARE_LMS
         public NewLoan()
         {
             InitializeComponent();
+            cn = new SqlConnection(dbConn.myConnection());
             getLoanID();
         }
 
@@ -35,7 +36,7 @@ namespace EAC_STAFF_WELFARE_LMS
             // Validate textboxes and other controls
             if (string.IsNullOrWhiteSpace(txtPFNo.Text) || string.IsNullOrWhiteSpace(txtLoanAmt.Text) || string.IsNullOrWhiteSpace(txtDuration.Text) || string.IsNullOrWhiteSpace(txtInstallments.Text))
             {
-                MessageBox.Show("Please fill in all required fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please fill in all the given fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -43,7 +44,7 @@ namespace EAC_STAFF_WELFARE_LMS
             int pfNo;
             if (!int.TryParse(txtPFNo.Text, out pfNo))
             {
-                MessageBox.Show("PFNo must be a valid integer.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("PFNo must be a valid number value.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -54,17 +55,25 @@ namespace EAC_STAFF_WELFARE_LMS
                 return;
             }
 
+
+            decimal interestRate;
+            if (!decimal.TryParse(txtInterest.Text, out interestRate))
+            {
+                MessageBox.Show("Interest rate must be a valid number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             int durationOfPayment;
             if (!int.TryParse(txtDuration.Text, out durationOfPayment))
             {
-                MessageBox.Show("Duration of payment must be a valid integer.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Duration of payment must be a valid number (of months).", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             decimal monthlyInstallments;
             if (!decimal.TryParse(txtInstallments.Text, out monthlyInstallments))
             {
-                MessageBox.Show("Monthly installments must be a valid number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Monthly installments must be a valid number value.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -81,7 +90,7 @@ namespace EAC_STAFF_WELFARE_LMS
             DateTime dueDate = applicationDate.AddMonths(durationOfPayment);
 
             // Confirm new loan addition
-            string confirmationMessage = $"Confirm New loan addition:\nApplicant Name - {applicantName}\nLoan amount - {loanAmount}\nDuration of Payment - {durationOfPayment} months\nMonthly Installments - {monthlyInstallments}";
+            string confirmationMessage = $"        Confirm New loan addition:\n \nApplicant Name - {applicantName}\nLoan amount - {loanAmount}\nDuration of Payment - {durationOfPayment} months\nMonthly Installments - {monthlyInstallments}";
             DialogResult result = MessageBox.Show(confirmationMessage, "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.No)
             {
@@ -98,7 +107,7 @@ namespace EAC_STAFF_WELFARE_LMS
         new SqlParameter("@LoanID", loanID),
         new SqlParameter("@PFNo", pfNo),
         new SqlParameter("@LoanAmount", loanAmount),
-        new SqlParameter("@InterestRate", 0), // Assuming interest rate is 0 for now
+        new SqlParameter("@InterestRate", interestRate), // Assuming interest rate is 0 for now
         new SqlParameter("@DurationOfPayment", durationOfPayment),
         new SqlParameter("@MonthlyInstallments", monthlyInstallments),
         new SqlParameter("@ApplicantName", applicantName),
@@ -173,6 +182,11 @@ namespace EAC_STAFF_WELFARE_LMS
 
             return loanID;
 
+        }
+
+        private void metroBtnSave_Click(object sender, EventArgs e)
+        {
+            InsertNewLoanRecord();
         }
     }
 }

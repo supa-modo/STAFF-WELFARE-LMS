@@ -104,6 +104,7 @@ namespace EAC_STAFF_WELFARE_LMS
         }
 
 
+
         private int lastClickedRowIndex = -1;
 
         private void dgvLoanApplications_CellClick(object sender, DataGridViewCellEventArgs e)

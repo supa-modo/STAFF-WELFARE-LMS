@@ -128,6 +128,7 @@
             this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
             this.btnDashboard.Location = new System.Drawing.Point(3, -2);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
@@ -160,6 +161,7 @@
             this.btnSettings.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.btnSettings.FlatAppearance.BorderSize = 0;
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.ForeColor = System.Drawing.Color.White;
             this.btnSettings.Location = new System.Drawing.Point(1042, -2);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
@@ -177,6 +179,7 @@
             this.btnReports.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.btnReports.FlatAppearance.BorderSize = 0;
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReports.ForeColor = System.Drawing.Color.White;
             this.btnReports.Location = new System.Drawing.Point(846, -2);
             this.btnReports.Name = "btnReports";
             this.btnReports.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
@@ -194,6 +197,7 @@
             this.btnMembers.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.btnMembers.FlatAppearance.BorderSize = 0;
             this.btnMembers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMembers.ForeColor = System.Drawing.Color.White;
             this.btnMembers.Location = new System.Drawing.Point(614, -2);
             this.btnMembers.Name = "btnMembers";
             this.btnMembers.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
@@ -211,6 +215,7 @@
             this.btnLoanApps.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.btnLoanApps.FlatAppearance.BorderSize = 0;
             this.btnLoanApps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoanApps.ForeColor = System.Drawing.Color.White;
             this.btnLoanApps.Location = new System.Drawing.Point(395, -2);
             this.btnLoanApps.Name = "btnLoanApps";
             this.btnLoanApps.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
@@ -228,6 +233,7 @@
             this.btnSavings.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.btnSavings.FlatAppearance.BorderSize = 0;
             this.btnSavings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSavings.ForeColor = System.Drawing.Color.White;
             this.btnSavings.Location = new System.Drawing.Point(199, -2);
             this.btnSavings.Name = "btnSavings";
             this.btnSavings.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);

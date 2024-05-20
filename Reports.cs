@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,20 @@ namespace EAC_STAFF_WELFARE_LMS
 {
     public partial class Reports : Form
     {
+
+        SqlConnection cn = new SqlConnection();
+        SqlCommand cmd = new SqlCommand();
+        dbConnect dbConn = new dbConnect();
+       
+
         public Reports()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            cmd = new SqlCommand("SELECT LoanID, PFNo, ApplicantName, LoanAmount, ApplicationDate, DueDate FROM Loans", cn);
         }
     }
 }

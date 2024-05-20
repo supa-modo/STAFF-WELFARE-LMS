@@ -13,7 +13,6 @@ namespace EAC_STAFF_WELFARE_LMS
 {
     public partial class Members : Form
     {
-
         SqlConnection cn = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         dbConnect dbConn = new dbConnect();

@@ -16,5 +16,12 @@ namespace EAC_STAFF_WELFARE_LMS
         {
             InitializeComponent();
         }
+
+        private void LoansReport_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+            this.reportViewer1.RefreshReport();
+        }
     }
 }

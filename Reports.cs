@@ -32,6 +32,16 @@ namespace EAC_STAFF_WELFARE_LMS
             d.Fill(dt);
 
             
+
+            
         }
+
+        private void Reports_Load(object sender, EventArgs e)
+        {
+
+            this.loanReportViewer.RefreshReport();
+        }
+
+       
     }
 }

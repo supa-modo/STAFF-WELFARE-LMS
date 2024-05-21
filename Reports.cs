@@ -27,6 +27,11 @@ namespace EAC_STAFF_WELFARE_LMS
         private void button1_Click(object sender, EventArgs e)
         {
             cmd = new SqlCommand("SELECT LoanID, PFNo, ApplicantName, LoanAmount, ApplicationDate, DueDate FROM Loans", cn);
+            SqlDataAdapter d = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            d.Fill(dt);
+
+            
         }
     }
 }

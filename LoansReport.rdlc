@@ -2,7 +2,7 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <Body>
     <ReportItems>
-      <Textbox Name="Textbox1">
+      <Textbox Name="Textbox">
         <CanGrow>true</CanGrow>
         <KeepTogether>true</KeepTogether>
         <Paragraphs>
@@ -10,15 +10,18 @@
             <TextRuns>
               <TextRun>
                 <Value>Loans Report</Value>
-                <Style />
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                </Style>
               </TextRun>
             </TextRuns>
-            <Style />
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
           </Paragraph>
         </Paragraphs>
-        <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>0.32167in</Top>
-        <Left>2.25917in</Left>
+        <Left>1.63417in</Left>
         <Height>0.33333in</Height>
         <Width>5.61458in</Width>
         <Style>
@@ -35,22 +38,22 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.5in</Width>
+              <Width>1.53299in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.11458in</Width>
+              <Width>0.82465in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.17708in</Width>
+              <Width>1.95139in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.5in</Width>
+              <Width>1.1059in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.5in</Width>
+              <Width>1.70882in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.5in</Width>
+              <Width>1.65799in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -61,13 +64,17 @@
                   <CellContents>
                     <Textbox Name="Textbox2">
                       <CanGrow>true</CanGrow>
+                      <CanShrink>true</CanShrink>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
                               <Value>Loan ID</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontWeight>SemiBold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -92,13 +99,17 @@
                   <CellContents>
                     <Textbox Name="Textbox4">
                       <CanGrow>true</CanGrow>
+                      <CanShrink>true</CanShrink>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
                               <Value>PFNo</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontWeight>SemiBold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -123,13 +134,17 @@
                   <CellContents>
                     <Textbox Name="Textbox6">
                       <CanGrow>true</CanGrow>
+                      <CanShrink>true</CanShrink>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
                               <Value>Applicant Name</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontWeight>SemiBold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -154,13 +169,17 @@
                   <CellContents>
                     <Textbox Name="Textbox8">
                       <CanGrow>true</CanGrow>
+                      <CanShrink>true</CanShrink>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
                               <Value>Loan Amount</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontWeight>SemiBold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -185,13 +204,17 @@
                   <CellContents>
                     <Textbox Name="Textbox14">
                       <CanGrow>true</CanGrow>
+                      <CanShrink>true</CanShrink>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
                               <Value>Application Date</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontWeight>SemiBold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -216,13 +239,17 @@
                   <CellContents>
                     <Textbox Name="Textbox10">
                       <CanGrow>true</CanGrow>
+                      <CanShrink>true</CanShrink>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
                               <Value>Due Date</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontWeight>SemiBold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -258,7 +285,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!LoanID.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -289,7 +319,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!PFNo.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -320,7 +353,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!ApplicantName.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -351,7 +387,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!LoanAmount.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -382,7 +421,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!ApplicationDate.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -413,7 +455,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!DueDate.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -459,26 +504,28 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>LoansDataset</DataSetName>
-        <Top>1.13417in</Top>
-        <Left>0.12375in</Left>
+        <Top>0.84944in</Top>
+        <Left>0.125in</Left>
         <Height>0.5in</Height>
-        <Width>10.29166in</Width>
+        <Width>8.78174in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
+          <FontFamily>Courier New</FontFamily>
+          <FontSize>9pt</FontSize>
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>8in</Height>
+    <Height>11in</Height>
     <Style>
       <Border>
         <Style>None</Style>
       </Border>
     </Style>
   </Body>
-  <Width>10.81125in</Width>
+  <Width>9in</Width>
   <Page>
     <LeftMargin>1in</LeftMargin>
     <RightMargin>1in</RightMargin>

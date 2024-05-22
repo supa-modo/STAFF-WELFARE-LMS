@@ -38,6 +38,7 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(3, 46);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(215, 44);
@@ -58,6 +59,9 @@
             // 
             // panelReportViewer
             // 
+            this.panelReportViewer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelReportViewer.Controls.Add(this.loanReportViewer);
             this.panelReportViewer.Location = new System.Drawing.Point(227, 7);
             this.panelReportViewer.Name = "panelReportViewer";
@@ -66,6 +70,7 @@
             // 
             // loanReportViewer
             // 
+            this.loanReportViewer.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.loanReportViewer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.loanReportViewer.LocalReport.ReportEmbeddedResource = "EAC_STAFF_WELFARE_LMS.LoansReport.rdlc";
             this.loanReportViewer.Location = new System.Drawing.Point(0, 0);

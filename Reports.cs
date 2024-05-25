@@ -53,6 +53,24 @@ namespace EAC_STAFF_WELFARE_LMS
             this.loanReportViewer.RefreshReport();
         }
 
-     
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Set up the SQL command to fetch data
+            cmd = new SqlCommand("SELECT * FROM Members", cn);
+            SqlDataAdapter d = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            d.Fill(dt);
+
+            // Clear any existing data sources from the ReportViewer
+            loanReportViewer.LocalReport.DataSources.Clear();
+
+            // Create a new ReportDataSource with the fetched data, Set the path to the .rdlc report file and add the new source to datasources
+            ReportDataSource source = new ReportDataSource("AllMembersDataset", dt);
+            loanReportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/MembersReport.rdlc";
+            loanReportViewer.LocalReport.DataSources.Add(source);
+
+            loanReportViewer.SetDisplayMode(DisplayMode.PrintLayout);
+            loanReportViewer.RefreshReport();
+        }
     }
 }

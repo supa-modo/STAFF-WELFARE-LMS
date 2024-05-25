@@ -88,6 +88,14 @@
     <Compile Include="addMemberModule.Designer.cs">
       <DependentUpon>addMemberModule.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllMembersDataset.cs">
+      <DependentUpon>AllMembersDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AllMembersDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllMembersDataset.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +177,7 @@
     <EmbeddedResource Include="LoanApplications.resx">
       <DependentUpon>LoanApplications.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MembersReport.rdlc" />
     <EmbeddedResource Include="LoansReport.rdlc" />
     <EmbeddedResource Include="LoansReport.resx">
       <DependentUpon>LoansReport.cs</DependentUpon>
@@ -200,6 +209,17 @@
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="AllMembersDataset.xsc">
+      <DependentUpon>AllMembersDataset.xsd</DependentUpon>
+    </None>
+    <None Include="AllMembersDataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AllMembersDataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AllMembersDataset.xss">
+      <DependentUpon>AllMembersDataset.xsd</DependentUpon>
+    </None>
     <None Include="LoansDataset.xsc">
       <DependentUpon>LoansDataset.xsd</DependentUpon>
     </None>

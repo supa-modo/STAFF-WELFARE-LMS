@@ -50,10 +50,10 @@
             // loginLogo
             // 
             this.loginLogo.Image = ((System.Drawing.Image)(resources.GetObject("loginLogo.Image")));
-            this.loginLogo.Location = new System.Drawing.Point(339, 50);
+            this.loginLogo.Location = new System.Drawing.Point(339, 45);
             this.loginLogo.Name = "loginLogo";
-            this.loginLogo.Size = new System.Drawing.Size(167, 137);
-            this.loginLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.loginLogo.Size = new System.Drawing.Size(169, 142);
+            this.loginLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.loginLogo.TabIndex = 1;
             this.loginLogo.TabStop = false;
             // 

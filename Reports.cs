@@ -35,42 +35,39 @@ namespace EAC_STAFF_WELFARE_LMS
             d.Fill(dt);
 
             // Clear any existing data sources from the ReportViewer
-            loanReportViewer.LocalReport.DataSources.Clear();
+            reportViewer.LocalReport.DataSources.Clear();
 
             // Create a new ReportDataSource with the fetched data, Set the path to the .rdlc report file and add the new source to datasources
-            ReportDataSource source = new ReportDataSource("LoansDataset", dt);
-            loanReportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/LoansReport.rdlc";
-            loanReportViewer.LocalReport.DataSources.Add(source);
+            ReportDataSource sourceLoans = new ReportDataSource("LoansDataset", dt);
+            reportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/LoansReport.rdlc";
+            reportViewer.LocalReport.DataSources.Add(sourceLoans);
 
-            loanReportViewer.SetDisplayMode(DisplayMode.PrintLayout);
-            loanReportViewer.RefreshReport();
+            reportViewer.SetDisplayMode(DisplayMode.PrintLayout);
+            reportViewer.RefreshReport();
         }
 
 
-        private void Reports_Load(object sender, EventArgs e)
-        {
-
-            this.loanReportViewer.RefreshReport();
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
             // Set up the SQL command to fetch data
             cmd = new SqlCommand("SELECT * FROM Members", cn);
-            SqlDataAdapter d = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            d.Fill(dt);
+            SqlDataAdapter d2 = new SqlDataAdapter(cmd);
+            DataTable dt2 = new DataTable();
+            d2.Fill(dt2);
 
             // Clear any existing data sources from the ReportViewer
-            loanReportViewer.LocalReport.DataSources.Clear();
+            reportViewer.LocalReport.DataSources.Clear();
 
             // Create a new ReportDataSource with the fetched data, Set the path to the .rdlc report file and add the new source to datasources
-            ReportDataSource source = new ReportDataSource("AllMembersDataset", dt);
-            loanReportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/MembersReport.rdlc";
-            loanReportViewer.LocalReport.DataSources.Add(source);
+            ReportDataSource sourceMembers = new ReportDataSource("AllMembersDataset", dt2);
+            
+            reportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/AllMembersReport.rdlc";
+            reportViewer.LocalReport.DataSources.Add(sourceMembers);
 
-            loanReportViewer.SetDisplayMode(DisplayMode.PrintLayout);
-            loanReportViewer.RefreshReport();
+
+            reportViewer.SetDisplayMode(DisplayMode.PrintLayout);
+            reportViewer.RefreshReport();
         }
     }
 }

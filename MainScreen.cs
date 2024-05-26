@@ -1,11 +1,4 @@
-﻿ 
-
-
-
-
-
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -51,7 +44,7 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private void btnSavings_Click(object sender, EventArgs e)
         {
-            openChildForm(new FullProfileView());
+            openChildForm(new Savings());
         }
 
         private void btnLoanApps_Click(object sender, EventArgs e)

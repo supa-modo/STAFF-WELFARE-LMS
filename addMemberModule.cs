@@ -65,10 +65,11 @@ namespace EAC_STAFF_WELFARE_LMS
             string jobTitle = txtBxJobTitle.Text;
             string department = txtBxDpt.Text;
             string contractType = comboBoxContractType.SelectedItem.ToString(); // Assuming comboBoxContractType contains contract types
+            string monthlySavings = textBoxSavings.Text;
 
             // Define the SQL query
-            string query = "INSERT INTO Members (MemberPFNo, FirstName, MiddleName, LastName, ContractStartDate, ContractEndDate, EmailAddress, SecondaryEmail, PhoneNumber1, PhoneNumber2, PhysicalAddress, JobTitle, Department, ContractType) " +
-                           "VALUES (@MemberPFNo, @FirstName, @MiddleName, @LastName, @ContractStartDate, @ContractEndDate, @EmailAddress, @SecondaryEmail, @PhoneNumber1, @PhoneNumber2, @PhysicalAddress, @JobTitle, @Department, @ContractType);";
+            string query = "INSERT INTO Members (MemberPFNo, FirstName, MiddleName, LastName, ContractStartDate, ContractEndDate, EmailAddress, SecondaryEmail, PhoneNumber1, PhoneNumber2, PhysicalAddress, JobTitle, Department, ContractType, MonthlySavings) " +
+                           "VALUES (@MemberPFNo, @FirstName, @MiddleName, @LastName, @ContractStartDate, @ContractEndDate, @EmailAddress, @SecondaryEmail, @PhoneNumber1, @PhoneNumber2, @PhysicalAddress, @JobTitle, @Department, @ContractType, @MonthlySavings);";
 
             // Define parameters for the SQL query
             SqlParameter[] parameters =
@@ -86,7 +87,8 @@ namespace EAC_STAFF_WELFARE_LMS
         new SqlParameter("@PhysicalAddress", physicalAddress),
         new SqlParameter("@JobTitle", jobTitle),
         new SqlParameter("@Department", department),
-        new SqlParameter("@ContractType", contractType)
+        new SqlParameter("@ContractType", contractType),
+        new SqlParameter("@MonthlySsvings", monthlySavings)
     };
 
             // Define SqlCommand with connection and query

@@ -88,7 +88,7 @@ namespace EAC_STAFF_WELFARE_LMS
         new SqlParameter("@JobTitle", jobTitle),
         new SqlParameter("@Department", department),
         new SqlParameter("@ContractType", contractType),
-        new SqlParameter("@MonthlySsvings", monthlySavings)
+        new SqlParameter("@MonthlySavings", monthlySavings)
     };
 
             // Define SqlCommand with connection and query

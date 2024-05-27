@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FullProfileView));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelMemberProfileTop = new System.Windows.Forms.Panel();
             this.picBxClose = new System.Windows.Forms.PictureBox();
             this.lblMemberProfile = new System.Windows.Forms.Label();
@@ -85,6 +85,17 @@
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.metroLoans = new MetroFramework.Controls.MetroTabPage();
             this.dgvIndividualLoans = new System.Windows.Forms.DataGridView();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.picBox = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.picBox2 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label35 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
@@ -102,17 +113,6 @@
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.picBox = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.picBox2 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panelMemberProfileTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBxClose)).BeginInit();
             this.panelMetro.SuspendLayout();
@@ -178,10 +178,10 @@
             this.metroTabProfile.Controls.Add(this.metroPDetails);
             this.metroTabProfile.Controls.Add(this.metroLoans);
             this.metroTabProfile.Controls.Add(this.metroSavings);
-            this.metroTabProfile.Location = new System.Drawing.Point(0, 0);
+            this.metroTabProfile.Location = new System.Drawing.Point(3, 0);
             this.metroTabProfile.Name = "metroTabProfile";
             this.metroTabProfile.SelectedIndex = 1;
-            this.metroTabProfile.Size = new System.Drawing.Size(1350, 660);
+            this.metroTabProfile.Size = new System.Drawing.Size(1347, 660);
             this.metroTabProfile.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTabProfile.TabIndex = 0;
             this.metroTabProfile.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -198,7 +198,7 @@
             this.metroPDetails.HorizontalScrollbarSize = 10;
             this.metroPDetails.Location = new System.Drawing.Point(4, 38);
             this.metroPDetails.Name = "metroPDetails";
-            this.metroPDetails.Size = new System.Drawing.Size(1342, 618);
+            this.metroPDetails.Size = new System.Drawing.Size(1339, 618);
             this.metroPDetails.TabIndex = 0;
             this.metroPDetails.Text = "      Personal Details               ";
             this.metroPDetails.VerticalScrollbar = true;
@@ -252,7 +252,7 @@
             this.panel2.Controls.Add(this.splitter1);
             this.panel2.Location = new System.Drawing.Point(0, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1341, 619);
+            this.panel2.Size = new System.Drawing.Size(1338, 619);
             this.panel2.TabIndex = 2;
             // 
             // metroButton1
@@ -277,7 +277,7 @@
             this.metroDateTime2.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
             this.metroDateTime2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.metroDateTime2.Location = new System.Drawing.Point(1140, 512);
-            this.metroDateTime2.MinimumSize = new System.Drawing.Size(4, 29);
+            this.metroDateTime2.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTime2.Name = "metroDateTime2";
             this.metroDateTime2.Size = new System.Drawing.Size(160, 29);
             this.metroDateTime2.Style = MetroFramework.MetroColorStyle.Green;
@@ -289,7 +289,7 @@
             this.metroDateTime1.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
             this.metroDateTime1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.metroDateTime1.Location = new System.Drawing.Point(863, 512);
-            this.metroDateTime1.MinimumSize = new System.Drawing.Size(4, 29);
+            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTime1.Name = "metroDateTime1";
             this.metroDateTime1.Size = new System.Drawing.Size(160, 29);
             this.metroDateTime1.Style = MetroFramework.MetroColorStyle.Green;
@@ -689,7 +689,7 @@
             this.metroLoans.HorizontalScrollbarSize = 10;
             this.metroLoans.Location = new System.Drawing.Point(4, 38);
             this.metroLoans.Name = "metroLoans";
-            this.metroLoans.Size = new System.Drawing.Size(1342, 618);
+            this.metroLoans.Size = new System.Drawing.Size(1339, 618);
             this.metroLoans.TabIndex = 1;
             this.metroLoans.Text = "      Loan Applications               ";
             this.metroLoans.VerticalScrollbarBarColor = true;
@@ -699,16 +699,18 @@
             // dgvIndividualLoans
             // 
             this.dgvIndividualLoans.AllowUserToDeleteRows = false;
+            this.dgvIndividualLoans.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvIndividualLoans.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvIndividualLoans.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvIndividualLoans.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.ScrollBar;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvIndividualLoans.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvIndividualLoans.ColumnHeadersHeight = 30;
             this.dgvIndividualLoans.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvIndividualLoans.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -723,15 +725,113 @@
             this.Column7,
             this.picBox,
             this.picBox2});
-            this.dgvIndividualLoans.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvIndividualLoans.EnableHeadersVisualStyles = false;
-            this.dgvIndividualLoans.Location = new System.Drawing.Point(0, 116);
+            this.dgvIndividualLoans.Location = new System.Drawing.Point(0, 122);
             this.dgvIndividualLoans.Name = "dgvIndividualLoans";
             this.dgvIndividualLoans.RowHeadersVisible = false;
             this.dgvIndividualLoans.RowTemplate.Height = 30;
-            this.dgvIndividualLoans.Size = new System.Drawing.Size(1342, 502);
+            this.dgvIndividualLoans.Size = new System.Drawing.Size(1339, 496);
             this.dgvIndividualLoans.TabIndex = 8;
             this.dgvIndividualLoans.UseWaitCursor = true;
+            // 
+            // Column8
+            // 
+            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle11;
+            this.Column8.HeaderText = "Loan ID";
+            this.Column8.Name = "Column8";
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle12;
+            this.Column2.HeaderText = "Loan Amount";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 131;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle13;
+            this.Column3.HeaderText = "Duration";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 96;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle14;
+            this.Column4.HeaderText = "Interest";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 90;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle15;
+            this.Column1.HeaderText = "Application Date";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 155;
+            // 
+            // Column5
+            // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle16;
+            this.Column5.HeaderText = "Due Date";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle17;
+            this.Column6.HeaderText = "Amount Paid";
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 127;
+            // 
+            // Column9
+            // 
+            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column9.HeaderText = "Pending Balance";
+            this.Column9.Name = "Column9";
+            this.Column9.Width = 152;
+            // 
+            // Column7
+            // 
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle18;
+            this.Column7.HeaderText = "Status";
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 120;
+            // 
+            // picBox
+            // 
+            this.picBox.HeaderText = "picBoxView";
+            this.picBox.Name = "picBox";
+            this.picBox.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.picBox.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.picBox.Width = 50;
+            // 
+            // picBox2
+            // 
+            this.picBox2.HeaderText = "picBoxPrint";
+            this.picBox2.Name = "picBox2";
+            this.picBox2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.picBox2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.picBox2.Width = 50;
             // 
             // panel4
             // 
@@ -745,7 +845,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1342, 116);
+            this.panel4.Size = new System.Drawing.Size(1339, 116);
             this.panel4.TabIndex = 7;
             this.panel4.UseWaitCursor = true;
             // 
@@ -753,7 +853,7 @@
             // 
             this.label35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label35.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.label35.Location = new System.Drawing.Point(897, 63);
+            this.label35.Location = new System.Drawing.Point(894, 67);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(255, 24);
             this.label35.TabIndex = 17;
@@ -766,9 +866,9 @@
             this.label34.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label34.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.label34.Location = new System.Drawing.Point(534, 63);
+            this.label34.Location = new System.Drawing.Point(534, 67);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(270, 24);
+            this.label34.Size = new System.Drawing.Size(267, 24);
             this.label34.TabIndex = 16;
             this.label34.Text = "PENDING LOAN BALANCE";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -778,7 +878,7 @@
             // 
             this.label33.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.label33.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label33.Location = new System.Drawing.Point(186, 63);
+            this.label33.Location = new System.Drawing.Point(186, 67);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(255, 24);
             this.label33.TabIndex = 15;
@@ -791,7 +891,7 @@
             this.label32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label32.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
             this.label32.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label32.Location = new System.Drawing.Point(897, 18);
+            this.label32.Location = new System.Drawing.Point(894, 22);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(255, 45);
             this.label32.TabIndex = 14;
@@ -805,9 +905,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label36.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
             this.label36.ForeColor = System.Drawing.Color.Red;
-            this.label36.Location = new System.Drawing.Point(534, 18);
+            this.label36.Location = new System.Drawing.Point(534, 22);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(270, 45);
+            this.label36.Size = new System.Drawing.Size(267, 45);
             this.label36.TabIndex = 13;
             this.label36.Text = "$ 37,962";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -818,7 +918,7 @@
             this.label37.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
             this.label37.ForeColor = System.Drawing.Color.Chocolate;
             this.label37.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label37.Location = new System.Drawing.Point(186, 18);
+            this.label37.Location = new System.Drawing.Point(186, 22);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(255, 45);
             this.label37.TabIndex = 12;
@@ -840,7 +940,7 @@
             this.metroSavings.HorizontalScrollbarSize = 10;
             this.metroSavings.Location = new System.Drawing.Point(4, 38);
             this.metroSavings.Name = "metroSavings";
-            this.metroSavings.Size = new System.Drawing.Size(1342, 618);
+            this.metroSavings.Size = new System.Drawing.Size(1339, 618);
             this.metroSavings.Style = MetroFramework.MetroColorStyle.Green;
             this.metroSavings.TabIndex = 2;
             this.metroSavings.Text = "     Savings Account                ";
@@ -945,105 +1045,6 @@
             this.metroTabPage3.VerticalScrollbarBarColor = true;
             this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage3.VerticalScrollbarSize = 9;
-            // 
-            // Column8
-            // 
-            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column8.HeaderText = "Loan ID";
-            this.Column8.Name = "Column8";
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column2.HeaderText = "Loan Amount";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 131;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Column3.HeaderText = "Duration";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 96;
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Column4.HeaderText = "Interest";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 90;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle6;
-            this.Column1.HeaderText = "Application Date";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 155;
-            // 
-            // Column5
-            // 
-            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle7;
-            this.Column5.HeaderText = "Due Date";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Column6.HeaderText = "Amount Paid";
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 127;
-            // 
-            // Column9
-            // 
-            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column9.HeaderText = "Pending Balance";
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 152;
-            // 
-            // Column7
-            // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle9;
-            this.Column7.HeaderText = "Status";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 120;
-            // 
-            // picBox
-            // 
-            this.picBox.HeaderText = "picBoxView";
-            this.picBox.Name = "picBox";
-            this.picBox.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.picBox.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.picBox.Width = 50;
-            // 
-            // picBox2
-            // 
-            this.picBox2.HeaderText = "picBoxPrint";
-            this.picBox2.Name = "picBox2";
-            this.picBox2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.picBox2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.picBox2.Width = 50;
             // 
             // FullProfileView
             // 

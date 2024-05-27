@@ -31,6 +31,7 @@ namespace EAC_STAFF_WELFARE_LMS
             LoadDataIntoDataGridView();
         }
 
+
         private void LoadDataIntoDataGridView()
         {
             int i = 0;
@@ -41,7 +42,7 @@ namespace EAC_STAFF_WELFARE_LMS
             txtSearchParam.Value = txtSearch.Text;
 
             // Define the SQL query with parameters
-            string query = "SELECT MemberPFNo, FirstName, MiddleName, LastName, JobTitle, ContractEndDate, ContractType, EmailAddress, SecondaryEmail, PhoneNumber1, PhoneNumber2, PhysicalAddress " +
+            string query = "SELECT MemberPFNo, FirstName, MiddleName, LastName, JobTitle, ContractEndDate, ContractType, EmailAddress, PhoneNumber1, PhoneNumber2, PhysicalAddress " +
                            "FROM Members " +
                            "WHERE MemberPFNo LIKE '%' + @txtSearch + '%' " +
                            "OR (FirstName + ' ' + ISNULL(MiddleName, '') + ' ' + LastName) LIKE '%' + @txtSearch + '%' " +
@@ -49,7 +50,6 @@ namespace EAC_STAFF_WELFARE_LMS
                            "OR ContractEndDate LIKE '%' + @txtSearch + '%' " +
                            "OR ContractType LIKE '%' + @txtSearch + '%' " +
                            "OR EmailAddress LIKE '%' + @txtSearch + '%' " +
-                           "OR SecondaryEmail LIKE '%' + @txtSearch + '%' " +
                            "OR PhoneNumber1 LIKE '%' + @txtSearch + '%' " +
                            "OR PhoneNumber2 LIKE '%' + @txtSearch + '%' " +
                            "OR PhysicalAddress LIKE '%' + @txtSearch + '%';";
@@ -75,7 +75,6 @@ namespace EAC_STAFF_WELFARE_LMS
                                           dr["ContractEndDate"],
                                           dr["ContractType"],
                                           dr["EmailAddress"],
-                                          dr["SecondaryEmail"],
                                           dr["PhoneNumber1"],
                                           dr["PhoneNumber2"],
                                           dr["PhysicalAddress"]);

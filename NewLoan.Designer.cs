@@ -99,6 +99,7 @@
             this.txtDuration.Name = "txtDuration";
             this.txtDuration.Size = new System.Drawing.Size(417, 29);
             this.txtDuration.TabIndex = 161;
+            
             // 
             // txtInterest
             // 
@@ -118,6 +119,7 @@
             this.txtLoanAmt.Name = "txtLoanAmt";
             this.txtLoanAmt.Size = new System.Drawing.Size(417, 29);
             this.txtLoanAmt.TabIndex = 157;
+            
             // 
             // txtPFNo
             // 

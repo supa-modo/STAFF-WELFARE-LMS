@@ -23,6 +23,10 @@ namespace EAC_STAFF_WELFARE_LMS
             InitializeComponent();
             cn = new SqlConnection(dbConn.myConnection());
             getLoanID();
+
+            // Subscribe to the TextChanged event for txtLoanAmt and txtDuration
+            txtLoanAmt.TextChanged += NewLoanTxtBoxes_TextChanged;
+            txtDuration.TextChanged += NewLoanTxtBoxes_TextChanged;
         }
 
         private void picBxClose_Click(object sender, EventArgs e)
@@ -184,9 +188,41 @@ namespace EAC_STAFF_WELFARE_LMS
 
         }
 
+
         private void metroBtnSave_Click(object sender, EventArgs e)
         {
             InsertNewLoanRecord();
         }
+
+
+
+        private void NewLoanTxtBoxes_TextChanged(object sender, EventArgs e)
+        {
+            CalculatedDivision();
+        }
+
+        private void CalculatedDivision()
+        {
+            // Ensure both txtLoanAmt and txtDuration have valid numbers
+            if (double.TryParse(txtLoanAmt.Text, out double value1) &&
+                double.TryParse(txtDuration.Text, out double value2))
+            {
+                // Avoid division by zero
+                if (value2 != 0)
+                {
+                    double result = value1 / value2;
+                    txtInstallments.Text = result.ToString();
+                }
+                else
+                {
+                    txtInstallments.Text = "Cannot divide by zero";
+                }
+            }
+            else
+            {
+                txtInstallments.Text = "Invalid input";
+            }
+        }
+
     }
 }

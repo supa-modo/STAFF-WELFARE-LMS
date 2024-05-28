@@ -76,8 +76,8 @@ namespace EAC_STAFF_WELFARE_LMS
                         dr["LoanAmount"], 
                         dr["InterestRate"], 
                         dr["DurationOfPayment"],
-                        dr["ApplicationDate"], 
-                        dr["DueDate"],
+                        ((DateTime)dr["ApplicationDate"]).ToString("dd-MMM-yyyy"),
+                        ((DateTime)dr["DueDate"]).ToString("dd-MMM-yyyy"),
                         dr["MonthlyInstallments"],
                         "ACTIVE");
                 }

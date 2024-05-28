@@ -72,7 +72,7 @@ namespace EAC_STAFF_WELFARE_LMS
                                          dr["MiddleName"].ToString() + " " +
                                          dr["LastName"].ToString(),
                                          dr["JobTitle"],
-                                         ((DateTime)dr["ContractEndDate"]).ToString("dd-MMM-yyyy"), // Format the date here
+                                         ((DateTime)dr["ContractEndDate"]).ToString("dd-MMM-yyyy"), 
                                          dr["ContractType"],
                                          dr["EmailAddress"],
                                          dr["PhoneNumber1"],

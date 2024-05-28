@@ -30,14 +30,14 @@ namespace EAC_STAFF_WELFARE_LMS
             txtSearchParam.Value = txtSearch.Text;
 
             // Defining the SQL query with parameters
-            string query = "SELECT SavingsId, s.MemberPFNo AS PFNo, " +
+            string query = "SELECT SavingsId, s.PFNo AS PFNo, " +
                            "CONCAT(m.FirstName, ' ', ISNULL(m.MiddleName + ' ', ''), m.LastName) AS ApplicantName, " +
                            "m.MonthlySavings AS MonthlySavingsDeduction, " +
                            "SavingsAccountBalance, LastUpdated, 'ACTIVE' AS Status " +
                            "FROM Savings s " +
-                           "INNER JOIN Members m ON s.MemberPFNo = m.PFNo " +
+                           "INNER JOIN Members m ON s.PFNo = m.MemberPFNo " +
                            "WHERE SavingsId LIKE '%' + @txtSearch + '%' " +
-                           "OR s.MemberPFNo LIKE '%' + @txtSearch + '%' " +
+                           "OR s.PFNo LIKE '%' + @txtSearch + '%' " +
                            "OR SavingsAccountBalance LIKE '%' + @txtSearch + '%' " +
                            "OR LastUpdated LIKE '%' + @txtSearch + '%' " +
                            "OR CONCAT(m.FirstName, ' ', ISNULL(m.MiddleName + ' ', ''), m.LastName) LIKE '%' + @txtSearch + '%' " +
@@ -61,8 +61,8 @@ namespace EAC_STAFF_WELFARE_LMS
                         dr["ApplicantName"],
                         dr["MonthlySavingsDeduction"],
                         dr["SavingsAccountBalance"],
-                        dr["LastUpdated"],
-                        "ACTIVE");
+                        ((DateTime)dr["LastUpdated"]).ToString("dd-MMM-yyyy"));
+                    
                 }
             }
             catch (Exception ex)
@@ -91,6 +91,7 @@ namespace EAC_STAFF_WELFARE_LMS
 
                 // Informing the user of the successful update
                 MessageBox.Show("Savings update completed successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
             }
             catch (Exception ex)
             {
@@ -103,8 +104,59 @@ namespace EAC_STAFF_WELFARE_LMS
                 if (cn.State == ConnectionState.Open)
                 {
                     cn.Close();
+                    LoadSavingsIntoDataGridView();
+                    CalculateAndDisplayTotalSavings();
                 }
             }
+        }
+
+
+        //Function that calculates the total savings balance when called
+        private void CalculateAndDisplayTotalSavings()
+        {
+            // Define the SQL query to calculate the total savings
+            string query = "SELECT SUM(SavingsAccountBalance) AS TotalSavings FROM Savings";
+            SqlCommand cmd = new SqlCommand(query, cn);
+
+            try
+            {
+                cn.Open();
+                // Execute the query and get the result
+                object result = cmd.ExecuteScalar();
+
+                // Check if the result is not null
+                if (result != DBNull.Value)
+                {
+                    // Convert the result to decimal and display it in the label
+                    decimal totalSavings = Convert.ToDecimal(result);
+                    labelTotalSavings.Text = totalSavings.ToString("C"); // Currency format
+                }
+                else
+                {
+                    // If no savings found, display 0 in the label
+                    labelTotalSavings.Text = "0";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+
+        private void Savings_Load(object sender, EventArgs e)
+        {
+            LoadSavingsIntoDataGridView();
+            CalculateAndDisplayTotalSavings();
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            LoadSavingsIntoDataGridView();
         }
     }
 }

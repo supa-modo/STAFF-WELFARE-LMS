@@ -136,6 +136,7 @@
             // 
             this.dgvMembers.AllowUserToAddRows = false;
             this.dgvMembers.AllowUserToDeleteRows = false;
+            this.dgvMembers.AllowUserToResizeRows = false;
             this.dgvMembers.BackgroundColor = System.Drawing.Color.White;
             this.dgvMembers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;

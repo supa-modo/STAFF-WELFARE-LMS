@@ -28,11 +28,11 @@ namespace EAC_STAFF_WELFARE_LMS
         private void Members_Load(object sender, EventArgs e)
         {
             // Load data into DataGridView when the form loads
-            LoadDataIntoDataGridView();
+            LoadMembersDataIntoDataGridView();
         }
 
 
-        private void LoadDataIntoDataGridView()
+        private void LoadMembersDataIntoDataGridView()
         {
             int i = 0;
             dgvMembers.Rows.Clear();
@@ -42,7 +42,7 @@ namespace EAC_STAFF_WELFARE_LMS
             txtSearchParam.Value = txtSearch.Text;
 
             // Define the SQL query with parameters
-            string query = "SELECT MemberPFNo, FirstName, MiddleName, LastName, JobTitle, ContractEndDate, ContractType, EmailAddress, PhoneNumber1, PhoneNumber2, PhysicalAddress " +
+            string query = "SELECT MemberPFNo, FirstName, MiddleName, LastName, JobTitle, ContractEndDate, ContractType, EmailAddress, PhoneNumber1, PhysicalAddress " +
                            "FROM Members " +
                            "WHERE MemberPFNo LIKE '%' + @txtSearch + '%' " +
                            "OR (FirstName + ' ' + ISNULL(MiddleName, '') + ' ' + LastName) LIKE '%' + @txtSearch + '%' " +
@@ -51,7 +51,6 @@ namespace EAC_STAFF_WELFARE_LMS
                            "OR ContractType LIKE '%' + @txtSearch + '%' " +
                            "OR EmailAddress LIKE '%' + @txtSearch + '%' " +
                            "OR PhoneNumber1 LIKE '%' + @txtSearch + '%' " +
-                           "OR PhoneNumber2 LIKE '%' + @txtSearch + '%' " +
                            "OR PhysicalAddress LIKE '%' + @txtSearch + '%';";
 
             // Define the SqlCommand with connection and query
@@ -67,17 +66,17 @@ namespace EAC_STAFF_WELFARE_LMS
                 {
                     i++;
                     // Add data to DataGridView
-                    dgvMembers.Rows.Add(i, dr["MemberPFNo"],
-                                          dr["FirstName"].ToString() + " " +
-                                          dr["MiddleName"].ToString() + " " +
-                                          dr["LastName"].ToString(),
-                                          dr["JobTitle"],
-                                          dr["ContractEndDate"],
-                                          dr["ContractType"],
-                                          dr["EmailAddress"],
-                                          dr["PhoneNumber1"],
-                                          dr["PhoneNumber2"],
-                                          dr["PhysicalAddress"]);
+                    dgvMembers.Rows.Add(i,
+                                         dr["MemberPFNo"],
+                                         dr["FirstName"].ToString() + " " +
+                                         dr["MiddleName"].ToString() + " " +
+                                         dr["LastName"].ToString(),
+                                         dr["JobTitle"],
+                                         ((DateTime)dr["ContractEndDate"]).ToString("dd-MMM-yyyy"), // Format the date here
+                                         dr["ContractType"],
+                                         dr["EmailAddress"],
+                                         dr["PhoneNumber1"],
+                                         dr["PhysicalAddress"]);
                 }
             }
             catch (Exception ex)
@@ -92,9 +91,10 @@ namespace EAC_STAFF_WELFARE_LMS
         }
 
 
+
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            LoadDataIntoDataGridView();
+            LoadMembersDataIntoDataGridView();
         }
 
         private void metroBtnNew_Click(object sender, EventArgs e)
@@ -154,5 +154,7 @@ namespace EAC_STAFF_WELFARE_LMS
                 fullProfileView.ShowDialog();
             }
         }
+
+       
     }
 }

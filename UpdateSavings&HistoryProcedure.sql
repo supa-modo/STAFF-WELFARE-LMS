@@ -28,7 +28,7 @@ BEGIN
 
     -- Insert records from the temporary table into SavingsHistory
     INSERT INTO SavingsHistory (PFNo, TransactionDate, Amount, BalanceAfterTransaction)
-    SELECT PFNo, TransactionDate, MonthlySavings, SavingsAccountBalance
+    SELECT MemberPFNo, TransactionDate, MonthlySavings, SavingsAccountBalance
     FROM #TempOutput;
 
     -- Drop the temporary table

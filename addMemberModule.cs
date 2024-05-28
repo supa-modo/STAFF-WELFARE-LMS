@@ -102,6 +102,7 @@ namespace EAC_STAFF_WELFARE_LMS
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("New member added successfully!");
                 this.Dispose();
+                /*LoadMembersDataIntoDataGridView();*/
             }
             catch (Exception ex)
             {

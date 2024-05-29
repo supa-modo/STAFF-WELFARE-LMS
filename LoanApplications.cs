@@ -19,21 +19,24 @@ namespace EAC_STAFF_WELFARE_LMS
         dbConnect dbConn = new dbConnect();
         SqlDataReader dr;
 
+        
+
         public LoanApplications()
         {
             InitializeComponent();
             cn = new SqlConnection(dbConn.myConnection());
+            
         }
 
         private void metroBtnNewLoan_Click(object sender, EventArgs e)
         {
-            NewLoan newLoan = new NewLoan();
+            NewLoan newLoan = new NewLoan(this);
             newLoan.ShowDialog();  
             
         }
 
 
-        private void LoadLoanApplicationsIntoDataGridView()
+        public void LoadLoanApplicationsIntoDataGridView()
         {
             int i = 0;
             dgvLoanApplications.Rows.Clear();
@@ -67,14 +70,17 @@ namespace EAC_STAFF_WELFARE_LMS
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
+                    
                     i++;
+                    string interestRate = dr["InterestRate"].ToString() + "%";
                     // Add data to DataGridView
                     dgvLoanApplications.Rows.Add(i, 
                         dr["LoanID"], 
                         dr["PFNo"],
                         dr["ApplicantName"],
                         dr["LoanAmount"], 
-                        dr["InterestRate"], 
+                        /*dr["InterestRate"],*/ 
+                        interestRate,
                         dr["DurationOfPayment"],
                         ((DateTime)dr["ApplicationDate"]).ToString("dd-MMM-yyyy"),
                         ((DateTime)dr["DueDate"]).ToString("dd-MMM-yyyy"),

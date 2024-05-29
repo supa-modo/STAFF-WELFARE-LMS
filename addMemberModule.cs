@@ -17,11 +17,14 @@ namespace EAC_STAFF_WELFARE_LMS
         SqlConnection cn = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         dbConnect dbConn = new dbConnect();
+        Members members;
 
-        public addMemberModule()
+        public addMemberModule(Members membrs)
         {
             InitializeComponent();
             cn = new SqlConnection(dbConn.myConnection());
+            members = membrs;
+
         }
 
 
@@ -102,7 +105,7 @@ namespace EAC_STAFF_WELFARE_LMS
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("New member added successfully!");
                 this.Dispose();
-                /*LoadMembersDataIntoDataGridView();*/
+                
             }
             catch (Exception ex)
             {
@@ -142,7 +145,8 @@ namespace EAC_STAFF_WELFARE_LMS
         private void btnSaveMember_Click(object sender, EventArgs e)
         {
             InsertNewMemberRecord();
-            
+            members.LoadMembersDataIntoDataGridView();
+
         }
     }
 }

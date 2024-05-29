@@ -17,12 +17,14 @@ namespace EAC_STAFF_WELFARE_LMS
         SqlConnection cn = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         dbConnect dbConn = new dbConnect();
+        LoanApplications loanApplications;
 
-        public NewLoan()
+        public NewLoan(LoanApplications loanAppls)
         {
             InitializeComponent();
             cn = new SqlConnection(dbConn.myConnection());
             getLoanID();
+            loanApplications = loanAppls;
 
             // Subscribe to the TextChanged event for txtLoanAmt and txtDuration
             txtLoanAmt.TextChanged += NewLoanTxtBoxes_TextChanged;
@@ -96,7 +98,11 @@ namespace EAC_STAFF_WELFARE_LMS
             // Confirm new loan addition
             string confirmationMessage = $"        Confirm New loan addition:\n \nApplicant Name - {applicantName}\nLoan amount - {loanAmount}\nDuration of Payment - {durationOfPayment} months\nMonthly Installments - {monthlyInstallments}";
             DialogResult result = MessageBox.Show(confirmationMessage, "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.No)
+            
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            } else if (result == DialogResult.No)
             {
                 return;
             }
@@ -138,6 +144,7 @@ namespace EAC_STAFF_WELFARE_LMS
             {
                 // Close the SqlConnection
                 cn.Close();
+                
             }
         }
 
@@ -192,6 +199,7 @@ namespace EAC_STAFF_WELFARE_LMS
         private void metroBtnSave_Click(object sender, EventArgs e)
         {
             InsertNewLoanRecord();
+            loanApplications.LoadLoanApplicationsIntoDataGridView();
         }
 
 

@@ -33,6 +33,7 @@
             this.btnAllMembersReport = new System.Windows.Forms.Button();
             this.panelReportViewer = new System.Windows.Forms.Panel();
             this.reportViewer = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.btnSavingsReport = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelReportViewer.SuspendLayout();
             this.SuspendLayout();
@@ -51,6 +52,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel1.Controls.Add(this.btnSavingsReport);
             this.panel1.Controls.Add(this.btnAllMembersReport);
             this.panel1.Controls.Add(this.btnLoanReport);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -92,6 +94,17 @@
             this.reportViewer.Size = new System.Drawing.Size(1111, 618);
             this.reportViewer.TabIndex = 2;
             // 
+            // btnSavingsReport
+            // 
+            this.btnSavingsReport.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSavingsReport.Location = new System.Drawing.Point(3, 165);
+            this.btnSavingsReport.Name = "btnSavingsReport";
+            this.btnSavingsReport.Size = new System.Drawing.Size(215, 44);
+            this.btnSavingsReport.TabIndex = 2;
+            this.btnSavingsReport.Text = "Sample Savings Report";
+            this.btnSavingsReport.UseVisualStyleBackColor = true;
+            this.btnSavingsReport.Click += new System.EventHandler(this.btnSavingsReport_Click);
+            // 
             // Reports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -118,5 +131,6 @@
         private System.Windows.Forms.Panel panelReportViewer;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer;
         private System.Windows.Forms.Button btnAllMembersReport;
+        private System.Windows.Forms.Button btnSavingsReport;
     }
 }

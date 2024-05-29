@@ -1,4 +1,5 @@
-﻿using Microsoft.Reporting.WinForms;
+﻿using Microsoft.Reporting.WebForms;
+using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ReportDataSource = Microsoft.Reporting.WinForms.ReportDataSource;
 
 namespace EAC_STAFF_WELFARE_LMS
 {
@@ -69,5 +71,39 @@ namespace EAC_STAFF_WELFARE_LMS
             reportViewer.SetDisplayMode(DisplayMode.PrintLayout);
             reportViewer.RefreshReport();
         }
+
+        private void btnSavingsReport_Click(object sender, EventArgs e)
+        {
+            string query = @"
+        SELECT s.SavingsId, 
+               s.PFNo, 
+               m.FirstName, 
+               m.MiddleName, 
+               m.LastName, 
+               s.MonthlySavings, 
+               s.SavingsAccountBalance, 
+               s.LastUpdated
+        FROM Savings s
+        INNER JOIN Members m ON s.PFNo = m.MemberPFNo";
+
+            // Create the SqlCommand and SqlDataAdapter
+            SqlCommand cmd = new SqlCommand(query, cn);
+            SqlDataAdapter d3 = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            d3.Fill(dt);
+
+            // Clear any existing data sources from the ReportViewer
+            reportViewer.LocalReport.DataSources.Clear();
+
+            // Create a new ReportDataSource with the fetched data
+            ReportDataSource sourceSavings = new ReportDataSource("DataSetSavings", dt);
+            reportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/SavingsDetailsReport.rdlc";
+            reportViewer.LocalReport.DataSources.Add(sourceSavings);
+
+            // Set display mode and refresh the report
+            reportViewer.SetDisplayMode(DisplayMode.PrintLayout);
+            reportViewer.RefreshReport();
+        }
+
     }
 }

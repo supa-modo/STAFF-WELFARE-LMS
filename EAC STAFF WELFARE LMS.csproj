@@ -177,6 +177,11 @@
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="TotalSavingsDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TotalSavingsDataset.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="addMemberModule.resx">
       <DependentUpon>addMemberModule.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +223,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SavingsDetailsReport.rdlc" />
     <EmbeddedResource Include="Reports.resx">
       <DependentUpon>Reports.cs</DependentUpon>
     </EmbeddedResource>
@@ -259,6 +265,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TotalSavingsDataset.xsc">
+      <DependentUpon>TotalSavingsDataset.xsd</DependentUpon>
+    </None>
+    <None Include="TotalSavingsDataset.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TotalSavingsDataset.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TotalSavingsDataset.xss">
+      <DependentUpon>TotalSavingsDataset.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

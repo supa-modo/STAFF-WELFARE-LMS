@@ -656,6 +656,7 @@
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
+              <Color>White</Color>
               <Style>None</Style>
             </Border>
           </Style>

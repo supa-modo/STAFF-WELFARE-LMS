@@ -649,17 +649,17 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>2.12354cm</Height>
+    <Height>3.26125cm</Height>
     <Style>
       <Border>
         <Style>None</Style>
       </Border>
     </Style>
   </Body>
-  <Width>28cm</Width>
+  <Width>27.52375cm</Width>
   <Page>
     <PageHeader>
-      <Height>4.24214cm</Height>
+      <Height>4.20687cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -683,7 +683,7 @@
               </Style>
             </Paragraph>
           </Paragraphs>
-          <Top>1.15738in</Top>
+          <Top>1.10183in</Top>
           <Left>2.35875in</Left>
           <Height>0.20485in</Height>
           <Width>5.61458in</Width>
@@ -701,9 +701,9 @@
           <Source>Embedded</Source>
           <Value>Emblem_of_East_African_Community21</Value>
           <Sizing>Fit</Sizing>
-          <Top>0.14861in</Top>
+          <Top>0.07223in</Top>
           <Left>4.51201in</Left>
-          <Height>1.02266in</Height>
+          <Height>1.04349in</Height>
           <Width>1.3125in</Width>
           <ZIndex>1</ZIndex>
           <Style>
@@ -731,7 +731,7 @@
               </Style>
             </Paragraph>
           </Paragraphs>
-          <Top>1.36223in</Top>
+          <Top>1.30668in</Top>
           <Left>2.35875in</Left>
           <Height>0.18749in</Height>
           <Width>5.61458in</Width>
@@ -747,8 +747,8 @@
           </Style>
         </Textbox>
         <Line Name="Line1">
-          <Top>1.67013in</Top>
-          <Left>0.28206in</Left>
+          <Top>1.56361in</Top>
+          <Left>0.16748in</Left>
           <Height>0in</Height>
           <Width>10.61916in</Width>
           <ZIndex>3</ZIndex>
@@ -759,8 +759,8 @@
           </Style>
         </Line>
         <Line Name="Line2">
-          <Top>1.64235in</Top>
-          <Left>0.28206in</Left>
+          <Top>1.53583in</Top>
+          <Left>0.16748in</Left>
           <Height>0in</Height>
           <Width>10.61916in</Width>
           <ZIndex>4</ZIndex>

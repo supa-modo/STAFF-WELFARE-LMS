@@ -47,7 +47,7 @@ namespace EAC_STAFF_WELFARE_LMS
 
             // Define the SQL query with parameters
             string query = "SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstallments, " +
-                           "ApplicantName, ApplicationDate, DueDate, 'ACTIVE' AS Status " +
+                           "ApplicantName, ApplicationDate, DueDate, Pending Balance, LoanStatus " +
                            "FROM Loans " +
                            "WHERE LoanID LIKE '%' + @txtSearch + '%' " +
                            "OR PFNo LIKE '%' + @txtSearch + '%' " +
@@ -57,6 +57,7 @@ namespace EAC_STAFF_WELFARE_LMS
                            "OR MonthlyInstallments LIKE '%' + @txtSearch + '%' " +
                            "OR ApplicantName LIKE '%' + @txtSearch + '%' " +
                            "OR ApplicationDate LIKE '%' + @txtSearch + '%' " +
+                           "OR LoanStatus LIKE '%' + @txtSearch + '%' " +
                            "OR DueDate LIKE '%' + @txtSearch + '%';";
 
             // Define the SqlCommand with connection and query
@@ -85,7 +86,9 @@ namespace EAC_STAFF_WELFARE_LMS
                         ((DateTime)dr["ApplicationDate"]).ToString("dd-MMM-yyyy"),
                         ((DateTime)dr["DueDate"]).ToString("dd-MMM-yyyy"),
                         dr["MonthlyInstallments"],
-                        "ACTIVE");
+                        dr["PendingBalance"],
+                        dr["LoanStatus"]
+                        );
                 }
             }
             catch (Exception ex)

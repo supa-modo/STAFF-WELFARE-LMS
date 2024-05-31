@@ -29,37 +29,38 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoanApplications));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.labelTotalLoans = new System.Windows.Forms.Label();
+            this.labelLoansTotal = new System.Windows.Forms.Label();
             this.metroBtnNewLoan = new MetroFramework.Controls.MetroButton();
             this.txtSearch = new MetroFramework.Controls.MetroTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvLoanApplications = new System.Windows.Forms.DataGridView();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.labelTotalLoans = new System.Windows.Forms.Label();
-            this.labelLoansTotal = new System.Windows.Forms.Label();
+            this.LoanID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PFNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ApplicantName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LoanAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Interest = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Duration = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateApplied = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MonthlyInstallments = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PendingBalance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LoanStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLoanApplications)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLoanApplications)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -73,6 +74,42 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1350, 40);
             this.panel1.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.labelTotalLoans);
+            this.panel2.Controls.Add(this.labelLoansTotal);
+            this.panel2.Location = new System.Drawing.Point(291, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(505, 40);
+            this.panel2.TabIndex = 9;
+            // 
+            // labelTotalLoans
+            // 
+            this.labelTotalLoans.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelTotalLoans.BackColor = System.Drawing.SystemColors.Control;
+            this.labelTotalLoans.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.labelTotalLoans.ForeColor = System.Drawing.Color.Salmon;
+            this.labelTotalLoans.Location = new System.Drawing.Point(251, 3);
+            this.labelTotalLoans.Name = "labelTotalLoans";
+            this.labelTotalLoans.Size = new System.Drawing.Size(165, 33);
+            this.labelTotalLoans.TabIndex = 1;
+            this.labelTotalLoans.Text = "12345678";
+            this.labelTotalLoans.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelLoansTotal
+            // 
+            this.labelLoansTotal.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.labelLoansTotal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLoansTotal.ForeColor = System.Drawing.Color.SeaGreen;
+            this.labelLoansTotal.Location = new System.Drawing.Point(67, 3);
+            this.labelLoansTotal.Name = "labelLoansTotal";
+            this.labelLoansTotal.Size = new System.Drawing.Size(178, 33);
+            this.labelLoansTotal.TabIndex = 0;
+            this.labelLoansTotal.Text = "Active Loans Balance:";
+            this.labelLoansTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // metroBtnNewLoan
             // 
@@ -148,28 +185,29 @@
             this.dgvLoanApplications.AllowUserToResizeRows = false;
             this.dgvLoanApplications.BackgroundColor = System.Drawing.Color.White;
             this.dgvLoanApplications.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.ScrollBar;
-            dataGridViewCellStyle37.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle37.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLoanApplications.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLoanApplications.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvLoanApplications.ColumnHeadersHeight = 30;
             this.dgvLoanApplications.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvLoanApplications.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column6,
-            this.Column8,
-            this.Column9,
-            this.Column1,
-            this.Column2,
-            this.Column4,
-            this.Column3,
-            this.Column10,
-            this.Column5,
-            this.Column11,
-            this.Column7});
+            this.LoanID,
+            this.PFNo,
+            this.ApplicantName,
+            this.LoanAmount,
+            this.Interest,
+            this.Duration,
+            this.DateApplied,
+            this.DueDate,
+            this.MonthlyInstallments,
+            this.PendingBalance,
+            this.LoanStatus});
             this.dgvLoanApplications.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvLoanApplications.EnableHeadersVisualStyles = false;
             this.dgvLoanApplications.Location = new System.Drawing.Point(0, 40);
@@ -189,139 +227,111 @@
             this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Column6.Width = 50;
             // 
-            // Column8
+            // LoanID
             // 
-            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle38;
-            this.Column8.HeaderText = "Loan ID";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Width = 83;
+            this.LoanID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.LoanID.DefaultCellStyle = dataGridViewCellStyle2;
+            this.LoanID.HeaderText = "Loan ID";
+            this.LoanID.Name = "LoanID";
+            this.LoanID.ReadOnly = true;
+            this.LoanID.Width = 83;
             // 
-            // Column9
+            // PFNo
             // 
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column9.DefaultCellStyle = dataGridViewCellStyle39;
-            this.Column9.HeaderText = "PF NO.";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            this.Column9.Width = 130;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.PFNo.DefaultCellStyle = dataGridViewCellStyle3;
+            this.PFNo.HeaderText = "PF NO.";
+            this.PFNo.Name = "PFNo";
+            this.PFNo.ReadOnly = true;
+            this.PFNo.Width = 130;
             // 
-            // Column1
+            // ApplicantName
             // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle40;
-            this.Column1.HeaderText = "Applicant Name";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ApplicantName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.ApplicantName.DefaultCellStyle = dataGridViewCellStyle4;
+            this.ApplicantName.HeaderText = "Applicant Name";
+            this.ApplicantName.Name = "ApplicantName";
+            this.ApplicantName.ReadOnly = true;
+            this.ApplicantName.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // Column2
+            // LoanAmount
             // 
-            dataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle41.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle41;
-            this.Column2.HeaderText = "Loan Amount";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 130;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoanAmount.DefaultCellStyle = dataGridViewCellStyle5;
+            this.LoanAmount.HeaderText = "Loan Amount";
+            this.LoanAmount.Name = "LoanAmount";
+            this.LoanAmount.ReadOnly = true;
+            this.LoanAmount.Width = 130;
             // 
-            // Column4
+            // Interest
             // 
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle42;
-            this.Column4.HeaderText = "Interest";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 80;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Interest.DefaultCellStyle = dataGridViewCellStyle6;
+            this.Interest.HeaderText = "Interest";
+            this.Interest.Name = "Interest";
+            this.Interest.ReadOnly = true;
+            this.Interest.Width = 80;
             // 
-            // Column3
+            // Duration
             // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle43.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle43;
-            this.Column3.HeaderText = "Duration";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 90;
+            this.Duration.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Duration.DefaultCellStyle = dataGridViewCellStyle7;
+            this.Duration.HeaderText = "Duration";
+            this.Duration.Name = "Duration";
+            this.Duration.ReadOnly = true;
+            this.Duration.Width = 90;
             // 
-            // Column10
+            // DateApplied
             // 
-            this.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column10.HeaderText = "Date Applied";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            this.Column10.Width = 121;
+            this.DateApplied.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.DateApplied.HeaderText = "Date Applied";
+            this.DateApplied.Name = "DateApplied";
+            this.DateApplied.ReadOnly = true;
+            this.DateApplied.Width = 121;
             // 
-            // Column5
+            // DueDate
             // 
-            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle44;
-            this.Column5.HeaderText = "Due Date";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 95;
+            this.DueDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DueDate.DefaultCellStyle = dataGridViewCellStyle8;
+            this.DueDate.HeaderText = "Due Date";
+            this.DueDate.Name = "DueDate";
+            this.DueDate.ReadOnly = true;
+            this.DueDate.Width = 95;
             // 
-            // Column11
+            // MonthlyInstallments
             // 
-            this.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column11.HeaderText = "Monthly Installments";
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
-            this.Column11.Width = 169;
+            this.MonthlyInstallments.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.MonthlyInstallments.HeaderText = "Monthly Installments";
+            this.MonthlyInstallments.Name = "MonthlyInstallments";
+            this.MonthlyInstallments.ReadOnly = true;
+            this.MonthlyInstallments.Width = 169;
             // 
-            // Column7
+            // PendingBalance
             // 
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle45;
-            this.Column7.HeaderText = "Status";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Width = 130;
+            this.PendingBalance.HeaderText = "Pending Balance";
+            this.PendingBalance.Name = "PendingBalance";
+            this.PendingBalance.ReadOnly = true;
+            this.PendingBalance.Width = 130;
             // 
-            // panel2
+            // LoanStatus
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.labelTotalLoans);
-            this.panel2.Controls.Add(this.labelLoansTotal);
-            this.panel2.Location = new System.Drawing.Point(291, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(505, 40);
-            this.panel2.TabIndex = 9;
-            // 
-            // labelTotalLoans
-            // 
-            this.labelTotalLoans.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelTotalLoans.BackColor = System.Drawing.SystemColors.Control;
-            this.labelTotalLoans.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.labelTotalLoans.ForeColor = System.Drawing.Color.Salmon;
-            this.labelTotalLoans.Location = new System.Drawing.Point(251, 3);
-            this.labelTotalLoans.Name = "labelTotalLoans";
-            this.labelTotalLoans.Size = new System.Drawing.Size(165, 33);
-            this.labelTotalLoans.TabIndex = 1;
-            this.labelTotalLoans.Text = "12345678";
-            this.labelTotalLoans.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelLoansTotal
-            // 
-            this.labelLoansTotal.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.labelLoansTotal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLoansTotal.ForeColor = System.Drawing.Color.SeaGreen;
-            this.labelLoansTotal.Location = new System.Drawing.Point(67, 3);
-            this.labelLoansTotal.Name = "labelLoansTotal";
-            this.labelLoansTotal.Size = new System.Drawing.Size(178, 33);
-            this.labelLoansTotal.TabIndex = 0;
-            this.labelLoansTotal.Text = "Active Loans Balance:";
-            this.labelLoansTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LoanStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.LoanStatus.DefaultCellStyle = dataGridViewCellStyle9;
+            this.LoanStatus.HeaderText = "Loan Status";
+            this.LoanStatus.Name = "LoanStatus";
+            this.LoanStatus.ReadOnly = true;
+            this.LoanStatus.Width = 108;
             // 
             // LoanApplications
             // 
@@ -338,8 +348,8 @@
             this.Text = "LoanApplications";
             this.Load += new System.EventHandler(this.LoanApplications_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLoanApplications)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLoanApplications)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -351,19 +361,20 @@
         private System.Windows.Forms.DataGridView dgvLoanApplications;
         private MetroFramework.Controls.MetroTextBox txtSearch;
         private MetroFramework.Controls.MetroButton metroBtnNewLoan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label labelTotalLoans;
         private System.Windows.Forms.Label labelLoansTotal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LoanID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PFNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ApplicantName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LoanAmount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Interest;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Duration;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DateApplied;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DueDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MonthlyInstallments;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PendingBalance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LoanStatus;
     }
 }

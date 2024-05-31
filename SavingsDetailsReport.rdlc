@@ -15,10 +15,10 @@
               <Width>0.81695in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.56993in</Width>
+              <Width>2.44493in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.98512in</Width>
+              <Width>1.23512in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.76637in</Width>
@@ -186,7 +186,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Monthly Savings</Value>
+                              <Value> Monthly Savings (USD)</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>9pt</FontSize>
@@ -223,7 +223,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Savings Account Balance</Value>
+                              <Value>Savings Account Balance (USD)</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>9pt</FontSize>
@@ -479,6 +479,7 @@
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
+                                <Format>0.00;(0.00)</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -563,10 +564,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSetSavings</DataSetName>
-        <Top>0.33333in</Top>
-        <Left>0.78536in</Left>
+        <Top>0.36111in</Top>
+        <Left>0.66036in</Left>
         <Height>0.5in</Height>
-        <Width>9.36903in</Width>
+        <Width>9.49403in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -633,7 +634,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(Fields!SavingsAccountBalance.Value)</Value>
+                              <Value>="$" &amp; Format(Sum(Fields!SavingsAccountBalance.Value), "N2")</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontWeight>ExtraBold</FontWeight>
@@ -732,7 +733,7 @@
               </Style>
             </Paragraph>
           </Paragraphs>
-          <Top>1.12265in</Top>
+          <Top>1.10877in</Top>
           <Left>2.60827in</Left>
           <Height>0.20485in</Height>
           <Width>5.61458in</Width>
@@ -750,7 +751,7 @@
           <Source>Embedded</Source>
           <Value>Emblem_of_East_African_Community21</Value>
           <Sizing>Fit</Sizing>
-          <Top>0.05097in</Top>
+          <Top>0.0232in</Top>
           <Left>4.76153in</Left>
           <Height>1.03001in</Height>
           <Width>1.3125in</Width>
@@ -780,7 +781,7 @@
               </Style>
             </Paragraph>
           </Paragraphs>
-          <Top>1.3275in</Top>
+          <Top>1.31362in</Top>
           <Left>2.60827in</Left>
           <Height>0.18749in</Height>
           <Width>5.61458in</Width>
@@ -797,9 +798,9 @@
         </Textbox>
         <Line Name="Line1">
           <Top>1.55666in</Top>
-          <Left>0.78536in</Left>
+          <Left>0.66036in</Left>
           <Height>0in</Height>
-          <Width>9.36903in</Width>
+          <Width>9.49403in</Width>
           <ZIndex>3</ZIndex>
           <Style>
             <Border>
@@ -809,9 +810,9 @@
         </Line>
         <Line Name="Line2">
           <Top>1.58444in</Top>
-          <Left>0.78536in</Left>
+          <Left>0.66036in</Left>
           <Height>0in</Height>
-          <Width>9.36903in</Width>
+          <Width>9.49403in</Width>
           <ZIndex>4</ZIndex>
           <Style>
             <Border>

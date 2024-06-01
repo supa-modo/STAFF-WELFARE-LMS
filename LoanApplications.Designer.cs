@@ -38,11 +38,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelTotalLoans = new System.Windows.Forms.Label();
             this.labelLoansTotal = new System.Windows.Forms.Label();
-            this.metroBtnNewLoan = new MetroFramework.Controls.MetroButton();
             this.txtSearch = new MetroFramework.Controls.MetroTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvLoanApplications = new System.Windows.Forms.DataGridView();
@@ -58,15 +60,18 @@
             this.MonthlyInstallments = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PendingBalance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LoanStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.metroBtnNewLoan = new MetroFramework.Controls.MetroButton();
+            this.metroBtnRunLoansDeduction = new MetroFramework.Controls.MetroButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoanApplications)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.metroBtnNewLoan);
             this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -81,7 +86,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.labelTotalLoans);
             this.panel2.Controls.Add(this.labelLoansTotal);
-            this.panel2.Location = new System.Drawing.Point(291, 0);
+            this.panel2.Location = new System.Drawing.Point(433, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(505, 40);
             this.panel2.TabIndex = 9;
@@ -110,25 +115,6 @@
             this.labelLoansTotal.TabIndex = 0;
             this.labelLoansTotal.Text = "Active Loans Balance:";
             this.labelLoansTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // metroBtnNewLoan
-            // 
-            this.metroBtnNewLoan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroBtnNewLoan.BackColor = System.Drawing.Color.SeaGreen;
-            this.metroBtnNewLoan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.metroBtnNewLoan.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroBtnNewLoan.ForeColor = System.Drawing.Color.White;
-            this.metroBtnNewLoan.Location = new System.Drawing.Point(802, 4);
-            this.metroBtnNewLoan.Name = "metroBtnNewLoan";
-            this.metroBtnNewLoan.Size = new System.Drawing.Size(193, 33);
-            this.metroBtnNewLoan.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroBtnNewLoan.TabIndex = 6;
-            this.metroBtnNewLoan.Text = "Add New Loan";
-            this.metroBtnNewLoan.UseCustomBackColor = true;
-            this.metroBtnNewLoan.UseCustomForeColor = true;
-            this.metroBtnNewLoan.UseSelectable = true;
-            this.metroBtnNewLoan.UseStyleColors = true;
-            this.metroBtnNewLoan.Click += new System.EventHandler(this.metroBtnNewLoan_Click);
             // 
             // txtSearch
             // 
@@ -183,6 +169,9 @@
             // 
             this.dgvLoanApplications.AllowUserToDeleteRows = false;
             this.dgvLoanApplications.AllowUserToResizeRows = false;
+            this.dgvLoanApplications.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvLoanApplications.BackgroundColor = System.Drawing.Color.White;
             this.dgvLoanApplications.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -208,14 +197,13 @@
             this.MonthlyInstallments,
             this.PendingBalance,
             this.LoanStatus});
-            this.dgvLoanApplications.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvLoanApplications.EnableHeadersVisualStyles = false;
-            this.dgvLoanApplications.Location = new System.Drawing.Point(0, 40);
+            this.dgvLoanApplications.Location = new System.Drawing.Point(0, 86);
             this.dgvLoanApplications.Name = "dgvLoanApplications";
             this.dgvLoanApplications.ReadOnly = true;
             this.dgvLoanApplications.RowHeadersVisible = false;
             this.dgvLoanApplications.RowTemplate.Height = 30;
-            this.dgvLoanApplications.Size = new System.Drawing.Size(1350, 590);
+            this.dgvLoanApplications.Size = new System.Drawing.Size(1350, 546);
             this.dgvLoanApplications.TabIndex = 3;
             this.dgvLoanApplications.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLoanApplications_CellClick);
             // 
@@ -245,7 +233,7 @@
             this.PFNo.HeaderText = "PF NO.";
             this.PFNo.Name = "PFNo";
             this.PFNo.ReadOnly = true;
-            this.PFNo.Width = 130;
+            this.PFNo.Width = 90;
             // 
             // ApplicantName
             // 
@@ -259,13 +247,14 @@
             // 
             // LoanAmount
             // 
+            this.LoanAmount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoanAmount.DefaultCellStyle = dataGridViewCellStyle5;
             this.LoanAmount.HeaderText = "Loan Amount";
             this.LoanAmount.Name = "LoanAmount";
             this.LoanAmount.ReadOnly = true;
-            this.LoanAmount.Width = 130;
+            this.LoanAmount.Width = 121;
             // 
             // Interest
             // 
@@ -280,7 +269,7 @@
             // Duration
             // 
             this.Duration.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Duration.DefaultCellStyle = dataGridViewCellStyle7;
             this.Duration.HeaderText = "Duration";
@@ -290,26 +279,28 @@
             // 
             // DateApplied
             // 
-            this.DateApplied.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.DateApplied.DefaultCellStyle = dataGridViewCellStyle8;
             this.DateApplied.HeaderText = "Date Applied";
             this.DateApplied.Name = "DateApplied";
             this.DateApplied.ReadOnly = true;
-            this.DateApplied.Width = 121;
+            this.DateApplied.Width = 120;
             // 
             // DueDate
             // 
-            this.DueDate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DueDate.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DueDate.DefaultCellStyle = dataGridViewCellStyle9;
             this.DueDate.HeaderText = "Due Date";
             this.DueDate.Name = "DueDate";
             this.DueDate.ReadOnly = true;
-            this.DueDate.Width = 95;
+            this.DueDate.Width = 120;
             // 
             // MonthlyInstallments
             // 
             this.MonthlyInstallments.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.MonthlyInstallments.DefaultCellStyle = dataGridViewCellStyle10;
             this.MonthlyInstallments.HeaderText = "Monthly Installments";
             this.MonthlyInstallments.Name = "MonthlyInstallments";
             this.MonthlyInstallments.ReadOnly = true;
@@ -317,6 +308,9 @@
             // 
             // PendingBalance
             // 
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PendingBalance.DefaultCellStyle = dataGridViewCellStyle11;
             this.PendingBalance.HeaderText = "Pending Balance";
             this.PendingBalance.Name = "PendingBalance";
             this.PendingBalance.ReadOnly = true;
@@ -325,13 +319,61 @@
             // LoanStatus
             // 
             this.LoanStatus.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.LoanStatus.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.LoanStatus.DefaultCellStyle = dataGridViewCellStyle12;
             this.LoanStatus.HeaderText = "Loan Status";
             this.LoanStatus.Name = "LoanStatus";
             this.LoanStatus.ReadOnly = true;
             this.LoanStatus.Width = 108;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.metroBtnNewLoan);
+            this.panel3.Controls.Add(this.metroBtnRunLoansDeduction);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 40);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1350, 40);
+            this.panel3.TabIndex = 4;
+            // 
+            // metroBtnNewLoan
+            // 
+            this.metroBtnNewLoan.BackColor = System.Drawing.Color.SeaGreen;
+            this.metroBtnNewLoan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.metroBtnNewLoan.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroBtnNewLoan.ForeColor = System.Drawing.Color.White;
+            this.metroBtnNewLoan.Location = new System.Drawing.Point(17, 3);
+            this.metroBtnNewLoan.Name = "metroBtnNewLoan";
+            this.metroBtnNewLoan.Size = new System.Drawing.Size(240, 33);
+            this.metroBtnNewLoan.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroBtnNewLoan.TabIndex = 10;
+            this.metroBtnNewLoan.Text = "Add New Loan";
+            this.metroBtnNewLoan.UseCustomBackColor = true;
+            this.metroBtnNewLoan.UseCustomForeColor = true;
+            this.metroBtnNewLoan.UseSelectable = true;
+            this.metroBtnNewLoan.UseStyleColors = true;
+            this.metroBtnNewLoan.Click += new System.EventHandler(this.metroBtnNewLoan_Click_1);
+            // 
+            // metroBtnRunLoansDeduction
+            // 
+            this.metroBtnRunLoansDeduction.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroBtnRunLoansDeduction.BackColor = System.Drawing.Color.SeaGreen;
+            this.metroBtnRunLoansDeduction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.metroBtnRunLoansDeduction.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroBtnRunLoansDeduction.ForeColor = System.Drawing.Color.White;
+            this.metroBtnRunLoansDeduction.Location = new System.Drawing.Point(504, 3);
+            this.metroBtnRunLoansDeduction.Name = "metroBtnRunLoansDeduction";
+            this.metroBtnRunLoansDeduction.Size = new System.Drawing.Size(342, 35);
+            this.metroBtnRunLoansDeduction.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroBtnRunLoansDeduction.TabIndex = 9;
+            this.metroBtnRunLoansDeduction.Text = "Run Monthly Loan Deductions";
+            this.metroBtnRunLoansDeduction.UseCustomBackColor = true;
+            this.metroBtnRunLoansDeduction.UseCustomForeColor = true;
+            this.metroBtnRunLoansDeduction.UseSelectable = true;
+            this.metroBtnRunLoansDeduction.UseStyleColors = true;
+            this.metroBtnRunLoansDeduction.Click += new System.EventHandler(this.metroBtnRunLoansDeduction_Click);
             // 
             // LoanApplications
             // 
@@ -339,6 +381,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 630);
             this.ControlBox = false;
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.dgvLoanApplications);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -350,6 +393,7 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoanApplications)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -360,10 +404,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvLoanApplications;
         private MetroFramework.Controls.MetroTextBox txtSearch;
-        private MetroFramework.Controls.MetroButton metroBtnNewLoan;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label labelTotalLoans;
         private System.Windows.Forms.Label labelLoansTotal;
+        private System.Windows.Forms.Panel panel3;
+        private MetroFramework.Controls.MetroButton metroBtnRunLoansDeduction;
+        private MetroFramework.Controls.MetroButton metroBtnNewLoan;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn LoanID;
         private System.Windows.Forms.DataGridViewTextBoxColumn PFNo;

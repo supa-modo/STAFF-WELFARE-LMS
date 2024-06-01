@@ -28,13 +28,6 @@ namespace EAC_STAFF_WELFARE_LMS
             
         }
 
-        private void metroBtnNewLoan_Click(object sender, EventArgs e)
-        {
-            NewLoan newLoan = new NewLoan(this);
-            newLoan.ShowDialog();  
-            
-        }
-
 
         public void LoadLoanApplicationsIntoDataGridView()
         {
@@ -47,7 +40,7 @@ namespace EAC_STAFF_WELFARE_LMS
 
             // Define the SQL query with parameters
             string query = "SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstallments, " +
-                           "ApplicantName, ApplicationDate, DueDate, Pending Balance, LoanStatus " +
+                           "ApplicantName, ApplicationDate, DueDate, PendingBalance, LoanStatus " +
                            "FROM Loans " +
                            "WHERE LoanID LIKE '%' + @txtSearch + '%' " +
                            "OR PFNo LIKE '%' + @txtSearch + '%' " +
@@ -146,6 +139,49 @@ namespace EAC_STAFF_WELFARE_LMS
             }
         }
 
-        
+        //Monthly deductions method
+        private void RunMonthlyDeductions()
+        {
+            try
+            {
+                cn.Open();
+                string query = @"
+            UPDATE Loans 
+            SET PendingBalance = PendingBalance - MonthlyInstallments
+            WHERE LoanStatus = 'Active' AND PendingBalance >= MonthlyInstallments;
+
+            INSERT INTO LoanPayments (LoanID, PaymentDate, AmountPaid, PendingBalance)
+            SELECT LoanID, GETDATE(), MonthlyInstallments, PendingBalance - MonthlyInstallments
+            FROM Loans
+            WHERE LoanStatus = 'Active' AND PendingBalance >= MonthlyInstallments;
+        ";
+
+                SqlCommand cmd = new SqlCommand(query, cn);
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Monthly deductions have been successfully processed.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+
+        private void metroBtnNewLoan_Click_1(object sender, EventArgs e)
+        {
+            NewLoan newLoan = new NewLoan(this);
+            newLoan.ShowDialog();
+        }
+
+        private void metroBtnRunLoansDeduction_Click(object sender, EventArgs e)
+        {
+            RunMonthlyDeductions();
+            LoadLoanApplicationsIntoDataGridView();
+        }
     }
 }

@@ -121,6 +121,12 @@
     <Compile Include="LoanApplications.Designer.cs">
       <DependentUpon>LoanApplications.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoanPaymentHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoanPaymentHistory.Designer.cs">
+      <DependentUpon>LoanPaymentHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoansDataset.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -198,6 +204,9 @@
       <DependentUpon>LoanApplications.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllMembersReport.rdlc" />
+    <EmbeddedResource Include="LoanPaymentHistory.resx">
+      <DependentUpon>LoanPaymentHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoansReport.rdlc" />
     <EmbeddedResource Include="LoansReport.resx">
       <DependentUpon>LoansReport.cs</DependentUpon>

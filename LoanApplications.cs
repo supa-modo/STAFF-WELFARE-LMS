@@ -25,6 +25,7 @@ namespace EAC_STAFF_WELFARE_LMS
         {
             InitializeComponent();
             cn = new SqlConnection(dbConn.myConnection());
+            CalculateAndDisplayTotalActiveLoans();
             
         }
 
@@ -98,6 +99,7 @@ namespace EAC_STAFF_WELFARE_LMS
         private void LoanApplications_Load(object sender, EventArgs e)
         {
             LoadLoanApplicationsIntoDataGridView();
+            CalculateAndDisplayTotalActiveLoans();
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
@@ -109,33 +111,64 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private int lastClickedRowIndex = -1;
 
+
         private void dgvLoanApplications_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Check if the clicked cell is not the header cell and the row index is valid
             if (e.RowIndex >= 0 && e.RowIndex < dgvLoanApplications.Rows.Count && e.ColumnIndex >= 0)
             {
-                // Get the clicked row
                 DataGridViewRow clickedRow = dgvLoanApplications.Rows[e.RowIndex];
 
-                // Toggle background color of the clicked row
                 if (e.RowIndex == lastClickedRowIndex)
                 {
-                    // If the same row is clicked again, revert back to default color
                     clickedRow.DefaultCellStyle.BackColor = Color.White;
-                    lastClickedRowIndex = -1; // Reset last clicked row index
+                    lastClickedRowIndex = -1;
                 }
                 else
                 {
-                    // Reset the background color of the last clicked row, if any
                     if (lastClickedRowIndex != -1)
                     {
                         dgvLoanApplications.Rows[lastClickedRowIndex].DefaultCellStyle.BackColor = Color.White;
                     }
 
-                    // Highlight the clicked row by changing its background color
-                    clickedRow.DefaultCellStyle.BackColor = Color.Khaki; 
-                    lastClickedRowIndex = e.RowIndex; // Store the index of the last clicked row
+                    clickedRow.DefaultCellStyle.BackColor = Color.Khaki;
+                    lastClickedRowIndex = e.RowIndex;
                 }
+            }
+        }
+
+
+        public void CalculateAndDisplayTotalActiveLoans()
+        {
+            // Define the SQL query to calculate the total savings
+            string query = "SELECT SUM(PendingBalance) AS TotalActiveLoans FROM Loans";
+            SqlCommand cmd = new SqlCommand(query, cn);
+
+            try
+            {
+                cn.Open();
+                // Execute the query and get the result
+                object result = cmd.ExecuteScalar();
+
+                // Check if the result is not null
+                if (result != DBNull.Value)
+                {
+                    // Convert the result to decimal and display it in the label
+                    decimal totalActiveLoans = Convert.ToDecimal(result);
+                    labelTotalLoans.Text = totalActiveLoans.ToString("C"); // Currency format
+                }
+                else
+                {
+                    // If no savings found, display 0 in the label
+                    labelTotalLoans.Text = "0";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                cn.Close();
             }
         }
 
@@ -182,6 +215,19 @@ namespace EAC_STAFF_WELFARE_LMS
         {
             RunMonthlyDeductions();
             LoadLoanApplicationsIntoDataGridView();
+            CalculateAndDisplayTotalActiveLoans();
+        }
+
+        private void dgvLoanApplications_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.RowIndex < dgvLoanApplications.Rows.Count && e.ColumnIndex >= 0)
+            {
+                DataGridViewRow clickedRow = dgvLoanApplications.Rows[e.RowIndex];
+                string loanId = clickedRow.Cells["LoanID"].Value.ToString();
+                LoanPaymentHistory loanPaymentHistoryForm = new LoanPaymentHistory(loanId);
+                loanPaymentHistoryForm.ShowDialog();
+            }
+               
         }
     }
 }

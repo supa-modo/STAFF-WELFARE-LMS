@@ -188,7 +188,7 @@ namespace EAC_STAFF_WELFARE_LMS
         public string getLoanID()
         {
             string sdate = DateTime.Now.ToString("yyyyMMddhhmmss");
-            string loanID = "101" + sdate;
+            string loanID = "LA" + sdate;
             labelLoanID.Text = loanID;
 
             return loanID;
@@ -200,6 +200,7 @@ namespace EAC_STAFF_WELFARE_LMS
         {
             InsertNewLoanRecord();
             loanApplications.LoadLoanApplicationsIntoDataGridView();
+            loanApplications.CalculateAndDisplayTotalActiveLoans();
         }
 
 

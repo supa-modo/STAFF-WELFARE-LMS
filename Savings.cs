@@ -17,6 +17,7 @@ namespace EAC_STAFF_WELFARE_LMS
             InitializeComponent();
             dbConn = new dbConnect();
             cn = new SqlConnection(dbConn.myConnection());
+            CalculateAndDisplayTotalSavings();
         }
 
         //Function that loads savings data to the savings datagridview from the database when called

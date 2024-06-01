@@ -99,7 +99,6 @@
             this.txtDuration.Name = "txtDuration";
             this.txtDuration.Size = new System.Drawing.Size(417, 29);
             this.txtDuration.TabIndex = 161;
-            
             // 
             // txtInterest
             // 
@@ -119,7 +118,6 @@
             this.txtLoanAmt.Name = "txtLoanAmt";
             this.txtLoanAmt.Size = new System.Drawing.Size(417, 29);
             this.txtLoanAmt.TabIndex = 157;
-            
             // 
             // txtPFNo
             // 
@@ -244,7 +242,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1041, 591);
             this.ControlBox = false;
             this.Controls.Add(this.labelLoanID);

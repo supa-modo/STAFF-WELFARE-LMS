@@ -102,11 +102,6 @@ namespace EAC_STAFF_WELFARE_LMS
             CalculateAndDisplayTotalActiveLoans();
         }
 
-        private void txtSearch_TextChanged(object sender, EventArgs e)
-        {
-            LoadLoanApplicationsIntoDataGridView();
-        }
-
 
 
         private int lastClickedRowIndex = -1;
@@ -228,6 +223,11 @@ namespace EAC_STAFF_WELFARE_LMS
                 loanPaymentHistoryForm.ShowDialog();
             }
                
+        }
+
+        private void txtSearch_TextChanged_1(object sender, EventArgs e)
+        {
+            LoadLoanApplicationsIntoDataGridView();
         }
     }
 }

@@ -52,7 +52,6 @@
             // 
             // dgvLoanPaymentHistory
             // 
-            this.dgvLoanPaymentHistory.AllowUserToAddRows = false;
             this.dgvLoanPaymentHistory.AllowUserToDeleteRows = false;
             this.dgvLoanPaymentHistory.AllowUserToResizeColumns = false;
             this.dgvLoanPaymentHistory.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
@@ -71,12 +70,15 @@
             this.AmountPaid,
             this.PendingBalance,
             this.PaymentDate});
+            this.dgvLoanPaymentHistory.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvLoanPaymentHistory.GridColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dgvLoanPaymentHistory.Location = new System.Drawing.Point(5, 47);
+            this.dgvLoanPaymentHistory.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dgvLoanPaymentHistory.Location = new System.Drawing.Point(0, 38);
             this.dgvLoanPaymentHistory.Name = "dgvLoanPaymentHistory";
             this.dgvLoanPaymentHistory.ReadOnly = true;
+            this.dgvLoanPaymentHistory.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvLoanPaymentHistory.RowTemplate.Height = 24;
-            this.dgvLoanPaymentHistory.Size = new System.Drawing.Size(1069, 473);
+            this.dgvLoanPaymentHistory.Size = new System.Drawing.Size(1080, 487);
             this.dgvLoanPaymentHistory.TabIndex = 0;
             // 
             // PaymentID
@@ -97,7 +99,7 @@
             this.Loan_ID.HeaderText = "Loan ID";
             this.Loan_ID.Name = "Loan_ID";
             this.Loan_ID.ReadOnly = true;
-            this.Loan_ID.Width = 216;
+            this.Loan_ID.Width = 220;
             // 
             // AmountPaid
             // 
@@ -127,7 +129,7 @@
             this.PaymentDate.HeaderText = "Payment Date";
             this.PaymentDate.Name = "PaymentDate";
             this.PaymentDate.ReadOnly = true;
-            this.PaymentDate.Width = 240;
+            this.PaymentDate.Width = 247;
             // 
             // picBxClose
             // 
@@ -143,6 +145,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.SeaGreen;
             this.panel1.Controls.Add(this.labelApplicant);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.picBxClose);
@@ -155,7 +158,7 @@
             // labelApplicant
             // 
             this.labelApplicant.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            this.labelApplicant.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelApplicant.ForeColor = System.Drawing.Color.White;
             this.labelApplicant.Location = new System.Drawing.Point(416, 9);
             this.labelApplicant.Name = "labelApplicant";
             this.labelApplicant.Size = new System.Drawing.Size(178, 26);
@@ -165,7 +168,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 26);

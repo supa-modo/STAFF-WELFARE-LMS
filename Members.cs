@@ -107,7 +107,20 @@ namespace EAC_STAFF_WELFARE_LMS
 
 
         private int lastClickedRowIndex = -1;
-        private void dgvMembers_CellClick(object sender, DataGridViewCellEventArgs e)
+
+
+        private void dgvMembers_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var senderGrid = (DataGridView)sender;
+            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn ||
+                e.ColumnIndex == 2)
+            {
+                FullProfileView fullProfileView = new FullProfileView();
+                fullProfileView.ShowDialog();
+            }
+        }
+
+        private void dgvMembers_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             // Check if the clicked cell is not the header cell and the row index is valid
             if (e.RowIndex >= 0 && e.RowIndex < dgvMembers.Rows.Count && e.ColumnIndex >= 0)
@@ -142,19 +155,5 @@ namespace EAC_STAFF_WELFARE_LMS
                 }
             }
         }
-
-
-        private void dgvMembers_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            var senderGrid = (DataGridView)sender;
-            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn ||
-                e.ColumnIndex == 2)
-            {
-                FullProfileView fullProfileView = new FullProfileView();
-                fullProfileView.ShowDialog();
-            }
-        }
-
-       
     }
 }

@@ -60,9 +60,9 @@
             this.PendingBalance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LoanStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtSearch = new MetroFramework.Controls.MetroTextBox();
             this.metroBtnNewLoan = new MetroFramework.Controls.MetroButton();
             this.metroBtnRunLoansDeduction = new MetroFramework.Controls.MetroButton();
-            this.txtSearch = new MetroFramework.Controls.MetroTextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoanApplications)).BeginInit();
@@ -165,7 +165,7 @@
             this.dgvLoanApplications.Size = new System.Drawing.Size(1350, 546);
             this.dgvLoanApplications.TabIndex = 3;
             this.dgvLoanApplications.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLoanApplications_CellClick);
-            this.dgvLoanApplications.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLoanApplications_CellContentDoubleClick);
+            this.dgvLoanApplications.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLoanApplications_CellDoubleClick);
             // 
             // Column6
             // 
@@ -298,44 +298,6 @@
             this.panel3.Size = new System.Drawing.Size(1350, 40);
             this.panel3.TabIndex = 4;
             // 
-            // metroBtnNewLoan
-            // 
-            this.metroBtnNewLoan.BackColor = System.Drawing.Color.SeaGreen;
-            this.metroBtnNewLoan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.metroBtnNewLoan.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroBtnNewLoan.ForeColor = System.Drawing.Color.White;
-            this.metroBtnNewLoan.Location = new System.Drawing.Point(17, 3);
-            this.metroBtnNewLoan.Name = "metroBtnNewLoan";
-            this.metroBtnNewLoan.Size = new System.Drawing.Size(240, 33);
-            this.metroBtnNewLoan.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroBtnNewLoan.TabIndex = 10;
-            this.metroBtnNewLoan.Text = "Add New Loan";
-            this.metroBtnNewLoan.UseCustomBackColor = true;
-            this.metroBtnNewLoan.UseCustomForeColor = true;
-            this.metroBtnNewLoan.UseSelectable = true;
-            this.metroBtnNewLoan.UseStyleColors = true;
-            this.metroBtnNewLoan.Click += new System.EventHandler(this.metroBtnNewLoan_Click_1);
-            // 
-            // metroBtnRunLoansDeduction
-            // 
-            this.metroBtnRunLoansDeduction.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroBtnRunLoansDeduction.BackColor = System.Drawing.Color.SeaGreen;
-            this.metroBtnRunLoansDeduction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.metroBtnRunLoansDeduction.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroBtnRunLoansDeduction.ForeColor = System.Drawing.Color.White;
-            this.metroBtnRunLoansDeduction.Location = new System.Drawing.Point(504, 3);
-            this.metroBtnRunLoansDeduction.Name = "metroBtnRunLoansDeduction";
-            this.metroBtnRunLoansDeduction.Size = new System.Drawing.Size(342, 35);
-            this.metroBtnRunLoansDeduction.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroBtnRunLoansDeduction.TabIndex = 9;
-            this.metroBtnRunLoansDeduction.Text = "Run Monthly Loan Deductions";
-            this.metroBtnRunLoansDeduction.UseCustomBackColor = true;
-            this.metroBtnRunLoansDeduction.UseCustomForeColor = true;
-            this.metroBtnRunLoansDeduction.UseSelectable = true;
-            this.metroBtnRunLoansDeduction.UseStyleColors = true;
-            this.metroBtnRunLoansDeduction.Click += new System.EventHandler(this.metroBtnRunLoansDeduction_Click);
-            // 
             // txtSearch
             // 
             this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -374,6 +336,44 @@
             this.txtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged_1);
+            // 
+            // metroBtnNewLoan
+            // 
+            this.metroBtnNewLoan.BackColor = System.Drawing.Color.SeaGreen;
+            this.metroBtnNewLoan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.metroBtnNewLoan.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroBtnNewLoan.ForeColor = System.Drawing.Color.White;
+            this.metroBtnNewLoan.Location = new System.Drawing.Point(17, 3);
+            this.metroBtnNewLoan.Name = "metroBtnNewLoan";
+            this.metroBtnNewLoan.Size = new System.Drawing.Size(240, 33);
+            this.metroBtnNewLoan.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroBtnNewLoan.TabIndex = 10;
+            this.metroBtnNewLoan.Text = "Add New Loan";
+            this.metroBtnNewLoan.UseCustomBackColor = true;
+            this.metroBtnNewLoan.UseCustomForeColor = true;
+            this.metroBtnNewLoan.UseSelectable = true;
+            this.metroBtnNewLoan.UseStyleColors = true;
+            this.metroBtnNewLoan.Click += new System.EventHandler(this.metroBtnNewLoan_Click_1);
+            // 
+            // metroBtnRunLoansDeduction
+            // 
+            this.metroBtnRunLoansDeduction.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroBtnRunLoansDeduction.BackColor = System.Drawing.Color.SeaGreen;
+            this.metroBtnRunLoansDeduction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.metroBtnRunLoansDeduction.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroBtnRunLoansDeduction.ForeColor = System.Drawing.Color.White;
+            this.metroBtnRunLoansDeduction.Location = new System.Drawing.Point(504, 3);
+            this.metroBtnRunLoansDeduction.Name = "metroBtnRunLoansDeduction";
+            this.metroBtnRunLoansDeduction.Size = new System.Drawing.Size(342, 35);
+            this.metroBtnRunLoansDeduction.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroBtnRunLoansDeduction.TabIndex = 9;
+            this.metroBtnRunLoansDeduction.Text = "Run Monthly Loan Deductions";
+            this.metroBtnRunLoansDeduction.UseCustomBackColor = true;
+            this.metroBtnRunLoansDeduction.UseCustomForeColor = true;
+            this.metroBtnRunLoansDeduction.UseSelectable = true;
+            this.metroBtnRunLoansDeduction.UseStyleColors = true;
+            this.metroBtnRunLoansDeduction.Click += new System.EventHandler(this.metroBtnRunLoansDeduction_Click);
             // 
             // LoanApplications
             // 

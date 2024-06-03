@@ -169,7 +169,7 @@
             this.dgvMembers.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvMembers.Size = new System.Drawing.Size(1350, 590);
             this.dgvMembers.TabIndex = 5;
-            this.dgvMembers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMembers_CellClick);
+            this.dgvMembers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMembers_CellClick_1);
             this.dgvMembers.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMembers_CellDoubleClick);
             // 
             // Column10
@@ -262,7 +262,7 @@
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
             this.btnViewProfile.DefaultCellStyle = dataGridViewCellStyle6;
-            this.btnViewProfile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnViewProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewProfile.HeaderText = "";
             this.btnViewProfile.Name = "btnViewProfile";
             this.btnViewProfile.ReadOnly = true;

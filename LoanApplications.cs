@@ -213,7 +213,13 @@ namespace EAC_STAFF_WELFARE_LMS
             CalculateAndDisplayTotalActiveLoans();
         }
 
-        private void dgvLoanApplications_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+
+        private void txtSearch_TextChanged_1(object sender, EventArgs e)
+        {
+            LoadLoanApplicationsIntoDataGridView();
+        }
+
+        private void dgvLoanApplications_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.RowIndex < dgvLoanApplications.Rows.Count && e.ColumnIndex >= 0)
             {
@@ -222,12 +228,6 @@ namespace EAC_STAFF_WELFARE_LMS
                 LoanPaymentHistory loanPaymentHistoryForm = new LoanPaymentHistory(loanId);
                 loanPaymentHistoryForm.ShowDialog();
             }
-               
-        }
-
-        private void txtSearch_TextChanged_1(object sender, EventArgs e)
-        {
-            LoadLoanApplicationsIntoDataGridView();
         }
     }
 }

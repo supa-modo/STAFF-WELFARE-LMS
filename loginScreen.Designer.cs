@@ -59,11 +59,11 @@
             // 
             // labelEAC
             // 
-            this.labelEAC.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.labelEAC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.labelEAC.ForeColor = System.Drawing.Color.Green;
-            this.labelEAC.Location = new System.Drawing.Point(230, 173);
+            this.labelEAC.Location = new System.Drawing.Point(230, 175);
             this.labelEAC.Name = "labelEAC";
-            this.labelEAC.Size = new System.Drawing.Size(312, 34);
+            this.labelEAC.Size = new System.Drawing.Size(312, 31);
             this.labelEAC.TabIndex = 2;
             this.labelEAC.Text = "EAST AFRICAN COMMUNITY";
             this.labelEAC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -74,7 +74,7 @@
             this.labelSyst.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.labelSyst.Location = new System.Drawing.Point(193, 208);
             this.labelSyst.Name = "labelSyst";
-            this.labelSyst.Size = new System.Drawing.Size(387, 31);
+            this.labelSyst.Size = new System.Drawing.Size(387, 30);
             this.labelSyst.TabIndex = 3;
             this.labelSyst.Text = "STAFF WELFARE MANAGEMENT SYSTEM";
             this.labelSyst.TextAlign = System.Drawing.ContentAlignment.TopCenter;

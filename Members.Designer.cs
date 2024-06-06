@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Members));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -124,7 +125,7 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label1.Location = new System.Drawing.Point(13, 8);
             this.label1.Name = "label1";
@@ -141,7 +142,7 @@
             this.dgvMembers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10F);
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowFrame;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -165,6 +166,8 @@
             this.dgvMembers.Location = new System.Drawing.Point(0, 40);
             this.dgvMembers.Name = "dgvMembers";
             this.dgvMembers.RowHeadersVisible = false;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.dgvMembers.RowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvMembers.RowTemplate.Height = 30;
             this.dgvMembers.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvMembers.Size = new System.Drawing.Size(1350, 590);
@@ -178,7 +181,7 @@
             this.Column10.HeaderText = "S\\No";
             this.Column10.Name = "Column10";
             this.Column10.ReadOnly = true;
-            this.Column10.Width = 69;
+            this.Column10.Width = 62;
             // 
             // Column8
             // 
@@ -189,7 +192,7 @@
             this.Column8.HeaderText = "Staff Code";
             this.Column8.Name = "Column8";
             this.Column8.ReadOnly = true;
-            this.Column8.Width = 104;
+            this.Column8.Width = 95;
             // 
             // staffName
             // 
@@ -206,7 +209,7 @@
             this.Column1.HeaderText = "Job Title";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 90;
+            this.Column1.Width = 82;
             // 
             // Column2
             // 
@@ -214,7 +217,7 @@
             this.Column2.HeaderText = "Contract End Date";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 158;
+            this.Column2.Width = 145;
             // 
             // Column6
             // 
@@ -222,7 +225,7 @@
             this.Column6.HeaderText = "Contract Type";
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
-            this.Column6.Width = 128;
+            this.Column6.Width = 117;
             // 
             // Column3
             // 
@@ -232,7 +235,7 @@
             this.Column3.HeaderText = "Email Address";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 131;
+            this.Column3.Width = 117;
             // 
             // Column4
             // 
@@ -242,7 +245,7 @@
             this.Column4.HeaderText = "Phone Number";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            this.Column4.Width = 139;
+            this.Column4.Width = 125;
             // 
             // Column9
             // 
@@ -251,7 +254,7 @@
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;
             this.Column9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column9.Width = 130;
+            this.Column9.Width = 114;
             // 
             // btnViewProfile
             // 

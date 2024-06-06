@@ -98,7 +98,7 @@
             // lblAddMember
             // 
             this.lblAddMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblAddMember.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddMember.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblAddMember.ForeColor = System.Drawing.Color.SeaGreen;
             this.lblAddMember.Location = new System.Drawing.Point(12, 7);
             this.lblAddMember.Name = "lblAddMember";
@@ -152,17 +152,17 @@
             // 
             // txBxPFNo
             // 
-            this.txBxPFNo.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txBxPFNo.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txBxPFNo.ForeColor = System.Drawing.Color.Gray;
             this.txBxPFNo.Location = new System.Drawing.Point(545, 10);
             this.txBxPFNo.Name = "txBxPFNo";
-            this.txBxPFNo.Size = new System.Drawing.Size(244, 29);
+            this.txBxPFNo.Size = new System.Drawing.Size(244, 27);
             this.txBxPFNo.TabIndex = 157;
             // 
             // labelPFNo
             // 
             this.labelPFNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelPFNo.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPFNo.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.labelPFNo.ForeColor = System.Drawing.Color.Green;
             this.labelPFNo.Location = new System.Drawing.Point(426, 12);
             this.labelPFNo.Name = "labelPFNo";
@@ -202,16 +202,17 @@
             // 
             // textBoxSavings
             // 
+            this.textBoxSavings.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSavings.ForeColor = System.Drawing.Color.Gray;
             this.textBoxSavings.Location = new System.Drawing.Point(865, 390);
             this.textBoxSavings.Name = "textBoxSavings";
-            this.textBoxSavings.Size = new System.Drawing.Size(244, 29);
+            this.textBoxSavings.Size = new System.Drawing.Size(244, 27);
             this.textBoxSavings.TabIndex = 153;
             // 
             // labelSavings
             // 
             this.labelSavings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelSavings.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSavings.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.labelSavings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelSavings.Location = new System.Drawing.Point(865, 360);
             this.labelSavings.Name = "labelSavings";
@@ -246,7 +247,7 @@
             // 
             // comboBoxContractType
             // 
-            this.comboBoxContractType.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxContractType.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxContractType.ForeColor = System.Drawing.Color.Gray;
             this.comboBoxContractType.FormattingEnabled = true;
             this.comboBoxContractType.Items.AddRange(new object[] {
@@ -261,88 +262,98 @@
             // 
             // txtBxDpt
             // 
+            this.txtBxDpt.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxDpt.ForeColor = System.Drawing.Color.Gray;
             this.txtBxDpt.Location = new System.Drawing.Point(90, 466);
             this.txtBxDpt.Name = "txtBxDpt";
-            this.txtBxDpt.Size = new System.Drawing.Size(353, 29);
+            this.txtBxDpt.Size = new System.Drawing.Size(353, 27);
             this.txtBxDpt.TabIndex = 146;
             // 
             // txtBxJobTitle
             // 
+            this.txtBxJobTitle.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxJobTitle.ForeColor = System.Drawing.Color.Gray;
             this.txtBxJobTitle.Location = new System.Drawing.Point(90, 392);
             this.txtBxJobTitle.Name = "txtBxJobTitle";
-            this.txtBxJobTitle.Size = new System.Drawing.Size(353, 29);
+            this.txtBxJobTitle.Size = new System.Drawing.Size(353, 27);
             this.txtBxJobTitle.TabIndex = 145;
             // 
             // txtAddress
             // 
+            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress.ForeColor = System.Drawing.Color.Gray;
             this.txtAddress.Location = new System.Drawing.Point(440, 272);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(244, 29);
+            this.txtAddress.Size = new System.Drawing.Size(244, 27);
             this.txtAddress.TabIndex = 144;
             // 
             // txtSecEmail
             // 
+            this.txtSecEmail.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSecEmail.ForeColor = System.Drawing.Color.Gray;
             this.txtSecEmail.Location = new System.Drawing.Point(90, 272);
             this.txtSecEmail.Name = "txtSecEmail";
-            this.txtSecEmail.Size = new System.Drawing.Size(244, 29);
+            this.txtSecEmail.Size = new System.Drawing.Size(244, 27);
             this.txtSecEmail.TabIndex = 143;
             // 
             // txtEmail
             // 
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.Gray;
             this.txtEmail.Location = new System.Drawing.Point(790, 201);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(244, 29);
+            this.txtEmail.Size = new System.Drawing.Size(244, 27);
             this.txtEmail.TabIndex = 142;
             // 
             // txtPhone2
             // 
+            this.txtPhone2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone2.ForeColor = System.Drawing.Color.Gray;
             this.txtPhone2.Location = new System.Drawing.Point(440, 201);
             this.txtPhone2.Name = "txtPhone2";
-            this.txtPhone2.Size = new System.Drawing.Size(244, 29);
+            this.txtPhone2.Size = new System.Drawing.Size(244, 27);
             this.txtPhone2.TabIndex = 141;
             // 
             // txtPhone1
             // 
+            this.txtPhone1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone1.ForeColor = System.Drawing.Color.Gray;
             this.txtPhone1.Location = new System.Drawing.Point(90, 201);
             this.txtPhone1.Name = "txtPhone1";
-            this.txtPhone1.Size = new System.Drawing.Size(244, 29);
+            this.txtPhone1.Size = new System.Drawing.Size(244, 27);
             this.txtPhone1.TabIndex = 140;
             // 
             // txtLName
             // 
+            this.txtLName.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLName.ForeColor = System.Drawing.Color.Gray;
             this.txtLName.Location = new System.Drawing.Point(790, 92);
             this.txtLName.Name = "txtLName";
-            this.txtLName.Size = new System.Drawing.Size(244, 29);
+            this.txtLName.Size = new System.Drawing.Size(244, 27);
             this.txtLName.TabIndex = 139;
             // 
             // txtMName
             // 
+            this.txtMName.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMName.ForeColor = System.Drawing.Color.Gray;
             this.txtMName.Location = new System.Drawing.Point(440, 92);
             this.txtMName.Name = "txtMName";
-            this.txtMName.Size = new System.Drawing.Size(244, 29);
+            this.txtMName.Size = new System.Drawing.Size(244, 27);
             this.txtMName.TabIndex = 138;
             // 
             // txtFName
             // 
+            this.txtFName.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFName.ForeColor = System.Drawing.Color.Gray;
             this.txtFName.Location = new System.Drawing.Point(90, 88);
             this.txtFName.Name = "txtFName";
-            this.txtFName.Size = new System.Drawing.Size(244, 29);
+            this.txtFName.Size = new System.Drawing.Size(244, 27);
             this.txtFName.TabIndex = 137;
             // 
             // label45
             // 
             this.label45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label45.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label45.Location = new System.Drawing.Point(440, 242);
             this.label45.Name = "label45";
@@ -354,7 +365,7 @@
             // label43
             // 
             this.label43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label43.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label43.Location = new System.Drawing.Point(90, 242);
             this.label43.Name = "label43";
@@ -366,7 +377,7 @@
             // label40
             // 
             this.label40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label40.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.label40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label40.Location = new System.Drawing.Point(790, 168);
             this.label40.Name = "label40";
@@ -378,7 +389,7 @@
             // labelMName
             // 
             this.labelMName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelMName.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMName.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.labelMName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelMName.Location = new System.Drawing.Point(440, 58);
             this.labelMName.Name = "labelMName";
@@ -390,7 +401,7 @@
             // labelLName
             // 
             this.labelLName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelLName.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLName.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.labelLName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelLName.Location = new System.Drawing.Point(790, 63);
             this.labelLName.Name = "labelLName";
@@ -402,7 +413,7 @@
             // label19
             // 
             this.label19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label19.Location = new System.Drawing.Point(779, 468);
             this.label19.Name = "label19";
@@ -414,7 +425,7 @@
             // label15
             // 
             this.label15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label15.Location = new System.Drawing.Point(502, 468);
             this.label15.Name = "label15";
@@ -426,7 +437,7 @@
             // labelContactDetails
             // 
             this.labelContactDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelContactDetails.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelContactDetails.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.labelContactDetails.ForeColor = System.Drawing.Color.SeaGreen;
             this.labelContactDetails.Location = new System.Drawing.Point(90, 134);
             this.labelContactDetails.Name = "labelContactDetails";
@@ -438,7 +449,7 @@
             // label21
             // 
             this.label21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.label21.ForeColor = System.Drawing.Color.SeaGreen;
             this.label21.Location = new System.Drawing.Point(90, 324);
             this.label21.Name = "label21";
@@ -450,7 +461,7 @@
             // label20
             // 
             this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label20.Location = new System.Drawing.Point(502, 436);
             this.label20.Name = "label20";
@@ -462,7 +473,7 @@
             // label18
             // 
             this.label18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label18.Location = new System.Drawing.Point(90, 436);
             this.label18.Name = "label18";
@@ -474,7 +485,7 @@
             // label16
             // 
             this.label16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label16.Location = new System.Drawing.Point(502, 360);
             this.label16.Name = "label16";
@@ -486,7 +497,7 @@
             // label14
             // 
             this.label14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label14.Location = new System.Drawing.Point(90, 360);
             this.label14.Name = "label14";
@@ -498,7 +509,7 @@
             // label12
             // 
             this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label12.Location = new System.Drawing.Point(440, 168);
             this.label12.Name = "label12";
@@ -510,7 +521,7 @@
             // label30
             // 
             this.label30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label30.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label30.Location = new System.Drawing.Point(90, 170);
             this.label30.Name = "label30";
@@ -521,7 +532,7 @@
             // labelFName
             // 
             this.labelFName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelFName.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFName.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.labelFName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelFName.Location = new System.Drawing.Point(90, 58);
             this.labelFName.Name = "labelFName";

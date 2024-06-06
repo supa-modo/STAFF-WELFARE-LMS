@@ -6,25 +6,25 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>0.6875in</Width>
+              <Width>0.48959in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.32466in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.9397in</Width>
+              <Width>0.92928in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.57639in</Width>
+              <Width>1.73264in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.21999in</Width>
+              <Width>1.18874in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.48138in</Width>
+              <Width>1.33555in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.44965in</Width>
+              <Width>1.34548in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -583,10 +583,10 @@
             <Direction>Descending</Direction>
           </SortExpression>
         </SortExpressions>
-        <Top>0.2036in</Top>
+        <Top>2.32562in</Top>
         <Left>0.5in</Left>
         <Height>0.5in</Height>
-        <Width>9.67927in</Width>
+        <Width>8.34594in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -596,136 +596,125 @@
           <PaddingTop>5pt</PaddingTop>
         </Style>
       </Tablix>
+      <Textbox Name="Textbox3">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>EAST AFRICAN COMMUNITY STAFF WELFARE ASSOCIATION</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <Top>1.73338in</Top>
+        <Left>2.36348in</Left>
+        <Height>0.20485in</Height>
+        <Width>5.61458in</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Image Name="eacLogo">
+        <Source>Embedded</Source>
+        <Value>Emblem_of_East_African_Community21</Value>
+        <Sizing>Fit</Sizing>
+        <Top>0.62003in</Top>
+        <Left>4.51674in</Left>
+        <Height>1.07168in</Height>
+        <Width>1.3125in</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Color>White</Color>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
+      <Textbox Name="Textbox">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>ACTIVE LOANS REPORT</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <Top>1.93823in</Top>
+        <Left>2.36348in</Left>
+        <Height>0.18749in</Height>
+        <Width>5.61458in</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Line Name="Line1">
+        <Top>2.16739in</Top>
+        <Left>0.54057in</Left>
+        <Height>0in</Height>
+        <Width>9.15844in</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Line Name="Line2">
+        <Top>2.19517in</Top>
+        <Left>0.54057in</Left>
+        <Height>0in</Height>
+        <Width>9.15844in</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
     </ReportItems>
-    <Height>5.61604cm</Height>
+    <Height>7.44166cm</Height>
     <Style>
       <Border>
         <Style>None</Style>
       </Border>
     </Style>
   </Body>
-  <Width>26.11435cm</Width>
+  <Width>24.73852cm</Width>
   <Page>
-    <PageHeader>
-      <Height>4.14162cm</Height>
-      <PrintOnFirstPage>true</PrintOnFirstPage>
-      <PrintOnLastPage>true</PrintOnLastPage>
-      <ReportItems>
-        <Textbox Name="Textbox3">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>EAST AFRICAN COMMUNITY STAFF WELFARE ASSOCIATION</Value>
-                  <Style>
-                    <FontStyle>Normal</FontStyle>
-                    <FontFamily>Courier New</FontFamily>
-                    <FontWeight>Bold</FontWeight>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <Top>1.09945in</Top>
-          <Left>2.35416in</Left>
-          <Height>0.20485in</Height>
-          <Width>5.61458in</Width>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Image Name="eacLogo">
-          <Source>Embedded</Source>
-          <Value>Emblem_of_East_African_Community21</Value>
-          <Sizing>Fit</Sizing>
-          <Top>0.02777in</Top>
-          <Left>4.50742in</Left>
-          <Height>1.03001in</Height>
-          <Width>1.3125in</Width>
-          <ZIndex>1</ZIndex>
-          <Style>
-            <Border>
-              <Color>White</Color>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </Image>
-        <Textbox Name="Textbox">
-          <CanGrow>true</CanGrow>
-          <KeepTogether>true</KeepTogether>
-          <Paragraphs>
-            <Paragraph>
-              <TextRuns>
-                <TextRun>
-                  <Value>ACTIVE LOANS REPORT</Value>
-                  <Style>
-                    <FontFamily>Courier New</FontFamily>
-                    <FontSize>9pt</FontSize>
-                  </Style>
-                </TextRun>
-              </TextRuns>
-              <Style>
-                <TextAlign>Center</TextAlign>
-              </Style>
-            </Paragraph>
-          </Paragraphs>
-          <Top>1.3043in</Top>
-          <Left>2.35416in</Left>
-          <Height>0.18749in</Height>
-          <Width>5.61458in</Width>
-          <ZIndex>2</ZIndex>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-            <PaddingLeft>2pt</PaddingLeft>
-            <PaddingRight>2pt</PaddingRight>
-            <PaddingTop>2pt</PaddingTop>
-            <PaddingBottom>2pt</PaddingBottom>
-          </Style>
-        </Textbox>
-        <Line Name="Line1">
-          <Top>1.53346in</Top>
-          <Left>0.53125in</Left>
-          <Height>0in</Height>
-          <Width>9.64803in</Width>
-          <ZIndex>3</ZIndex>
-          <Style>
-            <Border>
-              <Style>Solid</Style>
-            </Border>
-          </Style>
-        </Line>
-        <Line Name="Line2">
-          <Top>1.56124in</Top>
-          <Left>0.53125in</Left>
-          <Height>0in</Height>
-          <Width>9.64803in</Width>
-          <ZIndex>4</ZIndex>
-          <Style>
-            <Border>
-              <Style>Solid</Style>
-            </Border>
-          </Style>
-        </Line>
-      </ReportItems>
-      <Style>
-        <Border>
-          <Style>None</Style>
-        </Border>
-      </Style>
-    </PageHeader>
     <PageHeight>21.59cm</PageHeight>
     <PageWidth>28cm</PageWidth>
     <LeftMargin>0.1cm</LeftMargin>

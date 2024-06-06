@@ -50,52 +50,54 @@
             // loginLogo
             // 
             this.loginLogo.Image = ((System.Drawing.Image)(resources.GetObject("loginLogo.Image")));
-            this.loginLogo.Location = new System.Drawing.Point(339, 45);
+            this.loginLogo.Location = new System.Drawing.Point(307, 43);
             this.loginLogo.Name = "loginLogo";
-            this.loginLogo.Size = new System.Drawing.Size(169, 142);
+            this.loginLogo.Size = new System.Drawing.Size(158, 130);
             this.loginLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.loginLogo.TabIndex = 1;
             this.loginLogo.TabStop = false;
             // 
             // labelEAC
             // 
-            this.labelEAC.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.labelEAC.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelEAC.ForeColor = System.Drawing.Color.Green;
-            this.labelEAC.Location = new System.Drawing.Point(293, 190);
+            this.labelEAC.Location = new System.Drawing.Point(230, 173);
             this.labelEAC.Name = "labelEAC";
-            this.labelEAC.Size = new System.Drawing.Size(259, 34);
+            this.labelEAC.Size = new System.Drawing.Size(312, 34);
             this.labelEAC.TabIndex = 2;
             this.labelEAC.Text = "EAST AFRICAN COMMUNITY";
+            this.labelEAC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelSyst
             // 
-            this.labelSyst.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSyst.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.labelSyst.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelSyst.Location = new System.Drawing.Point(264, 224);
+            this.labelSyst.Location = new System.Drawing.Point(193, 208);
             this.labelSyst.Name = "labelSyst";
-            this.labelSyst.Size = new System.Drawing.Size(316, 31);
+            this.labelSyst.Size = new System.Drawing.Size(387, 31);
             this.labelSyst.TabIndex = 3;
             this.labelSyst.Text = "STAFF WELFARE MANAGEMENT SYSTEM";
+            this.labelSyst.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtPwd
             // 
             this.txtPwd.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtPwd.Font = new System.Drawing.Font("Segoe UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPwd.Font = new System.Drawing.Font("Segoe UI", 13.25F);
             this.txtPwd.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtPwd.Location = new System.Drawing.Point(181, 340);
+            this.txtPwd.Location = new System.Drawing.Point(157, 308);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.PasswordChar = '*';
-            this.txtPwd.Size = new System.Drawing.Size(483, 35);
+            this.txtPwd.Size = new System.Drawing.Size(458, 31);
             this.txtPwd.TabIndex = 6;
             this.txtPwd.UseSystemPasswordChar = true;
             // 
             // chkBxRememberMe
             // 
             this.chkBxRememberMe.AutoSize = true;
-            this.chkBxRememberMe.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.chkBxRememberMe.Location = new System.Drawing.Point(181, 386);
+            this.chkBxRememberMe.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.chkBxRememberMe.Location = new System.Drawing.Point(160, 348);
             this.chkBxRememberMe.Name = "chkBxRememberMe";
-            this.chkBxRememberMe.Size = new System.Drawing.Size(104, 19);
+            this.chkBxRememberMe.Size = new System.Drawing.Size(99, 17);
             this.chkBxRememberMe.TabIndex = 7;
             this.chkBxRememberMe.Text = "Remember Me";
             this.chkBxRememberMe.UseVisualStyleBackColor = true;
@@ -103,11 +105,11 @@
             // btnSignIn
             // 
             this.btnSignIn.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnSignIn.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.btnSignIn.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
             this.btnSignIn.ForeColor = System.Drawing.Color.White;
-            this.btnSignIn.Location = new System.Drawing.Point(362, 416);
+            this.btnSignIn.Location = new System.Drawing.Point(335, 376);
             this.btnSignIn.Name = "btnSignIn";
-            this.btnSignIn.Size = new System.Drawing.Size(120, 40);
+            this.btnSignIn.Size = new System.Drawing.Size(102, 38);
             this.btnSignIn.TabIndex = 10;
             this.btnSignIn.Text = "Sign In";
             this.btnSignIn.UseVisualStyleBackColor = false;
@@ -116,19 +118,19 @@
             // txtUsername
             // 
             this.txtUsername.BackColor = System.Drawing.Color.Cornsilk;
-            this.txtUsername.Font = new System.Drawing.Font("Cocon", 12F);
+            this.txtUsername.Font = new System.Drawing.Font("Cocon", 11F);
             this.txtUsername.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtUsername.Location = new System.Drawing.Point(181, 281);
+            this.txtUsername.Location = new System.Drawing.Point(157, 256);
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(483, 35);
+            this.txtUsername.Size = new System.Drawing.Size(458, 30);
             this.txtUsername.TabIndex = 5;
             // 
             // picBxUser
             // 
             this.picBxUser.BackColor = System.Drawing.Color.Cornsilk;
             this.picBxUser.Image = ((System.Drawing.Image)(resources.GetObject("picBxUser.Image")));
-            this.picBxUser.Location = new System.Drawing.Point(628, 286);
+            this.picBxUser.Location = new System.Drawing.Point(584, 258);
             this.picBxUser.Name = "picBxUser";
             this.picBxUser.Size = new System.Drawing.Size(25, 25);
             this.picBxUser.TabIndex = 11;
@@ -138,30 +140,29 @@
             // 
             this.picBxPwd.BackColor = System.Drawing.Color.Cornsilk;
             this.picBxPwd.Image = ((System.Drawing.Image)(resources.GetObject("picBxPwd.Image")));
-            this.picBxPwd.Location = new System.Drawing.Point(628, 345);
+            this.picBxPwd.Location = new System.Drawing.Point(584, 311);
             this.picBxPwd.Name = "picBxPwd";
             this.picBxPwd.Size = new System.Drawing.Size(25, 25);
             this.picBxPwd.TabIndex = 12;
             this.picBxPwd.TabStop = false;
-            this.picBxPwd.Click += new System.EventHandler(this.picBxPwd_Click);
             // 
             // labelUsername
             // 
             this.labelUsername.AutoSize = true;
-            this.labelUsername.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
-            this.labelUsername.Location = new System.Drawing.Point(181, 263);
+            this.labelUsername.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Italic);
+            this.labelUsername.Location = new System.Drawing.Point(160, 238);
             this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(60, 15);
+            this.labelUsername.Size = new System.Drawing.Size(54, 13);
             this.labelUsername.TabIndex = 14;
             this.labelUsername.Text = "Username";
             // 
             // labelPwd
             // 
             this.labelPwd.AutoSize = true;
-            this.labelPwd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic);
-            this.labelPwd.Location = new System.Drawing.Point(181, 322);
+            this.labelPwd.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Italic);
+            this.labelPwd.Location = new System.Drawing.Point(160, 292);
             this.labelPwd.Name = "labelPwd";
-            this.labelPwd.Size = new System.Drawing.Size(57, 15);
+            this.labelPwd.Size = new System.Drawing.Size(51, 13);
             this.labelPwd.TabIndex = 15;
             this.labelPwd.Text = "Password";
             // 
@@ -180,8 +181,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(854, 510);
+            this.ClientSize = new System.Drawing.Size(780, 459);
             this.ControlBox = false;
             this.Controls.Add(this.picBxClose);
             this.Controls.Add(this.labelPwd);

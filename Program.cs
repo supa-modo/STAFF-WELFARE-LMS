@@ -16,11 +16,15 @@ namespace EAC_STAFF_WELFARE_LMS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            if (Environment.OSVersion.Version.Major >= 6)
-                SetProcessDPIAware();
+           /* if (Environment.OSVersion.Version.Major >= 6)
+                SetProcessDPIAware();*/
 
-
-            Application.Run(new loginScreen());
+            loginScreen loginScreen = new loginScreen();
+            if(loginScreen.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new MainScreen());
+            }
+            
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();

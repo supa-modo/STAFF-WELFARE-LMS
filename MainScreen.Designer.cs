@@ -79,7 +79,7 @@
             // labelTop
             // 
             this.labelTop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelTop.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.labelTop.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.labelTop.ForeColor = System.Drawing.Color.Green;
             this.labelTop.Location = new System.Drawing.Point(292, 10);
             this.labelTop.Name = "labelTop";
@@ -94,21 +94,21 @@
             this.panelUser.BackColor = System.Drawing.Color.Khaki;
             this.panelUser.Controls.Add(this.labelLoggedInUser);
             this.panelUser.Controls.Add(this.picBxUser);
-            this.panelUser.Location = new System.Drawing.Point(1079, 15);
+            this.panelUser.Location = new System.Drawing.Point(1103, 15);
             this.panelUser.Name = "panelUser";
-            this.panelUser.Size = new System.Drawing.Size(259, 34);
+            this.panelUser.Size = new System.Drawing.Size(235, 34);
             this.panelUser.TabIndex = 2;
             // 
             // labelLoggedInUser
             // 
-            this.labelLoggedInUser.Font = new System.Drawing.Font("Cocon", 9.5F);
+            this.labelLoggedInUser.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLoggedInUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelLoggedInUser.Location = new System.Drawing.Point(38, 6);
             this.labelLoggedInUser.Name = "labelLoggedInUser";
             this.labelLoggedInUser.Size = new System.Drawing.Size(193, 22);
             this.labelLoggedInUser.TabIndex = 1;
             this.labelLoggedInUser.Text = "Logged In User";
-            this.labelLoggedInUser.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.labelLoggedInUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // picBxUser
             // 
@@ -128,6 +128,7 @@
             this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnDashboard.ForeColor = System.Drawing.Color.White;
             this.btnDashboard.Location = new System.Drawing.Point(3, -2);
             this.btnDashboard.Name = "btnDashboard";
@@ -161,6 +162,7 @@
             this.btnSettings.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.btnSettings.FlatAppearance.BorderSize = 0;
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnSettings.ForeColor = System.Drawing.Color.White;
             this.btnSettings.Location = new System.Drawing.Point(1042, -2);
             this.btnSettings.Name = "btnSettings";
@@ -179,6 +181,7 @@
             this.btnReports.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.btnReports.FlatAppearance.BorderSize = 0;
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReports.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnReports.ForeColor = System.Drawing.Color.White;
             this.btnReports.Location = new System.Drawing.Point(846, -2);
             this.btnReports.Name = "btnReports";
@@ -197,6 +200,7 @@
             this.btnMembers.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.btnMembers.FlatAppearance.BorderSize = 0;
             this.btnMembers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMembers.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnMembers.ForeColor = System.Drawing.Color.White;
             this.btnMembers.Location = new System.Drawing.Point(614, -2);
             this.btnMembers.Name = "btnMembers";
@@ -215,6 +219,7 @@
             this.btnLoanApps.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.btnLoanApps.FlatAppearance.BorderSize = 0;
             this.btnLoanApps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLoanApps.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnLoanApps.ForeColor = System.Drawing.Color.White;
             this.btnLoanApps.Location = new System.Drawing.Point(395, -2);
             this.btnLoanApps.Name = "btnLoanApps";
@@ -233,6 +238,7 @@
             this.btnSavings.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.btnSavings.FlatAppearance.BorderSize = 0;
             this.btnSavings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSavings.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.btnSavings.ForeColor = System.Drawing.Color.White;
             this.btnSavings.Location = new System.Drawing.Point(199, -2);
             this.btnSavings.Name = "btnSavings";

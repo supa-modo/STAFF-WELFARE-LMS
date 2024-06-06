@@ -23,7 +23,6 @@ namespace EAC_STAFF_WELFARE_LMS
             InitializeComponent();
             cn = new SqlConnection(dbConn.myConnection());
             cn.Open();
-            MessageBox.Show("Database connected successfully");
         }
 
         private void picBxClose_Click(object sender, EventArgs e)
@@ -31,17 +30,25 @@ namespace EAC_STAFF_WELFARE_LMS
             Application.Exit();
         }
 
-        private void picBxPwd_Click(object sender, EventArgs e)
-        {
-           
-        }
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-            MainScreen mScreen = new MainScreen();
-            mScreen.ShowDialog();
-            
-            this.Close();
+            if (IsValidLogin())
+            {
+                // Set the dialog result to OK and close the form
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            else
+            {
+                // Show error message
+                MessageBox.Show("Invalid login credentials.");
+            }
+        }
+
+        private bool IsValidLogin()
+        {
+            throw new NotImplementedException();
         }
     }
 }

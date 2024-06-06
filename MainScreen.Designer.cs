@@ -308,6 +308,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MainScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelTopBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logoMainScrn)).EndInit();
             this.panelUser.ResumeLayout(false);

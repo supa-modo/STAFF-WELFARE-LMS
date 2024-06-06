@@ -8,16 +8,12 @@ namespace EAC_STAFF_WELFARE_LMS
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+        
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           /* if (Environment.OSVersion.Version.Major >= 6)
-                SetProcessDPIAware();*/
 
             loginScreen loginScreen = new loginScreen();
             if(loginScreen.ShowDialog() == DialogResult.OK)
@@ -26,7 +22,6 @@ namespace EAC_STAFF_WELFARE_LMS
             }
             
         }
-        [System.Runtime.InteropServices.DllImport("user32.dll")]
-        private static extern bool SetProcessDPIAware();
+        
     }
 }

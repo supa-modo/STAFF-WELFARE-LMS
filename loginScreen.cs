@@ -48,7 +48,7 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private bool IsValidLogin()
         {
-            throw new NotImplementedException();
+            return true;
         }
     }
 }

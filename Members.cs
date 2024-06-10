@@ -111,12 +111,20 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private void dgvMembers_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0 && e.RowIndex < dgvMembers.Rows.Count && e.ColumnIndex >= 0)
+            {
+                DataGridViewRow clickedRow = dgvMembers.Rows[e.RowIndex];
+                string pfNo = clickedRow.Cells["StaffCode"].Value.ToString();
+                FullProfileView fullProfileView = new FullProfileView(pfNo);
+                fullProfileView.ShowDialog();
+            }
+
             var senderGrid = (DataGridView)sender;
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn ||
                 e.ColumnIndex == 2)
             {
-                FullProfileView fullProfileView = new FullProfileView();
-                fullProfileView.ShowDialog();
+                
+                
             }
         }
 

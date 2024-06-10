@@ -31,13 +31,14 @@ namespace EAC_STAFF_WELFARE_LMS
             try
             {
                 cn.Open();
-                string query = "SELECT FirstName, MiddleName, LastName, ContractStartDate, ContractEndDate, EmailAddress, SecondaryEmail, PhoneNumber1, PhoneNumber2, PhysicalAddress, JobTitle, Department, ContractType FROM Members WHERE StaffCode = @StaffCode";
+                string query = "SELECT MemberPFNo, FirstName, MiddleName, LastName, ContractStartDate, ContractEndDate, EmailAddress, SecondaryEmail, PhoneNumber1, PhoneNumber2, PhysicalAddress, JobTitle, Department, ContractType FROM Members WHERE MemberPFNo = @StaffCode";
                 cmd = new SqlCommand(query, cn);
                 cmd.Parameters.AddWithValue("@StaffCode", pfNo);
 
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
+                    labelPFNo2.Text = reader["MemberPFNo"].ToString();
                     txtFName.Text = reader["FirstName"].ToString();
                     txtMName.Text = reader["MiddleName"].ToString();
                     txtLName.Text = reader["LastName"].ToString();
@@ -51,6 +52,11 @@ namespace EAC_STAFF_WELFARE_LMS
                     comboContract.Text = reader["ContractType"].ToString();
                     metroDateTimeStart.Value = Convert.ToDateTime(reader["ContractStartDate"]);
                     metroDateTimeEnd.Value = Convert.ToDateTime(reader["ContractEndDate"]);
+
+                    labelEmail.Text = txtEmail.Text = reader["EmailAddress"].ToString();
+                    labelJobTitle.Text = reader["JobTitle"].ToString();
+                    string fullName = $"{reader["FirstName"]} {reader["MiddleName"]} {reader["LastName"]}".Trim();
+                    labelFullName.Text = fullName;
                 }
                 reader.Close();
             }

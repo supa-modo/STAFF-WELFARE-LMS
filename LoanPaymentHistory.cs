@@ -8,12 +8,12 @@ namespace EAC_STAFF_WELFARE_LMS
 {
     public partial class LoanPaymentHistory : Form
     {
-        private string loanId; // Change to string
+        private string loanId; 
         private SqlConnection cn;
         private SqlCommand cmd;
         private dbConnect dbConn;
 
-        public LoanPaymentHistory(string loanId) // Change to string
+        public LoanPaymentHistory(string loanId)
         {
             InitializeComponent();
             this.loanId = loanId;

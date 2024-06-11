@@ -98,7 +98,8 @@ namespace EAC_STAFF_WELFARE_LMS
             btnCancel.Visible = true;
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+
+        private void btnSave_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -136,9 +137,8 @@ namespace EAC_STAFF_WELFARE_LMS
             }
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void btnCancel_Click_1(object sender, EventArgs e)
         {
-            // Reload the profile to discard changes
             loadFullProfile();
             SetControlsReadOnly(true);
             btnSave.Visible = false;

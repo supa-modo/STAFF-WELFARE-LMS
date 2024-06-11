@@ -113,8 +113,8 @@
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.btnSave = new MetroFramework.Controls.MetroButton();
+            this.btnCancel = new MetroFramework.Controls.MetroButton();
             this.panelMemberProfileTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBxClose)).BeginInit();
             this.panelMetro.SuspendLayout();
@@ -216,8 +216,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.AutoScroll = true;
-            this.panel2.Controls.Add(this.metroButton2);
-            this.panel2.Controls.Add(this.metroButton1);
+            this.panel2.Controls.Add(this.btnCancel);
+            this.panel2.Controls.Add(this.btnSave);
             this.panel2.Controls.Add(this.metrobtnEdit);
             this.panel2.Controls.Add(this.metroDateTimeEnd);
             this.panel2.Controls.Add(this.metroDateTimeStart);
@@ -1053,35 +1053,37 @@
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 6;
             // 
-            // metroButton1
+            // btnSave
             // 
-            this.metroButton1.BackColor = System.Drawing.Color.SeaGreen;
-            this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton1.ForeColor = System.Drawing.Color.White;
-            this.metroButton1.Location = new System.Drawing.Point(624, 544);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(140, 34);
-            this.metroButton1.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroButton1.TabIndex = 125;
-            this.metroButton1.Text = "Save Changes";
-            this.metroButton1.UseCustomBackColor = true;
-            this.metroButton1.UseCustomForeColor = true;
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.UseStyleColors = true;
+            this.btnSave.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnSave.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Location = new System.Drawing.Point(624, 544);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(140, 34);
+            this.btnSave.Style = MetroFramework.MetroColorStyle.Green;
+            this.btnSave.TabIndex = 125;
+            this.btnSave.Text = "Save Changes";
+            this.btnSave.UseCustomBackColor = true;
+            this.btnSave.UseCustomForeColor = true;
+            this.btnSave.UseSelectable = true;
+            this.btnSave.UseStyleColors = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
-            // metroButton2
+            // btnCancel
             // 
-            this.metroButton2.BackColor = System.Drawing.Color.Gray;
-            this.metroButton2.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton2.ForeColor = System.Drawing.Color.White;
-            this.metroButton2.Location = new System.Drawing.Point(826, 544);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(137, 34);
-            this.metroButton2.TabIndex = 156;
-            this.metroButton2.Text = "Cancel";
-            this.metroButton2.UseCustomBackColor = true;
-            this.metroButton2.UseCustomForeColor = true;
-            this.metroButton2.UseSelectable = true;
+            this.btnCancel.BackColor = System.Drawing.Color.Gray;
+            this.btnCancel.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(826, 544);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(137, 34);
+            this.btnCancel.TabIndex = 156;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseCustomBackColor = true;
+            this.btnCancel.UseCustomForeColor = true;
+            this.btnCancel.UseSelectable = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
             // 
             // FullProfileView
             // 
@@ -1193,7 +1195,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewButtonColumn picBox;
         private System.Windows.Forms.DataGridViewButtonColumn picBox2;
-        private MetroFramework.Controls.MetroButton metroButton1;
-        private MetroFramework.Controls.MetroButton metroButton2;
+        private MetroFramework.Controls.MetroButton btnSave;
+        private MetroFramework.Controls.MetroButton btnCancel;
     }
 }

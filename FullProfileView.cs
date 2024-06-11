@@ -19,6 +19,9 @@ namespace EAC_STAFF_WELFARE_LMS
             dbConn = new dbConnect();
             cn = new SqlConnection(dbConn.myConnection());
             loadFullProfile();
+            SetControlsReadOnly(true);
+            btnSave.Visible = false;
+            btnCancel.Visible = false;
         }
 
         private void picBxClose_Click(object sender, EventArgs e)
@@ -68,6 +71,78 @@ namespace EAC_STAFF_WELFARE_LMS
             {
                 cn.Close();
             }
+        }
+
+        private void SetControlsReadOnly(bool readOnly)
+        {
+            txtFName.ReadOnly = readOnly;
+            txtMName.ReadOnly = readOnly;
+            txtLName.ReadOnly = readOnly;
+            txtPhone1.ReadOnly = readOnly;
+            txtPhone2.ReadOnly = readOnly;
+            txtEmail.ReadOnly = readOnly;
+            txtEmail2.ReadOnly = readOnly;
+            txtAddress.ReadOnly = readOnly;
+            txtTitle.ReadOnly = readOnly;
+            txtDpt.ReadOnly = readOnly;
+            comboContract.Enabled = !readOnly;
+            metroDateTimeStart.Enabled = !readOnly;
+            metroDateTimeEnd.Enabled = !readOnly;
+        }
+
+        private void metrobtnEdit_Click(object sender, EventArgs e)
+        {
+            // Enable the controls for editing
+            SetControlsReadOnly(false);
+            btnSave.Visible = true;
+            btnCancel.Visible = true;
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                cn.Open();
+                string query = "UPDATE Members SET FirstName = @FirstName, MiddleName = @MiddleName, LastName = @LastName, ContractStartDate = @ContractStartDate, ContractEndDate = @ContractEndDate, EmailAddress = @EmailAddress, SecondaryEmail = @SecondaryEmail, PhoneNumber1 = @PhoneNumber1, PhoneNumber2 = @PhoneNumber2, PhysicalAddress = @PhysicalAddress, JobTitle = @JobTitle, Department = @Department, ContractType = @ContractType WHERE MemberPFNo = @StaffCode";
+                cmd = new SqlCommand(query, cn);
+                cmd.Parameters.AddWithValue("@FirstName", txtFName.Text);
+                cmd.Parameters.AddWithValue("@MiddleName", txtMName.Text);
+                cmd.Parameters.AddWithValue("@LastName", txtLName.Text);
+                cmd.Parameters.AddWithValue("@ContractStartDate", metroDateTimeStart.Value);
+                cmd.Parameters.AddWithValue("@ContractEndDate", metroDateTimeEnd.Value);
+                cmd.Parameters.AddWithValue("@EmailAddress", txtEmail.Text);
+                cmd.Parameters.AddWithValue("@SecondaryEmail", txtEmail2.Text);
+                cmd.Parameters.AddWithValue("@PhoneNumber1", txtPhone1.Text);
+                cmd.Parameters.AddWithValue("@PhoneNumber2", txtPhone2.Text);
+                cmd.Parameters.AddWithValue("@PhysicalAddress", txtAddress.Text);
+                cmd.Parameters.AddWithValue("@JobTitle", txtTitle.Text);
+                cmd.Parameters.AddWithValue("@Department", txtDpt.Text);
+                cmd.Parameters.AddWithValue("@ContractType", comboContract.Text);
+                cmd.Parameters.AddWithValue("@StaffCode", pfNo);
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Profile updated successfully!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+                SetControlsReadOnly(true);
+                btnSave.Visible = false;
+                btnCancel.Visible = false;
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            // Reload the profile to discard changes
+            loadFullProfile();
+            SetControlsReadOnly(true);
+            btnSave.Visible = false;
+            btnCancel.Visible = false;
         }
     }
 }

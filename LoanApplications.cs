@@ -173,15 +173,12 @@ namespace EAC_STAFF_WELFARE_LMS
             try
             {
                 cn.Open();
-                string query = @"
-            UPDATE Loans 
-            SET PendingBalance = PendingBalance - MonthlyInstallments
-            WHERE LoanStatus = 'Active' AND PendingBalance >= MonthlyInstallments;
+                string query = @"UPDATE Loans SET PendingBalance = PendingBalance - MonthlyInstallments 
+                                 WHERE LoanStatus = 'Active' AND PendingBalance >= MonthlyInstallments;
 
-            INSERT INTO LoanPayments (LoanID, PaymentDate, AmountPaid, PendingBalance)
-            SELECT LoanID, GETDATE(), MonthlyInstallments, PendingBalance - MonthlyInstallments
-            FROM Loans
-            WHERE LoanStatus = 'Active' AND PendingBalance >= MonthlyInstallments;
+                                INSERT INTO LoanPayments (LoanID, PaymentDate, AmountPaid, PendingBalance)
+                                SELECT LoanID, GETDATE(), MonthlyInstallments, PendingBalance - MonthlyInstallments
+                                FROM Loans WHERE LoanStatus = 'Active' AND PendingBalance >= MonthlyInstallments;
         ";
 
                 SqlCommand cmd = new SqlCommand(query, cn);

@@ -30,10 +30,10 @@
         {
             this.btnLoanReport = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSavingsReport = new System.Windows.Forms.Button();
             this.btnAllMembersReport = new System.Windows.Forms.Button();
             this.panelReportViewer = new System.Windows.Forms.Panel();
             this.reportViewer = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.btnSavingsReport = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelReportViewer.SuspendLayout();
             this.SuspendLayout();
@@ -41,9 +41,9 @@
             // btnLoanReport
             // 
             this.btnLoanReport.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoanReport.Location = new System.Drawing.Point(3, 46);
+            this.btnLoanReport.Location = new System.Drawing.Point(6, 533);
             this.btnLoanReport.Name = "btnLoanReport";
-            this.btnLoanReport.Size = new System.Drawing.Size(215, 44);
+            this.btnLoanReport.Size = new System.Drawing.Size(215, 27);
             this.btnLoanReport.TabIndex = 0;
             this.btnLoanReport.Text = "Sample Loan Report";
             this.btnLoanReport.UseVisualStyleBackColor = true;
@@ -61,12 +61,23 @@
             this.panel1.Size = new System.Drawing.Size(221, 630);
             this.panel1.TabIndex = 2;
             // 
+            // btnSavingsReport
+            // 
+            this.btnSavingsReport.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSavingsReport.Location = new System.Drawing.Point(6, 587);
+            this.btnSavingsReport.Name = "btnSavingsReport";
+            this.btnSavingsReport.Size = new System.Drawing.Size(215, 27);
+            this.btnSavingsReport.TabIndex = 2;
+            this.btnSavingsReport.Text = "Sample Savings Report";
+            this.btnSavingsReport.UseVisualStyleBackColor = true;
+            this.btnSavingsReport.Click += new System.EventHandler(this.btnSavingsReport_Click);
+            // 
             // btnAllMembersReport
             // 
             this.btnAllMembersReport.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAllMembersReport.Location = new System.Drawing.Point(3, 105);
+            this.btnAllMembersReport.Location = new System.Drawing.Point(6, 559);
             this.btnAllMembersReport.Name = "btnAllMembersReport";
-            this.btnAllMembersReport.Size = new System.Drawing.Size(215, 44);
+            this.btnAllMembersReport.Size = new System.Drawing.Size(215, 27);
             this.btnAllMembersReport.TabIndex = 1;
             this.btnAllMembersReport.Text = "Sample Members Report";
             this.btnAllMembersReport.UseVisualStyleBackColor = true;
@@ -93,17 +104,6 @@
             this.reportViewer.ServerReport.BearerToken = null;
             this.reportViewer.Size = new System.Drawing.Size(1111, 618);
             this.reportViewer.TabIndex = 2;
-            // 
-            // btnSavingsReport
-            // 
-            this.btnSavingsReport.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSavingsReport.Location = new System.Drawing.Point(3, 165);
-            this.btnSavingsReport.Name = "btnSavingsReport";
-            this.btnSavingsReport.Size = new System.Drawing.Size(215, 44);
-            this.btnSavingsReport.TabIndex = 2;
-            this.btnSavingsReport.Text = "Sample Savings Report";
-            this.btnSavingsReport.UseVisualStyleBackColor = true;
-            this.btnSavingsReport.Click += new System.EventHandler(this.btnSavingsReport_Click);
             // 
             // Reports
             // 

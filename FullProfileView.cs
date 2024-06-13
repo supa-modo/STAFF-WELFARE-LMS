@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace EAC_STAFF_WELFARE_LMS
@@ -11,10 +12,12 @@ namespace EAC_STAFF_WELFARE_LMS
         private SqlConnection cn;
         private SqlCommand cmd;
         private dbConnect dbConn;
+        Members members;
 
-        public FullProfileView(string pfNo)
+        public FullProfileView(string pfNo, Members membersForm)
         {
             InitializeComponent();
+            members = membersForm;
             this.pfNo = pfNo;
             dbConn = new dbConnect();
             cn = new SqlConnection(dbConn.myConnection());
@@ -88,14 +91,19 @@ namespace EAC_STAFF_WELFARE_LMS
             comboContract.Enabled = !readOnly;
             metroDateTimeStart.Enabled = !readOnly;
             metroDateTimeEnd.Enabled = !readOnly;
+
+            
+
         }
 
         private void metrobtnEdit_Click(object sender, EventArgs e)
         {
-            // Enable the controls for editing
+            // Enabling the controls for editing
             SetControlsReadOnly(false);
             btnSave.Visible = true;
             btnCancel.Visible = true;
+            metrobtnEdit.Visible = false;
+            txtFName.Focus();
         }
 
 
@@ -134,6 +142,9 @@ namespace EAC_STAFF_WELFARE_LMS
                 SetControlsReadOnly(true);
                 btnSave.Visible = false;
                 btnCancel.Visible = false;
+                metrobtnEdit.Visible = true;
+                members.LoadMembersDataIntoDataGridView();
+                this.Close();
             }
         }
 
@@ -143,6 +154,7 @@ namespace EAC_STAFF_WELFARE_LMS
             SetControlsReadOnly(true);
             btnSave.Visible = false;
             btnCancel.Visible = false;
+            metrobtnEdit.Visible = true;
         }
     }
 }

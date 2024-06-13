@@ -115,7 +115,7 @@ namespace EAC_STAFF_WELFARE_LMS
             {
                 DataGridViewRow clickedRow = dgvMembers.Rows[e.RowIndex];
                 string pfNo = clickedRow.Cells["StaffCode"].Value.ToString();
-                FullProfileView fullProfileView = new FullProfileView(pfNo);
+                FullProfileView fullProfileView = new FullProfileView(pfNo, this);
                 fullProfileView.ShowDialog();
             }
 

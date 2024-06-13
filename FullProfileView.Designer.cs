@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FullProfileView));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelMemberProfileTop = new System.Windows.Forms.Panel();
             this.picBxClose = new System.Windows.Forms.PictureBox();
             this.lblMemberProfile = new System.Windows.Forms.Label();
@@ -45,6 +45,8 @@
             this.metroTabProfile = new MetroFramework.Controls.MetroTabControl();
             this.metroPDetails = new MetroFramework.Controls.MetroTabPage();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnCancel = new MetroFramework.Controls.MetroButton();
+            this.btnSave = new MetroFramework.Controls.MetroButton();
             this.metrobtnEdit = new MetroFramework.Controls.MetroButton();
             this.metroDateTimeEnd = new MetroFramework.Controls.MetroDateTime();
             this.metroDateTimeStart = new MetroFramework.Controls.MetroDateTime();
@@ -113,8 +115,6 @@
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
-            this.btnSave = new MetroFramework.Controls.MetroButton();
-            this.btnCancel = new MetroFramework.Controls.MetroButton();
             this.panelMemberProfileTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBxClose)).BeginInit();
             this.panelMetro.SuspendLayout();
@@ -262,6 +262,38 @@
             this.panel2.Size = new System.Drawing.Size(1338, 619);
             this.panel2.TabIndex = 2;
             // 
+            // btnCancel
+            // 
+            this.btnCancel.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnCancel.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(826, 544);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(137, 34);
+            this.btnCancel.TabIndex = 156;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseCustomBackColor = true;
+            this.btnCancel.UseCustomForeColor = true;
+            this.btnCancel.UseSelectable = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnSave.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Location = new System.Drawing.Point(624, 544);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(140, 34);
+            this.btnSave.Style = MetroFramework.MetroColorStyle.Green;
+            this.btnSave.TabIndex = 125;
+            this.btnSave.Text = "Save Changes";
+            this.btnSave.UseCustomBackColor = true;
+            this.btnSave.UseCustomForeColor = true;
+            this.btnSave.UseSelectable = true;
+            this.btnSave.UseStyleColors = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
+            // 
             // metrobtnEdit
             // 
             this.metrobtnEdit.BackColor = System.Drawing.Color.SeaGreen;
@@ -285,7 +317,7 @@
             this.metroDateTimeEnd.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
             this.metroDateTimeEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.metroDateTimeEnd.Location = new System.Drawing.Point(1140, 465);
-            this.metroDateTimeEnd.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTimeEnd.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTimeEnd.Name = "metroDateTimeEnd";
             this.metroDateTimeEnd.Size = new System.Drawing.Size(160, 29);
             this.metroDateTimeEnd.Style = MetroFramework.MetroColorStyle.Green;
@@ -297,7 +329,7 @@
             this.metroDateTimeStart.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
             this.metroDateTimeStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.metroDateTimeStart.Location = new System.Drawing.Point(863, 465);
-            this.metroDateTimeStart.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTimeStart.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTimeStart.Name = "metroDateTimeStart";
             this.metroDateTimeStart.Size = new System.Drawing.Size(160, 29);
             this.metroDateTimeStart.Style = MetroFramework.MetroColorStyle.Green;
@@ -711,14 +743,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvIndividualLoans.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvIndividualLoans.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle46.BackColor = System.Drawing.SystemColors.ScrollBar;
-            dataGridViewCellStyle46.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle46.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvIndividualLoans.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvIndividualLoans.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvIndividualLoans.ColumnHeadersHeight = 30;
             this.dgvIndividualLoans.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvIndividualLoans.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -745,18 +777,18 @@
             // Column8
             // 
             this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column8.HeaderText = "Loan ID";
             this.Column8.Name = "Column8";
             // 
             // Column2
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle48.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle48;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle3;
             this.Column2.HeaderText = "Loan Amount";
             this.Column2.Name = "Column2";
             this.Column2.Width = 131;
@@ -764,9 +796,9 @@
             // Column3
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle49.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle49;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column3.HeaderText = "Duration";
             this.Column3.Name = "Column3";
             this.Column3.Width = 96;
@@ -774,9 +806,9 @@
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle50.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle50;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle5;
             this.Column4.HeaderText = "Interest";
             this.Column4.Name = "Column4";
             this.Column4.Width = 90;
@@ -784,8 +816,8 @@
             // Column1
             // 
             this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle51.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle51;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle6;
             this.Column1.HeaderText = "Application Date";
             this.Column1.Name = "Column1";
             this.Column1.Width = 155;
@@ -793,18 +825,18 @@
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle52.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle52;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle7;
             this.Column5.HeaderText = "Due Date";
             this.Column5.Name = "Column5";
             // 
             // Column6
             // 
             this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle53.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle53;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle8;
             this.Column6.HeaderText = "Amount Paid";
             this.Column6.Name = "Column6";
             this.Column6.Width = 127;
@@ -818,9 +850,9 @@
             // 
             // Column7
             // 
-            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle54.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle54;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle9;
             this.Column7.HeaderText = "Status";
             this.Column7.Name = "Column7";
             this.Column7.Width = 120;
@@ -1054,42 +1086,10 @@
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 6;
             // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnSave.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(624, 544);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(140, 34);
-            this.btnSave.Style = MetroFramework.MetroColorStyle.Green;
-            this.btnSave.TabIndex = 125;
-            this.btnSave.Text = "Save Changes";
-            this.btnSave.UseCustomBackColor = true;
-            this.btnSave.UseCustomForeColor = true;
-            this.btnSave.UseSelectable = true;
-            this.btnSave.UseStyleColors = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.Color.RosyBrown;
-            this.btnCancel.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(826, 544);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(137, 34);
-            this.btnCancel.TabIndex = 156;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseCustomBackColor = true;
-            this.btnCancel.UseCustomForeColor = true;
-            this.btnCancel.UseSelectable = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
-            // 
             // FullProfileView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1350, 700);
             this.ControlBox = false;

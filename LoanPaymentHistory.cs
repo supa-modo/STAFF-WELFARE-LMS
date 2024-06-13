@@ -27,13 +27,12 @@ namespace EAC_STAFF_WELFARE_LMS
         private void LoadPaymentHistory()
         {
 
-            dgvLoanPaymentHistory.GridColor = Color.SeaGreen;
+            dgvLoanPaymentHistory.GridColor = Color.LightGray;
             dgvLoanPaymentHistory.CellBorderStyle = DataGridViewCellBorderStyle.Single;
             dgvLoanPaymentHistory.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
             dgvLoanPaymentHistory.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
 
-            // Optionally, set other visual properties
-            dgvLoanPaymentHistory.EnableHeadersVisualStyles = false;
+           dgvLoanPaymentHistory.EnableHeadersVisualStyles = false;
             dgvLoanPaymentHistory.ColumnHeadersDefaultCellStyle.BackColor = Color.LightGray;
             dgvLoanPaymentHistory.DefaultCellStyle.SelectionBackColor = Color.Khaki;
 

@@ -276,7 +276,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(249, 4);
+            this.label2.Location = new System.Drawing.Point(210, 4);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 13);
             this.label2.TabIndex = 1;
@@ -285,11 +285,11 @@
             // 
             // label1Footer
             // 
-            this.label1Footer.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.label1Footer.Font = new System.Drawing.Font("Segoe UI", 7F);
             this.label1Footer.ForeColor = System.Drawing.Color.White;
             this.label1Footer.Location = new System.Drawing.Point(9, 4);
             this.label1Footer.Name = "label1Footer";
-            this.label1Footer.Size = new System.Drawing.Size(237, 13);
+            this.label1Footer.Size = new System.Drawing.Size(208, 13);
             this.label1Footer.TabIndex = 0;
             this.label1Footer.Text = "EAC STAFF WELFARE MANAGEMENT SYSTEM ";
             this.label1Footer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

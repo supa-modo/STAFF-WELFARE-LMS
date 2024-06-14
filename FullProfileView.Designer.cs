@@ -81,7 +81,6 @@
             this.labelJobTitle = new System.Windows.Forms.Label();
             this.labelPFNo = new System.Windows.Forms.Label();
             this.labelPFNo2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.labelEmail = new System.Windows.Forms.Label();
             this.picProfile = new System.Windows.Forms.PictureBox();
             this.splitter1 = new System.Windows.Forms.Splitter();
@@ -183,7 +182,7 @@
             this.metroTabProfile.Controls.Add(this.metroSavings);
             this.metroTabProfile.Location = new System.Drawing.Point(3, 0);
             this.metroTabProfile.Name = "metroTabProfile";
-            this.metroTabProfile.SelectedIndex = 0;
+            this.metroTabProfile.SelectedIndex = 1;
             this.metroTabProfile.Size = new System.Drawing.Size(1347, 660);
             this.metroTabProfile.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTabProfile.TabIndex = 0;
@@ -253,7 +252,6 @@
             this.panel2.Controls.Add(this.labelJobTitle);
             this.panel2.Controls.Add(this.labelPFNo);
             this.panel2.Controls.Add(this.labelPFNo2);
-            this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.labelEmail);
             this.panel2.Controls.Add(this.picProfile);
             this.panel2.Controls.Add(this.splitter1);
@@ -304,7 +302,7 @@
             this.metrobtnEdit.Size = new System.Drawing.Size(174, 34);
             this.metrobtnEdit.Style = MetroFramework.MetroColorStyle.Green;
             this.metrobtnEdit.TabIndex = 124;
-            this.metrobtnEdit.Text = "Edit User Details";
+            this.metrobtnEdit.Text = "Edit Member Details";
             this.metrobtnEdit.UseCustomBackColor = true;
             this.metrobtnEdit.UseCustomForeColor = true;
             this.metrobtnEdit.UseSelectable = true;
@@ -317,7 +315,7 @@
             this.metroDateTimeEnd.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
             this.metroDateTimeEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.metroDateTimeEnd.Location = new System.Drawing.Point(1140, 465);
-            this.metroDateTimeEnd.MinimumSize = new System.Drawing.Size(4, 29);
+            this.metroDateTimeEnd.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTimeEnd.Name = "metroDateTimeEnd";
             this.metroDateTimeEnd.Size = new System.Drawing.Size(160, 29);
             this.metroDateTimeEnd.Style = MetroFramework.MetroColorStyle.Green;
@@ -329,7 +327,7 @@
             this.metroDateTimeStart.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
             this.metroDateTimeStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.metroDateTimeStart.Location = new System.Drawing.Point(863, 465);
-            this.metroDateTimeStart.MinimumSize = new System.Drawing.Size(4, 29);
+            this.metroDateTimeStart.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTimeStart.Name = "metroDateTimeStart";
             this.metroDateTimeStart.Size = new System.Drawing.Size(160, 29);
             this.metroDateTimeStart.Style = MetroFramework.MetroColorStyle.Green;
@@ -352,82 +350,92 @@
             // 
             // txtDpt
             // 
+            this.txtDpt.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDpt.ForeColor = System.Drawing.Color.Gray;
             this.txtDpt.Location = new System.Drawing.Point(339, 461);
             this.txtDpt.Name = "txtDpt";
-            this.txtDpt.Size = new System.Drawing.Size(353, 29);
+            this.txtDpt.Size = new System.Drawing.Size(353, 27);
             this.txtDpt.TabIndex = 112;
             // 
             // txtTitle
             // 
+            this.txtTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTitle.ForeColor = System.Drawing.Color.Gray;
             this.txtTitle.Location = new System.Drawing.Point(339, 374);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(353, 29);
+            this.txtTitle.Size = new System.Drawing.Size(353, 27);
             this.txtTitle.TabIndex = 111;
             // 
             // txtAddress
             // 
+            this.txtAddress.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress.ForeColor = System.Drawing.Color.Gray;
             this.txtAddress.Location = new System.Drawing.Point(689, 258);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(244, 29);
+            this.txtAddress.Size = new System.Drawing.Size(244, 27);
             this.txtAddress.TabIndex = 110;
             // 
             // txtEmail2
             // 
+            this.txtEmail2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail2.ForeColor = System.Drawing.Color.Gray;
             this.txtEmail2.Location = new System.Drawing.Point(339, 258);
             this.txtEmail2.Name = "txtEmail2";
-            this.txtEmail2.Size = new System.Drawing.Size(244, 29);
+            this.txtEmail2.Size = new System.Drawing.Size(244, 27);
             this.txtEmail2.TabIndex = 109;
             // 
             // txtEmail
             // 
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.Gray;
             this.txtEmail.Location = new System.Drawing.Point(1039, 180);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(244, 29);
+            this.txtEmail.Size = new System.Drawing.Size(244, 27);
             this.txtEmail.TabIndex = 108;
             // 
             // txtPhone2
             // 
+            this.txtPhone2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone2.ForeColor = System.Drawing.Color.Gray;
             this.txtPhone2.Location = new System.Drawing.Point(689, 180);
             this.txtPhone2.Name = "txtPhone2";
-            this.txtPhone2.Size = new System.Drawing.Size(244, 29);
+            this.txtPhone2.Size = new System.Drawing.Size(244, 27);
             this.txtPhone2.TabIndex = 107;
             // 
             // txtPhone1
             // 
+            this.txtPhone1.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone1.ForeColor = System.Drawing.Color.Gray;
             this.txtPhone1.Location = new System.Drawing.Point(339, 180);
             this.txtPhone1.Name = "txtPhone1";
-            this.txtPhone1.Size = new System.Drawing.Size(244, 29);
+            this.txtPhone1.Size = new System.Drawing.Size(244, 27);
             this.txtPhone1.TabIndex = 106;
             // 
             // txtLName
             // 
+            this.txtLName.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLName.ForeColor = System.Drawing.Color.Gray;
             this.txtLName.Location = new System.Drawing.Point(1039, 71);
             this.txtLName.Name = "txtLName";
-            this.txtLName.Size = new System.Drawing.Size(244, 29);
+            this.txtLName.Size = new System.Drawing.Size(244, 27);
             this.txtLName.TabIndex = 105;
             // 
             // txtMName
             // 
+            this.txtMName.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMName.ForeColor = System.Drawing.Color.Gray;
             this.txtMName.Location = new System.Drawing.Point(689, 71);
             this.txtMName.Name = "txtMName";
-            this.txtMName.Size = new System.Drawing.Size(244, 29);
+            this.txtMName.Size = new System.Drawing.Size(244, 27);
             this.txtMName.TabIndex = 104;
             // 
             // txtFName
             // 
+            this.txtFName.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFName.ForeColor = System.Drawing.Color.Gray;
             this.txtFName.Location = new System.Drawing.Point(339, 71);
             this.txtFName.Name = "txtFName";
-            this.txtFName.Size = new System.Drawing.Size(244, 29);
+            this.txtFName.Size = new System.Drawing.Size(244, 27);
             this.txtFName.TabIndex = 103;
             // 
             // label45
@@ -627,12 +635,12 @@
             this.labelFullName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelFullName.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.labelFullName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelFullName.Location = new System.Drawing.Point(14, 152);
+            this.labelFullName.Location = new System.Drawing.Point(14, 145);
             this.labelFullName.Name = "labelFullName";
-            this.labelFullName.Size = new System.Drawing.Size(282, 62);
+            this.labelFullName.Size = new System.Drawing.Size(282, 57);
             this.labelFullName.TabIndex = 65;
             this.labelFullName.Text = "Member Name Text Overlap Test";
-            this.labelFullName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelFullName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // labelJobTitle
             // 
@@ -640,9 +648,9 @@
             this.labelJobTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelJobTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.labelJobTitle.ForeColor = System.Drawing.Color.SeaGreen;
-            this.labelJobTitle.Location = new System.Drawing.Point(14, 213);
+            this.labelJobTitle.Location = new System.Drawing.Point(14, 201);
             this.labelJobTitle.Name = "labelJobTitle";
-            this.labelJobTitle.Size = new System.Drawing.Size(282, 39);
+            this.labelJobTitle.Size = new System.Drawing.Size(282, 23);
             this.labelJobTitle.TabIndex = 66;
             this.labelJobTitle.Text = "Job Title";
             this.labelJobTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -653,7 +661,7 @@
             this.labelPFNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelPFNo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.labelPFNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelPFNo.Location = new System.Drawing.Point(36, 286);
+            this.labelPFNo.Location = new System.Drawing.Point(37, 263);
             this.labelPFNo.Name = "labelPFNo";
             this.labelPFNo.Size = new System.Drawing.Size(97, 30);
             this.labelPFNo.TabIndex = 67;
@@ -667,32 +675,19 @@
             this.labelPFNo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelPFNo2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelPFNo2.ForeColor = System.Drawing.Color.Gray;
-            this.labelPFNo2.Location = new System.Drawing.Point(139, 286);
+            this.labelPFNo2.Location = new System.Drawing.Point(140, 263);
             this.labelPFNo2.Name = "labelPFNo2";
             this.labelPFNo2.Size = new System.Drawing.Size(128, 30);
             this.labelPFNo2.TabIndex = 68;
             this.labelPFNo2.Text = "05069";
             this.labelPFNo2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.FloralWhite;
-            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(36, 294);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 30);
-            this.label4.TabIndex = 67;
-            this.label4.Text = "PF NO:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // labelEmail
             // 
             this.labelEmail.BackColor = System.Drawing.Color.FloralWhite;
             this.labelEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelEmail.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmail.Location = new System.Drawing.Point(14, 247);
+            this.labelEmail.Location = new System.Drawing.Point(15, 224);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(282, 39);
             this.labelEmail.TabIndex = 64;
@@ -766,11 +761,11 @@
             this.picBox,
             this.picBox2});
             this.dgvIndividualLoans.EnableHeadersVisualStyles = false;
-            this.dgvIndividualLoans.Location = new System.Drawing.Point(0, 122);
+            this.dgvIndividualLoans.Location = new System.Drawing.Point(0, 116);
             this.dgvIndividualLoans.Name = "dgvIndividualLoans";
             this.dgvIndividualLoans.RowHeadersVisible = false;
             this.dgvIndividualLoans.RowTemplate.Height = 30;
-            this.dgvIndividualLoans.Size = new System.Drawing.Size(1339, 496);
+            this.dgvIndividualLoans.Size = new System.Drawing.Size(1340, 506);
             this.dgvIndividualLoans.TabIndex = 8;
             this.dgvIndividualLoans.UseWaitCursor = true;
             // 
@@ -922,7 +917,7 @@
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(255, 24);
             this.label33.TabIndex = 15;
-            this.label33.Text = "LOANS TAKEN";
+            this.label33.Text = "TOTAL LOANS TAKEN";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label33.UseWaitCursor = true;
             // 
@@ -1090,6 +1085,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1350, 700);
             this.ControlBox = false;
@@ -1133,7 +1129,6 @@
         private System.Windows.Forms.PictureBox picProfile;
         private System.Windows.Forms.Label labelFullName;
         private System.Windows.Forms.Label labelJobTitle;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.Label labelPFNo;
         private System.Windows.Forms.Label labelPFNo2;

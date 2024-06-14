@@ -32,6 +32,23 @@ namespace EAC_STAFF_WELFARE_LMS
             this.Dispose();
         }
 
+        private void loadLoansData()
+        {
+            try
+            {
+                cn.Open();
+                string query = "SELECT LoanID, LoanAmount, Duration, InterestRate, ApplicationDate, DueDate, AmountPaid, PendingBalance, LoanStatus FROM Loans WHERE MemberPFNo = @StaffCode";
+                cmd = new SqlCommand(query, cn);
+                cmd.Parameters.AddWithValue("@StaffCode", pfNo);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         private void loadFullProfile()
         {
             try

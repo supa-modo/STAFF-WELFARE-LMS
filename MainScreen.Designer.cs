@@ -254,9 +254,9 @@
             this.panelMainScreen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelMainScreen.Location = new System.Drawing.Point(7, 100);
+            this.panelMainScreen.Location = new System.Drawing.Point(3, 100);
             this.panelMainScreen.Name = "panelMainScreen";
-            this.panelMainScreen.Size = new System.Drawing.Size(1336, 608);
+            this.panelMainScreen.Size = new System.Drawing.Size(1347, 608);
             this.panelMainScreen.TabIndex = 5;
             // 
             // panelFooter

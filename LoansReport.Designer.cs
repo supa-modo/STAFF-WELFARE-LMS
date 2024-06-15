@@ -85,7 +85,7 @@
             this.panelDash2.Controls.Add(this.panelTotalDiv);
             this.panelDash2.Controls.Add(this.panelActiveLoans);
             this.panelDash2.Controls.Add(this.panelSavingsAccounts);
-            this.panelDash2.Location = new System.Drawing.Point(86, 123);
+            this.panelDash2.Location = new System.Drawing.Point(68, 84);
             this.panelDash2.Name = "panelDash2";
             this.panelDash2.Size = new System.Drawing.Size(932, 141);
             this.panelDash2.TabIndex = 10;

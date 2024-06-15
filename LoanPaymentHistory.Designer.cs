@@ -84,7 +84,7 @@
             this.dgvLoanPaymentHistory.RowTemplate.Height = 24;
             this.dgvLoanPaymentHistory.Size = new System.Drawing.Size(1081, 434);
             this.dgvLoanPaymentHistory.TabIndex = 0;
-            this.dgvLoanPaymentHistory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLoanPaymentHistory_CellContentClick);
+            this.dgvLoanPaymentHistory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLoanPaymentHistory_CellClick);
             // 
             // PaymentID
             // 

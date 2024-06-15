@@ -34,6 +34,7 @@ namespace EAC_STAFF_WELFARE_LMS
 
         public void LoadMembersDataIntoDataGridView()
         {
+            dgvMembers.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;
             int i = 0;
             dgvMembers.Rows.Clear();
 

@@ -95,6 +95,7 @@
             this.dgvMemberSavings.RowTemplate.Height = 30;
             this.dgvMemberSavings.Size = new System.Drawing.Size(1350, 544);
             this.dgvMemberSavings.TabIndex = 5;
+            this.dgvMemberSavings.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMemberSavings_CellClick);
             // 
             // panel1
             // 

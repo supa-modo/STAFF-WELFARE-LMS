@@ -29,6 +29,7 @@ namespace EAC_STAFF_WELFARE_LMS
 
         public void LoadLoanApplicationsIntoDataGridView()
         {
+            
             int i = 0;
             dgvLoansDashBoard.Rows.Clear();
 
@@ -83,5 +84,33 @@ namespace EAC_STAFF_WELFARE_LMS
             }
         }
 
+        private int lastClickedRowIndex = -1;
+
+        private void dgvLoansDashBoard_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dgvLoansDashBoard.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;
+            if (e.RowIndex >= 0 && e.RowIndex < dgvLoansDashBoard.Rows.Count && e.ColumnIndex >= 0)
+            {
+                DataGridViewRow clickedRow = dgvLoansDashBoard.Rows[e.RowIndex];
+
+                if (e.RowIndex == lastClickedRowIndex)
+                {
+                    clickedRow.DefaultCellStyle.BackColor = Color.White;
+
+                    lastClickedRowIndex = -1;
+                }
+                else
+                {
+                    if (lastClickedRowIndex != -1)
+                    {
+                        dgvLoansDashBoard.Rows[lastClickedRowIndex].DefaultCellStyle.BackColor = Color.White;
+                    }
+
+                    clickedRow.DefaultCellStyle.BackColor = Color.Khaki;
+
+                    lastClickedRowIndex = e.RowIndex;
+                }
+            }
+        }
     }
 }

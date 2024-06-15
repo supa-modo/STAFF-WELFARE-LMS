@@ -34,7 +34,7 @@ namespace EAC_STAFF_WELFARE_LMS
 
            dgvLoanPaymentHistory.EnableHeadersVisualStyles = false;
             dgvLoanPaymentHistory.ColumnHeadersDefaultCellStyle.BackColor = Color.LightGray;
-            dgvLoanPaymentHistory.DefaultCellStyle.SelectionBackColor = Color.Khaki;
+            dgvLoanPaymentHistory.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;
 
 
             try
@@ -105,7 +105,8 @@ namespace EAC_STAFF_WELFARE_LMS
         }
 
         private int lastClickedRowIndex = -1;
-        private void dgvLoanPaymentHistory_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+        private void dgvLoanPaymentHistory_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.RowIndex < dgvLoanPaymentHistory.Rows.Count && e.ColumnIndex >= 0)
             {
@@ -114,6 +115,7 @@ namespace EAC_STAFF_WELFARE_LMS
                 if (e.RowIndex == lastClickedRowIndex)
                 {
                     clickedRow.DefaultCellStyle.BackColor = Color.White;
+
                     lastClickedRowIndex = -1;
                 }
                 else
@@ -124,6 +126,7 @@ namespace EAC_STAFF_WELFARE_LMS
                     }
 
                     clickedRow.DefaultCellStyle.BackColor = Color.Khaki;
+
                     lastClickedRowIndex = e.RowIndex;
                 }
             }

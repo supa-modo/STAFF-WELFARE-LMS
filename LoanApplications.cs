@@ -32,6 +32,7 @@ namespace EAC_STAFF_WELFARE_LMS
 
         public void LoadLoanApplicationsIntoDataGridView()
         {
+            dgvLoanApplications.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;
             int i = 0;
             dgvLoanApplications.Rows.Clear();
 

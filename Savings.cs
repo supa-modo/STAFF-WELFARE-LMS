@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace EAC_STAFF_WELFARE_LMS
@@ -158,6 +159,34 @@ namespace EAC_STAFF_WELFARE_LMS
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             LoadSavingsIntoDataGridView();
+        }
+
+        private int lastClickedRowIndex = -1;
+        private void dgvMemberSavings_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dgvMemberSavings.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;
+            if (e.RowIndex >= 0 && e.RowIndex < dgvMemberSavings.Rows.Count && e.ColumnIndex >= 0)
+            {
+                DataGridViewRow clickedRow = dgvMemberSavings.Rows[e.RowIndex];
+
+                if (e.RowIndex == lastClickedRowIndex)
+                {
+                    clickedRow.DefaultCellStyle.BackColor = Color.White;
+
+                    lastClickedRowIndex = -1;
+                }
+                else
+                {
+                    if (lastClickedRowIndex != -1)
+                    {
+                        dgvMemberSavings.Rows[lastClickedRowIndex].DefaultCellStyle.BackColor = Color.White;
+                    }
+
+                    clickedRow.DefaultCellStyle.BackColor = Color.Khaki;
+
+                    lastClickedRowIndex = e.RowIndex;
+                }
+            }
         }
     }
 }

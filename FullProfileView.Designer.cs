@@ -315,7 +315,7 @@
             this.metroDateTimeEnd.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
             this.metroDateTimeEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.metroDateTimeEnd.Location = new System.Drawing.Point(1140, 465);
-            this.metroDateTimeEnd.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTimeEnd.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTimeEnd.Name = "metroDateTimeEnd";
             this.metroDateTimeEnd.Size = new System.Drawing.Size(160, 29);
             this.metroDateTimeEnd.Style = MetroFramework.MetroColorStyle.Green;
@@ -327,7 +327,7 @@
             this.metroDateTimeStart.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
             this.metroDateTimeStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.metroDateTimeStart.Location = new System.Drawing.Point(863, 465);
-            this.metroDateTimeStart.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTimeStart.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTimeStart.Name = "metroDateTimeStart";
             this.metroDateTimeStart.Size = new System.Drawing.Size(160, 29);
             this.metroDateTimeStart.Style = MetroFramework.MetroColorStyle.Green;
@@ -761,11 +761,11 @@
             this.picBox,
             this.picBox2});
             this.dgvIndividualLoans.EnableHeadersVisualStyles = false;
-            this.dgvIndividualLoans.Location = new System.Drawing.Point(0, 116);
+            this.dgvIndividualLoans.Location = new System.Drawing.Point(0, 122);
             this.dgvIndividualLoans.Name = "dgvIndividualLoans";
             this.dgvIndividualLoans.RowHeadersVisible = false;
             this.dgvIndividualLoans.RowTemplate.Height = 30;
-            this.dgvIndividualLoans.Size = new System.Drawing.Size(1340, 506);
+            this.dgvIndividualLoans.Size = new System.Drawing.Size(1340, 500);
             this.dgvIndividualLoans.TabIndex = 8;
             this.dgvIndividualLoans.UseWaitCursor = true;
             // 

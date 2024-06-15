@@ -34,12 +34,40 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private void loadLoansData()
         {
-            try
-            {
+            int i = 0;
+            dgvIndividualLoans.Rows.Clear();
+
                 cn.Open();
                 string query = "SELECT LoanID, LoanAmount, Duration, InterestRate, ApplicationDate, DueDate, AmountPaid, PendingBalance, LoanStatus FROM Loans WHERE MemberPFNo = @StaffCode";
                 cmd = new SqlCommand(query, cn);
                 cmd.Parameters.AddWithValue("@StaffCode", pfNo);
+
+                try
+                {
+                    cn.Open();
+                    // Execute the query
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+
+                        i++;
+                        string interestRate = dr["InterestRate"].ToString() + "%";
+                        // Add data to DataGridView
+                        dgvIndividualLoans.Rows.Add(i,
+                            dr["LoanID"],
+                            dr["PFNo"],
+                            dr["ApplicantName"],
+                            dr["LoanAmount"],
+                            /*dr["InterestRate"],*/
+                            interestRate,
+                            dr["DurationOfPayment"],
+                            ((DateTime)dr["ApplicationDate"]).ToString("dd-MMM-yyyy"),
+                            ((DateTime)dr["DueDate"]).ToString("dd-MMM-yyyy"),
+                            dr["MonthlyInstallments"],
+                            dr["PendingBalance"],
+                            dr["LoanStatus"]
+                            );
+                    }
 
             }
             catch (Exception)

@@ -91,7 +91,6 @@ namespace EAC_STAFF_WELFARE_LMS
             }
             finally
             {
-                // Close the SqlConnection
                 cn.Close();
             }
         }

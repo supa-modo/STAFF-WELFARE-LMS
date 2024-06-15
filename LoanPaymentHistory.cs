@@ -37,6 +37,31 @@ namespace EAC_STAFF_WELFARE_LMS
             dgvLoanPaymentHistory.DefaultCellStyle.SelectionBackColor = Color.Khaki;
 
 
+            try
+            {
+                cn.Open();
+                string query2 = "SELECT ApplicantName from Loans WHERE LoanID = @LoanID";
+                cmd = new SqlCommand(query2, cn);
+                cmd.Parameters.AddWithValue("@loanId", loanId);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    labelApplicant.Text = reader["ApplicantName"].ToString();
+                }
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("An error occurred: " + ex.Message); ;
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+
 
             int i = 0;
             dgvLoanPaymentHistory.Rows.Clear();
@@ -79,7 +104,30 @@ namespace EAC_STAFF_WELFARE_LMS
             this.Dispose();
         }
 
-        
+        private int lastClickedRowIndex = -1;
+        private void dgvLoanPaymentHistory_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.RowIndex < dgvLoanPaymentHistory.Rows.Count && e.ColumnIndex >= 0)
+            {
+                DataGridViewRow clickedRow = dgvLoanPaymentHistory.Rows[e.RowIndex];
+
+                if (e.RowIndex == lastClickedRowIndex)
+                {
+                    clickedRow.DefaultCellStyle.BackColor = Color.White;
+                    lastClickedRowIndex = -1;
+                }
+                else
+                {
+                    if (lastClickedRowIndex != -1)
+                    {
+                        dgvLoanPaymentHistory.Rows[lastClickedRowIndex].DefaultCellStyle.BackColor = Color.White;
+                    }
+
+                    clickedRow.DefaultCellStyle.BackColor = Color.Khaki;
+                    lastClickedRowIndex = e.RowIndex;
+                }
+            }
+        }
     }
 
 }

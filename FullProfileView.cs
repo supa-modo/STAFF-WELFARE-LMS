@@ -26,6 +26,8 @@ namespace EAC_STAFF_WELFARE_LMS
             btnSave.Visible = false;
             btnCancel.Visible = false;
             loadLoansData();
+            CalculateTotalIndividualActiveLoans();
+            CalculateTotalIndividualLoans();
         }
 
         private void picBxClose_Click(object sender, EventArgs e)
@@ -35,6 +37,7 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private void loadLoansData()
         {
+            dgvIndividualLoans.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;
             int i = 0;
             dgvIndividualLoans.Rows.Clear();
 
@@ -71,6 +74,71 @@ namespace EAC_STAFF_WELFARE_LMS
             catch (Exception ex)
             {
                 MessageBox.Show("An error occurred: " + ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+
+        private void CalculateTotalIndividualLoans()
+        {
+            decimal totalIndividualLoans = 0;
+
+            try
+            {
+                //Getting specific individual's total loans whether active or paid
+                cn.Open();
+                string query = "SELECT SUM(LoanAmount) AS TotalLoanAmount FROM Loans WHERE PFNo = @StaffCode";
+                cmd = new SqlCommand(query, cn);
+                cmd.Parameters.AddWithValue("@StaffCode", pfNo);
+
+                Object result = cmd.ExecuteScalar();
+                if (result != DBNull.Value)
+                {
+                    totalIndividualLoans = Convert.ToDecimal(result);
+
+                }
+                labelTotalLoans.Text = totalIndividualLoans.ToString("C");
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("An Error occured: " + ex.Message);
+            }
+            finally { 
+                cn.Close(); 
+            }
+        }
+
+
+        private void CalculateTotalIndividualActiveLoans()
+        {
+            decimal totalIndividualLoans = 0;
+
+            try
+            {
+                //Getting specific individual's total active loans
+                cn.Open();
+                string query = "SELECT SUM(PendingBalance) AS TotalLoanAmount FROM Loans WHERE PFNo = @StaffCode AND LoanStatus = 'Active'";
+                cmd = new SqlCommand(query, cn);
+                cmd.Parameters.AddWithValue("@StaffCode", pfNo);
+
+                Object result = cmd.ExecuteScalar();
+                if (result != DBNull.Value)
+                {
+                    totalIndividualLoans = Convert.ToDecimal(result);
+
+                }
+                labelPendingLoans.Text = totalIndividualLoans.ToString("C");
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("An Error occured: " + ex.Message);
             }
             finally
             {
@@ -203,5 +271,31 @@ namespace EAC_STAFF_WELFARE_LMS
             btnCancel.Visible = false;
             metrobtnEdit.Visible = true;
         }
+
+        private int lastClickedRowIndex = -1;
+        private void dgvIndividualLoans_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.RowIndex < dgvIndividualLoans.Rows.Count && e.ColumnIndex >= 0)
+            {
+                DataGridViewRow clickedRow = dgvIndividualLoans.Rows[e.RowIndex];
+
+                if (e.RowIndex == lastClickedRowIndex)
+                {
+                    clickedRow.DefaultCellStyle.BackColor = Color.White;
+                    lastClickedRowIndex = -1;
+                }
+                else
+                {
+                    if (lastClickedRowIndex != -1)
+                    {
+                        dgvIndividualLoans.Rows[lastClickedRowIndex].DefaultCellStyle.BackColor = Color.White;
+                    }
+
+                    clickedRow.DefaultCellStyle.BackColor = Color.Khaki;
+                    lastClickedRowIndex = e.RowIndex;
+                }
+            }
+        }
+
     }
 }

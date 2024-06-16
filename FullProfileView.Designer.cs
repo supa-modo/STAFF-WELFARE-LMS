@@ -29,20 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FullProfileView));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelMemberProfileTop = new System.Windows.Forms.Panel();
             this.picBxClose = new System.Windows.Forms.PictureBox();
             this.lblMemberProfile = new System.Windows.Forms.Label();
-            this.panelMetro = new System.Windows.Forms.Panel();
             this.metroTabProfile = new MetroFramework.Controls.MetroTabControl();
             this.metroPDetails = new MetroFramework.Controls.MetroTabPage();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -87,23 +86,6 @@
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.metroLoans = new MetroFramework.Controls.MetroTabPage();
             this.dgvIndividualLoans = new System.Windows.Forms.DataGridView();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.metroSavings = new MetroFramework.Controls.MetroTabPage();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.metroTabControl2 = new MetroFramework.Controls.MetroTabControl();
-            this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.SNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -115,9 +97,25 @@
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.picBox2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.labelPaidIn = new System.Windows.Forms.Label();
+            this.labelPendingLoans = new System.Windows.Forms.Label();
+            this.labelTotalLoans = new System.Windows.Forms.Label();
+            this.metroSavings = new MetroFramework.Controls.MetroTabPage();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.metroTabControl2 = new MetroFramework.Controls.MetroTabControl();
+            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
+            this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.panelMemberProfileTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBxClose)).BeginInit();
-            this.panelMetro.SuspendLayout();
             this.metroTabProfile.SuspendLayout();
             this.metroPDetails.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -136,14 +134,14 @@
             this.panelMemberProfileTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMemberProfileTop.Location = new System.Drawing.Point(0, 0);
             this.panelMemberProfileTop.Name = "panelMemberProfileTop";
-            this.panelMemberProfileTop.Size = new System.Drawing.Size(1350, 40);
+            this.panelMemberProfileTop.Size = new System.Drawing.Size(1328, 40);
             this.panelMemberProfileTop.TabIndex = 0;
             // 
             // picBxClose
             // 
             this.picBxClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.picBxClose.Image = ((System.Drawing.Image)(resources.GetObject("picBxClose.Image")));
-            this.picBxClose.Location = new System.Drawing.Point(1318, 11);
+            this.picBxClose.Location = new System.Drawing.Point(1296, 11);
             this.picBxClose.Name = "picBxClose";
             this.picBxClose.Size = new System.Drawing.Size(20, 20);
             this.picBxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -164,27 +162,18 @@
             this.lblMemberProfile.Text = "Member Full Profile";
             this.lblMemberProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panelMetro
-            // 
-            this.panelMetro.Controls.Add(this.metroTabProfile);
-            this.panelMetro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMetro.Location = new System.Drawing.Point(0, 40);
-            this.panelMetro.Name = "panelMetro";
-            this.panelMetro.Size = new System.Drawing.Size(1350, 660);
-            this.panelMetro.TabIndex = 1;
-            // 
             // metroTabProfile
             // 
             this.metroTabProfile.Controls.Add(this.metroPDetails);
             this.metroTabProfile.Controls.Add(this.metroLoans);
             this.metroTabProfile.Controls.Add(this.metroSavings);
             this.metroTabProfile.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTabProfile.Location = new System.Drawing.Point(0, 0);
+            this.metroTabProfile.Location = new System.Drawing.Point(0, 40);
             this.metroTabProfile.Name = "metroTabProfile";
-            this.metroTabProfile.SelectedIndex = 1;
-            this.metroTabProfile.Size = new System.Drawing.Size(1350, 660);
+            this.metroTabProfile.SelectedIndex = 2;
+            this.metroTabProfile.Size = new System.Drawing.Size(1328, 665);
             this.metroTabProfile.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTabProfile.TabIndex = 0;
+            this.metroTabProfile.TabIndex = 1;
             this.metroTabProfile.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTabProfile.UseCustomBackColor = true;
             this.metroTabProfile.UseSelectable = true;
@@ -200,7 +189,7 @@
             this.metroPDetails.HorizontalScrollbarSize = 10;
             this.metroPDetails.Location = new System.Drawing.Point(4, 38);
             this.metroPDetails.Name = "metroPDetails";
-            this.metroPDetails.Size = new System.Drawing.Size(1342, 618);
+            this.metroPDetails.Size = new System.Drawing.Size(1320, 623);
             this.metroPDetails.TabIndex = 0;
             this.metroPDetails.Text = "      Personal Details               ";
             this.metroPDetails.VerticalScrollbar = true;
@@ -210,9 +199,6 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.AutoScroll = true;
             this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel2.BackColor = System.Drawing.Color.Silver;
@@ -255,9 +241,9 @@
             this.panel2.Controls.Add(this.labelEmail);
             this.panel2.Controls.Add(this.picProfile);
             this.panel2.Controls.Add(this.splitter1);
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Location = new System.Drawing.Point(1, -1);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1340, 618);
+            this.panel2.Size = new System.Drawing.Size(1316, 623);
             this.panel2.TabIndex = 2;
             // 
             // btnCancel
@@ -273,7 +259,6 @@
             this.btnCancel.UseCustomBackColor = true;
             this.btnCancel.UseCustomForeColor = true;
             this.btnCancel.UseSelectable = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
             // 
             // btnSave
             // 
@@ -290,7 +275,6 @@
             this.btnSave.UseCustomForeColor = true;
             this.btnSave.UseSelectable = true;
             this.btnSave.UseStyleColors = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
             // metrobtnEdit
             // 
@@ -307,14 +291,13 @@
             this.metrobtnEdit.UseCustomForeColor = true;
             this.metrobtnEdit.UseSelectable = true;
             this.metrobtnEdit.UseStyleColors = true;
-            this.metrobtnEdit.Click += new System.EventHandler(this.metrobtnEdit_Click);
             // 
             // metroDateTimeEnd
             // 
             this.metroDateTimeEnd.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.metroDateTimeEnd.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
             this.metroDateTimeEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.metroDateTimeEnd.Location = new System.Drawing.Point(1140, 465);
+            this.metroDateTimeEnd.Location = new System.Drawing.Point(1114, 465);
             this.metroDateTimeEnd.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTimeEnd.Name = "metroDateTimeEnd";
             this.metroDateTimeEnd.Size = new System.Drawing.Size(160, 29);
@@ -326,7 +309,7 @@
             this.metroDateTimeStart.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.metroDateTimeStart.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
             this.metroDateTimeStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.metroDateTimeStart.Location = new System.Drawing.Point(863, 465);
+            this.metroDateTimeStart.Location = new System.Drawing.Point(837, 465);
             this.metroDateTimeStart.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTimeStart.Name = "metroDateTimeStart";
             this.metroDateTimeStart.Size = new System.Drawing.Size(160, 29);
@@ -343,7 +326,7 @@
             "Short-Term Contract",
             "Casual Contract",
             "Consultant Contract"});
-            this.comboContract.Location = new System.Drawing.Point(772, 378);
+            this.comboContract.Location = new System.Drawing.Point(746, 378);
             this.comboContract.Name = "comboContract";
             this.comboContract.Size = new System.Drawing.Size(353, 28);
             this.comboContract.TabIndex = 113;
@@ -503,7 +486,7 @@
             this.label19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label19.Location = new System.Drawing.Point(1045, 467);
+            this.label19.Location = new System.Drawing.Point(1019, 467);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(89, 25);
             this.label19.TabIndex = 84;
@@ -515,7 +498,7 @@
             this.label15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label15.Location = new System.Drawing.Point(768, 467);
+            this.label15.Location = new System.Drawing.Point(742, 467);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(89, 25);
             this.label15.TabIndex = 83;
@@ -551,7 +534,7 @@
             this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label20.Location = new System.Drawing.Point(768, 435);
+            this.label20.Location = new System.Drawing.Point(742, 435);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(150, 25);
             this.label20.TabIndex = 80;
@@ -575,7 +558,7 @@
             this.label16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label16.Location = new System.Drawing.Point(768, 346);
+            this.label16.Location = new System.Drawing.Point(742, 346);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(150, 25);
             this.label16.TabIndex = 77;
@@ -635,11 +618,11 @@
             this.labelFullName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelFullName.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.labelFullName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelFullName.Location = new System.Drawing.Point(14, 145);
+            this.labelFullName.Location = new System.Drawing.Point(6, 152);
             this.labelFullName.Name = "labelFullName";
-            this.labelFullName.Size = new System.Drawing.Size(282, 57);
+            this.labelFullName.Size = new System.Drawing.Size(294, 31);
             this.labelFullName.TabIndex = 65;
-            this.labelFullName.Text = "Member Name Text Overlap Test";
+            this.labelFullName.Text = "Member Name Text Overlap";
             this.labelFullName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // labelJobTitle
@@ -648,7 +631,7 @@
             this.labelJobTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelJobTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.labelJobTitle.ForeColor = System.Drawing.Color.SeaGreen;
-            this.labelJobTitle.Location = new System.Drawing.Point(14, 201);
+            this.labelJobTitle.Location = new System.Drawing.Point(14, 189);
             this.labelJobTitle.Name = "labelJobTitle";
             this.labelJobTitle.Size = new System.Drawing.Size(282, 23);
             this.labelJobTitle.TabIndex = 66;
@@ -661,7 +644,7 @@
             this.labelPFNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelPFNo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.labelPFNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelPFNo.Location = new System.Drawing.Point(37, 263);
+            this.labelPFNo.Location = new System.Drawing.Point(37, 242);
             this.labelPFNo.Name = "labelPFNo";
             this.labelPFNo.Size = new System.Drawing.Size(97, 30);
             this.labelPFNo.TabIndex = 67;
@@ -675,7 +658,7 @@
             this.labelPFNo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelPFNo2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.labelPFNo2.ForeColor = System.Drawing.Color.Gray;
-            this.labelPFNo2.Location = new System.Drawing.Point(140, 263);
+            this.labelPFNo2.Location = new System.Drawing.Point(140, 242);
             this.labelPFNo2.Name = "labelPFNo2";
             this.labelPFNo2.Size = new System.Drawing.Size(128, 30);
             this.labelPFNo2.TabIndex = 68;
@@ -687,9 +670,9 @@
             this.labelEmail.BackColor = System.Drawing.Color.FloralWhite;
             this.labelEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelEmail.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmail.Location = new System.Drawing.Point(15, 224);
+            this.labelEmail.Location = new System.Drawing.Point(15, 218);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(282, 39);
+            this.labelEmail.Size = new System.Drawing.Size(282, 18);
             this.labelEmail.TabIndex = 64;
             this.labelEmail.Text = "email.xyz@eachq.org";
             this.labelEmail.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -710,7 +693,7 @@
             this.splitter1.BackColor = System.Drawing.Color.FloralWhite;
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(312, 618);
+            this.splitter1.Size = new System.Drawing.Size(306, 623);
             this.splitter1.TabIndex = 0;
             this.splitter1.TabStop = false;
             // 
@@ -724,7 +707,7 @@
             this.metroLoans.HorizontalScrollbarSize = 10;
             this.metroLoans.Location = new System.Drawing.Point(4, 38);
             this.metroLoans.Name = "metroLoans";
-            this.metroLoans.Size = new System.Drawing.Size(1342, 618);
+            this.metroLoans.Size = new System.Drawing.Size(1320, 623);
             this.metroLoans.TabIndex = 1;
             this.metroLoans.Text = "      Loan Applications               ";
             this.metroLoans.VerticalScrollbarBarColor = true;
@@ -737,19 +720,16 @@
             this.dgvIndividualLoans.AllowUserToDeleteRows = false;
             this.dgvIndividualLoans.AllowUserToResizeColumns = false;
             this.dgvIndividualLoans.AllowUserToResizeRows = false;
-            this.dgvIndividualLoans.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvIndividualLoans.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvIndividualLoans.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvIndividualLoans.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.ScrollBar;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvIndividualLoans.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.dgvIndividualLoans.ColumnHeadersHeight = 30;
             this.dgvIndividualLoans.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvIndividualLoans.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -765,13 +745,127 @@
             this.Column7,
             this.picBox2});
             this.dgvIndividualLoans.EnableHeadersVisualStyles = false;
-            this.dgvIndividualLoans.Location = new System.Drawing.Point(0, 114);
+            this.dgvIndividualLoans.Location = new System.Drawing.Point(3, 116);
             this.dgvIndividualLoans.Name = "dgvIndividualLoans";
+            this.dgvIndividualLoans.ReadOnly = true;
             this.dgvIndividualLoans.RowHeadersVisible = false;
             this.dgvIndividualLoans.RowTemplate.Height = 30;
-            this.dgvIndividualLoans.Size = new System.Drawing.Size(1342, 504);
+            this.dgvIndividualLoans.Size = new System.Drawing.Size(1317, 507);
             this.dgvIndividualLoans.TabIndex = 8;
             this.dgvIndividualLoans.UseWaitCursor = true;
+            // 
+            // SNo
+            // 
+            this.SNo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.SNo.HeaderText = "S/No.";
+            this.SNo.Name = "SNo";
+            this.SNo.ReadOnly = true;
+            this.SNo.Width = 75;
+            // 
+            // Column8
+            // 
+            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle22;
+            this.Column8.HeaderText = "Loan ID";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle23;
+            this.Column2.HeaderText = "Loan Amount";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 131;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle24;
+            this.Column3.HeaderText = "Duration";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 96;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle25;
+            this.Column4.HeaderText = "Interest Rate";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 127;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle26;
+            this.Column1.HeaderText = "Application Date";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 155;
+            // 
+            // Column5
+            // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle27;
+            this.Column5.HeaderText = "Due Date";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle28;
+            this.Column6.HeaderText = "Amount Paid";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Width = 127;
+            // 
+            // Column9
+            // 
+            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.Column9.DefaultCellStyle = dataGridViewCellStyle29;
+            this.Column9.HeaderText = "Pending Balance";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            this.Column9.Width = 152;
+            // 
+            // Column7
+            // 
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle30;
+            this.Column7.HeaderText = "Status";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            this.Column7.Width = 120;
+            // 
+            // picBox2
+            // 
+            this.picBox2.HeaderText = "";
+            this.picBox2.Name = "picBox2";
+            this.picBox2.ReadOnly = true;
+            this.picBox2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.picBox2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.picBox2.Width = 50;
             // 
             // panel4
             // 
@@ -779,12 +873,12 @@
             this.panel4.Controls.Add(this.label35);
             this.panel4.Controls.Add(this.label34);
             this.panel4.Controls.Add(this.label33);
-            this.panel4.Controls.Add(this.label32);
-            this.panel4.Controls.Add(this.label36);
-            this.panel4.Controls.Add(this.label37);
-            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Controls.Add(this.labelPaidIn);
+            this.panel4.Controls.Add(this.labelPendingLoans);
+            this.panel4.Controls.Add(this.labelTotalLoans);
+            this.panel4.Location = new System.Drawing.Point(3, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1339, 116);
+            this.panel4.Size = new System.Drawing.Size(1317, 116);
             this.panel4.TabIndex = 7;
             this.panel4.UseWaitCursor = true;
             // 
@@ -792,7 +886,7 @@
             // 
             this.label35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label35.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.label35.Location = new System.Drawing.Point(894, 67);
+            this.label35.Location = new System.Drawing.Point(872, 67);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(255, 24);
             this.label35.TabIndex = 17;
@@ -807,9 +901,9 @@
             this.label34.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.label34.Location = new System.Drawing.Point(534, 67);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(267, 24);
+            this.label34.Size = new System.Drawing.Size(245, 24);
             this.label34.TabIndex = 16;
-            this.label34.Text = "PENDING LOAN BALANCE";
+            this.label34.Text = "PENDING LOANS BALANCE";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label34.UseWaitCursor = true;
             // 
@@ -825,45 +919,45 @@
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label33.UseWaitCursor = true;
             // 
-            // label32
+            // labelPaidIn
             // 
-            this.label32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label32.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
-            this.label32.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label32.Location = new System.Drawing.Point(894, 22);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(255, 45);
-            this.label32.TabIndex = 14;
-            this.label32.Text = "$ 1,748";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label32.UseWaitCursor = true;
+            this.labelPaidIn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelPaidIn.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
+            this.labelPaidIn.ForeColor = System.Drawing.Color.SeaGreen;
+            this.labelPaidIn.Location = new System.Drawing.Point(872, 22);
+            this.labelPaidIn.Name = "labelPaidIn";
+            this.labelPaidIn.Size = new System.Drawing.Size(255, 45);
+            this.labelPaidIn.TabIndex = 14;
+            this.labelPaidIn.Text = "$ 1,748";
+            this.labelPaidIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelPaidIn.UseWaitCursor = true;
             // 
-            // label36
+            // labelPendingLoans
             // 
-            this.label36.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelPendingLoans.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label36.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
-            this.label36.ForeColor = System.Drawing.Color.Red;
-            this.label36.Location = new System.Drawing.Point(534, 22);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(267, 45);
-            this.label36.TabIndex = 13;
-            this.label36.Text = "$ 37,962";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label36.UseWaitCursor = true;
+            this.labelPendingLoans.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
+            this.labelPendingLoans.ForeColor = System.Drawing.Color.Red;
+            this.labelPendingLoans.Location = new System.Drawing.Point(534, 22);
+            this.labelPendingLoans.Name = "labelPendingLoans";
+            this.labelPendingLoans.Size = new System.Drawing.Size(245, 45);
+            this.labelPendingLoans.TabIndex = 13;
+            this.labelPendingLoans.Text = "$ 37,962";
+            this.labelPendingLoans.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelPendingLoans.UseWaitCursor = true;
             // 
-            // label37
+            // labelTotalLoans
             // 
-            this.label37.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
-            this.label37.ForeColor = System.Drawing.Color.Chocolate;
-            this.label37.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label37.Location = new System.Drawing.Point(186, 22);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(255, 45);
-            this.label37.TabIndex = 12;
-            this.label37.Text = "$ 400,542";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label37.UseWaitCursor = true;
+            this.labelTotalLoans.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
+            this.labelTotalLoans.ForeColor = System.Drawing.Color.Chocolate;
+            this.labelTotalLoans.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.labelTotalLoans.Location = new System.Drawing.Point(186, 22);
+            this.labelTotalLoans.Name = "labelTotalLoans";
+            this.labelTotalLoans.Size = new System.Drawing.Size(255, 45);
+            this.labelTotalLoans.TabIndex = 12;
+            this.labelTotalLoans.Text = "$ 400,542";
+            this.labelTotalLoans.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelTotalLoans.UseWaitCursor = true;
             // 
             // metroSavings
             // 
@@ -879,7 +973,7 @@
             this.metroSavings.HorizontalScrollbarSize = 10;
             this.metroSavings.Location = new System.Drawing.Point(4, 38);
             this.metroSavings.Name = "metroSavings";
-            this.metroSavings.Size = new System.Drawing.Size(1339, 618);
+            this.metroSavings.Size = new System.Drawing.Size(1320, 623);
             this.metroSavings.Style = MetroFramework.MetroColorStyle.Green;
             this.metroSavings.TabIndex = 2;
             this.metroSavings.Text = "     Savings Account                ";
@@ -933,9 +1027,9 @@
             // 
             // metroTabControl2
             // 
+            this.metroTabControl2.Controls.Add(this.metroTabPage2);
             this.metroTabControl2.Controls.Add(this.metroTabPage3);
             this.metroTabControl2.Controls.Add(this.metroTabPage1);
-            this.metroTabControl2.Controls.Add(this.metroTabPage2);
             this.metroTabControl2.Location = new System.Drawing.Point(34, 275);
             this.metroTabControl2.Name = "metroTabControl2";
             this.metroTabControl2.SelectedIndex = 2;
@@ -943,14 +1037,28 @@
             this.metroTabControl2.TabIndex = 2;
             this.metroTabControl2.UseSelectable = true;
             // 
+            // metroTabPage2
+            // 
+            this.metroTabPage2.HorizontalScrollbarBarColor = true;
+            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.HorizontalScrollbarSize = 5;
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage2.Name = "metroTabPage2";
+            this.metroTabPage2.Size = new System.Drawing.Size(369, 186);
+            this.metroTabPage2.TabIndex = 1;
+            this.metroTabPage2.Text = "metroTabPage2";
+            this.metroTabPage2.VerticalScrollbarBarColor = true;
+            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.VerticalScrollbarSize = 6;
+            // 
             // metroTabPage3
             // 
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage3.HorizontalScrollbarSize = 5;
-            this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage3.Location = new System.Drawing.Point(4, 35);
             this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(369, 183);
+            this.metroTabPage3.Size = new System.Drawing.Size(369, 186);
             this.metroTabPage3.TabIndex = 2;
             this.metroTabPage3.Text = "metroTabPage3";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
@@ -971,132 +1079,15 @@
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 6;
             // 
-            // metroTabPage2
-            // 
-            this.metroTabPage2.HorizontalScrollbarBarColor = true;
-            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 5;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
-            this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(369, 183);
-            this.metroTabPage2.TabIndex = 1;
-            this.metroTabPage2.Text = "metroTabPage2";
-            this.metroTabPage2.VerticalScrollbarBarColor = true;
-            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 6;
-            // 
-            // SNo
-            // 
-            this.SNo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.SNo.HeaderText = "S/No.";
-            this.SNo.Name = "SNo";
-            this.SNo.ReadOnly = true;
-            this.SNo.Width = 75;
-            // 
-            // Column8
-            // 
-            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column8.HeaderText = "Loan ID";
-            this.Column8.Name = "Column8";
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column2.HeaderText = "Loan Amount";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 131;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Column3.HeaderText = "Duration";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 96;
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Column4.HeaderText = "Interest Rate";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 127;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle6;
-            this.Column1.HeaderText = "Application Date";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 155;
-            // 
-            // Column5
-            // 
-            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle7;
-            this.Column5.HeaderText = "Due Date";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle8;
-            this.Column6.HeaderText = "Amount Paid";
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 127;
-            // 
-            // Column9
-            // 
-            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.Column9.DefaultCellStyle = dataGridViewCellStyle9;
-            this.Column9.HeaderText = "Pending Balance";
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 152;
-            // 
-            // Column7
-            // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle10;
-            this.Column7.HeaderText = "Status";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 120;
-            // 
-            // picBox2
-            // 
-            this.picBox2.HeaderText = "";
-            this.picBox2.Name = "picBox2";
-            this.picBox2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.picBox2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.picBox2.Width = 50;
-            // 
             // FullProfileView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1350, 700);
+            this.ClientSize = new System.Drawing.Size(1328, 705);
             this.ControlBox = false;
-            this.Controls.Add(this.panelMetro);
+            this.Controls.Add(this.metroTabProfile);
             this.Controls.Add(this.panelMemberProfileTop);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1106,7 +1097,6 @@
             this.Text = "FullProfileView";
             this.panelMemberProfileTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picBxClose)).EndInit();
-            this.panelMetro.ResumeLayout(false);
             this.metroTabProfile.ResumeLayout(false);
             this.metroPDetails.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -1126,19 +1116,26 @@
 
         private System.Windows.Forms.Panel panelMemberProfileTop;
         private System.Windows.Forms.Label lblMemberProfile;
-        private System.Windows.Forms.Panel panelMetro;
+        private System.Windows.Forms.PictureBox picBxClose;
         private MetroFramework.Controls.MetroTabControl metroTabProfile;
         private MetroFramework.Controls.MetroTabPage metroPDetails;
-        private MetroFramework.Controls.MetroTabPage metroLoans;
-        private MetroFramework.Controls.MetroTabPage metroSavings;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Splitter splitter1;
-        private System.Windows.Forms.PictureBox picProfile;
-        private System.Windows.Forms.Label labelFullName;
-        private System.Windows.Forms.Label labelJobTitle;
-        private System.Windows.Forms.Label labelEmail;
-        private System.Windows.Forms.Label labelPFNo;
-        private System.Windows.Forms.Label labelPFNo2;
+        private MetroFramework.Controls.MetroButton btnCancel;
+        private MetroFramework.Controls.MetroButton btnSave;
+        private MetroFramework.Controls.MetroButton metrobtnEdit;
+        private MetroFramework.Controls.MetroDateTime metroDateTimeEnd;
+        private MetroFramework.Controls.MetroDateTime metroDateTimeStart;
+        private System.Windows.Forms.ComboBox comboContract;
+        private System.Windows.Forms.TextBox txtDpt;
+        private System.Windows.Forms.TextBox txtTitle;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.TextBox txtEmail2;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtPhone2;
+        private System.Windows.Forms.TextBox txtPhone1;
+        private System.Windows.Forms.TextBox txtLName;
+        private System.Windows.Forms.TextBox txtMName;
+        private System.Windows.Forms.TextBox txtFName;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label40;
@@ -1155,40 +1152,15 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label labelFName;
+        private System.Windows.Forms.Label labelFullName;
+        private System.Windows.Forms.Label labelJobTitle;
+        private System.Windows.Forms.Label labelPFNo;
+        private System.Windows.Forms.Label labelPFNo2;
+        private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.PictureBox picProfile;
+        private System.Windows.Forms.Splitter splitter1;
+        private MetroFramework.Controls.MetroTabPage metroLoans;
         private System.Windows.Forms.DataGridView dgvIndividualLoans;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private MetroFramework.Controls.MetroTabControl metroTabControl2;
-        private MetroFramework.Controls.MetroTabPage metroTabPage1;
-        private MetroFramework.Controls.MetroTabPage metroTabPage2;
-        private MetroFramework.Controls.MetroTabPage metroTabPage3;
-        private System.Windows.Forms.TextBox txtFName;
-        private System.Windows.Forms.TextBox txtAddress;
-        private System.Windows.Forms.TextBox txtEmail2;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.TextBox txtPhone2;
-        private System.Windows.Forms.TextBox txtPhone1;
-        private System.Windows.Forms.TextBox txtLName;
-        private System.Windows.Forms.TextBox txtMName;
-        private System.Windows.Forms.TextBox txtTitle;
-        private System.Windows.Forms.ComboBox comboContract;
-        private System.Windows.Forms.TextBox txtDpt;
-        private MetroFramework.Controls.MetroDateTime metroDateTimeStart;
-        private MetroFramework.Controls.MetroDateTime metroDateTimeEnd;
-        private System.Windows.Forms.PictureBox picBxClose;
-        private MetroFramework.Controls.MetroButton metrobtnEdit;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label37;
-        private MetroFramework.Controls.MetroButton btnSave;
-        private MetroFramework.Controls.MetroButton btnCancel;
         private System.Windows.Forms.DataGridViewTextBoxColumn SNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -1200,5 +1172,22 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewButtonColumn picBox2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label labelPaidIn;
+        private System.Windows.Forms.Label labelPendingLoans;
+        private System.Windows.Forms.Label labelTotalLoans;
+        private MetroFramework.Controls.MetroTabPage metroSavings;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private MetroFramework.Controls.MetroTabControl metroTabControl2;
+        private MetroFramework.Controls.MetroTabPage metroTabPage2;
+        private MetroFramework.Controls.MetroTabPage metroTabPage3;
+        private MetroFramework.Controls.MetroTabPage metroTabPage1;
     }
 }

@@ -28,42 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnLoanReport = new System.Windows.Forms.Button();
             this.panelReportsSide = new System.Windows.Forms.Panel();
-            this.btnSavingsReport = new System.Windows.Forms.Button();
-            this.btnAllMembersReport = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnIndivSavings = new System.Windows.Forms.Button();
+            this.btnTotalSavings = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnIndivMembers = new System.Windows.Forms.Button();
+            this.btnAllMembers = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnIndivLoans = new System.Windows.Forms.Button();
+            this.btnActiveLoans = new System.Windows.Forms.Button();
+            this.btnAllLoans = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panelReportViewer = new System.Windows.Forms.Panel();
             this.reportViewer = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
             this.panelReportsSide.SuspendLayout();
-            this.panelReportViewer.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panelReportViewer.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnLoanReport
-            // 
-            this.btnLoanReport.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoanReport.Location = new System.Drawing.Point(6, 543);
-            this.btnLoanReport.Name = "btnLoanReport";
-            this.btnLoanReport.Size = new System.Drawing.Size(215, 27);
-            this.btnLoanReport.TabIndex = 0;
-            this.btnLoanReport.Text = "Sample Loan Report";
-            this.btnLoanReport.UseVisualStyleBackColor = true;
-            this.btnLoanReport.Click += new System.EventHandler(this.button1_Click);
             // 
             // panelReportsSide
             // 
@@ -73,37 +60,228 @@
             this.panelReportsSide.Controls.Add(this.panel5);
             this.panelReportsSide.Controls.Add(this.label2);
             this.panelReportsSide.Controls.Add(this.panel2);
-            this.panelReportsSide.Controls.Add(this.label1);
-            this.panelReportsSide.Controls.Add(this.btnSavingsReport);
-            this.panelReportsSide.Controls.Add(this.btnAllMembersReport);
-            this.panelReportsSide.Controls.Add(this.btnLoanReport);
+            this.panelReportsSide.Controls.Add(this.label4);
+            this.panelReportsSide.Controls.Add(this.panel1);
             this.panelReportsSide.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelReportsSide.Location = new System.Drawing.Point(0, 0);
             this.panelReportsSide.Name = "panelReportsSide";
             this.panelReportsSide.Size = new System.Drawing.Size(221, 630);
             this.panelReportsSide.TabIndex = 2;
             // 
-            // btnSavingsReport
+            // panel3
             // 
-            this.btnSavingsReport.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSavingsReport.Location = new System.Drawing.Point(6, 597);
-            this.btnSavingsReport.Name = "btnSavingsReport";
-            this.btnSavingsReport.Size = new System.Drawing.Size(215, 27);
-            this.btnSavingsReport.TabIndex = 2;
-            this.btnSavingsReport.Text = "Sample Savings Report";
-            this.btnSavingsReport.UseVisualStyleBackColor = true;
-            this.btnSavingsReport.Click += new System.EventHandler(this.btnSavingsReport_Click);
+            this.panel3.BackColor = System.Drawing.Color.Gray;
+            this.panel3.Controls.Add(this.btnIndivSavings);
+            this.panel3.Controls.Add(this.btnTotalSavings);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 316);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(221, 78);
+            this.panel3.TabIndex = 38;
             // 
-            // btnAllMembersReport
+            // btnIndivSavings
             // 
-            this.btnAllMembersReport.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAllMembersReport.Location = new System.Drawing.Point(6, 569);
-            this.btnAllMembersReport.Name = "btnAllMembersReport";
-            this.btnAllMembersReport.Size = new System.Drawing.Size(215, 27);
-            this.btnAllMembersReport.TabIndex = 1;
-            this.btnAllMembersReport.Text = "Sample Members Report";
-            this.btnAllMembersReport.UseVisualStyleBackColor = true;
-            this.btnAllMembersReport.Click += new System.EventHandler(this.button2_Click);
+            this.btnIndivSavings.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnIndivSavings.BackColor = System.Drawing.Color.Silver;
+            this.btnIndivSavings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnIndivSavings.FlatAppearance.BorderSize = 0;
+            this.btnIndivSavings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIndivSavings.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
+            this.btnIndivSavings.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnIndivSavings.Location = new System.Drawing.Point(0, 39);
+            this.btnIndivSavings.Name = "btnIndivSavings";
+            this.btnIndivSavings.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnIndivSavings.Size = new System.Drawing.Size(221, 39);
+            this.btnIndivSavings.TabIndex = 14;
+            this.btnIndivSavings.Text = "Individual Savings";
+            this.btnIndivSavings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIndivSavings.UseVisualStyleBackColor = false;
+            this.btnIndivSavings.Click += new System.EventHandler(this.btnIndivSavings_Click);
+            // 
+            // btnTotalSavings
+            // 
+            this.btnTotalSavings.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnTotalSavings.BackColor = System.Drawing.Color.Silver;
+            this.btnTotalSavings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTotalSavings.FlatAppearance.BorderSize = 0;
+            this.btnTotalSavings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTotalSavings.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
+            this.btnTotalSavings.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnTotalSavings.Location = new System.Drawing.Point(0, 0);
+            this.btnTotalSavings.Name = "btnTotalSavings";
+            this.btnTotalSavings.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnTotalSavings.Size = new System.Drawing.Size(221, 39);
+            this.btnTotalSavings.TabIndex = 13;
+            this.btnTotalSavings.Text = "Total Savings";
+            this.btnTotalSavings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTotalSavings.UseVisualStyleBackColor = false;
+            this.btnTotalSavings.Click += new System.EventHandler(this.btnTotalSavings_Click);
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Gray;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(0, 279);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(221, 37);
+            this.label3.TabIndex = 37;
+            this.label3.Text = "Savings Reports";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Gray;
+            this.panel5.Controls.Add(this.btnIndivMembers);
+            this.panel5.Controls.Add(this.btnAllMembers);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 201);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(221, 78);
+            this.panel5.TabIndex = 36;
+            // 
+            // btnIndivMembers
+            // 
+            this.btnIndivMembers.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnIndivMembers.BackColor = System.Drawing.Color.Silver;
+            this.btnIndivMembers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnIndivMembers.FlatAppearance.BorderSize = 0;
+            this.btnIndivMembers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIndivMembers.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
+            this.btnIndivMembers.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnIndivMembers.Location = new System.Drawing.Point(0, 39);
+            this.btnIndivMembers.Name = "btnIndivMembers";
+            this.btnIndivMembers.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnIndivMembers.Size = new System.Drawing.Size(221, 39);
+            this.btnIndivMembers.TabIndex = 17;
+            this.btnIndivMembers.Text = "Individual Member Details";
+            this.btnIndivMembers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIndivMembers.UseVisualStyleBackColor = false;
+            this.btnIndivMembers.Click += new System.EventHandler(this.btnIndivMembers_Click);
+            // 
+            // btnAllMembers
+            // 
+            this.btnAllMembers.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAllMembers.BackColor = System.Drawing.Color.Silver;
+            this.btnAllMembers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAllMembers.FlatAppearance.BorderSize = 0;
+            this.btnAllMembers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAllMembers.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
+            this.btnAllMembers.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnAllMembers.Location = new System.Drawing.Point(0, 0);
+            this.btnAllMembers.Name = "btnAllMembers";
+            this.btnAllMembers.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnAllMembers.Size = new System.Drawing.Size(221, 39);
+            this.btnAllMembers.TabIndex = 16;
+            this.btnAllMembers.Text = "All Members Details";
+            this.btnAllMembers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAllMembers.UseVisualStyleBackColor = false;
+            this.btnAllMembers.Click += new System.EventHandler(this.btnAllMembers_Click);
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Gray;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(0, 164);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(221, 37);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "Members Reports";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.Controls.Add(this.btnIndivLoans);
+            this.panel2.Controls.Add(this.btnActiveLoans);
+            this.panel2.Controls.Add(this.btnAllLoans);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 47);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(221, 117);
+            this.panel2.TabIndex = 34;
+            // 
+            // btnIndivLoans
+            // 
+            this.btnIndivLoans.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnIndivLoans.BackColor = System.Drawing.Color.Silver;
+            this.btnIndivLoans.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnIndivLoans.FlatAppearance.BorderSize = 0;
+            this.btnIndivLoans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIndivLoans.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
+            this.btnIndivLoans.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnIndivLoans.Location = new System.Drawing.Point(0, 78);
+            this.btnIndivLoans.Name = "btnIndivLoans";
+            this.btnIndivLoans.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnIndivLoans.Size = new System.Drawing.Size(221, 39);
+            this.btnIndivLoans.TabIndex = 12;
+            this.btnIndivLoans.Text = "Individual Loan Report";
+            this.btnIndivLoans.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIndivLoans.UseVisualStyleBackColor = false;
+            this.btnIndivLoans.Click += new System.EventHandler(this.btnIndivLoans_Click);
+            // 
+            // btnActiveLoans
+            // 
+            this.btnActiveLoans.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnActiveLoans.BackColor = System.Drawing.Color.Silver;
+            this.btnActiveLoans.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnActiveLoans.FlatAppearance.BorderSize = 0;
+            this.btnActiveLoans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActiveLoans.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
+            this.btnActiveLoans.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnActiveLoans.Location = new System.Drawing.Point(0, 39);
+            this.btnActiveLoans.Name = "btnActiveLoans";
+            this.btnActiveLoans.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnActiveLoans.Size = new System.Drawing.Size(221, 39);
+            this.btnActiveLoans.TabIndex = 11;
+            this.btnActiveLoans.Text = "Active Loans Report";
+            this.btnActiveLoans.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnActiveLoans.UseVisualStyleBackColor = false;
+            this.btnActiveLoans.Click += new System.EventHandler(this.btnActiveLoans_Click);
+            // 
+            // btnAllLoans
+            // 
+            this.btnAllLoans.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAllLoans.BackColor = System.Drawing.Color.Silver;
+            this.btnAllLoans.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAllLoans.FlatAppearance.BorderSize = 0;
+            this.btnAllLoans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAllLoans.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
+            this.btnAllLoans.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnAllLoans.Location = new System.Drawing.Point(0, 0);
+            this.btnAllLoans.Name = "btnAllLoans";
+            this.btnAllLoans.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnAllLoans.Size = new System.Drawing.Size(221, 39);
+            this.btnAllLoans.TabIndex = 10;
+            this.btnAllLoans.Text = "All Loans Report";
+            this.btnAllLoans.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAllLoans.UseVisualStyleBackColor = false;
+            this.btnAllLoans.Click += new System.EventHandler(this.btnAllLoans_Click);
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Gray;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(0, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(221, 37);
+            this.label4.TabIndex = 33;
+            this.label4.Text = "Loans Reports";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(221, 10);
+            this.panel1.TabIndex = 32;
             // 
             // panelReportViewer
             // 
@@ -127,198 +305,6 @@
             this.reportViewer.Size = new System.Drawing.Size(1111, 618);
             this.reportViewer.TabIndex = 2;
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Gray;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(221, 37);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Loans Reports";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 37);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(221, 117);
-            this.panel2.TabIndex = 24;
-            // 
-            // button4
-            // 
-            this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button4.BackColor = System.Drawing.Color.Silver;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.button4.Location = new System.Drawing.Point(0, 78);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(221, 39);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "Individual Loan";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button3.BackColor = System.Drawing.Color.Silver;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.button3.Location = new System.Drawing.Point(0, 39);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(221, 39);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Active Loans";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(221, 39);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "All Loans";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Gray;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(0, 154);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(221, 37);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Members Reports";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Gray;
-            this.panel5.Controls.Add(this.button8);
-            this.panel5.Controls.Add(this.button11);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 191);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(221, 78);
-            this.panel5.TabIndex = 27;
-            // 
-            // button8
-            // 
-            this.button8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button8.BackColor = System.Drawing.Color.Silver;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.button8.Location = new System.Drawing.Point(0, 39);
-            this.button8.Name = "button8";
-            this.button8.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(221, 39);
-            this.button8.TabIndex = 17;
-            this.button8.Text = "Individual Member Details";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button11
-            // 
-            this.button11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button11.BackColor = System.Drawing.Color.Silver;
-            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.button11.Location = new System.Drawing.Point(0, 0);
-            this.button11.Name = "button11";
-            this.button11.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button11.Size = new System.Drawing.Size(221, 39);
-            this.button11.TabIndex = 16;
-            this.button11.Text = "All members details";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Gray;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(0, 269);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(221, 37);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "Savings Reports";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.Controls.Add(this.button10);
-            this.panel3.Controls.Add(this.button12);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 306);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(221, 78);
-            this.panel3.TabIndex = 29;
-            // 
-            // button10
-            // 
-            this.button10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button10.BackColor = System.Drawing.Color.Silver;
-            this.button10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.button10.Location = new System.Drawing.Point(0, 39);
-            this.button10.Name = "button10";
-            this.button10.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button10.Size = new System.Drawing.Size(221, 39);
-            this.button10.TabIndex = 14;
-            this.button10.Text = "Individual Savings";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            this.button12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button12.BackColor = System.Drawing.Color.Silver;
-            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.button12.Location = new System.Drawing.Point(0, 0);
-            this.button12.Name = "button12";
-            this.button12.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.button12.Size = new System.Drawing.Size(221, 39);
-            this.button12.TabIndex = 13;
-            this.button12.Text = "Total Savings";
-            this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.UseVisualStyleBackColor = false;
-            // 
             // Reports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -333,34 +319,31 @@
             this.Name = "Reports";
             this.Text = "Reports";
             this.panelReportsSide.ResumeLayout(false);
-            this.panelReportViewer.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panelReportViewer.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnLoanReport;
         private System.Windows.Forms.Panel panelReportsSide;
         private System.Windows.Forms.Panel panelReportViewer;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer;
-        private System.Windows.Forms.Button btnAllMembersReport;
-        private System.Windows.Forms.Button btnSavingsReport;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnIndivLoans;
+        private System.Windows.Forms.Button btnActiveLoans;
+        private System.Windows.Forms.Button btnAllLoans;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button btnIndivMembers;
+        private System.Windows.Forms.Button btnAllMembers;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnIndivSavings;
+        private System.Windows.Forms.Button btnTotalSavings;
     }
 }

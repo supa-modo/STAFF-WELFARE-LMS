@@ -25,6 +25,7 @@ namespace EAC_STAFF_WELFARE_LMS
             SetControlsReadOnly(true);
             btnSave.Visible = false;
             btnCancel.Visible = false;
+            loadLoansData();
         }
 
         private void picBxClose_Click(object sender, EventArgs e)
@@ -37,45 +38,46 @@ namespace EAC_STAFF_WELFARE_LMS
             int i = 0;
             dgvIndividualLoans.Rows.Clear();
 
-                cn.Open();
-                string query = "SELECT LoanID, LoanAmount, Duration, InterestRate, ApplicationDate, DueDate, AmountPaid, PendingBalance, LoanStatus FROM Loans WHERE MemberPFNo = @StaffCode";
-                cmd = new SqlCommand(query, cn);
-                cmd.Parameters.AddWithValue("@StaffCode", pfNo);
+            string query = "SELECT LoanID, LoanAmount, DurationOfPayment, InterestRate, ApplicationDate, DueDate, MonthlyInstallments, PendingBalance, LoanStatus FROM Loans WHERE PFNo = @StaffCode";
+            cmd = new SqlCommand(query, cn);
+            cmd.Parameters.AddWithValue("@StaffCode", pfNo);
 
-                try
-                {
-                    cn.Open();
-                    // Execute the query
-                    SqlDataReader dr = cmd.ExecuteReader();
-                    while (dr.Read())
-                    {
-
-                        i++;
-                        string interestRate = dr["InterestRate"].ToString() + "%";
-                        // Add data to DataGridView
-                        dgvIndividualLoans.Rows.Add(i,
-                            dr["LoanID"],
-                            dr["PFNo"],
-                            dr["ApplicantName"],
-                            dr["LoanAmount"],
-                            /*dr["InterestRate"],*/
-                            interestRate,
-                            dr["DurationOfPayment"],
-                            ((DateTime)dr["ApplicationDate"]).ToString("dd-MMM-yyyy"),
-                            ((DateTime)dr["DueDate"]).ToString("dd-MMM-yyyy"),
-                            dr["MonthlyInstallments"],
-                            dr["PendingBalance"],
-                            dr["LoanStatus"]
-                            );
-                    }
-
-            }
-            catch (Exception)
+            try
             {
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    i++;
+                    decimal loanAmount = dr.GetDecimal(dr.GetOrdinal("LoanAmount"));
+                    decimal pendingBalance = dr.GetDecimal(dr.GetOrdinal("PendingBalance"));
+                    decimal amountPaid = loanAmount - pendingBalance;
+                    string interestRate = dr["InterestRate"].ToString() + "%";
 
-                throw;
+                    dgvIndividualLoans.Rows.Add(i,
+                        dr["LoanID"],
+                        loanAmount,
+                        dr["DurationOfPayment"],
+                        interestRate,
+                        ((DateTime)dr["ApplicationDate"]).ToString("dd-MMM-yyyy"),
+                        ((DateTime)dr["DueDate"]).ToString("dd-MMM-yyyy"),
+                        amountPaid,
+                        pendingBalance,
+                        dr["LoanStatus"]
+                    );
+                }
+                dr.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
+            finally
+            {
+                cn.Close();
             }
         }
+
 
         private void loadFullProfile()
         {

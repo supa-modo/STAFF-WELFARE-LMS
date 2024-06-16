@@ -28,18 +28,15 @@ namespace EAC_STAFF_WELFARE_LMS
             cn = new SqlConnection(dbConn.myConnection());
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAllLoans_Click(object sender, EventArgs e)
         {
-            // Set up the SQL command to fetch data
             cmd = new SqlCommand("SELECT LoanID, PFNo, ApplicantName, LoanAmount, ApplicationDate, DueDate FROM Loans", cn);
             SqlDataAdapter d = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             d.Fill(dt);
-
-            // Clear any existing data sources from the ReportViewer
             reportViewer.LocalReport.DataSources.Clear();
 
-            // Create a new ReportDataSource with the fetched data, Set the path to the .rdlc report file and add the new source to datasources
+            // Creating a new ReportDataSource with the fetched data and setting the path to the .rdlc report file then adding new source to datasources
             ReportDataSource sourceLoans = new ReportDataSource("LoansDataset", dt);
             reportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/LoansReport.rdlc";
             reportViewer.LocalReport.DataSources.Add(sourceLoans);
@@ -48,22 +45,29 @@ namespace EAC_STAFF_WELFARE_LMS
             reportViewer.RefreshReport();
         }
 
-
-
-        private void button2_Click(object sender, EventArgs e)
+        private void btnActiveLoans_Click(object sender, EventArgs e)
         {
-            // Set up the SQL command to fetch data
+
+        }
+
+        private void btnIndivLoans_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAllMembers_Click(object sender, EventArgs e)
+        {
             cmd = new SqlCommand("SELECT * FROM Members", cn);
             SqlDataAdapter d2 = new SqlDataAdapter(cmd);
             DataTable dt2 = new DataTable();
             d2.Fill(dt2);
 
-            // Clear any existing data sources from the ReportViewer
+            // Clearing any existing data sources from the ReportViewer
             reportViewer.LocalReport.DataSources.Clear();
 
-            // Create a new ReportDataSource with the fetched data, Set the path to the .rdlc report file and add the new source to datasources
+            // Creating a new ReportDataSource with the fetched data and setting the path to the .rdlc report file then adding new source to datasources
             ReportDataSource sourceMembers = new ReportDataSource("AllMembersDataset", dt2);
-            
+
             reportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/AllMembersReport.rdlc";
             reportViewer.LocalReport.DataSources.Add(sourceMembers);
 
@@ -72,10 +76,14 @@ namespace EAC_STAFF_WELFARE_LMS
             reportViewer.RefreshReport();
         }
 
-        private void btnSavingsReport_Click(object sender, EventArgs e)
+        private void btnIndivMembers_Click(object sender, EventArgs e)
         {
-            string query = @"
-        SELECT s.SavingsId, 
+
+        }
+
+        private void btnTotalSavings_Click(object sender, EventArgs e)
+        {
+            string query = @"SELECT s.SavingsId, 
                s.PFNo, 
                m.FirstName, 
                m.MiddleName, 
@@ -83,26 +91,28 @@ namespace EAC_STAFF_WELFARE_LMS
                s.MonthlySavings, 
                s.SavingsAccountBalance, 
                s.LastUpdated
-        FROM Savings s
-        INNER JOIN Members m ON s.PFNo = m.MemberPFNo";
+               FROM Savings s
+               INNER JOIN Members m ON s.PFNo = m.MemberPFNo";
 
-            // Create the SqlCommand and SqlDataAdapter
             SqlCommand cmd = new SqlCommand(query, cn);
             SqlDataAdapter d3 = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             d3.Fill(dt);
 
-            // Clear any existing data sources from the ReportViewer
             reportViewer.LocalReport.DataSources.Clear();
 
-            // Create a new ReportDataSource with the fetched data
             ReportDataSource sourceSavings = new ReportDataSource("DataSetSavings", dt);
             reportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/SavingsDetailsReport.rdlc";
             reportViewer.LocalReport.DataSources.Add(sourceSavings);
 
-            // Set display mode and refresh the report
+            // Setting the display mode and refreshing the report
             reportViewer.SetDisplayMode(DisplayMode.PrintLayout);
             reportViewer.RefreshReport();
+        }
+
+        private void btnIndivSavings_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

@@ -107,11 +107,11 @@
             this.labelLoansTotal.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelLoansTotal.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLoansTotal.ForeColor = System.Drawing.Color.SeaGreen;
-            this.labelLoansTotal.Location = new System.Drawing.Point(3, 3);
+            this.labelLoansTotal.Location = new System.Drawing.Point(35, 3);
             this.labelLoansTotal.Name = "labelLoansTotal";
-            this.labelLoansTotal.Size = new System.Drawing.Size(303, 33);
+            this.labelLoansTotal.Size = new System.Drawing.Size(271, 33);
             this.labelLoansTotal.TabIndex = 0;
-            this.labelLoansTotal.Text = "Active Loans Total Pending Balance:";
+            this.labelLoansTotal.Text = "Active Loans Total Balance:";
             this.labelLoansTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label1
@@ -126,7 +126,9 @@
             // 
             // dgvLoanApplications
             // 
+            this.dgvLoanApplications.AllowUserToAddRows = false;
             this.dgvLoanApplications.AllowUserToDeleteRows = false;
+            this.dgvLoanApplications.AllowUserToResizeColumns = false;
             this.dgvLoanApplications.AllowUserToResizeRows = false;
             this.dgvLoanApplications.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -363,7 +365,7 @@
             this.metroBtnRunLoansDeduction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.metroBtnRunLoansDeduction.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.metroBtnRunLoansDeduction.ForeColor = System.Drawing.Color.White;
-            this.metroBtnRunLoansDeduction.Location = new System.Drawing.Point(504, 3);
+            this.metroBtnRunLoansDeduction.Location = new System.Drawing.Point(501, 3);
             this.metroBtnRunLoansDeduction.Name = "metroBtnRunLoansDeduction";
             this.metroBtnRunLoansDeduction.Size = new System.Drawing.Size(342, 35);
             this.metroBtnRunLoansDeduction.Style = MetroFramework.MetroColorStyle.Green;

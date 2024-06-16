@@ -54,9 +54,9 @@ namespace EAC_STAFF_WELFARE_LMS
             reportViewer.LocalReport.DataSources.Clear();
 
             // Creating a new ReportDataSource with the fetched data and setting the path to the .rdlc report file then adding new source to datasources
-            ReportDataSource sourceLoans = new ReportDataSource("AllLoansDataset", dt);
-            reportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/LoansReport.rdlc";
-            reportViewer.LocalReport.DataSources.Add(sourceLoans);
+            ReportDataSource sourceActiveLoans = new ReportDataSource("ActiveLoansDataset", dt4);
+            reportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/ActiveLoansReport.rdlc";
+            reportViewer.LocalReport.DataSources.Add(sourceActiveLoans);
 
             reportViewer.SetDisplayMode(DisplayMode.PrintLayout);
             reportViewer.RefreshReport();

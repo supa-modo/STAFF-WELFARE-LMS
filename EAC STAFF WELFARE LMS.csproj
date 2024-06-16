@@ -180,6 +180,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EacLMSDBDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="EacLMSDBDataSet2.cs">
+      <DependentUpon>EacLMSDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EacLMSDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EacLMSDBDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FullProfileView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,6 +280,7 @@
     <EmbeddedResource Include="FullProfileView.resx">
       <DependentUpon>FullProfileView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IndividualMemberReport.rdlc" />
     <EmbeddedResource Include="LoanApplications.resx">
       <DependentUpon>LoanApplications.cs</DependentUpon>
     </EmbeddedResource>
@@ -348,6 +357,17 @@
     </None>
     <None Include="EacLMSDBDataSet1.xss">
       <DependentUpon>EacLMSDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EacLMSDBDataSet2.xsc">
+      <DependentUpon>EacLMSDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EacLMSDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EacLMSDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EacLMSDBDataSet2.xss">
+      <DependentUpon>EacLMSDBDataSet2.xsd</DependentUpon>
     </None>
     <None Include="LoansDataset.xsc">
       <DependentUpon>LoansDataset.xsd</DependentUpon>

@@ -22,7 +22,7 @@
             </Style>
           </Paragraph>
         </Paragraphs>
-        <Top>1.23338in</Top>
+        <Top>1.48338in</Top>
         <Left>2.36348in</Left>
         <Height>0.20485in</Height>
         <Width>5.61458in</Width>
@@ -40,7 +40,7 @@
         <Source>Embedded</Source>
         <Value>Emblem_of_East_African_Community21</Value>
         <Sizing>Fit</Sizing>
-        <Top>0.12003in</Top>
+        <Top>0.37003in</Top>
         <Left>4.51674in</Left>
         <Height>1.07168in</Height>
         <Width>1.3125in</Width>
@@ -71,7 +71,7 @@
             </Style>
           </Paragraph>
         </Paragraphs>
-        <Top>1.43823in</Top>
+        <Top>1.68823in</Top>
         <Left>2.36348in</Left>
         <Height>0.18749in</Height>
         <Width>5.61458in</Width>
@@ -87,10 +87,10 @@
         </Style>
       </Textbox>
       <Line Name="Line1">
-        <Top>1.66739in</Top>
+        <Top>1.91739in</Top>
         <Left>0.16557in</Left>
         <Height>0in</Height>
-        <Width>10.28185in</Width>
+        <Width>10.13602in</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -99,10 +99,10 @@
         </Style>
       </Line>
       <Line Name="Line2">
-        <Top>1.69517in</Top>
+        <Top>1.94517in</Top>
         <Left>0.16557in</Left>
         <Height>0in</Height>
-        <Width>10.28185in</Width>
+        <Width>10.13602in</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
@@ -117,25 +117,25 @@
               <Width>1.12664cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.95521cm</Width>
+              <Width>3.42604cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>5.75375cm</Width>
+              <Width>5.48917cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.34125cm</Width>
+              <Width>2.20896cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.02375cm</Width>
+              <Width>3.10854cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.05563cm</Width>
+              <Width>2.89688cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.88613cm</Width>
+              <Width>2.75384cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.76458cm</Width>
+              <Width>2.52646cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.20896cm</Width>
@@ -306,7 +306,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Payment Duration</Value>
+                              <Value>Payment Duration(mths)</Value>
                               <Style>
                                 <FontStyle>Normal</FontStyle>
                                 <FontFamily>Courier New</FontFamily>
@@ -859,10 +859,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>AllLoansDataset</DataSetName>
-        <Top>4.57412cm</Top>
+        <Top>5.20912cm</Top>
         <Left>0.42055cm</Left>
         <Height>1.62333cm</Height>
-        <Width>26.1159cm</Width>
+        <Width>25.74548cm</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
@@ -871,14 +871,14 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>6.59499cm</Height>
+    <Height>7.04478cm</Height>
     <Style>
       <Border>
         <Style>None</Style>
       </Border>
     </Style>
   </Body>
-  <Width>26.66874cm</Width>
+  <Width>26.64228cm</Width>
   <Page>
     <PageHeight>21cm</PageHeight>
     <PageWidth>27cm</PageWidth>

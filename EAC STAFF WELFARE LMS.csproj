@@ -170,6 +170,16 @@
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="dbConnect.cs" />
+    <Compile Include="EacLMSDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EacLMSDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EacLMSDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EacLMSDBDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FullProfileView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -249,6 +259,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TotalSavingsDataset.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ActiveLoansReport.rdlc" />
     <EmbeddedResource Include="addMemberModule.resx">
       <DependentUpon>addMemberModule.cs</DependentUpon>
     </EmbeddedResource>
@@ -316,6 +327,28 @@
     </None>
     <None Include="app.manifest" />
     <None Include="EAC STAFF WELFARE LMS_TemporaryKey.pfx" />
+    <None Include="EacLMSDBDataSet.xsc">
+      <DependentUpon>EacLMSDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EacLMSDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EacLMSDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EacLMSDBDataSet.xss">
+      <DependentUpon>EacLMSDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EacLMSDBDataSet1.xsc">
+      <DependentUpon>EacLMSDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EacLMSDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EacLMSDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EacLMSDBDataSet1.xss">
+      <DependentUpon>EacLMSDBDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="LoansDataset.xsc">
       <DependentUpon>LoansDataset.xsd</DependentUpon>
     </None>

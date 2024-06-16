@@ -30,14 +30,14 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private void btnAllLoans_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("SELECT LoanID, PFNo, ApplicantName, LoanAmount, ApplicationDate, DueDate FROM Loans", cn);
+            cmd = new SqlCommand("SELECT LoanID, PFNo, ApplicantName, LoanAmount, DurationOfPayment, ApplicationDate, DueDate, PendingBalance, LoanStatus FROM Loans", cn);
             SqlDataAdapter d = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             d.Fill(dt);
             reportViewer.LocalReport.DataSources.Clear();
 
             // Creating a new ReportDataSource with the fetched data and setting the path to the .rdlc report file then adding new source to datasources
-            ReportDataSource sourceLoans = new ReportDataSource("LoansDataset", dt);
+            ReportDataSource sourceLoans = new ReportDataSource("AllLoansDataset", dt);
             reportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/LoansReport.rdlc";
             reportViewer.LocalReport.DataSources.Add(sourceLoans);
 
@@ -47,7 +47,19 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private void btnActiveLoans_Click(object sender, EventArgs e)
         {
+            cmd = new SqlCommand("SELECT LoanID, PFNo, ApplicantName, LoanAmount, DurationOfPayment, ApplicationDate, DueDate, PendingBalance, LoanStatus FROM Loans WHERE LoanStatus = 'Active'", cn);
+            SqlDataAdapter d4 = new SqlDataAdapter(cmd);
+            DataTable dt4 = new DataTable();
+            d4.Fill(dt4);
+            reportViewer.LocalReport.DataSources.Clear();
 
+            // Creating a new ReportDataSource with the fetched data and setting the path to the .rdlc report file then adding new source to datasources
+            ReportDataSource sourceLoans = new ReportDataSource("AllLoansDataset", dt);
+            reportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/LoansReport.rdlc";
+            reportViewer.LocalReport.DataSources.Add(sourceLoans);
+
+            reportViewer.SetDisplayMode(DisplayMode.PrintLayout);
+            reportViewer.RefreshReport();
         }
 
         private void btnIndivLoans_Click(object sender, EventArgs e)

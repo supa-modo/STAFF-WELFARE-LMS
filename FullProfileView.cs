@@ -211,7 +211,33 @@ namespace EAC_STAFF_WELFARE_LMS
 
         }
 
-        private void metrobtnEdit_Click(object sender, EventArgs e)
+
+        private int lastClickedRowIndex = -1;
+        private void dgvIndividualLoans_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.RowIndex < dgvIndividualLoans.Rows.Count && e.ColumnIndex >= 0)
+            {
+                DataGridViewRow clickedRow = dgvIndividualLoans.Rows[e.RowIndex];
+
+                if (e.RowIndex == lastClickedRowIndex)
+                {
+                    clickedRow.DefaultCellStyle.BackColor = Color.White;
+                    lastClickedRowIndex = -1;
+                }
+                else
+                {
+                    if (lastClickedRowIndex != -1)
+                    {
+                        dgvIndividualLoans.Rows[lastClickedRowIndex].DefaultCellStyle.BackColor = Color.White;
+                    }
+
+                    clickedRow.DefaultCellStyle.BackColor = Color.Khaki;
+                    lastClickedRowIndex = e.RowIndex;
+                }
+            }
+        }
+
+        private void metrobtnEdit_Click_1(object sender, EventArgs e)
         {
             // Enabling the controls for editing
             SetControlsReadOnly(false);
@@ -221,8 +247,7 @@ namespace EAC_STAFF_WELFARE_LMS
             txtFName.Focus();
         }
 
-
-        private void btnSave_Click_1(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
             try
             {
@@ -263,7 +288,7 @@ namespace EAC_STAFF_WELFARE_LMS
             }
         }
 
-        private void btnCancel_Click_1(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             loadFullProfile();
             SetControlsReadOnly(true);
@@ -271,31 +296,5 @@ namespace EAC_STAFF_WELFARE_LMS
             btnCancel.Visible = false;
             metrobtnEdit.Visible = true;
         }
-
-        private int lastClickedRowIndex = -1;
-        private void dgvIndividualLoans_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0 && e.RowIndex < dgvIndividualLoans.Rows.Count && e.ColumnIndex >= 0)
-            {
-                DataGridViewRow clickedRow = dgvIndividualLoans.Rows[e.RowIndex];
-
-                if (e.RowIndex == lastClickedRowIndex)
-                {
-                    clickedRow.DefaultCellStyle.BackColor = Color.White;
-                    lastClickedRowIndex = -1;
-                }
-                else
-                {
-                    if (lastClickedRowIndex != -1)
-                    {
-                        dgvIndividualLoans.Rows[lastClickedRowIndex].DefaultCellStyle.BackColor = Color.White;
-                    }
-
-                    clickedRow.DefaultCellStyle.BackColor = Color.Khaki;
-                    lastClickedRowIndex = e.RowIndex;
-                }
-            }
-        }
-
     }
 }

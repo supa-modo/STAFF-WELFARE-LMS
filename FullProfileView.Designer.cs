@@ -170,7 +170,7 @@
             this.metroTabProfile.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabProfile.Location = new System.Drawing.Point(0, 40);
             this.metroTabProfile.Name = "metroTabProfile";
-            this.metroTabProfile.SelectedIndex = 2;
+            this.metroTabProfile.SelectedIndex = 0;
             this.metroTabProfile.Size = new System.Drawing.Size(1328, 665);
             this.metroTabProfile.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTabProfile.TabIndex = 1;
@@ -259,6 +259,7 @@
             this.btnCancel.UseCustomBackColor = true;
             this.btnCancel.UseCustomForeColor = true;
             this.btnCancel.UseSelectable = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
@@ -275,6 +276,7 @@
             this.btnSave.UseCustomForeColor = true;
             this.btnSave.UseSelectable = true;
             this.btnSave.UseStyleColors = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // metrobtnEdit
             // 
@@ -291,6 +293,7 @@
             this.metrobtnEdit.UseCustomForeColor = true;
             this.metrobtnEdit.UseSelectable = true;
             this.metrobtnEdit.UseStyleColors = true;
+            this.metrobtnEdit.Click += new System.EventHandler(this.metrobtnEdit_Click_1);
             // 
             // metroDateTimeEnd
             // 
@@ -1042,9 +1045,9 @@
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.HorizontalScrollbarSize = 5;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(369, 186);
+            this.metroTabPage2.Size = new System.Drawing.Size(369, 183);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "metroTabPage2";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
@@ -1056,9 +1059,9 @@
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage3.HorizontalScrollbarSize = 5;
-            this.metroTabPage3.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(369, 186);
+            this.metroTabPage3.Size = new System.Drawing.Size(369, 183);
             this.metroTabPage3.TabIndex = 2;
             this.metroTabPage3.Text = "metroTabPage3";
             this.metroTabPage3.VerticalScrollbarBarColor = true;

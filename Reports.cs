@@ -28,13 +28,21 @@ namespace EAC_STAFF_WELFARE_LMS
             cn = new SqlConnection(dbConn.myConnection());
         }
 
+
+        private void ResetReportViewer()
+        {
+            reportViewer.Reset();
+            reportViewer.LocalReport.DataSources.Clear();
+            reportViewer.LocalReport.ReportPath = string.Empty;
+        }
+
         private void btnAllLoans_Click(object sender, EventArgs e)
         {
             cmd = new SqlCommand("SELECT LoanID, PFNo, ApplicantName, LoanAmount, DurationOfPayment, ApplicationDate, DueDate, PendingBalance, LoanStatus FROM Loans", cn);
             SqlDataAdapter d = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             d.Fill(dt);
-            reportViewer.LocalReport.DataSources.Clear();
+            ResetReportViewer();
 
             // Creating a new ReportDataSource with the fetched data and setting the path to the .rdlc report file then adding new source to datasources
             ReportDataSource sourceLoans = new ReportDataSource("AllLoansDataset", dt);
@@ -42,6 +50,8 @@ namespace EAC_STAFF_WELFARE_LMS
             reportViewer.LocalReport.DataSources.Add(sourceLoans);
 
             reportViewer.SetDisplayMode(DisplayMode.PrintLayout);
+            reportViewer.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.Percent;
+            reportViewer.ZoomPercent = 100;
             reportViewer.RefreshReport();
         }
 
@@ -51,7 +61,7 @@ namespace EAC_STAFF_WELFARE_LMS
             SqlDataAdapter d4 = new SqlDataAdapter(cmd);
             DataTable dt4 = new DataTable();
             d4.Fill(dt4);
-            reportViewer.LocalReport.DataSources.Clear();
+            ResetReportViewer();
 
             // Creating a new ReportDataSource with the fetched data and setting the path to the .rdlc report file then adding new source to datasources
             ReportDataSource sourceActiveLoans = new ReportDataSource("ActiveLoansDataset", dt4);
@@ -59,6 +69,8 @@ namespace EAC_STAFF_WELFARE_LMS
             reportViewer.LocalReport.DataSources.Add(sourceActiveLoans);
 
             reportViewer.SetDisplayMode(DisplayMode.PrintLayout);
+            reportViewer.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.Percent;
+            reportViewer.ZoomPercent = 100;
             reportViewer.RefreshReport();
         }
 
@@ -74,8 +86,7 @@ namespace EAC_STAFF_WELFARE_LMS
             DataTable dt2 = new DataTable();
             d2.Fill(dt2);
 
-            // Clearing any existing data sources from the ReportViewer
-            reportViewer.LocalReport.DataSources.Clear();
+            ResetReportViewer();
 
             // Creating a new ReportDataSource with the fetched data and setting the path to the .rdlc report file then adding new source to datasources
             ReportDataSource sourceMembers = new ReportDataSource("AllMembersDataset", dt2);
@@ -85,6 +96,8 @@ namespace EAC_STAFF_WELFARE_LMS
 
 
             reportViewer.SetDisplayMode(DisplayMode.PrintLayout);
+            reportViewer.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.Percent;
+            reportViewer.ZoomPercent = 100;
             reportViewer.RefreshReport();
         }
 
@@ -111,7 +124,7 @@ namespace EAC_STAFF_WELFARE_LMS
             DataTable dt = new DataTable();
             d3.Fill(dt);
 
-            reportViewer.LocalReport.DataSources.Clear();
+            ResetReportViewer();
 
             ReportDataSource sourceSavings = new ReportDataSource("DataSetSavings", dt);
             reportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/SavingsDetailsReport.rdlc";
@@ -119,6 +132,8 @@ namespace EAC_STAFF_WELFARE_LMS
 
             // Setting the display mode and refreshing the report
             reportViewer.SetDisplayMode(DisplayMode.PrintLayout);
+            reportViewer.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.Percent;
+            reportViewer.ZoomPercent = 100;
             reportViewer.RefreshReport();
         }
 

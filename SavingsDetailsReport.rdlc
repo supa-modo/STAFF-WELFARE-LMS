@@ -6,30 +6,30 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>0.60416in</Width>
+              <Width>0.44791in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.29762in</Width>
+              <Width>1.08131in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.81695in</Width>
+              <Width>0.69195in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.44493in</Width>
+              <Width>2.33035in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.23512in</Width>
+              <Width>1.01637in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.76637in</Width>
+              <Width>1.25595in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.32887in</Width>
+              <Width>0.96429in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.25in</Height>
+              <Height>0.44097in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -43,7 +43,7 @@
                               <Value>No.</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
-                                <FontSize>9pt</FontSize>
+                                <FontSize>8pt</FontSize>
                                 <FontWeight>ExtraBold</FontWeight>
                               </Style>
                             </TextRun>
@@ -80,7 +80,7 @@
                               <Value>Savings Id</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
-                                <FontSize>9pt</FontSize>
+                                <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
                             </TextRun>
@@ -117,7 +117,7 @@
                               <Value>PFNo</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
-                                <FontSize>9pt</FontSize>
+                                <FontSize>8pt</FontSize>
                                 <FontWeight>ExtraBold</FontWeight>
                               </Style>
                             </TextRun>
@@ -154,7 +154,7 @@
                               <Value>Member Name</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
-                                <FontSize>9pt</FontSize>
+                                <FontSize>8pt</FontSize>
                                 <FontWeight>ExtraBold</FontWeight>
                               </Style>
                             </TextRun>
@@ -189,7 +189,7 @@
                               <Value> Monthly Savings (USD)</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
-                                <FontSize>9pt</FontSize>
+                                <FontSize>8pt</FontSize>
                                 <FontWeight>ExtraBold</FontWeight>
                               </Style>
                             </TextRun>
@@ -226,7 +226,7 @@
                               <Value>Savings Account Balance (USD)</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
-                                <FontSize>9pt</FontSize>
+                                <FontSize>8pt</FontSize>
                                 <FontWeight>ExtraBold</FontWeight>
                               </Style>
                             </TextRun>
@@ -263,7 +263,7 @@
                               <Value>Last Updated</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
-                                <FontSize>9pt</FontSize>
+                                <FontSize>8pt</FontSize>
                                 <FontWeight>ExtraBold</FontWeight>
                               </Style>
                             </TextRun>
@@ -305,7 +305,7 @@
                               <Value>=RowNumber(Nothing)</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>7pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -340,7 +340,7 @@
                               <Value>=Fields!SavingsId.Value</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>7pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -375,7 +375,7 @@
                               <Value>=Fields!PFNo.Value</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>7pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -410,7 +410,7 @@
                               <Value>=Fields!FirstName.Value &amp; " " &amp; IIf(IsNothing(Fields!MiddleName.Value) Or Fields!MiddleName.Value = "", "", Fields!MiddleName.Value &amp; " ") &amp; Fields!LastName.Value</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>7pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -443,7 +443,7 @@
                               <Value>=Fields!MonthlySavings.Value</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>7pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -478,7 +478,7 @@
                               <Value>=Fields!SavingsAccountBalance.Value</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>7pt</FontSize>
                                 <Format>0.00;(0.00)</Format>
                               </Style>
                             </TextRun>
@@ -514,7 +514,7 @@
                               <Value>=Fields!LastUpdated.Value</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
-                                <FontSize>8pt</FontSize>
+                                <FontSize>7pt</FontSize>
                                 <Format>d</Format>
                               </Style>
                             </TextRun>
@@ -565,9 +565,8 @@
         </TablixRowHierarchy>
         <DataSetName>DataSetSavings</DataSetName>
         <Top>2.36111in</Top>
-        <Left>0.66036in</Left>
-        <Height>0.5in</Height>
-        <Width>9.49402in</Width>
+        <Height>0.69097in</Height>
+        <Width>7.78813in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -678,7 +677,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSetSavings</DataSetName>
         <Top>2.04167in</Top>
-        <Left>3.38417in</Left>
+        <Left>1.88277in</Left>
         <Height>0.25in</Height>
         <Width>4.02259in</Width>
         <ZIndex>1</ZIndex>
@@ -723,7 +722,7 @@
           </Paragraph>
         </Paragraphs>
         <Top>1.45599in</Top>
-        <Left>2.60584in</Left>
+        <Left>1.08677in</Left>
         <Height>0.20485in</Height>
         <Width>5.61458in</Width>
         <ZIndex>2</ZIndex>
@@ -741,10 +740,10 @@
         <Source>Embedded</Source>
         <Value>Emblem_of_East_African_Community21</Value>
         <Sizing>Fit</Sizing>
-        <Top>0.37042in</Top>
-        <Left>4.7591in</Left>
-        <Height>1.03001in</Height>
-        <Width>1.3125in</Width>
+        <Top>0.49542in</Top>
+        <Left>3.34496in</Left>
+        <Height>0.90501in</Height>
+        <Width>1.09821in</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -772,7 +771,7 @@
           </Paragraph>
         </Paragraphs>
         <Top>1.66084in</Top>
-        <Left>2.60584in</Left>
+        <Left>1.08677in</Left>
         <Height>0.18749in</Height>
         <Width>5.61458in</Width>
         <ZIndex>4</ZIndex>
@@ -788,9 +787,8 @@
       </Textbox>
       <Line Name="Line1">
         <Top>1.90388in</Top>
-        <Left>0.65793in</Left>
         <Height>0in</Height>
-        <Width>9.49403in</Width>
+        <Width>7.78813in</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
@@ -800,9 +798,8 @@
       </Line>
       <Line Name="Line2">
         <Top>1.93166in</Top>
-        <Left>0.65793in</Left>
         <Height>0in</Height>
-        <Width>9.49403in</Width>
+        <Width>7.78813in</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
@@ -811,18 +808,15 @@
         </Style>
       </Line>
     </ReportItems>
-    <Height>7.43479cm</Height>
+    <Height>3.10417in</Height>
     <Style />
   </Body>
-  <Width>27.45711cm</Width>
+  <Width>7.82904in</Width>
   <Page>
-    <PageHeight>21.59cm</PageHeight>
-    <PageWidth>27.94cm</PageWidth>
-    <LeftMargin>0cm</LeftMargin>
-    <RightMargin>0cm</RightMargin>
-    <TopMargin>0.2cm</TopMargin>
-    <BottomMargin>0.2cm</BottomMargin>
-    <ColumnSpacing>1.27cm</ColumnSpacing>
+    <LeftMargin>0.5in</LeftMargin>
+    <RightMargin>0.5in</RightMargin>
+    <TopMargin>1in</TopMargin>
+    <BottomMargin>1in</BottomMargin>
     <Style />
   </Page>
   <AutoRefresh>0</AutoRefresh>
@@ -1273,6 +1267,6 @@ oujo6AL8dpmaAp/VlZWVwfn5+XFl5eWhXH+Bi96QXf05TA3QabXWkNDQi7ExMXkhISFlFotFj3aKKS4u
 azBPOn50wiqrqmgwHU4HChMGh44xFFIZaC1km8m3fQ46WKhvFOobZobB0ID3NHQwmsV1GYiawPrR4SEfqyDPVMhKmzkxk6uryE/R1qyr7KBq6UyQP57aujbUIgeKEbeiThVsM7Yhne4KHJB7Oh6QFJe2FvS5Q1xBTI1ayICRMnC5jtN/G+zrxWhr1DkE58IhIE/QFyqgj0qgi2tdWc92ZZuWXiyNgLOs9A13JnnTZNUY66LnvNRltcGRG2gknSazyXAuJ6cx7VEeBlxwaODs2+lHM2OwoLNSJ7Zs2eJwenr6Pgxu8zhAJW/QT6OXLV82ev269YNOnjzZ4vDhw22d+6wClCMyQ38Va8zAWyHf586dC8Vvzi6IOHDyffIxI3dckUPACsH4tAdRy5VvMwvOyJXiQcBBqASDuHkCFJPe7s2oJYw0dRZ24qSkpMyBAweuadKkydnExMQsKDDHiIkNAWZG5ubmxpeVlYW6M5HMYqdi3vHx8bkwlj5dzOiHH3744YcfBFf7nz9/viEGXJwNdfnkP51uOHeltEMM5csCtGOFhYXRmZmZSRjkJq9Zs2ZgTk5Ogpjd44wlwBmXvLy8uIyMjFbIW+9sQ+kI0DmQQ1vnzp1z1q5dOxzO6SERwSdQqf4fLG0yshsIcNEAAAAASUVORK5CYII=</ImageData>
     </EmbeddedImage>
   </EmbeddedImages>
-  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>31ffba50-99cd-47d6-9e40-ddd5a8944939</rd:ReportID>
 </Report>

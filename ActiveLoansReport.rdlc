@@ -24,7 +24,7 @@
           </Paragraph>
         </Paragraphs>
         <Top>1.40653in</Top>
-        <Left>1.05147in</Left>
+        <Left>1.05505in</Left>
         <Height>0.20485in</Height>
         <Width>5.61458in</Width>
         <Style>
@@ -42,7 +42,7 @@
         <Value>Emblem_of_East_African_Community21</Value>
         <Sizing>Fit</Sizing>
         <Top>0.39041in</Top>
-        <Left>3.20473in</Left>
+        <Left>3.29984in</Left>
         <Height>0.9571in</Height>
         <Width>1.125in</Width>
         <ZIndex>1</ZIndex>
@@ -73,7 +73,7 @@
           </Paragraph>
         </Paragraphs>
         <Top>1.61138in</Top>
-        <Left>1.05147in</Left>
+        <Left>1.05505in</Left>
         <Height>0.18749in</Height>
         <Width>5.61458in</Width>
         <ZIndex>2</ZIndex>
@@ -89,7 +89,6 @@
       </Textbox>
       <Line Name="Line1">
         <Top>1.83012in</Top>
-        <Left>0.00491in</Left>
         <Height>0in</Height>
         <Width>7.72468in</Width>
         <ZIndex>3</ZIndex>
@@ -102,7 +101,6 @@
       </Line>
       <Line Name="Line2">
         <Top>1.8579in</Top>
-        <Left>0.00491in</Left>
         <Height>0in</Height>
         <Width>7.72468in</Width>
         <ZIndex>4</ZIndex>
@@ -162,6 +160,7 @@
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>SemiBold</FontWeight>
+                                <Color>DimGray</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -199,6 +198,7 @@
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>SemiBold</FontWeight>
+                                <Color>DimGray</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -236,6 +236,7 @@
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>SemiBold</FontWeight>
+                                <Color>DimGray</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -273,6 +274,7 @@
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>SemiBold</FontWeight>
+                                <Color>DimGray</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -310,6 +312,7 @@
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>SemiBold</FontWeight>
+                                <Color>DimGray</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -347,6 +350,7 @@
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>SemiBold</FontWeight>
+                                <Color>DimGray</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -384,6 +388,7 @@
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>SemiBold</FontWeight>
+                                <Color>DimGray</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -421,6 +426,7 @@
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>SemiBold</FontWeight>
+                                <Color>DimGray</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -458,6 +464,7 @@
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>SemiBold</FontWeight>
+                                <Color>DimGray</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -844,8 +851,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>ActiveLoansDataset</DataSetName>
-        <Top>2.00918in</Top>
-        <Left>0.00491in</Left>
+        <Top>2.63418in</Top>
         <Height>0.63542in</Height>
         <Width>7.72468in</Width>
         <ZIndex>5</ZIndex>
@@ -855,11 +861,166 @@
           </Border>
         </Style>
       </Tablix>
+      <Textbox Name="Textbox51">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Active Loan Applications</Value>
+                <Style>
+                  <Color>Gray</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox51</rd:DefaultName>
+        <Top>1.92735in</Top>
+        <Left>1.05505in</Left>
+        <Height>0.25in</Height>
+        <Width>1.90625in</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox52">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Total Active Loans Amount</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox52</rd:DefaultName>
+        <Top>2.24679in</Top>
+        <Left>1.05505in</Left>
+        <Height>0.25in</Height>
+        <Width>1.90625in</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox53">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox53</rd:DefaultName>
+        <Top>1.92735in</Top>
+        <Left>3.16542in</Left>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox54">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>="$" &amp; Format(Sum(Fields!LoanAmount.Value, "ActiveLoansDataset", "N2"))</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox54</rd:DefaultName>
+        <Top>2.24679in</Top>
+        <Left>3.16542in</Left>
+        <Height>0.25in</Height>
+        <Width>1.11458in</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox55">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Globals!ExecutionTime</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox55</rd:DefaultName>
+        <Top>1.92735in</Top>
+        <Left>5.20708in</Left>
+        <Height>0.25in</Height>
+        <Width>2.5176in</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>2.76042in</Height>
+    <Height>3.35417in</Height>
     <Style />
   </Body>
-  <Width>7.75042in</Width>
+  <Width>7.754in</Width>
   <Page>
     <PageHeight>11.69in</PageHeight>
     <PageWidth>8.27in</PageWidth>
@@ -877,6 +1038,13 @@
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
       <rd:DataSourceID>3792a2d0-fe1a-465f-899d-4b01b963e657</rd:DataSourceID>
+    </DataSource>
+    <DataSource Name="EacLMSDBDataSet2">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>10164c20-1c43-4ae3-9c3c-78cc352b1e54</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>

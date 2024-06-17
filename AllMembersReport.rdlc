@@ -48,7 +48,7 @@
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>Gray</Color>
+                                <Color>DimGray</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -86,7 +86,7 @@
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>Gray</Color>
+                                <Color>DimGray</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -124,7 +124,7 @@
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>Gray</Color>
+                                <Color>DimGray</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -160,7 +160,7 @@
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>Gray</Color>
+                                <Color>DimGray</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -198,7 +198,7 @@
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>Gray</Color>
+                                <Color>DimGray</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -234,7 +234,7 @@
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>Gray</Color>
+                                <Color>DimGray</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -272,7 +272,7 @@
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>Gray</Color>
+                                <Color>DimGray</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -310,7 +310,7 @@
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
-                                <Color>Gray</Color>
+                                <Color>DimGray</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -679,7 +679,7 @@
           </Paragraph>
         </Paragraphs>
         <Top>1.38422in</Top>
-        <Left>1.19558in</Left>
+        <Left>1.13536in</Left>
         <Height>0.20485in</Height>
         <Width>5.61458in</Width>
         <ZIndex>1</ZIndex>
@@ -698,7 +698,7 @@
         <Value>Emblem_of_East_African_Community21</Value>
         <Sizing>Fit</Sizing>
         <Top>0.3824in</Top>
-        <Left>3.45301in</Left>
+        <Left>3.35411in</Left>
         <Height>0.98793in</Height>
         <Width>1.17708in</Width>
         <ZIndex>2</ZIndex>
@@ -728,7 +728,7 @@
           </Paragraph>
         </Paragraphs>
         <Top>1.58907in</Top>
-        <Left>1.19558in</Left>
+        <Left>1.13536in</Left>
         <Height>0.18749in</Height>
         <Width>5.61458in</Width>
         <ZIndex>3</ZIndex>
@@ -744,22 +744,26 @@
       </Textbox>
       <Line Name="Line1">
         <Top>1.846in</Top>
+        <Left>0.01042in</Left>
         <Height>0in</Height>
         <Width>7.86446in</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
+            <Color>Gray</Color>
             <Style>Solid</Style>
           </Border>
         </Style>
       </Line>
       <Line Name="Line2">
         <Top>1.81822in</Top>
+        <Left>0.01042in</Left>
         <Height>0in</Height>
         <Width>7.86446in</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
+            <Color>Gray</Color>
             <Style>Solid</Style>
           </Border>
         </Style>

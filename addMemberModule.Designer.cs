@@ -227,7 +227,7 @@
             this.metroDateEndCt.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
             this.metroDateEndCt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.metroDateEndCt.Location = new System.Drawing.Point(874, 466);
-            this.metroDateEndCt.MinimumSize = new System.Drawing.Size(4, 29);
+            this.metroDateEndCt.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateEndCt.Name = "metroDateEndCt";
             this.metroDateEndCt.Size = new System.Drawing.Size(160, 29);
             this.metroDateEndCt.Style = MetroFramework.MetroColorStyle.Green;
@@ -239,7 +239,7 @@
             this.metroDateStartCt.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
             this.metroDateStartCt.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.metroDateStartCt.Location = new System.Drawing.Point(597, 466);
-            this.metroDateStartCt.MinimumSize = new System.Drawing.Size(4, 29);
+            this.metroDateStartCt.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateStartCt.Name = "metroDateStartCt";
             this.metroDateStartCt.Size = new System.Drawing.Size(160, 29);
             this.metroDateStartCt.Style = MetroFramework.MetroColorStyle.Green;
@@ -251,10 +251,10 @@
             this.comboBoxContractType.ForeColor = System.Drawing.Color.Gray;
             this.comboBoxContractType.FormattingEnabled = true;
             this.comboBoxContractType.Items.AddRange(new object[] {
-            "Permanent Contract",
-            "Short-Term Contract",
-            "Casual Contract",
-            "Consultant Contract"});
+            "Permanent",
+            "Short-Term",
+            "Consultant",
+            "Casual"});
             this.comboBoxContractType.Location = new System.Drawing.Point(503, 392);
             this.comboBoxContractType.Name = "comboBoxContractType";
             this.comboBoxContractType.Size = new System.Drawing.Size(296, 28);

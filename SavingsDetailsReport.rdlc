@@ -15,7 +15,7 @@
               <Width>0.69195in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.33035in</Width>
+              <Width>2.03868in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.01637in</Width>
@@ -564,9 +564,9 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSetSavings</DataSetName>
-        <Top>2.36111in</Top>
+        <Top>1.875in</Top>
         <Height>0.69097in</Height>
-        <Width>7.78813in</Width>
+        <Width>7.49646in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -587,7 +587,7 @@
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.25in</Height>
+              <Height>0.20833in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -601,7 +601,7 @@
                               <Value>Total Savings Balance</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontSize>9pt</FontSize>
                                 <FontWeight>Heavy</FontWeight>
                                 <Color>SeaGreen</Color>
                               </Style>
@@ -636,6 +636,7 @@
                               <Value>="$" &amp; Format(Sum(Fields!SavingsAccountBalance.Value), "N2")</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
                                 <FontWeight>ExtraBold</FontWeight>
                                 <Color>Tomato</Color>
                               </Style>
@@ -676,9 +677,9 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSetSavings</DataSetName>
-        <Top>2.04167in</Top>
-        <Left>1.88277in</Left>
-        <Height>0.25in</Height>
+        <Top>1.61111in</Top>
+        <Left>0.03131in</Left>
+        <Height>0.20833in</Height>
         <Width>4.02259in</Width>
         <ZIndex>1</ZIndex>
         <Style>
@@ -699,6 +700,8 @@
           <RightBorder>
             <Color>LightGrey</Color>
           </RightBorder>
+          <FontFamily>Courier New</FontFamily>
+          <FontSize>8pt</FontSize>
         </Style>
       </Tablix>
       <Textbox Name="Textbox3">
@@ -721,8 +724,8 @@
             </Style>
           </Paragraph>
         </Paragraphs>
-        <Top>1.45599in</Top>
-        <Left>1.08677in</Left>
+        <Top>1.066in</Top>
+        <Left>0.94094in</Left>
         <Height>0.20485in</Height>
         <Width>5.61458in</Width>
         <ZIndex>2</ZIndex>
@@ -740,8 +743,8 @@
         <Source>Embedded</Source>
         <Value>Emblem_of_East_African_Community21</Value>
         <Sizing>Fit</Sizing>
-        <Top>0.49542in</Top>
-        <Left>3.34496in</Left>
+        <Top>0.125in</Top>
+        <Left>3.19912in</Left>
         <Height>0.90501in</Height>
         <Width>1.09821in</Width>
         <ZIndex>3</ZIndex>
@@ -770,8 +773,8 @@
             </Style>
           </Paragraph>
         </Paragraphs>
-        <Top>1.66084in</Top>
-        <Left>1.08677in</Left>
+        <Top>1.27085in</Top>
+        <Left>0.94094in</Left>
         <Height>0.18749in</Height>
         <Width>5.61458in</Width>
         <ZIndex>4</ZIndex>
@@ -786,9 +789,9 @@
         </Style>
       </Textbox>
       <Line Name="Line1">
-        <Top>1.90388in</Top>
+        <Top>1.51389in</Top>
         <Height>0in</Height>
-        <Width>7.78813in</Width>
+        <Width>7.49646in</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
@@ -797,9 +800,9 @@
         </Style>
       </Line>
       <Line Name="Line2">
-        <Top>1.93166in</Top>
+        <Top>1.54167in</Top>
         <Height>0in</Height>
-        <Width>7.78813in</Width>
+        <Width>7.49646in</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
@@ -807,16 +810,50 @@
           </Border>
         </Style>
       </Line>
+      <Textbox Name="Textbox55">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Globals!ExecutionTime</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <Color>DimGray</Color>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox55</rd:DefaultName>
+        <Top>1.61111in</Top>
+        <Left>4.97886in</Left>
+        <Height>0.20833in</Height>
+        <Width>2.5176in</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>3.10417in</Height>
+    <Height>2.61458in</Height>
     <Style />
   </Body>
-  <Width>7.82904in</Width>
+  <Width>7.52696in</Width>
   <Page>
-    <LeftMargin>0.5in</LeftMargin>
-    <RightMargin>0.5in</RightMargin>
-    <TopMargin>1in</TopMargin>
-    <BottomMargin>1in</BottomMargin>
+    <LeftMargin>0.25in</LeftMargin>
+    <RightMargin>0.25in</RightMargin>
+    <TopMargin>0.5in</TopMargin>
+    <BottomMargin>0.5in</BottomMargin>
     <Style />
   </Page>
   <AutoRefresh>0</AutoRefresh>

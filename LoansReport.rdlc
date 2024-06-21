@@ -23,8 +23,8 @@
             </Style>
           </Paragraph>
         </Paragraphs>
-        <Top>1.48338in</Top>
-        <Left>1.48425in</Left>
+        <Top>0.98338in</Top>
+        <Left>1.15904in</Left>
         <Height>0.20485in</Height>
         <Width>5.61458in</Width>
         <Style>
@@ -41,10 +41,9 @@
         <Source>Embedded</Source>
         <Value>Emblem_of_East_African_Community21</Value>
         <Sizing>Fit</Sizing>
-        <Top>0.37003in</Top>
-        <Left>3.63529in</Left>
-        <Height>1.07168in</Height>
-        <Width>1.3125in</Width>
+        <Left>3.31008in</Left>
+        <Height>0.8946in</Height>
+        <Width>1.11458in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -72,8 +71,8 @@
             </Style>
           </Paragraph>
         </Paragraphs>
-        <Top>1.68823in</Top>
-        <Left>1.48425in</Left>
+        <Top>1.18823in</Top>
+        <Left>1.15904in</Left>
         <Height>0.18749in</Height>
         <Width>5.61458in</Width>
         <ZIndex>2</ZIndex>
@@ -87,28 +86,6 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
-      <Line Name="Line1">
-        <Top>1.91739in</Top>
-        <Height>0in</Height>
-        <Width>8.58308in</Width>
-        <ZIndex>3</ZIndex>
-        <Style>
-          <Border>
-            <Style>Solid</Style>
-          </Border>
-        </Style>
-      </Line>
-      <Line Name="Line2">
-        <Top>1.94517in</Top>
-        <Height>0in</Height>
-        <Width>8.58308in</Width>
-        <ZIndex>4</ZIndex>
-        <Style>
-          <Border>
-            <Style>Solid</Style>
-          </Border>
-        </Style>
-      </Line>
       <Tablix Name="Tablix2">
         <TablixBody>
           <TablixColumns>
@@ -119,13 +96,13 @@
               <Width>2.74346cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>5.29645cm</Width>
+              <Width>5.03187cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.94438cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.76458cm</Width>
+              <Width>1.7475cm</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.47354cm</Width>
@@ -134,10 +111,10 @@
               <Width>2.22467cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.91792cm</Width>
+              <Width>1.73271cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.60042cm</Width>
+              <Width>1.41521cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -858,11 +835,11 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>AllLoansDataset</DataSetName>
-        <Top>5.84412cm</Top>
+        <Top>4.4733cm</Top>
         <Left>0cm</Left>
         <Height>1.62333cm</Height>
-        <Width>21.80102cm</Width>
-        <ZIndex>5</ZIndex>
+        <Width>20.14894cm</Width>
+        <ZIndex>3</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -879,7 +856,7 @@
                 <Value>=Globals!ExecutionTime</Value>
                 <Style>
                   <FontFamily>Courier New</FontFamily>
-                  <FontSize>8pt</FontSize>
+                  <FontSize>7pt</FontSize>
                   <Color>DimGray</Color>
                 </Style>
               </TextRun>
@@ -888,11 +865,11 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox55</rd:DefaultName>
-        <Top>1.97295in</Top>
-        <Left>6.06548in</Left>
+        <Top>1.51461in</Top>
+        <Left>5.94048in</Left>
         <Height>0.17708in</Height>
-        <Width>2.5176in</Width>
-        <ZIndex>6</ZIndex>
+        <Width>1.91926in</Width>
+        <ZIndex>4</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -903,22 +880,46 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
+      <Line Name="Line1">
+        <Top>1.47295in</Top>
+        <Left>0.46238in</Left>
+        <Height>0in</Height>
+        <Width>6.9131in</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Color>Gray</Color>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Line Name="Line2">
+        <Top>1.44517in</Top>
+        <Left>0.46238in</Left>
+        <Height>0in</Height>
+        <Width>6.9131in</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Color>Gray</Color>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
     </ReportItems>
-    <Height>3.13812in</Height>
+    <Height>2.45062in</Height>
     <Style>
       <Border>
         <Style>None</Style>
       </Border>
     </Style>
   </Body>
-  <Width>8.60986in</Width>
+  <Width>7.95361in</Width>
   <Page>
-    <PageHeight>10.62992in</PageHeight>
-    <PageWidth>8.26772in</PageWidth>
-    <LeftMargin>0.2in</LeftMargin>
-    <RightMargin>0.2in</RightMargin>
-    <TopMargin>0.5in</TopMargin>
-    <BottomMargin>0.5in</BottomMargin>
+    <LeftMargin>0.18in</LeftMargin>
+    <RightMargin>0.18in</RightMargin>
+    <TopMargin>0.75in</TopMargin>
+    <BottomMargin>0.75in</BottomMargin>
     <Style />
   </Page>
   <AutoRefresh>0</AutoRefresh>

@@ -112,5 +112,17 @@ namespace EAC_STAFF_WELFARE_LMS
                 }
             }
         }
+
+        private void dgvLoansDashBoard_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+                if (e.RowIndex >= 0 && e.RowIndex < dgvLoansDashBoard.Rows.Count && e.ColumnIndex >= 0)
+                {
+                    DataGridViewRow clickedRow = dgvLoansDashBoard.Rows[e.RowIndex];
+                    string loanId = clickedRow.Cells["LoanID"].Value.ToString();
+                    LoanPaymentHistory loanPaymentHistoryForm = new LoanPaymentHistory(loanId);
+                    loanPaymentHistoryForm.ShowDialog();
+                }
+        }
     }
 }

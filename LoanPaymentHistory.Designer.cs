@@ -212,6 +212,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "LoanPaymentHistory";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "LoanPaymentHistory";
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoanPaymentHistory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBxClose)).EndInit();

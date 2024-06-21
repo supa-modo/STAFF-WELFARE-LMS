@@ -96,7 +96,7 @@ namespace EAC_STAFF_WELFARE_LMS
             DateTime dueDate = applicationDate.AddMonths(durationOfPayment);
 
             // Confirm new loan addition
-            string confirmationMessage = $"        Confirm New loan addition:\n \nApplicant Name - {applicantName}\nLoan amount - {loanAmount}\nDuration of Payment - {durationOfPayment} months\nMonthly Installments - {monthlyInstallments}";
+            string confirmationMessage = $"      Confirm New loan addition:\n Applicant Name - {applicantName}\nLoan amount - {loanAmount}\nDuration of Payment - {durationOfPayment} months\nMonthly Installments - {monthlyInstallments}";
             DialogResult result = MessageBox.Show(confirmationMessage, "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             
             if (result == DialogResult.Yes)

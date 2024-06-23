@@ -104,11 +104,11 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private void btnIndivMembers_Click(object sender, EventArgs e)
         {
-            string pfNo = "2304"; // Replace with the actual PFNo you want to filter by
+            string pfNo = "5630"; // Replace with the actual PFNo you want to filter by
             string query = @"
         SELECT l.ApplicantName, 
                m.JobTitle,
-               m.MemberPFNo AS PFNo, 
+               m.MemberPFNo, 
                s.SavingsAccountBalance,
                l.LoanID,
                l.LoanAmount,

@@ -6,27 +6,27 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.37684cm</Width>
+              <Width>1.42875cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.37684cm</Width>
+              <Width>3.84576cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.37684cm</Width>
+              <Width>2.45621cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.37684cm</Width>
+              <Width>3.09991cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.37684cm</Width>
+              <Width>2.4463cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.37684cm</Width>
+              <Width>2.03925cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.6cm</Height>
+              <Height>0.89104cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -38,10 +38,16 @@
                           <TextRuns>
                             <TextRun>
                               <Value>No.</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontWeight>SemiBold</FontWeight>
+                                <Color>DimGray</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox1</rd:DefaultName>
@@ -50,6 +56,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -68,10 +75,16 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Loan ID</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontWeight>SemiBold</FontWeight>
+                                <Color>DimGray</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox3</rd:DefaultName>
@@ -80,6 +93,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -98,10 +112,16 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Loan Amount</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontWeight>SemiBold</FontWeight>
+                                <Color>DimGray</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox5</rd:DefaultName>
@@ -110,6 +130,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -128,10 +149,16 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Due Date</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontWeight>SemiBold</FontWeight>
+                                <Color>DimGray</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox9</rd:DefaultName>
@@ -140,6 +167,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -158,10 +186,16 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Pending Balance</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontWeight>SemiBold</FontWeight>
+                                <Color>DimGray</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox11</rd:DefaultName>
@@ -170,6 +204,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -188,10 +223,16 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Loan Status</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontWeight>SemiBold</FontWeight>
+                                <Color>DimGray</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox7</rd:DefaultName>
@@ -200,6 +241,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -223,10 +265,15 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=RowNumber(Nothing)</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox2</rd:DefaultName>
@@ -253,10 +300,15 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!LoanID.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>LoanID</rd:DefaultName>
@@ -283,10 +335,15 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!LoanAmount.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>LoanAmount</rd:DefaultName>
@@ -313,10 +370,16 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!DueDate.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <Format>d</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>DueDate</rd:DefaultName>
@@ -343,10 +406,15 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!PendingBalance.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>PendingBalance</rd:DefaultName>
@@ -373,10 +441,15 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!LoanStatus.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>LoanStatus</rd:DefaultName>
@@ -418,10 +491,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>IndividualMemberDetails</DataSetName>
-        <Top>10.05978cm</Top>
-        <Left>2.49027cm</Left>
-        <Height>1.2cm</Height>
-        <Width>14.26103cm</Width>
+        <Top>8.23391cm</Top>
+        <Left>0.635cm</Left>
+        <Height>1.49104cm</Height>
+        <Width>15.31618cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -432,10 +505,10 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>4.07458cm</Width>
+              <Width>4.08781cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>10.18645cm</Width>
+              <Width>11.22838cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -452,7 +525,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Applicant Name</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -482,10 +558,15 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!ApplicantName.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox16</rd:DefaultName>
@@ -494,7 +575,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingLeft>10pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
@@ -517,7 +598,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Job Title</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -547,10 +631,15 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!JobTitle.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox17</rd:DefaultName>
@@ -559,7 +648,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingLeft>10pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
@@ -582,7 +671,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Member PF No.</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -604,7 +696,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox21">
+                    <Textbox Name="MemberPFNo">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -612,19 +704,24 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!MemberPFNo.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox21</rd:DefaultName>
+                      <rd:DefaultName>MemberPFNo</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingLeft>10pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
@@ -647,7 +744,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Savings Account Balance</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -677,10 +777,15 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!SavingsAccountBalance.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>Courier New</FontFamily>
+                                <FontSize>9pt</FontSize>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox24</rd:DefaultName>
@@ -689,7 +794,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingLeft>10pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
@@ -723,15 +828,17 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>IndividualMemberDetails</DataSetName>
-        <Top>5.0327cm</Top>
-        <Left>2.49027cm</Left>
+        <Top>4.45972cm</Top>
+        <Left>0.635cm</Left>
         <Height>2.4cm</Height>
-        <Width>14.26103cm</Width>
+        <Width>15.31619cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
+          <FontFamily>Courier New</FontFamily>
+          <FontSize>8pt</FontSize>
         </Style>
       </Tablix>
       <Textbox Name="Textbox35">
@@ -742,7 +849,10 @@
             <TextRuns>
               <TextRun>
                 <Value>=Globals!ExecutionTime</Value>
-                <Style />
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
               </TextRun>
             </TextRuns>
             <Style />
@@ -750,9 +860,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox35</rd:DefaultName>
         <Top>3.78916cm</Top>
-        <Left>13.15953cm</Left>
+        <Left>11.88953cm</Left>
         <Height>0.6cm</Height>
-        <Width>3.50542cm</Width>
+        <Width>4.06166cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -786,7 +896,7 @@
           </Paragraph>
         </Paragraphs>
         <Top>1.01612in</Top>
-        <Left>0.98042in</Left>
+        <Left>0.48042in</Left>
         <Height>0.20485in</Height>
         <Width>5.61458in</Width>
         <ZIndex>3</ZIndex>
@@ -804,7 +914,7 @@
         <Source>Embedded</Source>
         <Value>Emblem_of_East_African_Community21</Value>
         <Sizing>Fit</Sizing>
-        <Left>3.22521in</Left>
+        <Left>2.72521in</Left>
         <Height>0.9571in</Height>
         <Width>1.125in</Width>
         <ZIndex>4</ZIndex>
@@ -835,7 +945,7 @@
           </Paragraph>
         </Paragraphs>
         <Top>1.22097in</Top>
-        <Left>0.98042in</Left>
+        <Left>0.48042in</Left>
         <Height>0.18749in</Height>
         <Width>5.61458in</Width>
         <ZIndex>5</ZIndex>
@@ -851,9 +961,9 @@
       </Textbox>
       <Line Name="Line1">
         <Top>1.42235in</Top>
-        <Left>0.3979in</Left>
+        <Left>0.0229in</Left>
         <Height>0in</Height>
-        <Width>6.9131in</Width>
+        <Width>6.40268in</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
@@ -864,9 +974,9 @@
       </Line>
       <Line Name="Line2">
         <Top>1.39457in</Top>
-        <Left>0.3979in</Left>
+        <Left>0.0229in</Left>
         <Height>0in</Height>
-        <Width>6.9131in</Width>
+        <Width>6.40268in</Width>
         <ZIndex>7</ZIndex>
         <Style>
           <Border>
@@ -875,15 +985,49 @@
           </Border>
         </Style>
       </Line>
+      <Textbox Name="Textbox38">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Loans</Value>
+                <Style>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox38</rd:DefaultName>
+        <Top>2.87365in</Top>
+        <Left>0.25in</Left>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
     <Height>6.4375in</Height>
     <Style />
   </Body>
-  <Width>7.82292in</Width>
+  <Width>6.45833in</Width>
   <Page>
     <LeftMargin>1in</LeftMargin>
     <RightMargin>1in</RightMargin>
-    <TopMargin>1in</TopMargin>
+    <TopMargin>0.5in</TopMargin>
     <BottomMargin>1in</BottomMargin>
     <Style />
   </Page>

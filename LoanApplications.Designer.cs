@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoanApplications));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -40,13 +41,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoanApplications));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelTotalLoans = new System.Windows.Forms.Label();
             this.labelLoansTotal = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvLoanApplications = new System.Windows.Forms.DataGridView();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.txtSearch = new MetroFramework.Controls.MetroTextBox();
+            this.metroBtnNewLoan = new MetroFramework.Controls.MetroButton();
+            this.metroBtnRunLoansDeduction = new MetroFramework.Controls.MetroButton();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LoanID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PFNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,10 +63,6 @@
             this.MonthlyInstallments = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PendingBalance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LoanStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.txtSearch = new MetroFramework.Controls.MetroTextBox();
-            this.metroBtnNewLoan = new MetroFramework.Controls.MetroButton();
-            this.metroBtnRunLoansDeduction = new MetroFramework.Controls.MetroButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoanApplications)).BeginInit();
@@ -128,6 +128,7 @@
             // 
             this.dgvLoanApplications.AllowUserToAddRows = false;
             this.dgvLoanApplications.AllowUserToDeleteRows = false;
+            this.dgvLoanApplications.AllowUserToOrderColumns = true;
             this.dgvLoanApplications.AllowUserToResizeColumns = false;
             this.dgvLoanApplications.AllowUserToResizeRows = false;
             this.dgvLoanApplications.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -168,6 +169,94 @@
             this.dgvLoanApplications.TabIndex = 3;
             this.dgvLoanApplications.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLoanApplications_CellClick);
             this.dgvLoanApplications.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLoanApplications_CellDoubleClick);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.txtSearch);
+            this.panel3.Controls.Add(this.metroBtnNewLoan);
+            this.panel3.Controls.Add(this.metroBtnRunLoansDeduction);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 40);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1350, 40);
+            this.panel3.TabIndex = 4;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSearch.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtSearch.CustomButton.Image = null;
+            this.txtSearch.CustomButton.Location = new System.Drawing.Point(338, 1);
+            this.txtSearch.CustomButton.Name = "";
+            this.txtSearch.CustomButton.Size = new System.Drawing.Size(29, 29);
+            this.txtSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtSearch.CustomButton.TabIndex = 1;
+            this.txtSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtSearch.CustomButton.UseSelectable = true;
+            this.txtSearch.CustomButton.Visible = false;
+            this.txtSearch.DisplayIcon = true;
+            this.txtSearch.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtSearch.Icon = ((System.Drawing.Image)(resources.GetObject("txtSearch.Icon")));
+            this.txtSearch.Lines = new string[0];
+            this.txtSearch.Location = new System.Drawing.Point(972, 6);
+            this.txtSearch.MaxLength = 32767;
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.PromptText = "Search Here";
+            this.txtSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.SelectionLength = 0;
+            this.txtSearch.SelectionStart = 0;
+            this.txtSearch.ShortcutsEnabled = true;
+            this.txtSearch.Size = new System.Drawing.Size(368, 31);
+            this.txtSearch.TabIndex = 11;
+            this.txtSearch.UseSelectable = true;
+            this.txtSearch.WaterMark = "Search Here";
+            this.txtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged_1);
+            // 
+            // metroBtnNewLoan
+            // 
+            this.metroBtnNewLoan.BackColor = System.Drawing.Color.SeaGreen;
+            this.metroBtnNewLoan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.metroBtnNewLoan.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroBtnNewLoan.ForeColor = System.Drawing.Color.White;
+            this.metroBtnNewLoan.Location = new System.Drawing.Point(17, 3);
+            this.metroBtnNewLoan.Name = "metroBtnNewLoan";
+            this.metroBtnNewLoan.Size = new System.Drawing.Size(240, 33);
+            this.metroBtnNewLoan.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroBtnNewLoan.TabIndex = 10;
+            this.metroBtnNewLoan.Text = "Add New Loan";
+            this.metroBtnNewLoan.UseCustomBackColor = true;
+            this.metroBtnNewLoan.UseCustomForeColor = true;
+            this.metroBtnNewLoan.UseSelectable = true;
+            this.metroBtnNewLoan.UseStyleColors = true;
+            this.metroBtnNewLoan.Click += new System.EventHandler(this.metroBtnNewLoan_Click_1);
+            // 
+            // metroBtnRunLoansDeduction
+            // 
+            this.metroBtnRunLoansDeduction.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroBtnRunLoansDeduction.BackColor = System.Drawing.Color.SeaGreen;
+            this.metroBtnRunLoansDeduction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.metroBtnRunLoansDeduction.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroBtnRunLoansDeduction.ForeColor = System.Drawing.Color.White;
+            this.metroBtnRunLoansDeduction.Location = new System.Drawing.Point(501, 3);
+            this.metroBtnRunLoansDeduction.Name = "metroBtnRunLoansDeduction";
+            this.metroBtnRunLoansDeduction.Size = new System.Drawing.Size(342, 35);
+            this.metroBtnRunLoansDeduction.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroBtnRunLoansDeduction.TabIndex = 9;
+            this.metroBtnRunLoansDeduction.Text = "Run Monthly Loan Deductions";
+            this.metroBtnRunLoansDeduction.UseCustomBackColor = true;
+            this.metroBtnRunLoansDeduction.UseCustomForeColor = true;
+            this.metroBtnRunLoansDeduction.UseSelectable = true;
+            this.metroBtnRunLoansDeduction.UseStyleColors = true;
+            this.metroBtnRunLoansDeduction.Click += new System.EventHandler(this.metroBtnRunLoansDeduction_Click);
             // 
             // Column6
             // 
@@ -289,94 +378,6 @@
             this.LoanStatus.ReadOnly = true;
             this.LoanStatus.Width = 108;
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.txtSearch);
-            this.panel3.Controls.Add(this.metroBtnNewLoan);
-            this.panel3.Controls.Add(this.metroBtnRunLoansDeduction);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 40);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1350, 40);
-            this.panel3.TabIndex = 4;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSearch.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.txtSearch.CustomButton.Image = null;
-            this.txtSearch.CustomButton.Location = new System.Drawing.Point(338, 1);
-            this.txtSearch.CustomButton.Name = "";
-            this.txtSearch.CustomButton.Size = new System.Drawing.Size(29, 29);
-            this.txtSearch.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtSearch.CustomButton.TabIndex = 1;
-            this.txtSearch.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtSearch.CustomButton.UseSelectable = true;
-            this.txtSearch.CustomButton.Visible = false;
-            this.txtSearch.DisplayIcon = true;
-            this.txtSearch.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.txtSearch.Icon = ((System.Drawing.Image)(resources.GetObject("txtSearch.Icon")));
-            this.txtSearch.Lines = new string[0];
-            this.txtSearch.Location = new System.Drawing.Point(972, 6);
-            this.txtSearch.MaxLength = 32767;
-            this.txtSearch.Multiline = true;
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.PromptText = "Search Here";
-            this.txtSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtSearch.SelectedText = "";
-            this.txtSearch.SelectionLength = 0;
-            this.txtSearch.SelectionStart = 0;
-            this.txtSearch.ShortcutsEnabled = true;
-            this.txtSearch.Size = new System.Drawing.Size(368, 31);
-            this.txtSearch.TabIndex = 11;
-            this.txtSearch.UseSelectable = true;
-            this.txtSearch.WaterMark = "Search Here";
-            this.txtSearch.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtSearch.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged_1);
-            // 
-            // metroBtnNewLoan
-            // 
-            this.metroBtnNewLoan.BackColor = System.Drawing.Color.SeaGreen;
-            this.metroBtnNewLoan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.metroBtnNewLoan.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroBtnNewLoan.ForeColor = System.Drawing.Color.White;
-            this.metroBtnNewLoan.Location = new System.Drawing.Point(17, 3);
-            this.metroBtnNewLoan.Name = "metroBtnNewLoan";
-            this.metroBtnNewLoan.Size = new System.Drawing.Size(240, 33);
-            this.metroBtnNewLoan.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroBtnNewLoan.TabIndex = 10;
-            this.metroBtnNewLoan.Text = "Add New Loan";
-            this.metroBtnNewLoan.UseCustomBackColor = true;
-            this.metroBtnNewLoan.UseCustomForeColor = true;
-            this.metroBtnNewLoan.UseSelectable = true;
-            this.metroBtnNewLoan.UseStyleColors = true;
-            this.metroBtnNewLoan.Click += new System.EventHandler(this.metroBtnNewLoan_Click_1);
-            // 
-            // metroBtnRunLoansDeduction
-            // 
-            this.metroBtnRunLoansDeduction.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroBtnRunLoansDeduction.BackColor = System.Drawing.Color.SeaGreen;
-            this.metroBtnRunLoansDeduction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.metroBtnRunLoansDeduction.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroBtnRunLoansDeduction.ForeColor = System.Drawing.Color.White;
-            this.metroBtnRunLoansDeduction.Location = new System.Drawing.Point(501, 3);
-            this.metroBtnRunLoansDeduction.Name = "metroBtnRunLoansDeduction";
-            this.metroBtnRunLoansDeduction.Size = new System.Drawing.Size(342, 35);
-            this.metroBtnRunLoansDeduction.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroBtnRunLoansDeduction.TabIndex = 9;
-            this.metroBtnRunLoansDeduction.Text = "Run Monthly Loan Deductions";
-            this.metroBtnRunLoansDeduction.UseCustomBackColor = true;
-            this.metroBtnRunLoansDeduction.UseCustomForeColor = true;
-            this.metroBtnRunLoansDeduction.UseSelectable = true;
-            this.metroBtnRunLoansDeduction.UseStyleColors = true;
-            this.metroBtnRunLoansDeduction.Click += new System.EventHandler(this.metroBtnRunLoansDeduction_Click);
-            // 
             // LoanApplications
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -411,6 +412,7 @@
         private System.Windows.Forms.Panel panel3;
         private MetroFramework.Controls.MetroButton metroBtnRunLoansDeduction;
         private MetroFramework.Controls.MetroButton metroBtnNewLoan;
+        private MetroFramework.Controls.MetroTextBox txtSearch;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn LoanID;
         private System.Windows.Forms.DataGridViewTextBoxColumn PFNo;
@@ -423,6 +425,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MonthlyInstallments;
         private System.Windows.Forms.DataGridViewTextBoxColumn PendingBalance;
         private System.Windows.Forms.DataGridViewTextBoxColumn LoanStatus;
-        private MetroFramework.Controls.MetroTextBox txtSearch;
     }
 }

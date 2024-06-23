@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -39,13 +40,13 @@ namespace EAC_STAFF_WELFARE_LMS
         private void btnAllLoans_Click(object sender, EventArgs e)
         {
             cmd = new SqlCommand("SELECT LoanID, PFNo, ApplicantName, LoanAmount, DurationOfPayment, ApplicationDate, DueDate, PendingBalance, LoanStatus FROM Loans", cn);
-            SqlDataAdapter d = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            d.Fill(dt);
+            SqlDataAdapter d5 = new SqlDataAdapter(cmd);
+            DataTable dt5 = new DataTable();
+            d5.Fill(dt5);
             ResetReportViewer();
 
             // Creating a new ReportDataSource with the fetched data and setting the path to the .rdlc report file then adding new source to datasources
-            ReportDataSource sourceLoans = new ReportDataSource("AllLoansDataset", dt);
+            ReportDataSource sourceLoans = new ReportDataSource("AllLoansDataset", dt5);
             reportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/LoansReport.rdlc";
             reportViewer.LocalReport.DataSources.Add(sourceLoans);
 
@@ -103,8 +104,44 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private void btnIndivMembers_Click(object sender, EventArgs e)
         {
+            string pfNo = "2304"; // Replace with the actual PFNo you want to filter by
+            string query = @"
+        SELECT l.ApplicantName, 
+               m.JobTitle,
+               m.MemberPFNo AS PFNo, 
+               s.SavingsAccountBalance,
+               l.LoanID,
+               l.LoanAmount,
+               l.DueDate,
+               l.PendingBalance,
+               l.LoanStatus
+        FROM Loans l
+        INNER JOIN Members m ON l.PFNo = m.MemberPFNo
+        INNER JOIN Savings s ON s.PFNo = m.MemberPFNo
+        WHERE m.MemberPFNo = @PFNo";
 
+            using (SqlCommand cmd = new SqlCommand(query, cn))
+            {
+                cmd.Parameters.AddWithValue("@PFNo", pfNo);
+
+                SqlDataAdapter d6 = new SqlDataAdapter(cmd);
+                DataTable dt6 = new DataTable();
+                d6.Fill(dt6);
+
+                ResetReportViewer();
+
+                ReportDataSource sourceIndividualMemberDetails = new ReportDataSource("IndividualMemberDetails", dt6);
+                reportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/IndividualMemberReport.rdlc";
+                reportViewer.LocalReport.DataSources.Add(sourceIndividualMemberDetails);
+
+                // Setting the display mode and refreshing the report
+                reportViewer.SetDisplayMode(DisplayMode.PrintLayout);
+                reportViewer.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.Percent;
+                reportViewer.ZoomPercent = 100;
+                reportViewer.RefreshReport();
+            }
         }
+
 
         private void btnTotalSavings_Click(object sender, EventArgs e)
         {

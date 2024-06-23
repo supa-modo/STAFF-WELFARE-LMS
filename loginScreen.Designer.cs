@@ -50,9 +50,9 @@
             // loginLogo
             // 
             this.loginLogo.Image = ((System.Drawing.Image)(resources.GetObject("loginLogo.Image")));
-            this.loginLogo.Location = new System.Drawing.Point(307, 43);
+            this.loginLogo.Location = new System.Drawing.Point(318, 56);
             this.loginLogo.Name = "loginLogo";
-            this.loginLogo.Size = new System.Drawing.Size(158, 130);
+            this.loginLogo.Size = new System.Drawing.Size(135, 117);
             this.loginLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.loginLogo.TabIndex = 1;
             this.loginLogo.TabStop = false;
@@ -61,7 +61,7 @@
             // 
             this.labelEAC.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.labelEAC.ForeColor = System.Drawing.Color.Green;
-            this.labelEAC.Location = new System.Drawing.Point(230, 175);
+            this.labelEAC.Location = new System.Drawing.Point(229, 175);
             this.labelEAC.Name = "labelEAC";
             this.labelEAC.Size = new System.Drawing.Size(312, 31);
             this.labelEAC.TabIndex = 2;
@@ -72,7 +72,7 @@
             // 
             this.labelSyst.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.labelSyst.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelSyst.Location = new System.Drawing.Point(193, 208);
+            this.labelSyst.Location = new System.Drawing.Point(192, 208);
             this.labelSyst.Name = "labelSyst";
             this.labelSyst.Size = new System.Drawing.Size(387, 30);
             this.labelSyst.TabIndex = 3;
@@ -84,7 +84,7 @@
             this.txtPwd.BackColor = System.Drawing.Color.Cornsilk;
             this.txtPwd.Font = new System.Drawing.Font("Segoe UI", 13.25F);
             this.txtPwd.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtPwd.Location = new System.Drawing.Point(157, 308);
+            this.txtPwd.Location = new System.Drawing.Point(156, 308);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.PasswordChar = '*';
             this.txtPwd.Size = new System.Drawing.Size(458, 31);
@@ -107,7 +107,7 @@
             this.btnSignIn.BackColor = System.Drawing.Color.ForestGreen;
             this.btnSignIn.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Bold);
             this.btnSignIn.ForeColor = System.Drawing.Color.White;
-            this.btnSignIn.Location = new System.Drawing.Point(335, 376);
+            this.btnSignIn.Location = new System.Drawing.Point(334, 376);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(102, 38);
             this.btnSignIn.TabIndex = 10;
@@ -120,7 +120,7 @@
             this.txtUsername.BackColor = System.Drawing.Color.Cornsilk;
             this.txtUsername.Font = new System.Drawing.Font("Cocon", 11F);
             this.txtUsername.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtUsername.Location = new System.Drawing.Point(157, 256);
+            this.txtUsername.Location = new System.Drawing.Point(156, 256);
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(458, 30);

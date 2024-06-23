@@ -56,6 +56,7 @@
             // dgvLoanPaymentHistory
             // 
             this.dgvLoanPaymentHistory.AllowUserToDeleteRows = false;
+            this.dgvLoanPaymentHistory.AllowUserToOrderColumns = true;
             this.dgvLoanPaymentHistory.AllowUserToResizeColumns = false;
             this.dgvLoanPaymentHistory.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));

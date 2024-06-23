@@ -62,6 +62,7 @@
             // 
             this.dgvMemberSavings.AllowUserToAddRows = false;
             this.dgvMemberSavings.AllowUserToDeleteRows = false;
+            this.dgvMemberSavings.AllowUserToOrderColumns = true;
             this.dgvMemberSavings.AllowUserToResizeColumns = false;
             this.dgvMemberSavings.AllowUserToResizeRows = false;
             this.dgvMemberSavings.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 

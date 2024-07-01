@@ -39,6 +39,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelMemberProfileTop = new System.Windows.Forms.Panel();
             this.picBxClose = new System.Windows.Forms.PictureBox();
             this.lblMemberProfile = new System.Windows.Forms.Label();
@@ -105,15 +113,14 @@
             this.labelPendingLoans = new System.Windows.Forms.Label();
             this.labelTotalLoans = new System.Windows.Forms.Label();
             this.metroSavings = new MetroFramework.Controls.MetroTabPage();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.metroTabControl2 = new MetroFramework.Controls.MetroTabControl();
-            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.dgvSavingsHistory = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelMemberProfileTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBxClose)).BeginInit();
             this.metroTabProfile.SuspendLayout();
@@ -124,7 +131,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvIndividualLoans)).BeginInit();
             this.panel4.SuspendLayout();
             this.metroSavings.SuspendLayout();
-            this.metroTabControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSavingsHistory)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMemberProfileTop
@@ -170,7 +177,7 @@
             this.metroTabProfile.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabProfile.Location = new System.Drawing.Point(0, 40);
             this.metroTabProfile.Name = "metroTabProfile";
-            this.metroTabProfile.SelectedIndex = 1;
+            this.metroTabProfile.SelectedIndex = 2;
             this.metroTabProfile.Size = new System.Drawing.Size(1328, 665);
             this.metroTabProfile.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTabProfile.TabIndex = 1;
@@ -965,12 +972,8 @@
             // 
             // metroSavings
             // 
-            this.metroSavings.Controls.Add(this.label47);
-            this.metroSavings.Controls.Add(this.label46);
-            this.metroSavings.Controls.Add(this.label39);
-            this.metroSavings.Controls.Add(this.label38);
-            this.metroSavings.Controls.Add(this.comboBox1);
-            this.metroSavings.Controls.Add(this.metroTabControl2);
+            this.metroSavings.Controls.Add(this.panel1);
+            this.metroSavings.Controls.Add(this.dgvSavingsHistory);
             this.metroSavings.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.metroSavings.HorizontalScrollbarBarColor = true;
             this.metroSavings.HorizontalScrollbarHighlightOnWheel = false;
@@ -985,103 +988,112 @@
             this.metroSavings.VerticalScrollbarHighlightOnWheel = false;
             this.metroSavings.VerticalScrollbarSize = 10;
             // 
-            // label47
+            // dgvSavingsHistory
             // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(892, 294);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(63, 21);
-            this.label47.TabIndex = 6;
-            this.label47.Text = "label47";
+            this.dgvSavingsHistory.AllowUserToAddRows = false;
+            this.dgvSavingsHistory.AllowUserToDeleteRows = false;
+            this.dgvSavingsHistory.AllowUserToOrderColumns = true;
+            this.dgvSavingsHistory.AllowUserToResizeColumns = false;
+            this.dgvSavingsHistory.AllowUserToResizeRows = false;
+            this.dgvSavingsHistory.BackgroundColor = System.Drawing.Color.White;
+            this.dgvSavingsHistory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.ScrollBar;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSavingsHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.dgvSavingsHistory.ColumnHeadersHeight = 30;
+            this.dgvSavingsHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvSavingsHistory.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.Column11,
+            this.dataGridViewTextBoxColumn5});
+            this.dgvSavingsHistory.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvSavingsHistory.EnableHeadersVisualStyles = false;
+            this.dgvSavingsHistory.Location = new System.Drawing.Point(0, 115);
+            this.dgvSavingsHistory.Name = "dgvSavingsHistory";
+            this.dgvSavingsHistory.ReadOnly = true;
+            this.dgvSavingsHistory.RowHeadersVisible = false;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.dgvSavingsHistory.RowsDefaultCellStyle = dataGridViewCellStyle18;
+            this.dgvSavingsHistory.RowTemplate.Height = 30;
+            this.dgvSavingsHistory.Size = new System.Drawing.Size(1320, 508);
+            this.dgvSavingsHistory.TabIndex = 7;
             // 
-            // label46
+            // panel1
             // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(773, 328);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(63, 21);
-            this.label46.TabIndex = 5;
-            this.label46.Text = "label46";
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1320, 113);
+            this.panel1.TabIndex = 8;
             // 
-            // label39
+            // dataGridViewTextBoxColumn1
             // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(713, 294);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(63, 21);
-            this.label39.TabIndex = 4;
-            this.label39.Text = "label39";
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle12;
+            this.dataGridViewTextBoxColumn1.HeaderText = "S/No";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn1.Width = 80;
             // 
-            // label38
+            // dataGridViewTextBoxColumn2
             // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(645, 262);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(63, 21);
-            this.label38.TabIndex = 2;
-            this.label38.Text = "label38";
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle13;
+            this.dataGridViewTextBoxColumn2.HeaderText = "History Id";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // comboBox1
+            // dataGridViewTextBoxColumn3
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(625, 162);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(219, 29);
-            this.comboBox1.TabIndex = 3;
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle14;
+            this.dataGridViewTextBoxColumn3.HeaderText = "PF NO.";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
-            // metroTabControl2
+            // dataGridViewTextBoxColumn4
             // 
-            this.metroTabControl2.Controls.Add(this.metroTabPage2);
-            this.metroTabControl2.Controls.Add(this.metroTabPage3);
-            this.metroTabControl2.Controls.Add(this.metroTabPage1);
-            this.metroTabControl2.Location = new System.Drawing.Point(34, 275);
-            this.metroTabControl2.Name = "metroTabControl2";
-            this.metroTabControl2.SelectedIndex = 2;
-            this.metroTabControl2.Size = new System.Drawing.Size(377, 225);
-            this.metroTabControl2.TabIndex = 2;
-            this.metroTabControl2.UseSelectable = true;
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle15;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Transaction Date";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // metroTabPage2
+            // Column11
             // 
-            this.metroTabPage2.HorizontalScrollbarBarColor = true;
-            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 5;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
-            this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(369, 183);
-            this.metroTabPage2.TabIndex = 1;
-            this.metroTabPage2.Text = "metroTabPage2";
-            this.metroTabPage2.VerticalScrollbarBarColor = true;
-            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 6;
+            this.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column11.DefaultCellStyle = dataGridViewCellStyle16;
+            this.Column11.HeaderText = "Amount";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
             // 
-            // metroTabPage3
+            // dataGridViewTextBoxColumn5
             // 
-            this.metroTabPage3.HorizontalScrollbarBarColor = true;
-            this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.HorizontalScrollbarSize = 5;
-            this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
-            this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(369, 183);
-            this.metroTabPage3.TabIndex = 2;
-            this.metroTabPage3.Text = "metroTabPage3";
-            this.metroTabPage3.VerticalScrollbarBarColor = true;
-            this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.VerticalScrollbarSize = 6;
-            // 
-            // metroTabPage1
-            // 
-            this.metroTabPage1.HorizontalScrollbarBarColor = true;
-            this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.HorizontalScrollbarSize = 5;
-            this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
-            this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(369, 183);
-            this.metroTabPage1.TabIndex = 0;
-            this.metroTabPage1.Text = "metroTabPage1";
-            this.metroTabPage1.VerticalScrollbarBarColor = true;
-            this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.VerticalScrollbarSize = 6;
+            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle17;
+            this.dataGridViewTextBoxColumn5.HeaderText = "Savings Account Balance";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // FullProfileView
             // 
@@ -1110,8 +1122,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvIndividualLoans)).EndInit();
             this.panel4.ResumeLayout(false);
             this.metroSavings.ResumeLayout(false);
-            this.metroSavings.PerformLayout();
-            this.metroTabControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSavingsHistory)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1184,14 +1195,13 @@
         private System.Windows.Forms.Label labelPendingLoans;
         private System.Windows.Forms.Label labelTotalLoans;
         private MetroFramework.Controls.MetroTabPage metroSavings;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private MetroFramework.Controls.MetroTabControl metroTabControl2;
-        private MetroFramework.Controls.MetroTabPage metroTabPage2;
-        private MetroFramework.Controls.MetroTabPage metroTabPage3;
-        private MetroFramework.Controls.MetroTabPage metroTabPage1;
+        private System.Windows.Forms.DataGridView dgvSavingsHistory;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
     }
 }

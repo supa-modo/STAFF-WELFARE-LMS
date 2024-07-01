@@ -28,6 +28,7 @@ namespace EAC_STAFF_WELFARE_LMS
             loadLoansData();
             CalculateTotalIndividualActiveLoans();
             CalculateTotalIndividualLoans();
+            LoadSavingsHistoryIntoDataGridView();
         }
 
         private void picBxClose_Click(object sender, EventArgs e)
@@ -296,5 +297,55 @@ namespace EAC_STAFF_WELFARE_LMS
             btnCancel.Visible = false;
             metrobtnEdit.Visible = true;
         }
+
+
+        //Function that loads savings data to the savings datagridview from the database when called
+        private void LoadSavingsHistoryIntoDataGridView()
+        {
+            int i = 0;
+            dgvSavingsHistory.Rows.Clear();
+
+            // Defining the SQL query with parameters
+            string query = @"SELECT 
+                      sh.HistoryId, 
+                      sh.PFNo, 
+                      sh.TransactionDate, 
+                      sh.Amount, 
+                      sh.BalanceAfterTransaction,
+                  CONCAT(m.FirstName, ' ', ISNULL(m.MiddleName + ' ', ''), m.LastName) AS ApplicantName
+                  FROM SavingsHistory sh
+                  INNER JOIN Members m ON sh.PFNo = m.MemberPFNo
+                  WHERE sh.PFNo = @PFNo ORDER BY sh.HistoryId DESC;";
+
+            // Defining the SqlCommand with connection and query
+            SqlCommand cmd = new SqlCommand(query, cn);
+            cmd.Parameters.AddWithValue("@PFNo", "2304"); // Replace with the actual PFNo you want to filter by
+
+            try
+            {
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    i++;
+                    // Adding data to DataGridView
+                    dgvSavingsHistory.Rows.Add(i,
+                        dr["HistoryId"],
+                        dr["PFNo"],
+                        ((DateTime)dr["TransactionDate"]).ToString("dd-MMM-yyyy"),
+                        dr["Amount"],
+                        dr["BalanceAfterTransaction"]);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
     }
 }

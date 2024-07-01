@@ -301,7 +301,7 @@
             this.metroDateTimeEnd.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
             this.metroDateTimeEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.metroDateTimeEnd.Location = new System.Drawing.Point(1114, 465);
-            this.metroDateTimeEnd.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTimeEnd.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTimeEnd.Name = "metroDateTimeEnd";
             this.metroDateTimeEnd.Size = new System.Drawing.Size(160, 29);
             this.metroDateTimeEnd.Style = MetroFramework.MetroColorStyle.Green;
@@ -313,7 +313,7 @@
             this.metroDateTimeStart.FontWeight = MetroFramework.MetroDateTimeWeight.Bold;
             this.metroDateTimeStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.metroDateTimeStart.Location = new System.Drawing.Point(837, 465);
-            this.metroDateTimeStart.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTimeStart.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTimeStart.Name = "metroDateTimeStart";
             this.metroDateTimeStart.Size = new System.Drawing.Size(160, 29);
             this.metroDateTimeStart.Style = MetroFramework.MetroColorStyle.Green;
@@ -1097,7 +1097,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FullProfileView";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FullProfileView";
             this.panelMemberProfileTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picBxClose)).EndInit();

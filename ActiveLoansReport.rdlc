@@ -24,7 +24,7 @@
           </Paragraph>
         </Paragraphs>
         <Top>1.03153in</Top>
-        <Left>1.05505in</Left>
+        <Left>0.43005in</Left>
         <Height>0.20485in</Height>
         <Width>5.61458in</Width>
         <Style>
@@ -42,7 +42,7 @@
         <Value>Emblem_of_East_African_Community21</Value>
         <Sizing>Fit</Sizing>
         <Top>0.01541in</Top>
-        <Left>3.29984in</Left>
+        <Left>2.67484in</Left>
         <Height>0.9571in</Height>
         <Width>1.125in</Width>
         <ZIndex>1</ZIndex>
@@ -73,7 +73,7 @@
           </Paragraph>
         </Paragraphs>
         <Top>1.23638in</Top>
-        <Left>1.05505in</Left>
+        <Left>0.43005in</Left>
         <Height>0.18749in</Height>
         <Width>5.61458in</Width>
         <ZIndex>2</ZIndex>
@@ -101,9 +101,6 @@
             </TablixColumn>
             <TablixColumn>
               <Width>0.703in</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>0.66667in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>0.93854in</Width>
@@ -260,44 +257,6 @@
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox34</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <BackgroundColor>LightGrey</BackgroundColor>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox40">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>Payment Duration(mths)</Value>
-                              <Style>
-                                <FontFamily>Courier New</FontFamily>
-                                <FontSize>8pt</FontSize>
-                                <FontWeight>SemiBold</FontWeight>
-                                <Color>#303030</Color>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox40</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -621,43 +580,6 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="DurationOfPayment1">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Fields!DurationOfPayment.Value</Value>
-                              <Style>
-                                <FontFamily>Courier New</FontFamily>
-                                <FontSize>7pt</FontSize>
-                                <FontWeight>Light</FontWeight>
-                                <Color>#0d0d0d</Color>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>DurationOfPayment1</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-                <TablixCell>
-                  <CellContents>
                     <Textbox Name="ApplicationDate1">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
@@ -822,7 +744,6 @@
             <TablixMember />
             <TablixMember />
             <TablixMember />
-            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
@@ -838,7 +759,7 @@
         <DataSetName>ActiveLoansDataset</DataSetName>
         <Top>1.88418in</Top>
         <Height>0.63542in</Height>
-        <Width>7.8165in</Width>
+        <Width>7.14983in</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -866,10 +787,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox55</rd:DefaultName>
-        <Top>1.55235in</Top>
-        <Left>5.33208in</Left>
+        <Top>1.59251in</Top>
+        <Left>5.12089in</Left>
         <Height>0.25in</Height>
-        <Width>2.48442in</Width>
+        <Width>2.02894in</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
@@ -981,8 +902,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>ActiveLoansDataset</DataSetName>
-        <Top>1.55235in</Top>
-        <Left>0.5in</Left>
+        <Top>1.59251in</Top>
         <Height>0.25in</Height>
         <Width>2.63487in</Width>
         <ZIndex>5</ZIndex>
@@ -995,9 +915,8 @@
       </Tablix>
       <Line Name="Line1">
         <Top>1.43776in</Top>
-        <Left>0.47253in</Left>
         <Height>0in</Height>
-        <Width>6.9131in</Width>
+        <Width>7.14983in</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
@@ -1008,9 +927,8 @@
       </Line>
       <Line Name="Line2">
         <Top>1.40998in</Top>
-        <Left>0.47253in</Left>
         <Height>0in</Height>
-        <Width>6.9131in</Width>
+        <Width>7.14983in</Width>
         <ZIndex>7</ZIndex>
         <Style>
           <Border>
@@ -1023,10 +941,10 @@
     <Height>2.55208in</Height>
     <Style />
   </Body>
-  <Width>7.85817in</Width>
+  <Width>7.17067in</Width>
   <Page>
-    <LeftMargin>0.25in</LeftMargin>
-    <RightMargin>0.25in</RightMargin>
+    <LeftMargin>0.5in</LeftMargin>
+    <RightMargin>0.5in</RightMargin>
     <TopMargin>0.75in</TopMargin>
     <BottomMargin>0.75in</BottomMargin>
     <Style />

@@ -43,7 +43,6 @@
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.Color.Gray;
-            this.btnCancel.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Location = new System.Drawing.Point(322, 150);
             this.btnCancel.Name = "btnCancel";
@@ -58,13 +57,12 @@
             // btnOk
             // 
             this.btnOk.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnOk.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.btnOk.ForeColor = System.Drawing.Color.White;
             this.btnOk.Location = new System.Drawing.Point(167, 150);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(96, 31);
             this.btnOk.TabIndex = 156;
-            this.btnOk.Text = "OK";
+            this.btnOk.Text = "Coninue";
             this.btnOk.UseCustomBackColor = true;
             this.btnOk.UseCustomForeColor = true;
             this.btnOk.UseSelectable = true;
@@ -101,6 +99,7 @@
             this.picBxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBxClose.TabIndex = 19;
             this.picBxClose.TabStop = false;
+            this.picBxClose.Click += new System.EventHandler(this.picBxClose_Click);
             // 
             // label1
             // 

@@ -31,5 +31,10 @@ namespace EAC_STAFF_WELFARE_LMS
             DialogResult = DialogResult.Cancel; 
             Close();
         }
+
+        private void picBxClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -21,7 +21,7 @@
               <Width>2.4463cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.03925cm</Width>
+              <Width>2.28935cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -494,7 +494,7 @@
         <Top>14.18704cm</Top>
         <Left>0cm</Left>
         <Height>1.49104cm</Height>
-        <Width>15.31618cm</Width>
+        <Width>15.56628cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1457,7 +1457,7 @@
         <Top>5.72972cm</Top>
         <Left>0.00001cm</Left>
         <Height>4.94cm</Height>
-        <Width>15.56626cm</Width>
+        <Width>15.56627cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -1749,13 +1749,12 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingLeft>10pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -1805,7 +1804,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>="$" &amp; Format(Sum(IIf(Fields!LoanStatus.Value = "Active", Fields!LoanAmount.Value, 0), "IndividualMemberDetails"), "N2")</Value>
+                              <Value>="$" &amp; Format(IIf(Fields!LoanStatus.Value = "Active", Fields!LoanAmount.Value, 0), "N2")</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>9pt</FontSize>
@@ -1821,7 +1820,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingLeft>10pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
@@ -1863,7 +1862,7 @@
     <Height>6.27083in</Height>
     <Style />
   </Body>
-  <Width>6.12845in</Width>
+  <Width>6.12846in</Width>
   <Page>
     <LeftMargin>1in</LeftMargin>
     <RightMargin>1in</RightMargin>

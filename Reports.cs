@@ -104,85 +104,61 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private void btnIndivMembers_Click(object sender, EventArgs e)
         {
-            // Prompt the user to enter the PF No
-            string pfNo = Prompt.ShowDialog("Enter PF No:", "PF No Input");
-
-            if (string.IsNullOrEmpty(pfNo))
+            using (PFNoDialog pfNoDialog = new PFNoDialog())
             {
-                MessageBox.Show("PF No cannot be empty. Please enter a valid PF No.");
-                return;
-            }
-
-            string query = @"SELECT l.ApplicantName, 
-                  m.JobTitle,
-                  m.MemberPFNo,
-                  m.EmailAddress,
-                  m.PhoneNumber1,
-                  m.ContractEndDate,
-                  m.PhysicalAddress,
-                  s.SavingsAccountBalance,
-                  l.LoanID,
-                  l.LoanAmount,
-                  l.DueDate,
-                  l.PendingBalance,
-                  l.LoanStatus
-              FROM Loans l
-              INNER JOIN Members m ON l.PFNo = m.MemberPFNo
-              INNER JOIN Savings s ON s.PFNo = m.MemberPFNo
-              WHERE m.MemberPFNo = @PFNo";
-
-            using (SqlCommand cmd = new SqlCommand(query, cn))
-            {
-                cmd.Parameters.AddWithValue("@PFNo", pfNo);
-
-                SqlDataAdapter d6 = new SqlDataAdapter(cmd);
-                DataTable dt6 = new DataTable();
-                d6.Fill(dt6);
-
-                ResetReportViewer();
-
-                ReportDataSource sourceIndividualMemberDetails = new ReportDataSource("IndividualMemberDetails", dt6);
-                reportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/IndividualMemberReport.rdlc";
-                reportViewer.LocalReport.DataSources.Add(sourceIndividualMemberDetails);
-
-                // Setting the display mode and refreshing the report
-                reportViewer.SetDisplayMode(DisplayMode.PrintLayout);
-                reportViewer.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.Percent;
-                reportViewer.ZoomPercent = 100;
-                reportViewer.RefreshReport();
-            }
-        }
-
-        // Prompt class to display an input dialog
-        public static class Prompt
-        {
-            public static string ShowDialog(string text, string caption)
-            {
-                Form prompt = new Form()
+                if (pfNoDialog.ShowDialog() == DialogResult.OK)
                 {
-                    Width = 500,
-                    Height = 150,
-                    FormBorderStyle = FormBorderStyle.FixedDialog,
-                    Text = caption,
-                    StartPosition = FormStartPosition.CenterScreen
-                };
+                    string pfNo = pfNoDialog.PFNo;
 
-                Label textLabel = new Label() { Left = 50, Top = 20, Text = text };
-                TextBox inputBox = new TextBox() { Left = 50, Top = 50, Width = 400 };
+                    if (string.IsNullOrEmpty(pfNo))
+                    {
+                        MessageBox.Show("PF No cannot be empty. Please enter a valid PF No.");
+                        return;
+                    }
 
-                Button confirmation = new Button() { Text = "Ok", Left = 350, Width = 100, Top = 70 };
-                confirmation.Click += (sender, e) => { prompt.Close(); };
+                    string query = @"
+                        SELECT l.ApplicantName, 
+                               m.JobTitle,
+                               m.MemberPFNo,
+                               m.EmailAddress,
+                               m.PhoneNumber1,
+                               m.ContractEndDate,
+                               m.PhysicalAddress,
+                               s.SavingsAccountBalance,
+                               l.LoanID,
+                               l.LoanAmount,
+                               l.DueDate,
+                               l.PendingBalance,
+                               l.LoanStatus
+                        FROM Loans l
+                        INNER JOIN Members m ON l.PFNo = m.MemberPFNo
+                        INNER JOIN Savings s ON s.PFNo = m.MemberPFNo
+                        WHERE m.MemberPFNo = @PFNo";
 
-                prompt.Controls.Add(textLabel);
-                prompt.Controls.Add(inputBox);
-                prompt.Controls.Add(confirmation);
+                    using (SqlCommand cmd = new SqlCommand(query, cn))
+                    {
+                        cmd.Parameters.AddWithValue("@PFNo", pfNo);
 
-                prompt.AcceptButton = confirmation;
+                        SqlDataAdapter d6 = new SqlDataAdapter(cmd);
+                        DataTable dt6 = new DataTable();
+                        d6.Fill(dt6);
 
-                prompt.ShowDialog();
-                return inputBox.Text;
+                        ResetReportViewer();
+
+                        ReportDataSource sourceIndividualMemberDetails = new ReportDataSource("IndividualMemberDetails", dt6);
+                        reportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/IndividualMemberReport.rdlc";
+                        reportViewer.LocalReport.DataSources.Add(sourceIndividualMemberDetails);
+
+                        // Setting the display mode and refreshing the report
+                        reportViewer.SetDisplayMode(DisplayMode.PrintLayout);
+                        reportViewer.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.Percent;
+                        reportViewer.ZoomPercent = 100;
+                        reportViewer.RefreshReport();
+                    }
+                }
             }
         }
+
 
 
 

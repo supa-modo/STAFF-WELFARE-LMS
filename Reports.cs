@@ -115,7 +115,11 @@ namespace EAC_STAFF_WELFARE_LMS
 
             string query = @"SELECT l.ApplicantName, 
                   m.JobTitle,
-                  m.MemberPFNo, 
+                  m.MemberPFNo,
+                  m.EmailAddress,
+                  m.PhoneNumber1,
+                  m.ContractEndDate,
+                  m.PhysicalAddress,
                   s.SavingsAccountBalance,
                   l.LoanID,
                   l.LoanAmount,

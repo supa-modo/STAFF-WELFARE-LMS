@@ -37,7 +37,8 @@ namespace EAC_STAFF_WELFARE_LMS
             string query = "SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, " +
                            "ApplicantName, ApplicationDate, DueDate, PendingBalance, LoanStatus " +
                            "FROM Loans " +
-                           "WHERE LoanStatus = 'Active'";
+                           "WHERE LoanStatus = 'Active'" +
+                           "ORDER BY ApplicationDate DESC;";
 
             // Define the SqlCommand with connection and query
             SqlCommand cmd = new SqlCommand(query, cn);

@@ -56,7 +56,7 @@
             this.PFNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ApplicantName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LoanAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Interest = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PayableLoan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Duration = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DateApplied = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DueDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -152,7 +152,7 @@
             this.PFNo,
             this.ApplicantName,
             this.LoanAmount,
-            this.Interest,
+            this.PayableLoan,
             this.Duration,
             this.DateApplied,
             this.DueDate,
@@ -307,15 +307,16 @@
             this.LoanAmount.ReadOnly = true;
             this.LoanAmount.Width = 121;
             // 
-            // Interest
+            // PayableLoan
             // 
+            this.PayableLoan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Interest.DefaultCellStyle = dataGridViewCellStyle6;
-            this.Interest.HeaderText = "Interest";
-            this.Interest.Name = "Interest";
-            this.Interest.ReadOnly = true;
-            this.Interest.Width = 80;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PayableLoan.DefaultCellStyle = dataGridViewCellStyle6;
+            this.PayableLoan.HeaderText = "Payable Loan";
+            this.PayableLoan.Name = "PayableLoan";
+            this.PayableLoan.ReadOnly = true;
+            this.PayableLoan.Width = 119;
             // 
             // Duration
             // 
@@ -418,7 +419,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PFNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ApplicantName;
         private System.Windows.Forms.DataGridViewTextBoxColumn LoanAmount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Interest;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PayableLoan;
         private System.Windows.Forms.DataGridViewTextBoxColumn Duration;
         private System.Windows.Forms.DataGridViewTextBoxColumn DateApplied;
         private System.Windows.Forms.DataGridViewTextBoxColumn DueDate;

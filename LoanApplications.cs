@@ -41,19 +41,19 @@ namespace EAC_STAFF_WELFARE_LMS
             txtSearchParam.Value = txtSearch.Text;
 
             // Define the SQL query with parameters
-            string query = "SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstallments, " +
-                           "ApplicantName, ApplicationDate, DueDate, PendingBalance, LoanStatus " +
-                           "FROM Loans " +
-                           "WHERE LoanID LIKE '%' + @txtSearch + '%' " +
-                           "OR PFNo LIKE '%' + @txtSearch + '%' " +
-                           "OR LoanAmount LIKE '%' + @txtSearch + '%' " +
-                           "OR InterestRate LIKE '%' + @txtSearch + '%' " +
-                           "OR DurationOfPayment LIKE '%' + @txtSearch + '%' " +
-                           "OR MonthlyInstallments LIKE '%' + @txtSearch + '%' " +
-                           "OR ApplicantName LIKE '%' + @txtSearch + '%' " +
-                           "OR ApplicationDate LIKE '%' + @txtSearch + '%' " +
-                           "OR LoanStatus LIKE '%' + @txtSearch + '%' " +
-                           "OR DueDate LIKE '%' + @txtSearch + '%';";
+            string query = "SELECT LoanID, PFNo, LoanAmount, PayableLoan, DurationOfPayment, MonthlyInstallments, " +
+               "ApplicantName, ApplicationDate, DueDate, PendingBalance, LoanStatus " +
+               "FROM Loans " +
+               "WHERE LoanID LIKE '%' + @txtSearch + '%' " +
+               "OR PFNo LIKE '%' + @txtSearch + '%' " +
+               "OR LoanAmount LIKE '%' + @txtSearch + '%' " +
+               "OR DurationOfPayment LIKE '%' + @txtSearch + '%' " +
+               "OR MonthlyInstallments LIKE '%' + @txtSearch + '%' " +
+               "OR ApplicantName LIKE '%' + @txtSearch + '%' " +
+               "OR ApplicationDate LIKE '%' + @txtSearch + '%' " +
+               "OR LoanStatus LIKE '%' + @txtSearch + '%' " +
+               "OR DueDate LIKE '%' + @txtSearch + '%' " +
+               "ORDER BY ApplicationDate DESC;";
 
             // Define the SqlCommand with connection and query
             SqlCommand cmd = new SqlCommand(query, cn);
@@ -68,15 +68,15 @@ namespace EAC_STAFF_WELFARE_LMS
                 {
                     
                     i++;
-                    string interestRate = dr["InterestRate"].ToString() + "%";
+                    /*string interestRate = dr["InterestRate"].ToString() + "%";*/
                     // Add data to DataGridView
                     dgvLoanApplications.Rows.Add(i, 
                         dr["LoanID"], 
                         dr["PFNo"],
                         dr["ApplicantName"],
                         dr["LoanAmount"], 
-                        /*dr["InterestRate"],*/ 
-                        interestRate,
+                        dr["PayableLoan"],
+                        /*interestRate,*/
                         dr["DurationOfPayment"],
                         ((DateTime)dr["ApplicationDate"]).ToString("dd-MMM-yyyy"),
                         ((DateTime)dr["DueDate"]).ToString("dd-MMM-yyyy"),

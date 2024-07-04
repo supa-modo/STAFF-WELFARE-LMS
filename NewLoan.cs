@@ -26,8 +26,10 @@ namespace EAC_STAFF_WELFARE_LMS
             getLoanID();
             loanApplications = loanAppls;
 
-            // Subscribe to the TextChanged event for txtLoanAmt and txtDuration
+            // Subscribing to the TextChanged event for txtLoanAmt, txtPayableAmt, txtInterest and txtDuration
             txtLoanAmt.TextChanged += NewLoanTxtBoxes_TextChanged;
+            txtInterest.TextChanged += NewLoanTxtBoxes_TextChanged;
+            txtPayableAmt.TextChanged += NewLoanTxtBoxes_TextChanged;
             txtDuration.TextChanged += NewLoanTxtBoxes_TextChanged;
         }
 
@@ -96,7 +98,7 @@ namespace EAC_STAFF_WELFARE_LMS
             DateTime dueDate = applicationDate.AddMonths(durationOfPayment);
 
             // Confirm new loan addition
-            string confirmationMessage = $"      Confirm New loan addition:\n Applicant Name - {applicantName}\nLoan amount - {loanAmount}\nDuration of Payment - {durationOfPayment} months\nMonthly Installments - {monthlyInstallments}";
+            string confirmationMessage = $"    Confirm New loan addition:\n Applicant Name - {applicantName}\nLoan amount - {loanAmount}\nDuration of Payment - {durationOfPayment} months\nMonthly Installments - {monthlyInstallments}";
             DialogResult result = MessageBox.Show(confirmationMessage, "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             
             if (result == DialogResult.Yes)
@@ -212,14 +214,14 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private void CalculatedDivision()
         {
-            // Ensure both txtLoanAmt and txtDuration have valid numbers
-            if (double.TryParse(txtLoanAmt.Text, out double value1) &&
-                double.TryParse(txtDuration.Text, out double value2))
+            // Ensuring both txtLoanAmt and txtDuration have valid numbers
+            if (double.TryParse(txtPayableAmt.Text, out double payableAmt) &&
+                double.TryParse(txtDuration.Text, out double duration))
             {
-                // Avoid division by zero
-                if (value2 != 0)
+                // Avoiding division by zero
+                if (duration != 0)
                 {
-                    double result = value1 / value2;
+                    double result = payableAmt / duration;
                     txtInstallments.Text = result.ToString();
                 }
                 else
@@ -232,6 +234,7 @@ namespace EAC_STAFF_WELFARE_LMS
                 txtInstallments.Text = "Invalid input";
             }
         }
+
 
     }
 }

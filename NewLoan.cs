@@ -97,6 +97,9 @@ namespace EAC_STAFF_WELFARE_LMS
             DateTime applicationDate = DateTime.Now;
             DateTime dueDate = applicationDate.AddMonths(durationOfPayment);
 
+
+            
+
             // Confirm new loan addition
             string confirmationMessage = $"    Confirm New loan addition:\n Applicant Name - {applicantName}\nLoan amount - {loanAmount}\nDuration of Payment - {durationOfPayment} months\nMonthly Installments - {monthlyInstallments}";
             DialogResult result = MessageBox.Show(confirmationMessage, "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -110,8 +113,8 @@ namespace EAC_STAFF_WELFARE_LMS
             }
 
             // Insert data into the Loans table
-            string query = "INSERT INTO Loans (LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstallments, ApplicantName, ApplicationDate, DueDate) " +
-                           "VALUES (@LoanID, @PFNo, @LoanAmount, @InterestRate, @DurationOfPayment, @MonthlyInstallments, @ApplicantName, @ApplicationDate, @DueDate);";
+            string query = "INSERT INTO Loans (LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstallments, ApplicantName, ApplicationDate, DueDate, PayableLoan) " +
+                           "VALUES (@LoanID, @PFNo, @LoanAmount, @InterestRate, @DurationOfPayment, @MonthlyInstallments, @ApplicantName, @ApplicationDate, @DueDate, @PayableLoan);";
 
             // Define parameters for the SQL query
             SqlParameter[] parameters =
@@ -119,7 +122,7 @@ namespace EAC_STAFF_WELFARE_LMS
         new SqlParameter("@LoanID", loanID),
         new SqlParameter("@PFNo", pfNo),
         new SqlParameter("@LoanAmount", loanAmount),
-        new SqlParameter("@InterestRate", interestRate), // Assuming interest rate is 0 for now
+        new SqlParameter("@InterestRate", interestRate),
         new SqlParameter("@DurationOfPayment", durationOfPayment),
         new SqlParameter("@MonthlyInstallments", monthlyInstallments),
         new SqlParameter("@ApplicantName", applicantName),
@@ -214,8 +217,18 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private void CalculatedDivision()
         {
+            if (double.TryParse(txtLoanAmt.Text, out double loanAmount) &&
+                double.TryParse(txtInterest.Text, out double interest))
+            {
+                double payableAmount = loanAmount + (loanAmount * interest / 100);
+                txtPayableAmt.Text = payableAmount.ToString("F2");
+            }
+            else {
+                txtPayableAmt.Text = "Invalid input";
+            }
             // Ensuring both txtLoanAmt and txtDuration have valid numbers
-            if (double.TryParse(txtPayableAmt.Text, out double payableAmt) &&
+            if (
+                double.TryParse(txtPayableAmt.Text, out double payableAmt) &&
                 double.TryParse(txtDuration.Text, out double duration))
             {
                 // Avoiding division by zero

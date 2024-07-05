@@ -39,14 +39,14 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private void btnAllLoans_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("SELECT LoanID, PFNo, ApplicantName, LoanAmount, DurationOfPayment, ApplicationDate, DueDate, PendingBalance, LoanStatus FROM Loans", cn);
+            cmd = new SqlCommand("SELECT LoanID, PFNo, ApplicantName, DurationOfPayment, ApplicationDate, DueDate, PendingBalance, LoanStatus, PayableLoan FROM Loans ORDER BY ApplicationDate DESC", cn);
             SqlDataAdapter d5 = new SqlDataAdapter(cmd);
             DataTable dt5 = new DataTable();
             d5.Fill(dt5);
             ResetReportViewer();
 
             // Creating a new ReportDataSource with the fetched data and setting the path to the .rdlc report file then adding new source to datasources
-            ReportDataSource sourceLoans = new ReportDataSource("AllLoansDataset", dt5);
+            ReportDataSource sourceLoans = new ReportDataSource("LoanApplicationsDataset", dt5);
             reportViewer.LocalReport.ReportPath = "C:/Users/Administrator/OneDrive/Desktop/Projects/EAC STAFF WELFARE LMS/LoansReport.rdlc";
             reportViewer.LocalReport.DataSources.Add(sourceLoans);
 
@@ -58,7 +58,7 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private void btnActiveLoans_Click(object sender, EventArgs e)
         {
-            cmd = new SqlCommand("SELECT LoanID, PFNo, ApplicantName, LoanAmount, DurationOfPayment, ApplicationDate, DueDate, PendingBalance, LoanStatus FROM Loans WHERE LoanStatus = 'Active'", cn);
+            cmd = new SqlCommand("SELECT LoanID, PFNo, ApplicantName, PayableLoan, DurationOfPayment, ApplicationDate, DueDate, PendingBalance, LoanStatus FROM Loans WHERE LoanStatus = 'Active' ORDER BY ApplicationDate DESC", cn);
             SqlDataAdapter d4 = new SqlDataAdapter(cmd);
             DataTable dt4 = new DataTable();
             d4.Fill(dt4);
@@ -128,6 +128,7 @@ namespace EAC_STAFF_WELFARE_LMS
                                l.LoanID,
                                l.LoanAmount,
                                l.DueDate,
+                               l.PayableLoan,
                                l.PendingBalance,
                                l.LoanStatus
                         FROM Loans l

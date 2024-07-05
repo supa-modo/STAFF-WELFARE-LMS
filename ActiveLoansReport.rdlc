@@ -100,7 +100,7 @@
               <Width>1.94234in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.703in</Width>
+              <Width>1.04676in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>0.93854in</Width>
@@ -242,7 +242,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Loan Amount (USD)</Value>
+                              <Value>Payable Loan Amount (USD)</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
@@ -457,6 +457,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -467,7 +468,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="LoanID1">
+                    <Textbox Name="LoanID">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -488,12 +489,13 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>LoanID1</rd:DefaultName>
+                      <rd:DefaultName>LoanID</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -504,7 +506,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="ApplicantName1">
+                    <Textbox Name="ApplicantName">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -525,12 +527,13 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>ApplicantName1</rd:DefaultName>
+                      <rd:DefaultName>ApplicantName</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -541,14 +544,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="LoanAmount1">
+                    <Textbox Name="PayableLoan">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!LoanAmount.Value</Value>
+                              <Value>=Fields!PayableLoan.Value</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>7pt</FontSize>
@@ -563,12 +566,13 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>LoanAmount1</rd:DefaultName>
+                      <rd:DefaultName>PayableLoan</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -580,7 +584,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="ApplicationDate1">
+                    <Textbox Name="ApplicationDate">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -602,12 +606,13 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>ApplicationDate1</rd:DefaultName>
+                      <rd:DefaultName>ApplicationDate</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -618,7 +623,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="DueDate1">
+                    <Textbox Name="DueDate">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -640,12 +645,13 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>DueDate1</rd:DefaultName>
+                      <rd:DefaultName>DueDate</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -656,7 +662,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="PendingBalance1">
+                    <Textbox Name="PendingBalance">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -678,12 +684,13 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>PendingBalance1</rd:DefaultName>
+                      <rd:DefaultName>PendingBalance</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -695,7 +702,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="LoanStatus1">
+                    <Textbox Name="LoanStatus">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -716,18 +723,20 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>LoanStatus1</rd:DefaultName>
+                      <rd:DefaultName>LoanStatus</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -759,7 +768,7 @@
         <DataSetName>ActiveLoansDataset</DataSetName>
         <Top>1.88418in</Top>
         <Height>0.63542in</Height>
-        <Width>7.14983in</Width>
+        <Width>7.49359in</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -806,7 +815,7 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.63487in</Width>
+              <Width>1.93695in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1in</Width>
@@ -825,7 +834,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Total Active Loans Amount</Value>
+                              <Value>Total Active Loans Pending Amount</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>7pt</FontSize>
@@ -860,7 +869,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>="$" &amp; Format(Sum(Fields!LoanAmount.Value), "N2")</Value>
+                              <Value>="$" &amp; Format(Sum(Fields!PendingBalance.Value), "N2")</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>7pt</FontSize>
@@ -884,7 +893,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -905,7 +913,7 @@
         <DataSetName>ActiveLoansDataset</DataSetName>
         <Top>1.59251in</Top>
         <Height>0.25in</Height>
-        <Width>2.63487in</Width>
+        <Width>2.93695in</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
@@ -942,7 +950,7 @@
     <Height>2.55208in</Height>
     <Style />
   </Body>
-  <Width>7.17067in</Width>
+  <Width>7.49359in</Width>
   <Page>
     <LeftMargin>0.5in</LeftMargin>
     <RightMargin>0.5in</RightMargin>
@@ -1018,10 +1026,14 @@
           <DataField>LoanStatus</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="PayableLoan">
+          <DataField>PayableLoan</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>EacLMSDBDataSet1</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Administrator\OneDrive\Desktop\Projects\EAC STAFF WELFARE LMS\EacLMSDBDataSet1.xsd</rd:SchemaPath>
+        <rd:DataSetName>EacLMSDBDataSet4</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\Administrator\OneDrive\Desktop\Projects\EAC STAFF WELFARE LMS\EacLMSDBDataSet4.xsd</rd:SchemaPath>
         <rd:TableName>Loans</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

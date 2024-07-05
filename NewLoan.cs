@@ -1,19 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EAC_STAFF_WELFARE_LMS
 {
     public partial class NewLoan : Form
     {
-
         SqlConnection cn = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         dbConnect dbConn = new dbConnect();
@@ -38,7 +31,6 @@ namespace EAC_STAFF_WELFARE_LMS
             this.Dispose();
         }
 
-
         private void InsertNewLoanRecord()
         {
             // Validate textboxes and other controls
@@ -48,7 +40,7 @@ namespace EAC_STAFF_WELFARE_LMS
                 return;
             }
 
-            string loanID = getLoanID(); 
+            string loanID = getLoanID();
             int pfNo;
             if (!int.TryParse(txtPFNo.Text, out pfNo))
             {
@@ -62,7 +54,6 @@ namespace EAC_STAFF_WELFARE_LMS
                 MessageBox.Show("Loan amount must be a valid number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
 
             decimal interestRate;
             if (!decimal.TryParse(txtInterest.Text, out interestRate))
@@ -85,6 +76,9 @@ namespace EAC_STAFF_WELFARE_LMS
                 return;
             }
 
+            // Calculate payable amount
+            decimal payableAmount = loanAmount + (loanAmount * interestRate / 100);
+
             // Get applicant name from Members table
             string applicantName = GetApplicantName(pfNo);
             if (applicantName == null)
@@ -97,17 +91,15 @@ namespace EAC_STAFF_WELFARE_LMS
             DateTime applicationDate = DateTime.Now;
             DateTime dueDate = applicationDate.AddMonths(durationOfPayment);
 
-
-            
-
             // Confirm new loan addition
             string confirmationMessage = $"    Confirm New loan addition:\n Applicant Name - {applicantName}\nLoan amount - {loanAmount}\nDuration of Payment - {durationOfPayment} months\nMonthly Installments - {monthlyInstallments}";
             DialogResult result = MessageBox.Show(confirmationMessage, "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            
+
             if (result == DialogResult.Yes)
             {
                 this.Close();
-            } else if (result == DialogResult.No)
+            }
+            else if (result == DialogResult.No)
             {
                 return;
             }
@@ -119,16 +111,17 @@ namespace EAC_STAFF_WELFARE_LMS
             // Define parameters for the SQL query
             SqlParameter[] parameters =
             {
-        new SqlParameter("@LoanID", loanID),
-        new SqlParameter("@PFNo", pfNo),
-        new SqlParameter("@LoanAmount", loanAmount),
-        new SqlParameter("@InterestRate", interestRate),
-        new SqlParameter("@DurationOfPayment", durationOfPayment),
-        new SqlParameter("@MonthlyInstallments", monthlyInstallments),
-        new SqlParameter("@ApplicantName", applicantName),
-        new SqlParameter("@ApplicationDate", applicationDate),
-        new SqlParameter("@DueDate", dueDate)
-    };
+                new SqlParameter("@LoanID", loanID),
+                new SqlParameter("@PFNo", pfNo),
+                new SqlParameter("@LoanAmount", loanAmount),
+                new SqlParameter("@InterestRate", interestRate),
+                new SqlParameter("@DurationOfPayment", durationOfPayment),
+                new SqlParameter("@MonthlyInstallments", monthlyInstallments),
+                new SqlParameter("@ApplicantName", applicantName),
+                new SqlParameter("@ApplicationDate", applicationDate),
+                new SqlParameter("@DueDate", dueDate),
+                new SqlParameter("@PayableLoan", payableAmount) // Adding PayableLoan parameter
+            };
 
             // Define SqlCommand with connection and query
             SqlCommand cmd = new SqlCommand(query, cn);
@@ -149,7 +142,6 @@ namespace EAC_STAFF_WELFARE_LMS
             {
                 // Close the SqlConnection
                 cn.Close();
-                
             }
         }
 
@@ -188,8 +180,6 @@ namespace EAC_STAFF_WELFARE_LMS
             return null; // Return null if no member found with the provided PFNo
         }
 
-
-
         public string getLoanID()
         {
             string sdate = DateTime.Now.ToString("yyyyMMddhhmmss");
@@ -197,9 +187,7 @@ namespace EAC_STAFF_WELFARE_LMS
             labelLoanID.Text = loanID;
 
             return loanID;
-
         }
-
 
         private void metroBtnSave_Click(object sender, EventArgs e)
         {
@@ -207,8 +195,6 @@ namespace EAC_STAFF_WELFARE_LMS
             loanApplications.LoadLoanApplicationsIntoDataGridView();
             loanApplications.CalculateAndDisplayTotalActiveLoans();
         }
-
-
 
         private void NewLoanTxtBoxes_TextChanged(object sender, EventArgs e)
         {
@@ -223,19 +209,20 @@ namespace EAC_STAFF_WELFARE_LMS
                 double payableAmount = loanAmount + (loanAmount * interest / 100);
                 txtPayableAmt.Text = payableAmount.ToString("F2");
             }
-            else {
+            else
+            {
                 txtPayableAmt.Text = "Invalid input";
             }
-            // Ensuring both txtLoanAmt and txtDuration have valid numbers
-            if (
-                double.TryParse(txtPayableAmt.Text, out double payableAmt) &&
+
+            // Ensuring both txtPayableAmt and txtDuration have valid numbers
+            if (double.TryParse(txtPayableAmt.Text, out double payableAmt) &&
                 double.TryParse(txtDuration.Text, out double duration))
             {
                 // Avoiding division by zero
                 if (duration != 0)
                 {
                     double result = payableAmt / duration;
-                    txtInstallments.Text = result.ToString();
+                    txtInstallments.Text = result.ToString("F2");
                 }
                 else
                 {
@@ -247,7 +234,5 @@ namespace EAC_STAFF_WELFARE_LMS
                 txtInstallments.Text = "Invalid input";
             }
         }
-
-
     }
 }

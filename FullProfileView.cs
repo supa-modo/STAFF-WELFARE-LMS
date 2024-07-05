@@ -347,5 +347,58 @@ namespace EAC_STAFF_WELFARE_LMS
             }
         }
 
+        private void dgvSavingsHistory_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dgvSavingsHistory.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;
+            if (e.RowIndex >= 0 && e.RowIndex < dgvSavingsHistory.Rows.Count && e.ColumnIndex >= 0)
+            {
+                DataGridViewRow clickedRow = dgvSavingsHistory.Rows[e.RowIndex];
+
+                if (e.RowIndex == lastClickedRowIndex)
+                {
+                    clickedRow.DefaultCellStyle.BackColor = Color.White;
+
+                    lastClickedRowIndex = -1;
+                }
+                else
+                {
+                    if (lastClickedRowIndex != -1)
+                    {
+                        dgvSavingsHistory.Rows[lastClickedRowIndex].DefaultCellStyle.BackColor = Color.White;
+                    }
+
+                    clickedRow.DefaultCellStyle.BackColor = Color.Khaki;
+
+                    lastClickedRowIndex = e.RowIndex;
+                }
+            }
+        }
+
+        private void dgvIndividualLoans_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            dgvIndividualLoans.DefaultCellStyle.SelectionBackColor = Color.SeaGreen;
+            if (e.RowIndex >= 0 && e.RowIndex < dgvIndividualLoans.Rows.Count && e.ColumnIndex >= 0)
+            {
+                DataGridViewRow clickedRow = dgvIndividualLoans.Rows[e.RowIndex];
+
+                if (e.RowIndex == lastClickedRowIndex)
+                {
+                    clickedRow.DefaultCellStyle.BackColor = Color.White;
+
+                    lastClickedRowIndex = -1;
+                }
+                else
+                {
+                    if (lastClickedRowIndex != -1)
+                    {
+                        dgvIndividualLoans.Rows[lastClickedRowIndex].DefaultCellStyle.BackColor = Color.White;
+                    }
+
+                    clickedRow.DefaultCellStyle.BackColor = Color.Khaki;
+
+                    lastClickedRowIndex = e.RowIndex;
+                }
+            }
+        }
     }
 }

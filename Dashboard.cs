@@ -34,7 +34,7 @@ namespace EAC_STAFF_WELFARE_LMS
             dgvLoansDashBoard.Rows.Clear();
 
             // Define the SQL query with parameters
-            string query = "SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, " +
+            string query = "SELECT LoanID, PFNo, LoanAmount, InterestRate, PayableLoan, DurationOfPayment, " +
                            "ApplicantName, ApplicationDate, DueDate, PendingBalance, LoanStatus " +
                            "FROM Loans " +
                            "WHERE LoanStatus = 'Active'" +
@@ -54,16 +54,16 @@ namespace EAC_STAFF_WELFARE_LMS
                     string interestRate = dr["InterestRate"].ToString() + "%";
 
                     // Calculate the %Paid
-                    decimal loanAmount = Convert.ToDecimal(dr["LoanAmount"]);
+                    decimal payableLoan = Convert.ToDecimal(dr["PayableLoan"]);
                     decimal pendingBalance = Convert.ToDecimal(dr["PendingBalance"]);
-                    decimal percentPaid = ((loanAmount - pendingBalance) / loanAmount) * 100;
+                    decimal percentPaid = ((payableLoan - pendingBalance) / payableLoan) * 100;
 
                     // Add data to DataGridView
                     dgvLoansDashBoard.Rows.Add(i,
                         dr["LoanID"],
                         dr["PFNo"],
                         dr["ApplicantName"],
-                        loanAmount,
+                        payableLoan,
                         interestRate,
                         dr["DurationOfPayment"],
                         ((DateTime)dr["ApplicationDate"]).ToString("dd-MMM-yyyy"),

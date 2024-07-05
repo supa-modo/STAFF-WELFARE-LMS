@@ -188,6 +188,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EacLMSDBDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="EacLMSDBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EacLMSDBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EacLMSDBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EacLMSDBDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FullProfileView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +209,11 @@
     </Compile>
     <Compile Include="LoanApplications.Designer.cs">
       <DependentUpon>LoanApplications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoanApplicationsDataset1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoanApplicationsDataset1.xsd</DependentUpon>
     </Compile>
     <Compile Include="LoanPaymentHistory.cs">
       <SubType>Form</SubType>
@@ -377,6 +392,39 @@
     </None>
     <None Include="EacLMSDBDataSet2.xss">
       <DependentUpon>EacLMSDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="EacLMSDBDataSet3.xsc">
+      <DependentUpon>EacLMSDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EacLMSDBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EacLMSDBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EacLMSDBDataSet3.xss">
+      <DependentUpon>EacLMSDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="EacLMSDBDataSet4.xsc">
+      <DependentUpon>EacLMSDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="EacLMSDBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EacLMSDBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EacLMSDBDataSet4.xss">
+      <DependentUpon>EacLMSDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="LoanApplicationsDataset1.xsc">
+      <DependentUpon>LoanApplicationsDataset1.xsd</DependentUpon>
+    </None>
+    <None Include="LoanApplicationsDataset1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoanApplicationsDataset1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LoanApplicationsDataset1.xss">
+      <DependentUpon>LoanApplicationsDataset1.xsd</DependentUpon>
     </None>
     <None Include="LoansDataset.xsc">
       <DependentUpon>LoansDataset.xsd</DependentUpon>

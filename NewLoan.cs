@@ -33,7 +33,7 @@ namespace EAC_STAFF_WELFARE_LMS
 
         private void InsertNewLoanRecord()
         {
-            // Validate textboxes and other controls
+            // Validating the textboxes and other controls
             if (string.IsNullOrWhiteSpace(txtPFNo.Text) || string.IsNullOrWhiteSpace(txtLoanAmt.Text) || string.IsNullOrWhiteSpace(txtDuration.Text) || string.IsNullOrWhiteSpace(txtInstallments.Text))
             {
                 MessageBox.Show("Please fill in all the given fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

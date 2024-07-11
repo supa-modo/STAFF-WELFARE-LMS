@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoanApplications));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -41,6 +40,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoanApplications));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.labelTotalLoans = new System.Windows.Forms.Label();
@@ -63,6 +63,7 @@
             this.MonthlyInstallments = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PendingBalance = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LoanStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Print = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoanApplications)).BeginInit();
@@ -158,7 +159,8 @@
             this.DueDate,
             this.MonthlyInstallments,
             this.PendingBalance,
-            this.LoanStatus});
+            this.LoanStatus,
+            this.Print});
             this.dgvLoanApplications.EnableHeadersVisualStyles = false;
             this.dgvLoanApplications.Location = new System.Drawing.Point(0, 86);
             this.dgvLoanApplications.Name = "dgvLoanApplications";
@@ -379,6 +381,13 @@
             this.LoanStatus.ReadOnly = true;
             this.LoanStatus.Width = 108;
             // 
+            // Print
+            // 
+            this.Print.HeaderText = "";
+            this.Print.Image = ((System.Drawing.Image)(resources.GetObject("Print.Image")));
+            this.Print.Name = "Print";
+            this.Print.ReadOnly = true;
+            // 
             // LoanApplications
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -426,5 +435,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MonthlyInstallments;
         private System.Windows.Forms.DataGridViewTextBoxColumn PendingBalance;
         private System.Windows.Forms.DataGridViewTextBoxColumn LoanStatus;
+        private System.Windows.Forms.DataGridViewImageColumn Print;
     }
 }

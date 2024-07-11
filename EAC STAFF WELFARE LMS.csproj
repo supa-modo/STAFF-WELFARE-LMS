@@ -24,7 +24,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>http://localhost/EAC STAFF WELFARE LMS/</UpdateUrl>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -276,6 +276,12 @@
     <Compile Include="Savings.Designer.cs">
       <DependentUpon>Savings.cs</DependentUpon>
     </Compile>
+    <Compile Include="SavingsHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SavingsHistory.Designer.cs">
+      <DependentUpon>SavingsHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -343,6 +349,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Savings.resx">
       <DependentUpon>Savings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SavingsHistory.resx">
+      <DependentUpon>SavingsHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>

@@ -427,6 +427,8 @@ namespace EAC_STAFF_WELFARE_LMS {
             
             private global::System.Data.DataColumn columnLoanStatus;
             
+            private global::System.Data.DataColumn columnPayableLoan;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public LoansDataTable() {
@@ -550,6 +552,14 @@ namespace EAC_STAFF_WELFARE_LMS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PayableLoanColumn {
+                get {
+                    return this.columnPayableLoan;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -585,7 +595,7 @@ namespace EAC_STAFF_WELFARE_LMS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public LoansRow AddLoansRow(string LoanID, MembersRow parentMembersRowByFK__Loans__PFNo__17036CC0, decimal LoanAmount, decimal InterestRate, int DurationOfPayment, decimal MonthlyInstallments, string ApplicantName, System.DateTime ApplicationDate, System.DateTime DueDate, decimal PendingBalance, string LoanStatus) {
+            public LoansRow AddLoansRow(string LoanID, MembersRow parentMembersRowByFK__Loans__PFNo__17036CC0, decimal LoanAmount, decimal InterestRate, int DurationOfPayment, decimal MonthlyInstallments, string ApplicantName, System.DateTime ApplicationDate, System.DateTime DueDate, decimal PendingBalance, string LoanStatus, decimal PayableLoan) {
                 LoansRow rowLoansRow = ((LoansRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         LoanID,
@@ -598,7 +608,8 @@ namespace EAC_STAFF_WELFARE_LMS {
                         ApplicationDate,
                         DueDate,
                         PendingBalance,
-                        LoanStatus};
+                        LoanStatus,
+                        PayableLoan};
                 if ((parentMembersRowByFK__Loans__PFNo__17036CC0 != null)) {
                     columnValuesArray[1] = parentMembersRowByFK__Loans__PFNo__17036CC0[0];
                 }
@@ -642,6 +653,7 @@ namespace EAC_STAFF_WELFARE_LMS {
                 this.columnDueDate = base.Columns["DueDate"];
                 this.columnPendingBalance = base.Columns["PendingBalance"];
                 this.columnLoanStatus = base.Columns["LoanStatus"];
+                this.columnPayableLoan = base.Columns["PayableLoan"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -669,6 +681,8 @@ namespace EAC_STAFF_WELFARE_LMS {
                 base.Columns.Add(this.columnPendingBalance);
                 this.columnLoanStatus = new global::System.Data.DataColumn("LoanStatus", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLoanStatus);
+                this.columnPayableLoan = new global::System.Data.DataColumn("PayableLoan", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPayableLoan);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnLoanID}, true));
                 this.columnLoanID.AllowDBNull = false;
@@ -1649,6 +1663,8 @@ namespace EAC_STAFF_WELFARE_LMS {
             
             private global::System.Data.DataColumn columnExpr1;
             
+            private global::System.Data.DataColumn columnPayableLoan;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public Individual_Member_DetailsDataTable() {
@@ -1868,6 +1884,14 @@ namespace EAC_STAFF_WELFARE_LMS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PayableLoanColumn {
+                get {
+                    return this.columnPayableLoan;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1926,7 +1950,8 @@ namespace EAC_STAFF_WELFARE_LMS {
                         string PhysicalAddress, 
                         string JobTitle, 
                         string Department, 
-                        int Expr1) {
+                        int Expr1, 
+                        decimal PayableLoan) {
                 Individual_Member_DetailsRow rowIndividual_Member_DetailsRow = ((Individual_Member_DetailsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         MemberPFNo,
@@ -1951,7 +1976,8 @@ namespace EAC_STAFF_WELFARE_LMS {
                         PhysicalAddress,
                         JobTitle,
                         Department,
-                        Expr1};
+                        Expr1,
+                        PayableLoan};
                 if ((parentMembersRowByFK__Loans__PFNo__17036CC01 != null)) {
                     columnValuesArray[4] = parentMembersRowByFK__Loans__PFNo__17036CC01[0];
                 }
@@ -2000,6 +2026,7 @@ namespace EAC_STAFF_WELFARE_LMS {
                 this.columnJobTitle = base.Columns["JobTitle"];
                 this.columnDepartment = base.Columns["Department"];
                 this.columnExpr1 = base.Columns["Expr1"];
+                this.columnPayableLoan = base.Columns["PayableLoan"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2051,6 +2078,8 @@ namespace EAC_STAFF_WELFARE_LMS {
                 base.Columns.Add(this.columnDepartment);
                 this.columnExpr1 = new global::System.Data.DataColumn("Expr1", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnExpr1);
+                this.columnPayableLoan = new global::System.Data.DataColumn("PayableLoan", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPayableLoan);
                 this.columnMemberPFNo.AllowDBNull = false;
                 this.columnFirstName.MaxLength = 50;
                 this.columnMiddleName.MaxLength = 50;
@@ -2345,6 +2374,22 @@ namespace EAC_STAFF_WELFARE_LMS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal PayableLoan {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableLoans.PayableLoanColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PayableLoan\' in table \'Loans\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableLoans.PayableLoanColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public MembersRow MembersRow {
                 get {
                     return ((MembersRow)(this.GetParentRow(this.Table.ParentRelations["FK__Loans__PFNo__17036CC0"])));
@@ -2376,6 +2421,18 @@ namespace EAC_STAFF_WELFARE_LMS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetLoanStatusNull() {
                 this[this.tableLoans.LoanStatusColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsPayableLoanNull() {
+                return this.IsNull(this.tableLoans.PayableLoanColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetPayableLoanNull() {
+                this[this.tableLoans.PayableLoanColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -3254,6 +3311,23 @@ namespace EAC_STAFF_WELFARE_LMS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal PayableLoan {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableIndividual_Member_Details.PayableLoanColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PayableLoan\' in table \'Individual Member Details\' is DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableIndividual_Member_Details.PayableLoanColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public MembersRow MembersRow {
                 get {
                     return ((MembersRow)(this.GetParentRow(this.Table.ParentRelations["FK__Loans__PFNo__17036CC01"])));
@@ -3417,6 +3491,18 @@ namespace EAC_STAFF_WELFARE_LMS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetExpr1Null() {
                 this[this.tableIndividual_Member_Details.Expr1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsPayableLoanNull() {
+                return this.IsNull(this.tableIndividual_Member_Details.PayableLoanColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetPayableLoanNull() {
+                this[this.tableIndividual_Member_Details.PayableLoanColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -3692,10 +3778,11 @@ namespace EAC_STAFF_WELFARE_LMS.EacLMSDBDataSet2TableAdapters {
             tableMapping.ColumnMappings.Add("DueDate", "DueDate");
             tableMapping.ColumnMappings.Add("PendingBalance", "PendingBalance");
             tableMapping.ColumnMappings.Add("LoanStatus", "LoanStatus");
+            tableMapping.ColumnMappings.Add("PayableLoan", "PayableLoan");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Loans] WHERE (([LoanID] = @Original_LoanID) AND ([PFNo] = @Original_PFNo) AND ([LoanAmount] = @Original_LoanAmount) AND ([InterestRate] = @Original_InterestRate) AND ([DurationOfPayment] = @Original_DurationOfPayment) AND ([MonthlyInstallments] = @Original_MonthlyInstallments) AND ([ApplicantName] = @Original_ApplicantName) AND ([ApplicationDate] = @Original_ApplicationDate) AND ([DueDate] = @Original_DueDate) AND ((@IsNull_PendingBalance = 1 AND [PendingBalance] IS NULL) OR ([PendingBalance] = @Original_PendingBalance)) AND ((@IsNull_LoanStatus = 1 AND [LoanStatus] IS NULL) OR ([LoanStatus] = @Original_LoanStatus)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Loans] WHERE (([LoanID] = @Original_LoanID) AND ([PFNo] = @Original_PFNo) AND ([LoanAmount] = @Original_LoanAmount) AND ([InterestRate] = @Original_InterestRate) AND ([DurationOfPayment] = @Original_DurationOfPayment) AND ([MonthlyInstallments] = @Original_MonthlyInstallments) AND ([ApplicantName] = @Original_ApplicantName) AND ([ApplicationDate] = @Original_ApplicationDate) AND ([DueDate] = @Original_DueDate) AND ((@IsNull_PendingBalance = 1 AND [PendingBalance] IS NULL) OR ([PendingBalance] = @Original_PendingBalance)) AND ((@IsNull_LoanStatus = 1 AND [LoanStatus] IS NULL) OR ([LoanStatus] = @Original_LoanStatus)) AND ((@IsNull_PayableLoan = 1 AND [PayableLoan] IS NULL) OR ([PayableLoan] = @Original_PayableLoan)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_LoanID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LoanID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PFNo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PFNo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -3710,10 +3797,12 @@ namespace EAC_STAFF_WELFARE_LMS.EacLMSDBDataSet2TableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PendingBalance", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PendingBalance", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_LoanStatus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LoanStatus", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_LoanStatus", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LoanStatus", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_PayableLoan", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PayableLoan", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PayableLoan", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PayableLoan", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Loans] ([LoanID], [PFNo], [LoanAmount], [InterestRate], [DurationOfPayment], [MonthlyInstallments], [ApplicantName], [ApplicationDate], [DueDate], [PendingBalance], [LoanStatus]) VALUES (@LoanID, @PFNo, @LoanAmount, @InterestRate, @DurationOfPayment, @MonthlyInstallments, @ApplicantName, @ApplicationDate, @DueDate, @PendingBalance, @LoanStatus);
-SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstallments, ApplicantName, ApplicationDate, DueDate, PendingBalance, LoanStatus FROM Loans WHERE (LoanID = @LoanID)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Loans] ([LoanID], [PFNo], [LoanAmount], [InterestRate], [DurationOfPayment], [MonthlyInstallments], [ApplicantName], [ApplicationDate], [DueDate], [PendingBalance], [LoanStatus], [PayableLoan]) VALUES (@LoanID, @PFNo, @LoanAmount, @InterestRate, @DurationOfPayment, @MonthlyInstallments, @ApplicantName, @ApplicationDate, @DueDate, @PendingBalance, @LoanStatus, @PayableLoan);
+SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstallments, ApplicantName, ApplicationDate, DueDate, PendingBalance, LoanStatus, PayableLoan FROM Loans WHERE (LoanID = @LoanID)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LoanID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LoanID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PFNo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PFNo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -3726,10 +3815,11 @@ SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstall
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DueDate", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DueDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PendingBalance", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PendingBalance", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LoanStatus", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LoanStatus", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PayableLoan", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PayableLoan", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Loans] SET [LoanID] = @LoanID, [PFNo] = @PFNo, [LoanAmount] = @LoanAmount, [InterestRate] = @InterestRate, [DurationOfPayment] = @DurationOfPayment, [MonthlyInstallments] = @MonthlyInstallments, [ApplicantName] = @ApplicantName, [ApplicationDate] = @ApplicationDate, [DueDate] = @DueDate, [PendingBalance] = @PendingBalance, [LoanStatus] = @LoanStatus WHERE (([LoanID] = @Original_LoanID) AND ([PFNo] = @Original_PFNo) AND ([LoanAmount] = @Original_LoanAmount) AND ([InterestRate] = @Original_InterestRate) AND ([DurationOfPayment] = @Original_DurationOfPayment) AND ([MonthlyInstallments] = @Original_MonthlyInstallments) AND ([ApplicantName] = @Original_ApplicantName) AND ([ApplicationDate] = @Original_ApplicationDate) AND ([DueDate] = @Original_DueDate) AND ((@IsNull_PendingBalance = 1 AND [PendingBalance] IS NULL) OR ([PendingBalance] = @Original_PendingBalance)) AND ((@IsNull_LoanStatus = 1 AND [LoanStatus] IS NULL) OR ([LoanStatus] = @Original_LoanStatus)));
-SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstallments, ApplicantName, ApplicationDate, DueDate, PendingBalance, LoanStatus FROM Loans WHERE (LoanID = @LoanID)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Loans] SET [LoanID] = @LoanID, [PFNo] = @PFNo, [LoanAmount] = @LoanAmount, [InterestRate] = @InterestRate, [DurationOfPayment] = @DurationOfPayment, [MonthlyInstallments] = @MonthlyInstallments, [ApplicantName] = @ApplicantName, [ApplicationDate] = @ApplicationDate, [DueDate] = @DueDate, [PendingBalance] = @PendingBalance, [LoanStatus] = @LoanStatus, [PayableLoan] = @PayableLoan WHERE (([LoanID] = @Original_LoanID) AND ([PFNo] = @Original_PFNo) AND ([LoanAmount] = @Original_LoanAmount) AND ([InterestRate] = @Original_InterestRate) AND ([DurationOfPayment] = @Original_DurationOfPayment) AND ([MonthlyInstallments] = @Original_MonthlyInstallments) AND ([ApplicantName] = @Original_ApplicantName) AND ([ApplicationDate] = @Original_ApplicationDate) AND ([DueDate] = @Original_DueDate) AND ((@IsNull_PendingBalance = 1 AND [PendingBalance] IS NULL) OR ([PendingBalance] = @Original_PendingBalance)) AND ((@IsNull_LoanStatus = 1 AND [LoanStatus] IS NULL) OR ([LoanStatus] = @Original_LoanStatus)) AND ((@IsNull_PayableLoan = 1 AND [PayableLoan] IS NULL) OR ([PayableLoan] = @Original_PayableLoan)));
+SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstallments, ApplicantName, ApplicationDate, DueDate, PendingBalance, LoanStatus, PayableLoan FROM Loans WHERE (LoanID = @LoanID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LoanID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LoanID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PFNo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PFNo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -3742,6 +3832,7 @@ SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstall
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DueDate", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DueDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PendingBalance", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PendingBalance", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@LoanStatus", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LoanStatus", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PayableLoan", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PayableLoan", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_LoanID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LoanID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PFNo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PFNo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_LoanAmount", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "LoanAmount", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -3755,6 +3846,8 @@ SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstall
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PendingBalance", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PendingBalance", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_LoanStatus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LoanStatus", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_LoanStatus", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "LoanStatus", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_PayableLoan", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PayableLoan", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PayableLoan", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PayableLoan", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3771,8 +3864,8 @@ SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstall
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstallm" +
-                "ents, ApplicantName, ApplicationDate, DueDate, PendingBalance, LoanStatus FROM d" +
-                "bo.Loans";
+                "ents, ApplicantName, ApplicationDate, DueDate, PendingBalance, LoanStatus, Payab" +
+                "leLoan FROM dbo.Loans";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -3833,7 +3926,7 @@ SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstall
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_LoanID, int Original_PFNo, decimal Original_LoanAmount, decimal Original_InterestRate, int Original_DurationOfPayment, decimal Original_MonthlyInstallments, string Original_ApplicantName, System.DateTime Original_ApplicationDate, System.DateTime Original_DueDate, global::System.Nullable<decimal> Original_PendingBalance, string Original_LoanStatus) {
+        public virtual int Delete(string Original_LoanID, int Original_PFNo, decimal Original_LoanAmount, decimal Original_InterestRate, int Original_DurationOfPayment, decimal Original_MonthlyInstallments, string Original_ApplicantName, System.DateTime Original_ApplicationDate, System.DateTime Original_DueDate, global::System.Nullable<decimal> Original_PendingBalance, string Original_LoanStatus, global::System.Nullable<decimal> Original_PayableLoan) {
             if ((Original_LoanID == null)) {
                 throw new global::System.ArgumentNullException("Original_LoanID");
             }
@@ -3869,6 +3962,14 @@ SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstall
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_LoanStatus));
             }
+            if ((Original_PayableLoan.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((decimal)(Original_PayableLoan.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -3889,7 +3990,7 @@ SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstall
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string LoanID, int PFNo, decimal LoanAmount, decimal InterestRate, int DurationOfPayment, decimal MonthlyInstallments, string ApplicantName, System.DateTime ApplicationDate, System.DateTime DueDate, global::System.Nullable<decimal> PendingBalance, string LoanStatus) {
+        public virtual int Insert(string LoanID, int PFNo, decimal LoanAmount, decimal InterestRate, int DurationOfPayment, decimal MonthlyInstallments, string ApplicantName, System.DateTime ApplicationDate, System.DateTime DueDate, global::System.Nullable<decimal> PendingBalance, string LoanStatus, global::System.Nullable<decimal> PayableLoan) {
             if ((LoanID == null)) {
                 throw new global::System.ArgumentNullException("LoanID");
             }
@@ -3920,6 +4021,12 @@ SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstall
             }
             else {
                 this.Adapter.InsertCommand.Parameters[10].Value = ((string)(LoanStatus));
+            }
+            if ((PayableLoan.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[11].Value = ((decimal)(PayableLoan.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -3953,6 +4060,7 @@ SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstall
                     System.DateTime DueDate, 
                     global::System.Nullable<decimal> PendingBalance, 
                     string LoanStatus, 
+                    global::System.Nullable<decimal> PayableLoan, 
                     string Original_LoanID, 
                     int Original_PFNo, 
                     decimal Original_LoanAmount, 
@@ -3963,7 +4071,8 @@ SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstall
                     System.DateTime Original_ApplicationDate, 
                     System.DateTime Original_DueDate, 
                     global::System.Nullable<decimal> Original_PendingBalance, 
-                    string Original_LoanStatus) {
+                    string Original_LoanStatus, 
+                    global::System.Nullable<decimal> Original_PayableLoan) {
             if ((LoanID == null)) {
                 throw new global::System.ArgumentNullException("LoanID");
             }
@@ -3995,40 +4104,54 @@ SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstall
             else {
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(LoanStatus));
             }
+            if ((PayableLoan.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((decimal)(PayableLoan.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
             if ((Original_LoanID == null)) {
                 throw new global::System.ArgumentNullException("Original_LoanID");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_LoanID));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_LoanID));
             }
-            this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Original_PFNo));
-            this.Adapter.UpdateCommand.Parameters[13].Value = ((decimal)(Original_LoanAmount));
-            this.Adapter.UpdateCommand.Parameters[14].Value = ((decimal)(Original_InterestRate));
-            this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(Original_DurationOfPayment));
-            this.Adapter.UpdateCommand.Parameters[16].Value = ((decimal)(Original_MonthlyInstallments));
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_PFNo));
+            this.Adapter.UpdateCommand.Parameters[14].Value = ((decimal)(Original_LoanAmount));
+            this.Adapter.UpdateCommand.Parameters[15].Value = ((decimal)(Original_InterestRate));
+            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(Original_DurationOfPayment));
+            this.Adapter.UpdateCommand.Parameters[17].Value = ((decimal)(Original_MonthlyInstallments));
             if ((Original_ApplicantName == null)) {
                 throw new global::System.ArgumentNullException("Original_ApplicantName");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_ApplicantName));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_ApplicantName));
             }
-            this.Adapter.UpdateCommand.Parameters[18].Value = ((System.DateTime)(Original_ApplicationDate));
-            this.Adapter.UpdateCommand.Parameters[19].Value = ((System.DateTime)(Original_DueDate));
+            this.Adapter.UpdateCommand.Parameters[19].Value = ((System.DateTime)(Original_ApplicationDate));
+            this.Adapter.UpdateCommand.Parameters[20].Value = ((System.DateTime)(Original_DueDate));
             if ((Original_PendingBalance.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((decimal)(Original_PendingBalance.Value));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((decimal)(Original_PendingBalance.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
             if ((Original_LoanStatus == null)) {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[24].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_LoanStatus));
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(Original_LoanStatus));
+            }
+            if ((Original_PayableLoan.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((decimal)(Original_PayableLoan.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[25].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[26].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -4061,6 +4184,7 @@ SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstall
                     System.DateTime DueDate, 
                     global::System.Nullable<decimal> PendingBalance, 
                     string LoanStatus, 
+                    global::System.Nullable<decimal> PayableLoan, 
                     string Original_LoanID, 
                     int Original_PFNo, 
                     decimal Original_LoanAmount, 
@@ -4071,8 +4195,9 @@ SELECT LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstall
                     System.DateTime Original_ApplicationDate, 
                     System.DateTime Original_DueDate, 
                     global::System.Nullable<decimal> Original_PendingBalance, 
-                    string Original_LoanStatus) {
-            return this.Update(Original_LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstallments, ApplicantName, ApplicationDate, DueDate, PendingBalance, LoanStatus, Original_LoanID, Original_PFNo, Original_LoanAmount, Original_InterestRate, Original_DurationOfPayment, Original_MonthlyInstallments, Original_ApplicantName, Original_ApplicationDate, Original_DueDate, Original_PendingBalance, Original_LoanStatus);
+                    string Original_LoanStatus, 
+                    global::System.Nullable<decimal> Original_PayableLoan) {
+            return this.Update(Original_LoanID, PFNo, LoanAmount, InterestRate, DurationOfPayment, MonthlyInstallments, ApplicantName, ApplicationDate, DueDate, PendingBalance, LoanStatus, PayableLoan, Original_LoanID, Original_PFNo, Original_LoanAmount, Original_InterestRate, Original_DurationOfPayment, Original_MonthlyInstallments, Original_ApplicantName, Original_ApplicationDate, Original_DueDate, Original_PendingBalance, Original_LoanStatus, Original_PayableLoan);
         }
     }
     
@@ -5432,6 +5557,7 @@ SELECT SavingsId, PFNo, MonthlySavings, SavingsAccountBalance, LastUpdated FROM 
             tableMapping.ColumnMappings.Add("JobTitle", "JobTitle");
             tableMapping.ColumnMappings.Add("Department", "Department");
             tableMapping.ColumnMappings.Add("Expr1", "Expr1");
+            tableMapping.ColumnMappings.Add("PayableLoan", "PayableLoan");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -5449,7 +5575,7 @@ SELECT SavingsId, PFNo, MonthlySavings, SavingsAccountBalance, LastUpdated FROM 
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT        Members.MemberPFNo, Members.FirstName, Members.MiddleName, Members.LastName, Savings.PFNo, Savings.MonthlySavings, Savings.SavingsAccountBalance, Savings.LastUpdated, Loans.LoanID, Loans.LoanAmount, 
-                         Loans.LoanStatus, Loans.PendingBalance, Loans.DueDate, Loans.ApplicantName, Loans.MonthlyInstallments, Members.ContractEndDate, Members.ContractStartDate, Members.EmailAddress, Members.PhoneNumber1, 
+                         Loans.LoanStatus, Loans.PendingBalance, Loans.DueDate, Loans.ApplicantName, Loans.MonthlyInstallments, Loans.PayableLoan, Members.ContractEndDate, Members.ContractStartDate, Members.EmailAddress, Members.PhoneNumber1, 
                          Members.PhysicalAddress, Members.JobTitle, Members.Department, Members.MonthlySavings AS Expr1
 FROM            Loans INNER JOIN
                          Members ON Loans.PFNo = Members.MemberPFNo INNER JOIN

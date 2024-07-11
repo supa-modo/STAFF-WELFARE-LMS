@@ -24,7 +24,7 @@
           </Paragraph>
         </Paragraphs>
         <Top>1.03153in</Top>
-        <Left>0.43005in</Left>
+        <Left>0.89263in</Left>
         <Height>0.20485in</Height>
         <Width>5.61458in</Width>
         <Style>
@@ -42,7 +42,7 @@
         <Value>Emblem_of_East_African_Community21</Value>
         <Sizing>Fit</Sizing>
         <Top>0.01541in</Top>
-        <Left>2.67484in</Left>
+        <Left>3.13742in</Left>
         <Height>0.9571in</Height>
         <Width>1.125in</Width>
         <ZIndex>1</ZIndex>
@@ -73,7 +73,7 @@
           </Paragraph>
         </Paragraphs>
         <Top>1.23638in</Top>
-        <Left>0.43005in</Left>
+        <Left>0.89263in</Left>
         <Height>0.18749in</Height>
         <Width>5.61458in</Width>
         <ZIndex>2</ZIndex>
@@ -736,7 +736,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -924,6 +923,7 @@
       </Tablix>
       <Line Name="Line1">
         <Top>1.43776in</Top>
+        <Left>0.125in</Left>
         <Height>0in</Height>
         <Width>7.14983in</Width>
         <ZIndex>6</ZIndex>
@@ -936,6 +936,7 @@
       </Line>
       <Line Name="Line2">
         <Top>1.40998in</Top>
+        <Left>0.125in</Left>
         <Height>0in</Height>
         <Width>7.14983in</Width>
         <ZIndex>7</ZIndex>

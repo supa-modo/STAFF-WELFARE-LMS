@@ -30,12 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Members));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroBtnNewMember = new MetroFramework.Controls.MetroButton();
             this.txtSearch = new MetroFramework.Controls.MetroTextBox();
@@ -50,7 +49,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnViewProfile = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Details = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembers)).BeginInit();
             this.SuspendLayout();
@@ -161,14 +160,14 @@
             this.Column3,
             this.Column4,
             this.Column9,
-            this.btnViewProfile});
+            this.Details});
             this.dgvMembers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMembers.EnableHeadersVisualStyles = false;
             this.dgvMembers.Location = new System.Drawing.Point(0, 40);
             this.dgvMembers.Name = "dgvMembers";
             this.dgvMembers.RowHeadersVisible = false;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.dgvMembers.RowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.dgvMembers.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvMembers.RowTemplate.Height = 30;
             this.dgvMembers.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvMembers.Size = new System.Drawing.Size(1350, 590);
@@ -257,23 +256,11 @@
             this.Column9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Column9.Width = 130;
             // 
-            // btnViewProfile
+            // Details
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightSeaGreen;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            this.btnViewProfile.DefaultCellStyle = dataGridViewCellStyle6;
-            this.btnViewProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewProfile.HeaderText = "";
-            this.btnViewProfile.Name = "btnViewProfile";
-            this.btnViewProfile.ReadOnly = true;
-            this.btnViewProfile.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.btnViewProfile.Text = "View Profile";
-            this.btnViewProfile.UseColumnTextForButtonValue = true;
-            this.btnViewProfile.Width = 130;
+            this.Details.HeaderText = "";
+            this.Details.Image = ((System.Drawing.Image)(resources.GetObject("Details.Image")));
+            this.Details.Name = "Details";
             // 
             // Members
             // 
@@ -312,6 +299,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewButtonColumn btnViewProfile;
+        private System.Windows.Forms.DataGridViewImageColumn Details;
     }
 }

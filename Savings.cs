@@ -64,7 +64,7 @@ namespace EAC_STAFF_WELFARE_LMS
                         dr["MonthlySavingsDeduction"],
                         dr["SavingsAccountBalance"],
                         ((DateTime)dr["LastUpdated"]).ToString("dd-MMM-yyyy"));
-                    
+
                 }
             }
             catch (Exception ex)
@@ -93,7 +93,7 @@ namespace EAC_STAFF_WELFARE_LMS
 
                 // Informing the user of the successful update
                 MessageBox.Show("Savings update completed successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
+
             }
             catch (Exception ex)
             {
@@ -168,25 +168,42 @@ namespace EAC_STAFF_WELFARE_LMS
             if (e.RowIndex >= 0 && e.RowIndex < dgvMemberSavings.Rows.Count && e.ColumnIndex >= 0)
             {
                 DataGridViewRow clickedRow = dgvMemberSavings.Rows[e.RowIndex];
+                /*int lastColumnIndex = dgvMemberSavings.ColumnCount - 1;*/
+                int lastColumnIndex = dgvMemberSavings.ColumnCount;
+
+
+
+                if (lastClickedRowIndex != -1)
+                {
+                    DataGridViewRow lastClickedRow = dgvMemberSavings.Rows[lastClickedRowIndex];
+                    for (int i = 0; i < lastColumnIndex; i++)
+                    {
+                        lastClickedRow.Cells[i].Style.BackColor = Color.White;
+                    }
+                }
 
                 if (e.RowIndex == lastClickedRowIndex)
                 {
-                    clickedRow.DefaultCellStyle.BackColor = Color.White;
-
+                    for (int i = 0; i < lastColumnIndex; i++)
+                    {
+                        clickedRow.Cells[i].Style.BackColor = Color.White;
+                    }
                     lastClickedRowIndex = -1;
                 }
                 else
                 {
-                    if (lastClickedRowIndex != -1)
+                    for (int i = 0; i < lastColumnIndex; i++)
                     {
-                        dgvMemberSavings.Rows[lastClickedRowIndex].DefaultCellStyle.BackColor = Color.White;
+                        clickedRow.Cells[i].Style.BackColor = Color.Khaki;
                     }
-
-                    clickedRow.DefaultCellStyle.BackColor = Color.Khaki;
-
                     lastClickedRowIndex = e.RowIndex;
                 }
             }
+    }
+
+    private void dgvMemberSavings_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

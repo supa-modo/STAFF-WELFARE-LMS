@@ -153,7 +153,22 @@
   <metadata name="LoanStatus.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="Print.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Print.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAE9SURBVEhL7Za9SgNBFIVXRGxi1MJKRLAI2Ik/WPsG+hKW
+        4iv5QmlEC1FTpBTsBBEk+c5u7nCV0cxmf1jEAx/Mzpx7TzI7u2zWBfXhtQKqT9Y6TGAAeyWQX3WqT5aF
+        reRX6ZL/Pyzo74RdwD08zRiBip7dXAryq071NncH5xAk0yUcNYD6KjToBfaLYS1ag+1imPdV/6C6w4bw
+        DjvQeNgN3MIGNB7m1a0w3WA7uougetPcMHuoTyF2nH9C/u8PdXKY3ghLcACx5obW5Yu9QUqFHcMjxLbL
+        0Lp8SWFjOCuGuXxYGcXC1Ff9g67hA2T0qPgEPt2c5w22wGRhHvW9gi9ahc0ZuyCj/TP9Ulvz9MDLwlRv
+        HvX9VX4bD+EBYvfK0Lp8Fua3ca582DKoUewUGlqXr1JYK19XrX43NqAsmwKx6ajAwiQ21AAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
   <data name="txtSearch.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL

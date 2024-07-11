@@ -4,5 +4,8 @@
 
     public partial class EacLMSDBDataSet2
     {
+        partial class Individual_Member_DetailsDataTable
+        {
+        }
     }
 }

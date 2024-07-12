@@ -9,7 +9,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>EAST AFRICAN COMMUNITY STAFF WELFARE ASSOCIATION</Value>
+                <Value>EAST AFRICAN COMMUNITY</Value>
                 <Style>
                   <FontStyle>Normal</FontStyle>
                   <FontFamily>Courier New</FontFamily>
@@ -23,7 +23,7 @@
             </Style>
           </Paragraph>
         </Paragraphs>
-        <Top>0.98338in</Top>
+        <Top>0.96404in</Top>
         <Left>0.92962in</Left>
         <Height>0.20485in</Height>
         <Width>5.61458in</Width>
@@ -63,6 +63,7 @@
                 <Style>
                   <FontFamily>Courier New</FontFamily>
                   <FontSize>8pt</FontSize>
+                  <FontWeight>SemiBold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -71,7 +72,7 @@
             </Style>
           </Paragraph>
         </Paragraphs>
-        <Top>1.18823in</Top>
+        <Top>1.37374in</Top>
         <Left>0.92962in</Left>
         <Height>0.18749in</Height>
         <Width>5.61458in</Width>
@@ -97,7 +98,7 @@
                 <Style>
                   <FontFamily>Courier New</FontFamily>
                   <FontSize>7pt</FontSize>
-                  <Color>DimGray</Color>
+                  <FontWeight>SemiBold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -105,7 +106,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox55</rd:DefaultName>
-        <Top>1.52851in</Top>
+        <Top>1.65351in</Top>
         <Left>5.28778in</Left>
         <Height>0.17708in</Height>
         <Width>1.91926in</Width>
@@ -121,7 +122,7 @@
         </Style>
       </Textbox>
       <Line Name="Line1">
-        <Top>1.47295in</Top>
+        <Top>1.59795in</Top>
         <Left>0.11458in</Left>
         <Height>0in</Height>
         <Width>7.24466in</Width>
@@ -134,7 +135,7 @@
         </Style>
       </Line>
       <Line Name="Line2">
-        <Top>1.44517in</Top>
+        <Top>1.57017in</Top>
         <Left>0.11458in</Left>
         <Height>0in</Height>
         <Width>7.24466in</Width>
@@ -191,6 +192,7 @@
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>8pt</FontSize>
+                                <FontWeight>SemiBold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -202,7 +204,7 @@
                       <rd:DefaultName>Textbox47</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>#434040</Color>
                           <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>Silver</BackgroundColor>
@@ -240,7 +242,7 @@
                       <rd:DefaultName>Textbox49</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>#434040</Color>
                           <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>Silver</BackgroundColor>
@@ -278,7 +280,7 @@
                       <rd:DefaultName>Textbox51</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>#434040</Color>
                           <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>Silver</BackgroundColor>
@@ -316,7 +318,7 @@
                       <rd:DefaultName>Textbox53</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>#434040</Color>
                           <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>Silver</BackgroundColor>
@@ -354,7 +356,7 @@
                       <rd:DefaultName>Textbox56</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>#434040</Color>
                           <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>Silver</BackgroundColor>
@@ -392,7 +394,7 @@
                       <rd:DefaultName>Textbox60</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>#434040</Color>
                           <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>Silver</BackgroundColor>
@@ -430,7 +432,7 @@
                       <rd:DefaultName>Textbox58</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>#434040</Color>
                           <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>Silver</BackgroundColor>
@@ -468,7 +470,7 @@
                       <rd:DefaultName>Textbox62</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>#434040</Color>
                           <Style>Solid</Style>
                         </Border>
                         <BackgroundColor>Silver</BackgroundColor>
@@ -498,6 +500,7 @@
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>7pt</FontSize>
+                                <FontWeight>SemiBold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -509,7 +512,7 @@
                       <rd:DefaultName>Textbox48</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>#434040</Color>
                           <Style>Solid</Style>
                         </Border>
                         <VerticalAlign>Middle</VerticalAlign>
@@ -534,6 +537,7 @@
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>7pt</FontSize>
+                                <FontWeight>SemiBold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -545,7 +549,7 @@
                       <rd:DefaultName>LoanID</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>#434040</Color>
                           <Style>Solid</Style>
                         </Border>
                         <VerticalAlign>Middle</VerticalAlign>
@@ -570,6 +574,7 @@
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>7pt</FontSize>
+                                <FontWeight>SemiBold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -581,7 +586,7 @@
                       <rd:DefaultName>ApplicantName</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>#434040</Color>
                           <Style>Solid</Style>
                         </Border>
                         <VerticalAlign>Middle</VerticalAlign>
@@ -606,6 +611,7 @@
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>7pt</FontSize>
+                                <FontWeight>SemiBold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -617,7 +623,7 @@
                       <rd:DefaultName>PayableLoan</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>#434040</Color>
                           <Style>Solid</Style>
                         </Border>
                         <VerticalAlign>Middle</VerticalAlign>
@@ -642,6 +648,7 @@
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>7pt</FontSize>
+                                <FontWeight>SemiBold</FontWeight>
                                 <Format>d</Format>
                               </Style>
                             </TextRun>
@@ -654,7 +661,7 @@
                       <rd:DefaultName>ApplicationDate</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>#434040</Color>
                           <Style>Solid</Style>
                         </Border>
                         <VerticalAlign>Middle</VerticalAlign>
@@ -679,6 +686,7 @@
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>7pt</FontSize>
+                                <FontWeight>SemiBold</FontWeight>
                                 <Format>d</Format>
                               </Style>
                             </TextRun>
@@ -691,7 +699,7 @@
                       <rd:DefaultName>DueDate</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>#434040</Color>
                           <Style>Solid</Style>
                         </Border>
                         <VerticalAlign>Middle</VerticalAlign>
@@ -716,6 +724,7 @@
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>7pt</FontSize>
+                                <FontWeight>SemiBold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -727,7 +736,7 @@
                       <rd:DefaultName>PendingBalance</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>#434040</Color>
                           <Style>Solid</Style>
                         </Border>
                         <VerticalAlign>Middle</VerticalAlign>
@@ -752,6 +761,7 @@
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontSize>7pt</FontSize>
+                                <FontWeight>SemiBold</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -763,7 +773,7 @@
                       <rd:DefaultName>LoanStatus</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
+                          <Color>#434040</Color>
                           <Style>Solid</Style>
                         </Border>
                         <VerticalAlign>Middle</VerticalAlign>
@@ -773,6 +783,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -802,28 +813,65 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>LoanApplicationsDataset</DataSetName>
-        <Top>1.78in</Top>
+        <Top>1.905in</Top>
         <Height>0.6875in</Height>
         <Width>7.47444in</Width>
         <ZIndex>6</ZIndex>
         <Style>
           <Border>
+            <Color>#434040</Color>
             <Style>None</Style>
           </Border>
         </Style>
       </Tablix>
+      <Textbox Name="Textbox4">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>STAFF WELFARE ASSOCIATION</Value>
+                <Style>
+                  <FontStyle>Normal</FontStyle>
+                  <FontFamily>Courier New</FontFamily>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <Top>1.16889in</Top>
+        <Left>0.92962in</Left>
+        <Height>0.20485in</Height>
+        <Width>5.61458in</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>2.89853in</Height>
+    <Height>2.63417in</Height>
     <Style>
       <Border>
         <Style>None</Style>
       </Border>
     </Style>
   </Body>
-  <Width>7.50061in</Width>
+  <Width>7.47444in</Width>
   <Page>
     <PageFooter>
-      <Height>1in</Height>
+      <Height>0.69792in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -834,18 +882,24 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value />
-                  <Style />
+                  <Value>="Page " &amp; Globals!PageNumber &amp; " of " &amp; Globals!TotalPages</Value>
+                  <Style>
+                    <FontFamily>Courier New</FontFamily>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>SemiBold</FontWeight>
+                  </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
-          <Top>0.69397in</Top>
-          <Left>3.2942in</Left>
+          <Top>0.19397in</Top>
+          <Left>3.17962in</Left>
           <Height>0.19792in</Height>
-          <Width>0.83333in</Width>
+          <Width>1.11458in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -865,7 +919,7 @@
     </PageFooter>
     <LeftMargin>0.5in</LeftMargin>
     <RightMargin>0.5in</RightMargin>
-    <TopMargin>0.25in</TopMargin>
+    <TopMargin>0.5in</TopMargin>
     <BottomMargin>0.25in</BottomMargin>
     <Style />
   </Page>
